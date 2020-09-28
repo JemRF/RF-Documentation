@@ -1,7 +1,7 @@
 ---
 title: Flex Radio Module
 keywords: flex, temperature, humidity, pressure, alarm, button, reed, door, window, ds18b20, dht22, sht21, bme280, bmp280
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains the JEMRF Flex Radio Module"
 sidebar: mydoc_sidebar 

@@ -1,7 +1,7 @@
 ---
 title: Wireless Waterproof Temperature Sensor
 keywords: wireless temperature, temperature, sensor, 10k, thermistor, waterproof
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains the JEMRF Wireless Waterproof Temperature Sensor"
 sidebar: mydoc_sidebar

@@ -1,7 +1,7 @@
 ---
 title: HELLO Command
 keywords: hello, ping
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page describes the HELLO command."
 sidebar: mydoc_sidebar

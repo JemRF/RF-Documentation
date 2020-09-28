@@ -1,7 +1,7 @@
 ---
 title: Encryption
 keywords: encryption, key, security
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page describes the encryption related configurations and how to enable encryption."
 sidebar: mydoc_sidebar

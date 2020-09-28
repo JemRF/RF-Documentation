@@ -1,7 +1,7 @@
 ---
 title: Frequency
 keywords: frequency
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page describes the Frequency setting and how to change it."
 sidebar: mydoc_sidebar

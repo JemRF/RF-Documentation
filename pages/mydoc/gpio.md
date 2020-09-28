@@ -1,7 +1,7 @@
 ---
 title: GPIO
 keywords: gpio
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page describes the GPIO functionality of the Flex RF module."
 sidebar: mydoc_sidebar

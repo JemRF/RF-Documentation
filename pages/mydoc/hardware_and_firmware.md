@@ -1,7 +1,7 @@
 ---
 title: Hardware & Firmware
 keywords: hardware, firmware, update, download
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains the JEMRF hardware and firmware"
 sidebar: mydoc_sidebar

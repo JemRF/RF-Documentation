@@ -1,7 +1,7 @@
 ---
 title: Message Reference
 keywords: message reference, llap, protocol, message protocol, api, json, interface, messages
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains all the supported LLAP messages used by the JemRF devices"
 sidebar: mydoc_sidebar

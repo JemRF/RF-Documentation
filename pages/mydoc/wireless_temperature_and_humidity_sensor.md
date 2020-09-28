@@ -1,7 +1,7 @@
 ---
 title: Wireless Temperature and Humidity Sensor
 keywords: wireless temperature, temperature, sensor, 10k, thermistor
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains the JEMRF Wireless Temperature and Humidity Sensor"
 sidebar: mydoc_sidebar

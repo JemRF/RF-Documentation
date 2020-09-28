@@ -1,7 +1,7 @@
 ---
 title: Adafruit IO Integration
 keywords: interface, integrate, integration, adafruit, adafruitio
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains how to integrate our RF Modules with the Blynk app"
 sidebar: mydoc_sidebar

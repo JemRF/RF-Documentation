@@ -1,7 +1,7 @@
 ---
 title: Utilities
 keywords: utilities, serial_mon, rf_config, rfconfig, monitor, config, configure
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains our Python utilities that can be used to monitor radio message traffic as well as send commands and requests to other RF modules"
 sidebar: mydoc_sidebar

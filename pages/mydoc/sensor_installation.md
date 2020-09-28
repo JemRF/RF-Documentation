@@ -1,7 +1,7 @@
 ---
 title: Sensor Installation
 keywords: sensors, actuators, temperature, humidity, pressure, water, waterproof, install, battery, replace, open case, case
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains some of the common installation steps for all our sensors. There may be other sensor specific installation requirements for some of our sensors that have external parts, like door sensors and water sensors. These instructions can be found on the product pages."
 sidebar: mydoc_sidebar

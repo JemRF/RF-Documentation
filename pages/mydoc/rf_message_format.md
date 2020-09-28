@@ -1,7 +1,7 @@
 ---
 title: Message Format
 keywords: message format, llap, protocol, message protocol, api, json, interface
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains the message format used by the JemRF devices"
 sidebar: mydoc_sidebar

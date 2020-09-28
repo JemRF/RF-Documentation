@@ -1,7 +1,7 @@
 ---
 title: Wireless Motion Sensor
 keywords: wireless motion, motion, sensor, pir, alarm
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains the JEMRF Wireless Motion Sensor"
 sidebar: mydoc_sidebar

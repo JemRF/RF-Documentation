@@ -1,7 +1,7 @@
 ---
 title: Amazon IoT Core Integration
 keywords: interface, integrate, integration, amazon, aws, iot core, amazon iot core
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains how to integrate our RF Modules with Amazon IoT Core"
 sidebar: mydoc_sidebar

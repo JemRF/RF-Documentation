@@ -1,7 +1,7 @@
 ---
 title: Google Cloud Integration
 keywords: interface, integrate, integration, google cloud, google, cloud
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains how to integrate our RF Modules with Google Cloud"
 sidebar: mydoc_sidebar

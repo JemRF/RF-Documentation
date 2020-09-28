@@ -1,7 +1,7 @@
 ---
 title: Device ID
 keywords: ID, device, change id, change number, number, CHDEVID
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page describes the Device ID and how to change it."
 sidebar: mydoc_sidebar

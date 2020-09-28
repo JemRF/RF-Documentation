@@ -1,7 +1,7 @@
 ---
 title: Modes of Operation
 keywords: mode, modes, base station, sensor node, type, type 2, IoT Gateway, Gateway, sensor
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains modes of operation and how the personality of a RF device can be altered by changing the mode"
 sidebar: mydoc_sidebar

@@ -1,7 +1,7 @@
 ---
 title: Home Assistant Integration
 keywords: interface, integrate, integration, home assistant, hass
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains how to integrate our RF Modules with Home Assistant"
 sidebar: mydoc_sidebar

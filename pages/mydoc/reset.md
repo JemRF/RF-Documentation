@@ -1,7 +1,7 @@
 ---
 title: RESET
 keywords: reset, factory, default, security
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page describes how to reset your device back to default settings"
 sidebar: mydoc_sidebar

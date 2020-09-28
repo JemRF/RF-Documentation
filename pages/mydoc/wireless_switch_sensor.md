@@ -1,7 +1,7 @@
 ---
 title: Wireless Switch Sensor
 keywords: wireless switch, switch, sensor, door, window
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains the JEMRF Wireless Switch Sensor"
 sidebar: mydoc_sidebar

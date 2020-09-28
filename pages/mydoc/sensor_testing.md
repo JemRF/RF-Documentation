@@ -1,7 +1,7 @@
 ---
 title: Sensor Testing
 keywords: test, testing, install, installing
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains how to test your wireless sensor. We will cover all our RF sensor types."
 sidebar: mydoc_sidebar

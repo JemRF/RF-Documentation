@@ -1,7 +1,7 @@
 ---
 title: Wireless Water Sensor
 keywords: wireless water, switch, sensor, water, pool, flood, rain, moisture
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains the JEMRF Wireless Water Sensor"
 sidebar: mydoc_sidebar

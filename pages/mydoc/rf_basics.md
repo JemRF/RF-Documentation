@@ -1,7 +1,7 @@
 ---
 title: RF Communications Basics
 keywords: communication, communications, basics, basic, radio, spec, specification, protocol
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags: 
 summary: "This page describes the basics of radio communication and how data is communicated between RF devices"
 sidebar: mydoc_sidebar

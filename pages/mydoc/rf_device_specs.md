@@ -1,7 +1,7 @@
 ---
 title: RF Device Specification
 keywords: specs, specification, tech specs, tech, technical, data-sheet, datasheet, data sheet
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags: 
 summary: "This page shows the electrical and radio characteristics of our RF devices as well as some of the key features "
 sidebar: mydoc_sidebar

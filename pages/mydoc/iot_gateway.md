@@ -1,7 +1,7 @@
 ---
 title: IoT Gateway for Raspberry Pi
 keywords: gateway, base station, IoT, iot gateway, raspberry pi, raspberry, pi, serial, rs232
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains how to install and operate the IoT Gateway"
 sidebar: mydoc_sidebar

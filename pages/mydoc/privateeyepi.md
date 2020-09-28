@@ -1,7 +1,7 @@
 ---
 title: PrivateEyePi Integration
 keywords: interface, integrate, integration, PrivateEyePi
-last_updated: July 3, 2016
+last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains how to integrate our RF Modules with PrivateEyePi"
 sidebar: mydoc_sidebar
