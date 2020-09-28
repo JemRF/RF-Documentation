@@ -11,7 +11,7 @@ folder: mydoc
 
 <img src="temperature and humidity sensor 1 small.JPG" width="425"/> 
 
-<img src="../images/temperature and humidity sensor 2 small.JPG" width="425"/> 
+<img src="../../images/temperature and humidity sensor 2 small.JPG" width="425"/> 
 
 ## Product Description
 Wireless temperature and humidity sensor with high degree of accuracy (~0.3°C and +-2% Humidity). Very low power and can last 6 months on a single CR2032 coin cell battery when configured to send readings every 10 minutes. 
