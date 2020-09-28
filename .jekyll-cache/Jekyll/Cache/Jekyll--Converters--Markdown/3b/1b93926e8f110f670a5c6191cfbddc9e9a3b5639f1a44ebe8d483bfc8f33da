@@ -1,4 +1,4 @@
-I"€-<p>Examples of Bynk App Screens using sensors from JemRF:</p>
+I"˜-<p>Examples of Bynk App Screens using sensors from JemRF:</p>
 
 <p><img src="images/IMG-7238_large.png" width="425" /> <img src="images/5.5_Device_1_large.jpg" width="425" /></p>
 
@@ -200,27 +200,27 @@ button1RFRelay="A" ##'A' for RELAYA, 'B' for RELAYB
 <p>The LED will switch on when the door is closed and off when the door is open.  Unfortunately you canâ€™t change that around like you can with some of the other widgets but you can adjust rf2blynk.py to swap it around by applying the changes in red below:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if data.startswith('BUTTONON') or data.startswith('STATEON'):
-devID=str(int(devID)+30)
-sensordata=1
-PEPFunction=26
+  devID=str(int(devID)+30)
+  sensordata=1
+  PEPFunction=26
 
 if data.startswith('BUTTONOFF') or data.startswith('STATEOFF'):
-devID=str(int(devID)+30)
-sensordata=255
-PEPFunction=26
+  devID=str(int(devID)+30)
+  sensordata=255
+  PEPFunction=26
 </code></pre></div></div>
 
 <p>You might also want to use  a Label widget instead of an LED by applying the following changes to the code:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if data.startswith('BUTTONON') or data.startswith('STATEON'):
-devID=str(int(devID)+30)
-sensordata="Door Closed"
-PEPFunction=26
+  devID=str(int(devID)+30)
+  sensordata="Door Closed"
+  PEPFunction=26
 
 if data.startswith('BUTTONOFF') or data.startswith('STATEOFF'):
-devID=str(int(devID)+30)
-sensordata="Door Open"
-PEPFunction=26
+  devID=str(int(devID)+30)
+  sensordata="Door Open"
+  PEPFunction=26
 </code></pre></div></div>
 
 <h2 id="display-a-battery-indicator">Display a battery indicator</h2>
