@@ -1,0 +1,89 @@
+I"m<p>Sleep mode is essential to conserve battery life. When the device is sleeping the radio and all non-essential processors and sensors are shut down so they do not consume power. Once asleep there are two events that can cause the device to wake up and transmit data:</p>
+
+<ol>
+  <li>
+    <p><strong>A timed cycle</strong> where the device wakes up after a specified interval has expired and a sensor reading is taken, transmitted over the radio, and then sleep mode resumes until the timer expires again and so on.</p>
+  </li>
+  <li>
+    <p><strong>A switch</strong> is triggered that causes the device to wake up, transmit the event over the radio and resume sleeping.</p>
+  </li>
+</ol>
+
+<h2 id="timed-sleep-cycle-command">Timed Sleep Cycle Command</h2>
+
+<p>There are two commands required to set a timed sleep cycle:</p>
+
+<ol>
+  <li><strong>INTVL</strong> - The sleep cycle interval (in minutes)</li>
+  <li><strong>CYCLE</strong> - The command that tells the sensor to enter a cyclic sleep</li>
+</ol>
+
+<p>The two command in the example below set a timed cycle of 5 minutes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf_config.py 03 INTVL005
+SENT     : 03INTVL005
+RECEIVED : 03INTVL005-
+
+python rf_config.py 03 CYCLE
+SENT     : 03CYCLE
+RECEIVED : 03SLEEPING-
+</code></pre></div></div>
+
+<p>Now every 5 minutes the device will wake up and send the sensor data that is associated with the <a href="types.html">sensor’s type</a>.</p>
+
+<h2 id="sleep-command">Sleep Command</h2>
+
+<p>The SLEEP command simply puts the RF module to sleep. The device will wake when the button sensor contacts are bridged on the sensor.</p>
+
+<p>Use the INTVL command to set the interval you want to set for the button state to be sent. When the device is put to sleep using the SLEEP command then it will wake every INTVL minutes to report the state (a03STATEON– or a03STATEOFF-) of the button contact.</p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> When the button contacts are bridged the device will wake and transmit the event over the radio <strong>regardless of whether the device is in CYCLE sleep mode or SLEEP sleep mode</strong>. This is an important feature of our devices because it allows you to combine functionality of a contact switch based sensor (like a door sensor, motion sensor or water sensor) with a cycle sleep mode sensor like temperature, pressure, humidity and analog. See the <a href="multi_function_sensors.html">multi-function sensor section</a> of this documentation for more details.</div>
+
+<p>The example below sets the reporting interval to 25 minutes and puts the device to sleep:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf_config.py 03 INTVL025
+SENT     : 03INTVL025
+RECEIVED : 03INTVL025-
+
+python rf_config.py 03 SLEEP
+SENT     : 03SLEEP
+RECEIVED : 03SLEEPING-
+</code></pre></div></div>
+
+<p>Every 25 minutes the state of the button contact will get reported and the device will also wake and transmit when the button contact is bridged, followed by sleep again.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> From Version 7.2 upwards you can use the RBSON command to send button status when device is asleep using the CYCLE command. This is also another feature of <a href="multi_function_sensors.html">multi-function sensors</a> to be able to report cyclic sensor readings as well as report the button status every INTVL minutes.</div>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> You cannot communicate with a sensor when it is asleep. The radio will only get activated when it is time to transmit data. See below WAKE command that is used to wake a device from sleep.</div>
+
+<h2 id="wake-command">WAKE Command</h2>
+
+<p>The WAKE command (previously AWAKE command for versions 1 and 2) is used to wake up a sensor. You cannot wake a device without getting physical access to the device to power off and back on (this is a security feature). Once the device is powered back up you have a 5 second internal to issue the WAKE (or AWAKE for version 1 and 2) command.</p>
+
+<p>The steps to wake up a device are as follows:</p>
+
+<ol>
+  <li>Power off and on the device</li>
+  <li>
+    <p>Send the WAKE command within 5 seconds:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python rf_config.py 03 WAKE
+ SENT     : 03WAKE
+ RECEIVED : 03WAKE-----
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Send the HELLO command to check if the device is awake</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python rf_config.py 03 HELLO
+ SENT     : 03HELLO
+ RECEIVED : 03HELLO----
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Now the device is awake and available for configuration. You can put the device back to sleep using the CYCLE and SLEEP commands described above.</p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> When a device is awake and powered by coin cell battery it will only have a battery lifespan of about 30 minutes. So be sure to be quick when configuring a battery powered sensor. Alternatively give the sensor external power (e.g. two AA batteries) when doing configuration.</div>
+
+:ET

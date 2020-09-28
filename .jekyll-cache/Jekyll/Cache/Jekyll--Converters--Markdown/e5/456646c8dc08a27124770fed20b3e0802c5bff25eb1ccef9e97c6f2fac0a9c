@@ -1,0 +1,26 @@
+I"�<p>The Device ID is a two character unique identifier for each device. The ID is appended to each <a href="rf_message_format.html">radio message</a> so that the receiver of the message can determine which sensor sent the message. The Device ID is also used to address a device when sending a command. When a device receives a message (whether it arrives through the serial port or over the radio) the device compares the Device ID of the in-coming message to its own Device ID. If there is a match then the device will action the command.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can use numerics as well as alphabet characters 0-9, a-z, A-Z in the Device ID which gives a total possible 3,844 unique ID’s. If you need more ID’s then have a look at the <a href="panid.html">PANID</a> setting.</div>
+
+<h2 id="message-id-default-settings">Message ID Default Settings</h2>
+<p>The standard Device ID of a IoT Gateway is 01 and the standard Device ID of sensors is a random number between 01 and 99.</p>
+
+<h2 id="how-to-change-the-device-id">How to change the Device ID</h2>
+
+<p>The Device ID can be changed using the CHDEVID command.</p>
+
+<p><strong>Command:</strong> CHDEVID[<em>p1</em>] <br />
+<strong>Response:</strong> CHDEVID[<em>p1</em>]</p>
+
+<p><em>Where</em>: p1 = The new two character ID</p>
+
+<p>The below example changes the Device ID from 03 to 05:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf_config.py 03 CHDEVID05
+SENT     : 03CHDEVID05
+RECEIVED : 03CHDEVID05
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> We suggest you use alphanumeric characters only. Although the devices will support ASCII codes 32-122, the supporting interface applications may not handle non-alphanumeric characters very well.</div>
+
+:ET

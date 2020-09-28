@@ -1,0 +1,63 @@
+I"�	<p><a href="projects.privateeyepi.com">PrivateEyePi</a> is a cloud based alarm and monitoring solution for Raspberry Pi.</p>
+
+<h2 id="what-you-will-need">What you will need</h2>
+<ul>
+  <li>Any model Raspberry Pi with Python 2 and PIP installed</li>
+  <li><a href="iot_gateway.html">IoT Gateway</a> for Raspberry Pi or Flex RF Module</li>
+  <li>Any <a href="https://www.jemrf.com/collections/all/rf-sensors">wireless sensor</a></li>
+</ul>
+
+<h2 id="what-you-need-to-know-beforehand">What you need to know beforehand:</h2>
+<ul>
+  <li>How to operate a Raspberry Pi</li>
+  <li>You have already set up your <a href="iot_gateway.html">IoT Gateway</a> and <a href="sensor_testing.html">tested your sensor</a></li>
+  <li>Some Python programming knowledge is preferable but not mandatory as we provide you with the source code and instruction on how to run it</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Below are the minimal steps to install PrivateEyePi and run the PrivateEyePi interface for the RF Sensors. More information can be found on their website (projects.privateeyepi.com)</p>
+
+<ol>
+  <li>
+    <p>If you have not already installed PrivateEyePi, do so as follows:</p>
+
+    <p>Open a command prompt on the Raspberry Pi and create a directory for PrivateEyePi:</p>
+
+    <p>E.g.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> cd /home/pi
+ mkdir pep
+ cd pep
+      
+ wget -N www.privateeyepi.com/downloads/install.sh
+</code></pre></div>    </div>
+  </li>
+  <li>Create an account on PrivateEyePi
+ The following steps must be completed on a web browser:
+    <ul>
+      <li>Go to www.privateeyepi.com website</li>
+      <li>Click on the “New User” link</li>
+      <li>Type in the details and click the “Update” button</li>
+      <li>From the User menu option create a new token and copy it to your clipboard</li>
+    </ul>
+  </li>
+  <li>Copy the token to the globals.py file
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> cd /home/pi/pep
+ sudo nano globals.py
+    
+ Look for token="" and paste the token in between the braces.
+    
+ Save using Ctrl-x followed by 'y'
+    
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run rfsensor.py</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rfsensor.py    
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+:ET

@@ -1,0 +1,189 @@
+I"�$<p>Example dashboard:
+<br />
+<img src="images/jemrf_data_on_dashboard.webp" width="425" /></p>
+
+<h1 id="description">Description</h1>
+<p>ThingsBoard is an IoT platform that can do data visualization but also has a rules engine so you can raise alarms and create alerts. We will focus on mainly the data visualization aspects of ThingsBoard in this tutorial.</p>
+
+<p>ThingsBoard is an open-source platform that can be downloaded to your computer, or run from their online service thingsboard.io.</p>
+
+<p>They have some of the best dashboard widgets we’ve seen so you can create visually appealing dashboards in high resolution.</p>
+
+<p>We have tested ThingsBoard on a Raspberry Pi and find it works well, other than it takes few minutes to initially start the TingsBoard service. After it has started we found it very responsive and well suited to this platform.</p>
+
+<h2 id="installing-thingsboard-on-raspberry-pi">Installing ThingsBoard on Raspberry Pi</h2>
+<p>In this tutorial we will install ThingsBoard on the same Raspberry Pi where you have installed a wireless base station.</p>
+
+<p>You can find the ThingsBoard documentation for installation on Raspberry Pi here:</p>
+
+<p><a href="https://thingsboard.io/docs/user-guide/install/rpi/">https://thingsboard.io/docs/user-guide/install/rpi/</a></p>
+
+<p>Make sure you have the full version of Raspberry Pi Raspbian distro installed (not the light version), because ThingsBoard needs Java (which is not installed on the light version). To get up and running quickly I would suggest you skip the Postgres database install and go with the standard internal database shipped with ThingsBoard.</p>
+
+<p>Open up a terminal window on your Raspberry Pi and start by checking your Java version by typing:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -version
+</code></pre></div></div>
+
+<p>which will return something like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java version "1.8.0_65"
+Java(TM) SE Runtime Environment (build 1.8.0_65-b17)
+Java HotSpot(TM) Client VM (build 25.65-b01, mixed mode)
+</code></pre></div></div>
+
+<p>Any version greater than 1.8 is fine.</p>
+
+<p>Next download and install the package using the next four commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://github.com/thingsboard/thingsboard/releases/download/v1.4/thingsboard-1.4.deb
+
+sudo dpkg -i thingsboard-1.4.deb
+
+export JAVA_OPTS="$JAVA_OPTS -Dplatform=rpi -Xms256M -Xmx256M"
+
+sudo /usr/share/thingsboard/bin/install/install.sh --loadDemo
+</code></pre></div></div>
+
+<p>Then start the service by typing:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo service thingsboard start
+</code></pre></div></div>
+
+<p>It will take about 5 minutes to start. You can open a browser and browse to 
+the IP address of your Raspberry Pi on port 8080. E.g. http://192.168.2.19:8080</p>
+
+<p>Once the service has started you will see a login panel like this:</p>
+
+<p><img src="images/login_grande.webp" width="425" /></p>
+
+<p>The default user and password is:
+login - sysadmin@thingsboard.org.
+password - sysadmin.
+Add your own account by clicking on Tennants, then click on the blank Tanant and click on Manage Tenant Admin and then add a new user.</p>
+
+<h2 id="interfacing-rf-sensors-with-thingsboard-using-nodejs">Interfacing RF Sensors with ThingsBoard using Node.js</h2>
+
+<p>Our ThingsBoard interface examples can be found at:</p>
+
+<p><a href="https://github.com/JemRF/ThingsBoard">https://github.com/JemRF/ThingsBoard</a></p>
+
+<h2 id="raspberry-pi-nodejs-tutorial">Raspberry Pi Node.js Tutorial</h2>
+
+<h3 id="what-you-will-need">What you will need</h3>
+<ul>
+  <li>Any model Raspberry Pi with preferably the full Raspbian distro</li>
+  <li><a href="iot_gateway.html">IoT Gateway</a> for Raspberry Pi or Flex RF Module</li>
+  <li>Any <a href="https://www.jemrf.com/collections/all/rf-sensors">wireless sensor</a></li>
+</ul>
+
+<h3 id="what-you-need-to-know-beforehand">What you need to know beforehand</h3>
+<ul>
+  <li>How to operate a Raspberry Pi</li>
+  <li>You have already set up your <a href="iot_gateway.html">IoT Gateway</a> and <a href="sensor_testing.html">tested your sensor</a></li>
+  <li>Some JavaScript programming knowledge is preferable but not mandatory as we provide you with the source code</li>
+</ul>
+
+<h3 id="step-1--login-into-the-thingsboard-website-on-your-raspberry-pi-and-create-a-new-device-and-enter-a-new-device-name">Step 1 : Login into the ThingsBoard website on your Raspberry Pi and create a new device and enter a new device name.</h3>
+
+<p><img src="images/add_device_large.webp" width="425" /></p>
+
+<p>Select your new device and copy the access token for this device:</p>
+
+<p><img src="images/copy_access_token_grande.webp" width="425" /></p>
+
+<h3 id="step-2--obtain-a-token">Step 2 : Obtain a token</h3>
+
+<p>Open up a terminal session on your Raspberry Pi and download the JemRF ThnigsBoard library from github:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/JemRF/ThingsBoard
+
+cd ThingsBoard
+</code></pre></div></div>
+
+<h3 id="step-3--enter-the-token-into-the-test-tool-application">Step 3 : Enter the token into the test tool application</h3>
+
+<p>Edit the test tool:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano demo-tool.js
+</code></pre></div></div>
+
+<p>Paste the token into the code:</p>
+
+<p><img src="images/add_new_access_token_large.webp" width="425" /></p>
+
+<p>Press ctrl-x and enter to save.</p>
+
+<h3 id="step-4--run-the-test-tool">Step 4 : Run the test tool</h3>
+
+<p>Type the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node demo-tool.js
+</code></pre></div></div>
+
+<p>The test tool should connect to your local instance of ThingsBoard (on 127.0.0.1) and send random temperature and humidity sensor readings.</p>
+
+<p><img src="images/run_demo_tool_large.webp" width="425" /></p>
+
+<h3 id="step-5---verify-data-is-being-transmitted-to-thigsboard">Step 5  : Verify data is being transmitted to Thigsboard</h3>
+
+<p>Click on the Latest Telemetry tab of your Raspberry Pi device in ThingsBoard and you should see the latest data as shown below.</p>
+
+<p><img src="images/latest_telemetry.webp" width="425" /></p>
+
+<h2 id="interfacing-jemrf-sensor-with-thingsboard">Interfacing JemRF Sensor with Thingsboard</h2>
+
+<p>The IoT Gateway for Rapsberry Pi uses the serial port to interface. Since this is a Node.js tutorial we will be using the SerialPort library. Install this by typing:</p>
+
+<h3 id="step-1--install-the-serialport-node-library">Step 1 : Install the serialport node library</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install serialport
+</code></pre></div></div>
+
+<p>We have supplied two sample interface applications. The one named serial.js will send all sensor readings to one ThingsBoard device. The other application (serial2.js) will send reading from RF sensors to unique ThingsBoard devices. We will be using serial.js in this tutorial because it’s the easiest way to interface and you won’t need to create individual devices in ThingsBoard for all your RF Sensors.</p>
+
+<h3 id="step-2--enter-your-access-token-in-serialjs">Step 2 : Enter your access token in serial.js</h3>
+
+<p>Edit serial.js:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano serial.js
+</code></pre></div></div>
+
+<p>Press ctrl-x and then enter to exit and save.</p>
+
+<h3 id="step-3--run-the-application">Step 3 : Run the application</h3>
+
+<p>Type the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node serial.js
+</code></pre></div></div>
+
+<p>All wireless messages will get printed to the screen like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>61AWAKE---
+
+61TMPA18.60
+{'61TMP':65.48}
+Connecting to: 127.0.0.1 using access token: eLP2bSJBBv6BENEc4sV0
+
+61SLEEPING-
+{'61SLEEPING':}
+Connecting to: 127.0.0.1 using access token: eLP2bSJBBv6BENEc4sV0
+</code></pre></div></div>
+
+<h3 id="step-4--verify-the-data-is-being-sent-to-thingsboard">Step 4 : Verify the data is being sent to Thingsboard</h3>
+
+<p>Go back to the Latest Telemetry for the RaspberryPi ThingsBoard device and you should see your RF sensor readings start to appear.</p>
+
+<p>Creating dashboards is a fairly trivial task. Select the Latest Telemetry tab and select the check box next to the sensor you want to ad to the dashboard
+and then click the Show on Widget button.</p>
+
+<p><img src="images/show_on_widget.webp" width="425" /></p>
+
+<p>Select the type of gage you want to use and click add to dashboard. You will then be prompted to either create a new dashboard or add to an existing dashboard.</p>
+
+<p><img src="images/add_to_dashboard.webp" width="425" /></p>
+
+<p>Here are some examples of different widgets you can choose. There is quite an extensive list of options you can choose from.</p>
+
+<p><img src="images/jemrf_data_on_dashboard.webp" width="425" /></p>
+:ET

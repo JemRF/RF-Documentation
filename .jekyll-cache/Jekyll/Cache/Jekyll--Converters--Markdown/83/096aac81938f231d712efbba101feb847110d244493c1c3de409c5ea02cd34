@@ -1,0 +1,25 @@
+I"Ó<p>Each Frequency has ten channels that can be used to sub divide radio traffic. There are ten channels supported by our devices.</p>
+
+<p>For two devices to communicate they must have the same <a href="frequency.html">Frequency</a> and Channel and <a href="panid.html">PanID</a>.</p>
+
+<h2 id="channel-default-setting">Channel Default Setting</h2>
+<p>Default is 1.</p>
+
+<h2 id="how-to-change-the-channel">How to change the Channel</h2>
+
+<p>The Channel can be changed using the ATCN command.</p>
+
+<p><strong>Command:</strong> ATCN[<em>p1</em>] <br />
+<strong>Response:</strong> ATCN[<em>p1</em>]</p>
+
+<p><em>Where</em>: p1 = A number between 1 and 10</p>
+
+<p>The below example changes the Channel to 4:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf_config.py 03 ATCH4
+SENT     : 03ATCH4
+RECEIVED : 03ATCH4----
+</code></pre></div></div>
+
+<p>The device requires a restart in order to effect the new Channel.</p>
+:ET

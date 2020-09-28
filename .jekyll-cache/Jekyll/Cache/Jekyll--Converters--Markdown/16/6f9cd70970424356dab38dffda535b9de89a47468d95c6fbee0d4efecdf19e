@@ -1,0 +1,12 @@
+I"<p>The HELLO command is good command to use to test if there is connectivity to a particular device. This is also commonly known as a <em>ping test</em>. When an RF module receives a HELLO command it will simply reply with HELLO.</p>
+
+<p><strong>Command:</strong> HELLO <br />
+<strong>Response:</strong> HELLO</p>
+
+<p>Example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf_config.py 03 HELLO
+SENT     : 03HELLO
+RECEIVED : 03HELLO----
+</code></pre></div></div>
+:ET

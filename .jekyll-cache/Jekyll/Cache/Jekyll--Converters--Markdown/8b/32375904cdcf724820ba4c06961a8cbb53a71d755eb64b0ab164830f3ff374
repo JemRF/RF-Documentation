@@ -1,0 +1,14 @@
+I"�<p>There may be a time where you have lost communication with your device, particularly when doing configuration of frequency, channel, PanID and encryption. You can use the RESET command to reset the device back to default settings. The RESET command can only be sent through the serial port (this is a security feature). If you are unsure how to connect connect your device’s serial port please refer to the <a href="hardware and firmware.html">hardware and firmware</a> section of this documentation.</p>
+
+<h2 id="how-to-use-the-reset-command">How to use the RESET command</h2>
+
+<p>Connect your device to the micro-controller’s serial port.</p>
+
+<p>Unlike all other commands, the RESET command takes no Device ID.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf_config.py RESET -V
+SENT     : RESET
+RECEIVED : OK-------
+</code></pre></div></div>
+
+:ET

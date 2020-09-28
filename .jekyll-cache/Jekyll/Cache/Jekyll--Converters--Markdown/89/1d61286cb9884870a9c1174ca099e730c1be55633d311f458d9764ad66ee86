@@ -1,0 +1,99 @@
+I";<p><img src="images/hass.webp" width="425" /></p>
+
+<p>Home Assistant is an open source home automation platform. It has a vast amount of interfaces (over 740 when this article was written).</p>
+
+<p>They have a well documented Getting Started Guide for Raspberry Pi so we will not cover installing Home Assistant on your Raspberry Pi in this tutorial. Here is the link for common Home Assistant tasks on Raspberry Pi.</p>
+
+<h3 id="what-you-will-need">What you will need</h3>
+<ul>
+  <li>Any model Raspberry Pi with preferably the full Raspbian distro</li>
+  <li><a href="iot_gateway.html">IoT Gateway</a> for Raspberry Pi or Flex RF Module</li>
+  <li>Any <a href="https://www.jemrf.com/collections/all/rf-sensors">wireless sensor</a></li>
+</ul>
+
+<h3 id="what-you-need-to-know-beforehand">What you need to know beforehand</h3>
+<ul>
+  <li>How to operate a Raspberry Pi</li>
+  <li>You have already set up your <a href="iot_gateway.html">IoT Gateway</a> and <a href="sensor_testing.html">tested your sensor</a></li>
+  <li>Some Python programming knowledge is preferable but not mandatory as we provide you with the source code</li>
+</ul>
+
+<h3 id="step-1-download-the-jemrf-mqtt-library">STEP 1: DOWNLOAD THE JEMRF MQTT LIBRARY</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/JemRF/MQTT
+
+cd MQTT
+</code></pre></div></div>
+
+<h3 id="step-2-install-mqtt-if-you-havent-already">STEP 2: INSTALL MQTT (IF YOU HAVEN’T ALREADY)</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo pip install paho-mqtt
+</code></pre></div></div>
+
+<h3 id="step-3-configure-your-ip-address">STEP 3: CONFIGURE YOUR IP ADDRESS</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano rf2mqtt.py
+</code></pre></div></div>
+
+<p>Page down and edit the ip_address in the Configurations section.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#Configurations===============
+DEBUG = True
+Fahrenheit = False
+mqtt_server = "192.168.2.201" #Enter the IP address of your MQTT server 
+topic = "myhome"
+device_prefix = "RF_Device"
+#=============================
+</code></pre></div></div>
+
+<p>Pres CTRL-X to exit and save.</p>
+
+<h3 id="step-4-edit-the-home-assistant-yaml-file-and-configure-mqtt-and-your-sensors">STEP 4: EDIT THE HOME ASSISTANT YAML FILE AND CONFIGURE MQTT AND YOUR SENSORS</h3>
+<p>Type:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano /home/homeassistant/.homeassistant/configuration.yaml
+</code></pre></div></div>
+
+<p>﻿Then add the following section to the bottom of the file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mqtt:
+broker: 192.168.2.201
+
+# Example configuration.yaml entry temperature &amp; humidity sensor with a DeviceID of 04:
+
+sensor:
+  - platform: mqtt
+    name: "Temperature"
+    state_topic: "myhome/RF_Device04"
+    unit_of_measurement: '°C'
+    value_template: ""
+
+
+  - platform: mqtt
+    name: "Humidity"
+    state_topic: "myhome/RF_Device04"
+    unit_of_measurement: '%'
+    value_template: ""
+</code></pre></div></div>
+
+<p>Remember to restart the Home Assistant service:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl restart home-assistant@homeassistant.service
+</code></pre></div></div>
+<h3 id="step-5-run-the-interface">STEP 5: RUN THE INTERFACE</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf2mqtt.py
+</code></pre></div></div>
+
+<p>You should see output like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pi@raspberrypi:~/MQTT $ python rf2mqtt.py
+Sat Aug 4 18:50:12 2018 a04STARTED--
+Sat Aug 4 18:50:12 2018 a04STARTED--
+Sat Aug 4 18:50:18 2018 a04TMPB25.39
+Sat Aug 4 18:50:18 2018 a04TMPB25.39
+Sat Aug 4 18:50:18 2018 a04TMPB25.39
+Sat Aug 4 18:50:18 2018 a04HUM58.70-
+Processing data : DevId=04,Type=4,Value1=25.39,Value2=58.70
+{"TMP": "25.39", "HUM": "58.70"}
+Sat Aug 4 18:50:18 2018 a04HUM58.70-
+Sat Aug 4 18:50:18 2018 a04HUM58.70-
+Sat Aug 4 18:50:18 2018 a04SLEEPING-
+</code></pre></div></div>
+:ET

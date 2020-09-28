@@ -1,0 +1,45 @@
+I"!<p>128-bit AES encryption can be enabled between RF devices using a 16 character private key that is sent to each device before enabling encryption.</p>
+
+<p>The 16 Character encryption key should be sent to each device through the serial port. Refer the <a href="hardware_and_firmware.html">hardware and firmware</a> section of this documentation for serial port connection details for the device you have.</p>
+
+<h2 id="frequency-default-setting">Frequency Default Setting</h2>
+<p>Encryption is off by default and and the 16 character password is 16 spaces.</p>
+
+<h2 id="how-to-enable-encryption">How to enable encryption</h2>
+
+<ol>
+  <li>
+    <p>Configure the encryption key pass-phrase</p>
+
+    <p><strong>Command:</strong> ATEA[<em>p1</em>] <br />
+ <strong>Response:</strong> ATEA[<em>p2</em>]</p>
+
+    <p><em>Where</em>: p1 = is a 16 character pass-phrase
+          p2 = the first 5 characters of the pass-phrase</p>
+
+    <p>The below example sets the pass-phrase to MyPassPhrase1234:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python rf_config.py 03 ATEAMyPassPhrase1234 
+ SENT     : 03ATEAMyPassPhrase1234
+ RECEIVED : 03ATEAMyPas
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Enable Encryption</p>
+
+    <p><strong>Command:</strong> ATEE[<em>p1</em>] <br />
+ <strong>Response:</strong> ATEE[<em>p1</em>]</p>
+
+    <p><em>Where</em>: p1 = is 1 for on and 0 for off</p>
+
+    <p>The below example enables Encryption:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python rf_config.py 03 ATEE1 
+ SENT     : 03ATEE1
+ RECEIVED : 03ATEE1
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>The device with device ID 03 will now encrypt all outgoing messages and decrypt incoming messages</p>
+:ET

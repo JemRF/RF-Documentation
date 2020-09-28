@@ -1,0 +1,75 @@
+I"n<h2 id="iot-gateway-models">IoT Gateway Models</h2>
+<p>We have had three models of the Gateway:</p>
+
+<ol>
+  <li>24 Pin (being phased out)</li>
+  <li>10 Pin</li>
+  <li>40 Extended Pin</li>
+</ol>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> All IoT Gateway models can fit on any Raspberry Pi Model.</div>
+
+<p>The pictures below show how the gateway fits on to the Raspberry Pi.</p>
+
+<p><img src="images/RF_Base_Station.webp" width="425" /></p>
+
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Make sure you fit the gateway the right way around and and perfectly aligned with the pins of the Raspberry Pi as shown in the above pictures. You could damage the gateway if fitted incorrectly.</div>
+
+<h2 id="installation-steps">Installation steps</h2>
+
+<ol>
+  <li>
+    <p>Power off the Raspberry Pi</p>
+  </li>
+  <li>
+    <p>Carefully align the header as shown in Figure 1 and push the gateway all the way down onto the Raspberry Pi GPIO header.</p>
+  </li>
+  <li>
+    <p>In order to remove the gateway from the raspberry Pi power off the Raspberry Pi and then hold the Raspberry Pi firmly with one hand and gently wiggle the Gateway loose with your other hand. Wiggling it from side to side is easier than pulling it directly upwards.</p>
+  </li>
+  <li>
+    <p>The gateway receiver uses the Raspberry Pi serial port in order to communicate. Follow this link to configure the Raspberry Pi serial port: Enable the Serial port on the Raspberry Pi</p>
+  </li>
+</ol>
+
+<h2 id="testing-the-gateway">Testing the Gateway</h2>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you have not installed the utilities, refer the <a href="utilities.html">Utilities</a></div>
+
+<p>Open up a Raspberry Pi terminal window and test connectivity to the Gateway.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">cd</span> <span class="nx">rf_tools</span>
+
+<span class="nx">python</span> <span class="nx">rf_config</span><span class="p">.</span><span class="nx">py</span> <span class="mi">01</span> <span class="nx">HELLO</span>
+
+<span class="nx">SENT</span> <span class="p">:</span> <span class="mi">01</span><span class="nx">HELLO</span>
+<span class="nx">RECEIVED</span> <span class="p">:</span> <span class="mi">01</span><span class="nx">HELLO</span><span class="o">----</span>
+</code></pre></div></div>
+
+<p>As shown above the rf_config.py tool sent the command a01HELLO and it received a response a01HELLO—. That means it is working.</p>
+
+<p>If the tool was unable to communicate with the gateway then you would see two failed attempts to send the HELLO command as shown here:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">python</span> <span class="nx">rf_config</span><span class="p">.</span><span class="nx">py</span> <span class="mi">01</span> <span class="nx">HELLO</span>
+<span class="nx">SENT</span> <span class="p">:</span> <span class="mi">01</span><span class="nx">HELLO</span>
+<span class="nx">SENT</span> <span class="p">:</span> <span class="mi">01</span><span class="nx">HELLO</span>
+</code></pre></div></div>
+
+<p>Another good test to perform is to validate that the Gateway radio is functioning correctly. You can do this by powering up a sensor and watching for the sensor STARTED messages.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">python</span> <span class="nx">serial_mon</span><span class="p">.</span><span class="nx">py</span>
+
+<span class="nx">Now</span> <span class="nx">startup</span> <span class="nx">the</span> <span class="nx">sensor</span><span class="p">...</span>
+
+<span class="nx">Thu</span> <span class="nx">Feb</span> <span class="mi">27</span> <span class="mi">15</span><span class="p">:</span><span class="mi">02</span><span class="p">:</span><span class="mi">51</span> <span class="mi">2020</span> <span class="mi">95</span> <span class="nx">STARTED</span><span class="o">--</span>
+<span class="nx">Thu</span> <span class="nx">Feb</span> <span class="mi">27</span> <span class="mi">15</span><span class="p">:</span><span class="mi">02</span><span class="p">:</span><span class="mi">51</span> <span class="mi">2020</span> <span class="mi">95</span> <span class="nx">STARTED</span><span class="o">--</span>
+<span class="nx">Thu</span> <span class="nx">Feb</span> <span class="mi">27</span> <span class="mi">15</span><span class="p">:</span><span class="mi">02</span><span class="p">:</span><span class="mi">51</span> <span class="mi">2020</span> <span class="mi">95</span> <span class="nx">STARTED</span><span class="o">--</span>
+<span class="nx">Thu</span> <span class="nx">Feb</span> <span class="mi">27</span> <span class="mi">15</span><span class="p">:</span><span class="mi">02</span><span class="p">:</span><span class="mi">51</span> <span class="mi">2020</span> <span class="mi">95</span> <span class="nx">STARTED</span><span class="o">--</span>
+<span class="nx">Thu</span> <span class="nx">Feb</span> <span class="mi">27</span> <span class="mi">15</span><span class="p">:</span><span class="mi">02</span><span class="p">:</span><span class="mi">51</span> <span class="mi">2020</span> <span class="mi">95</span> <span class="nx">STARTED</span><span class="o">--</span>
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you have a wireless switch do not open/close the switch during the first 5 seconds as this will cause the device to start sending messages and cancel the startup sequence and prevent the device from entering sleep mode.</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Ideally put the sensors more than 5 feet away from the receiver when testing otherwise you may see message corruption or incomplete messages. These devices are tuned to transmit at a high DB in order to penetrate walls and for long distance line of sight so we have found when a sensor is very close to the receiver (e.g. 1-2 feet) then we see incomplete messages.</div>
+
+:ET

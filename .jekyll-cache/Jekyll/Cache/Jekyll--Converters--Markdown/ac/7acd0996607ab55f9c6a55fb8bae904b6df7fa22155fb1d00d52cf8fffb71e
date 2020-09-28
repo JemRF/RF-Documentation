@@ -1,0 +1,60 @@
+I"<p>There are six frequencies supported by our devices:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Frequency Number</th>
+      <th>Frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>433 MHZ</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>915 MHZ (US &amp; Canada)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>868.3 MHZ (Europe)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>868 MHZ</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>903 MHZ</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>315 MHZ</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For two devices to communicate they must have the same Frequency and <a href="channel.html">channel (ATCN)</a> and <a href="panid.html">PanID</a>.</p>
+
+<h2 id="frequency-default-settings">Frequency Default Settings</h2>
+<p>Default is 915 MHZ, but should be changed to the open frequency in your region.</p>
+
+<h2 id="how-to-change-the-frequency">How to change the Frequency</h2>
+
+<p>The Frequency can be changed using the ATCH command.</p>
+
+<p><strong>Command:</strong> ATCH[<em>p1</em>] <br />
+<strong>Response:</strong> ATCH[<em>p1</em>]</p>
+
+<p><em>Where</em>: p1 = A number between 1 and 6 per the Frequency Number in the above table</p>
+
+<p>The below example changes the Frequency to 433 MHZ:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf_config.py 03 ATCH1
+SENT     : 03ATCH1
+RECEIVED : 03ATCH1----
+</code></pre></div></div>
+
+<p>The device requires a restart in order to effect the new frequency.</p>
+:ET

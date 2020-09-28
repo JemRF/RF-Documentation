@@ -1,0 +1,25 @@
+I"æ<p>The Personal Area Network ID (PanID) defines the ID associate with the network of sensors. As defined in the <a href="index.html">Overview Section</a> you can have groups of sensors assigned to different networks. This enables you to sub-divide your sensor networks and direct traffic to specific receivers. The PanID is a 5 digit numeric (00000-99999).</p>
+
+<p>For two devices to communicate they must have the same <a href="frequency.html">Frequency</a> and <a href="channel.html">channel</a> and PanID.</p>
+
+<h2 id="panid-default-settings">PanID Default Settings</h2>
+<p>The standard PanID is set to 23205.</p>
+
+<h2 id="how-to-change-the-device-id">How to change the Device ID</h2>
+
+<p>The PanID can be changed using the ATID command.</p>
+
+<p><strong>Command:</strong> ATID[<em>p1</em>] <br />
+<strong>Response:</strong> ATID[<em>p1</em>]</p>
+
+<p><em>Where</em>: p1 = The new 5 digit all numeric number (00000 to 99999)</p>
+
+<p>The below example changes the PanID to 12345:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf_config.py 03 ATID12345
+SENT     : 03ATID12345
+RECEIVED : 03ATID12345
+</code></pre></div></div>
+
+<p>The device requires a reboot to enable the new PanID.</p>
+:ET

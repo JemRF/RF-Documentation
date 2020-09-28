@@ -1,0 +1,42 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: GitHub
+      external_url: https://github.com/jemrf
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: JemRF Help
+      folderitems:
+        - title: JemRF Forum
+          external_url: https://groups.google.com/forum/#!forum/privateeyepi
+        - title: FAQ's
+          external_url: https://www.jemrf.com/pages/troubleshooting
+        - title: Contact Us
+          external_url: https://www.jemrf.com/pages/contact-us
+        - title: JemRF Blog
+          external_url: https://jemrf.com
+    - title: Products
+      folderitems:
+        - title: Wireless Temperature Sensor
+          url: /wireless_temperature_sensor.html
+        - title: Wireless Waterproof Temperature Sensor
+          url: /wireless_waterproof_temperature_sensor.html
+        - title: Wireless Switch Sensor
+          url: /wireless_switch_sensor.html
+        - title: Wireless Water Sensor
+          url: /wireless_water_sensor.html
+        - title: Wireless Temperature and Humidity Sensor
+          url: /wireless_temperature_and_humidity_sensor.html
+        - title: Wireless Pressure, Temperature and Humidity Sensor
+          url: /wireless_pressure_temperature_and_humidity_sensor.html
+        - title: Wireless Motion Sensor
+          url: /wireless_motion_sensor.html
+        - title: Flex RF Module
+          url: /flex.html
+        - title: IoT Gateway
+          url: /iot_gateway.html

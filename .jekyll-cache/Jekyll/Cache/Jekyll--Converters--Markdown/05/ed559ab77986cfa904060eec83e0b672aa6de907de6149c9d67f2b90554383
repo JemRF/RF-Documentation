@@ -1,0 +1,163 @@
+I"�<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+Before following these steps make sure you have already setup and
+ <a href="iot_gateway.html">configured the Gateway</a> and are familiar with how to <a href="sensor_installation.html">install and remove the sensor battery</a>.<br />
+</div>
+
+<ol>
+  <li>
+    <p>Open a terminal window on the Raspberry Pi where the Gateway is installed.</p>
+  </li>
+  <li>
+    <p>Download the serial monitor application:</p>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/JemRF/rf_tools.git
+</code></pre></div></div>
+
+<ol>
+  <li>Run the serial monitor</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python serial_mon.py 
+</code></pre></div></div>
+
+<p>The serial monitor is now running. Any messages received by the Gateway’s radio will be displayed on the screen. You can exit the serial monitor anytime by pressing ctrl-c.</p>
+
+<ol>
+  <li>Insert the battery into the sensor with the flat side (+ve) facing upwards. The sensor will send 5 STARTED– messages followed by a 5 second pause and then it will go to sleep.</li>
+</ol>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+If you have a wireless switch do not open/close the switch during the first 5 seconds as this will cause the device to start sending messages and cancel the startup sequence and prevent the device from entering sleep mode.<br />
+</div>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> 
+Make sure the sensors more than 5 feet away from the receiver when testing otherwise you may miss some or all RF messages<br />
+</div>
+
+<p>The following sections cover the sensor data that will be displayed for each type of sensor. Each example shows the sensor reading(s) before going to sleep. We have configured the sensors to send a reading every 5 minutes. If you wait for 5 minutes then the sensor will awake from sleep and send another temperature reading and then go back to sleep. You can configure the interval to another setting if you wish (<a href="configuration_overview.html">see sensor configuration section of this documentation</a>).</p>
+
+<h3 id="temperature-sensor">TEMPERATURE SENSOR</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python serial_mon.py 9600
+
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+
+...5 second pause...
+
+Sat Oct 28 20:57:36 2017 02 TMPA22.05
+Sat Oct 28 20:57:36 2017 02 SLEEPING-
+</code></pre></div></div>
+
+<h3 id="temperature-and-humidity-sensor">TEMPERATURE and HUMIDITY SENSOR</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python serial_mon.py 9600
+
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+
+...5 second pause...
+
+Sat Oct 28 20:57:36 2017 02 TMPA22.05
+Sat Oct 28 20:57:36 2017 02 HUM56.55-
+Sat Oct 28 20:57:36 2017 02 SLEEPING-
+</code></pre></div></div>
+
+<h3 id="pressure-temperature-and-humidity-sensor">PRESSURE, TEMPERATURE and HUMIDITY SENSOR</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python serial_mon.py 9600
+
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+
+...5 second pause...
+
+Sat Oct 28 20:57:36 2017 02 TMPA22.05
+Sat Oct 28 20:57:36 2017 02 HUM56.55-
+Sat Oct 28 20:57:36 2017 02 PA1001.55-
+Sat Oct 28 20:57:36 2017 02 SLEEPING-
+</code></pre></div></div>
+
+<h3 id="switch-sensor-motion-sensor-or-water-sensor">SWITCH SENSOR, MOTION SENSOR, or WATER SENSOR</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python serial_mon.py 9600
+
+
+Sat Oct 28 21:05:03 2017 02 STARTED--
+Sat Oct 28 21:05:03 2017 02 STARTED--
+Sat Oct 28 21:05:03 2017 02 STARTED--
+Sat Oct 28 21:05:03 2017 02 STARTED--
+Sat Oct 28 21:05:03 2017 02 STARTED--
+Sat Oct 28 21:05:06 2017 02 STATEOFF-
+Sat Oct 28 21:05:07 2017 02 SLEEPING-
+</code></pre></div></div>
+
+<p>In the above example the sensor sent the state of the switch (a02STATEOFF-) before going to sleep. Every time the switch changes state (ie: opens or closes) then the sensor awakens from sleep and transmits the new state of the switch.</p>
+
+<p>Try testing this by closing and opening the switch or bridging the contacts shown in the picture below. This will also work if your sensor is configured for Temperature sensing.</p>
+
+<figure><img class="docimage" src="images/switch contacts.webp" alt="Switch contacs" /></figure>
+
+<p><strong>Red circle shows the button switch contacts</strong></p>
+
+<p>Messages transmitted when contacts bridged (switch closed):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sat Oct 28 21:50:41 2017 02 AWAKE----
+Sat Oct 28 21:50:41 2017 02 BUTTONON-
+Sat Oct 28 21:50:41 2017 02 BUTTONON-
+Sat Oct 28 21:50:41 2017 02 SLEEPING-
+</code></pre></div></div>
+
+<p>Messages transmitted when contacts not bridged (switch open):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sat Oct 28 21:50:43 2017 02 AWAKE----
+Sat Oct 28 21:50:43 2017 02 BUTTONOFF
+Sat Oct 28 21:50:43 2017 02 BUTTONOFF
+Sat Oct 28 21:50:43 2017 02 SLEEPING-
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+In the above example two BUTTONON/OFF messages are sent every time the switch state changes. This is merely precautionary in case one message is missed by the receiver. The number of messages can be configured using the NOMSG command (see the sensor configuration section of this documentation for more details).<br />
+</div>
+
+<h3 id="light-sensor">LIGHT SENSOR</h3>
+
+<p>Messages transmitted when sensor is started:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+Sat Oct 28 20:57:31 2017 02 STARTED--
+
+...5 second pause...
+
+Sat Oct 28 20:57:36 2017 02 ANAA1456-
+Sat Oct 28 20:57:36 2017 02 SLEEPING-
+</code></pre></div></div>
+
+<p>Messages transmitted every 5 (or INTVL) minutes thereafter.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sat Oct 28 21:50:43 2017 02 AWAKE----
+Sat Oct 28 21:50:43 2017 02 ANAA1456-
+Sat Oct 28 21:50:43 2017 02 ANAA1456-
+Sat Oct 28 21:50:43 2017 02 SLEEPING-
+</code></pre></div></div>
+
+<p>ANAA refers to Analog Sensor A.</p>
+
+<p>1456 is the light reading.</p>
+
+<p>To change the interval of the transmissions (or other configurations) refer the configuration section of this documentation.</p>
+
+:ET

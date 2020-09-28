@@ -1,0 +1,27 @@
+I"T<p>There are three general purpose IO pins on the Flex module that are configured for output and set on/off using the GPIO command. This is useful for switching LED’s on/off or interfacing with external circuitry.</p>
+
+<p>The GPIO pins are Pin 3,4 and 5 (refer below diagram)</p>
+
+<p><img src="images/flex pinout v2.png" width="425" /></p>
+
+<h2 id="gpio-default-setting">GPIO Default Setting</h2>
+<p>Each GPIO pin is configured for output and off by default.</p>
+
+<h2 id="how-to-use-the-gpio-command">How to use the GPIO command</h2>
+
+<p><strong>Command:</strong> GPIO[<em>p1</em>][<em>p2</em>] <br />
+<strong>Response:</strong> GPIO[<em>p1</em>][<em>p2</em>]</p>
+
+<p><em>Where</em>: <br /> 
+p1 = A,B or C pin indicator from the above pinout diagram <br />
+p2 = 0 for off and 1 for on <br /></p>
+
+<p>The below example explains how to set GPIOA on:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf_config.py 03 GPIOA1 
+SENT     : 03GPIOA1
+RECEIVED : 03GPIOA1
+</code></pre></div></div>
+
+<p>ToDo: Fix GPIO pinout for GPIOA and not GPIO1</p>
+:ET

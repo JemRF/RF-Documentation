@@ -1,0 +1,80 @@
+I".	<p>The TYPE command is use to set the <em>personality</em> of a sensor. In the <a href="rf_modes.html">Modes of Operation</a> section we described the two modes of an RF module. You use the TYPE command to configure which <em>mode</em> you want the module be in. Here is a list of all the types available:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type Number</th>
+      <th>Description</th>
+      <th>Mode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Thermistor Temperature Sensor</td>
+      <td>Sensor Mode</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Gateway</td>
+      <td>Gateway Mode</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>DHT22 Humidity Sensor</td>
+      <td>Sensor Mode</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>DS18B20 Temperature Sensor</td>
+      <td>Sensor Mode</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Analog A</td>
+      <td>Sensor Mode</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Analog B</td>
+      <td>Sensor Mode</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Relay</td>
+      <td>Actuator Mode</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>SHT21 Humidity and Temperature Sensor</td>
+      <td>Sensor Mode</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>BME280 Pressure, Humidity and Temperature Sensor</td>
+      <td>Sensor Mode</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>HTU21 Humidity and Temperature Sensor</td>
+      <td>Sensor Mode</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Type 2</strong> is <em>Gateway Mode</em> which enables the serial port so that the RF module can interface with a micro-controller (e.g. Raspberry Pi, PC, Arduino etc…).</p>
+
+<p><strong>All other types</strong> are <em>Sensor Mode</em>. The <em>Sensor Mode</em> types define what sensor is attached to the RF module (e.g. a type 4 sensor is DS18B20 temperature sensor). The sensor type is required in order to enter <a href="sleep_modes.html">timed sleep cycle</a>.</p>
+
+<p><strong>Command:</strong> TYPE[<em>p1</em>] <br />
+<strong>Response:</strong> TYPE[<em>p1</em>]</p>
+
+<p><em>Where</em>: p1 = Type Number from the above table</p>
+
+<p>Example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf_config.py 03 TYPE1
+SENT     : 03TYPE1
+RECEIVED : 03TYPE1----
+</code></pre></div></div>
+:ET
