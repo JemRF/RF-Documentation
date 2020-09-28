@@ -9,7 +9,7 @@ permalink: adafruit.html
 folder: mydoc
 ---
 
-## Interfacing with Adafruit IO
+## Intterfacing with Adafruit IO
 Adafruit IO has a very user friendly, and intuitive interface and is well documented which makes getting started and building dashboards very easy. And quick!
 
 ## Background
