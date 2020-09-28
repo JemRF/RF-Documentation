@@ -1,0 +1,63 @@
+I"/
+<p><img src="../../temperature and humidity sensor 1 small.jpg" width="425" /><img src="../../images/temperature and humidity sensor 2 small.jpg" width="425" /></p>
+
+<h2 id="product-description">Product Description</h2>
+<p>Wireless temperature and humidity sensor with high degree of accuracy (~0.3°C and +-2% Humidity). Very low power and can last 6 months on a single CR2032 coin cell battery when configured to send readings every 10 minutes.</p>
+
+<h2 id="installation">Installation</h2>
+<p>Install battery and close enclosure as described <a href="sensor_installation.html">here</a>.</p>
+
+<h2 id="sensor-testing">Sensor testing</h2>
+<ul>
+  <li>See the <a href="sensor_testing.html">testing section</a> of this documentation</li>
+</ul>
+
+<h2 id="product-specifications">Product Specifications</h2>
+<ul>
+  <li>~0.3°C accuracy</li>
+  <li>+-2% Humidity</li>
+  <li>Sensirion based SHT21 sensor</li>
+  <li><a href="rf_device_specs.html">Device specifications</a></li>
+</ul>
+
+<p><br /></p>
+
+<p><strong>Sensor (SHT21) Performance:</strong></p>
+<figure><img class="docimage" src="images/temperature_and_humidity_graphs_2_1024x1024.PNG" alt="Wireless Sensor Graphs" /></figure>
+
+<h3 id="electrical">Electrical</h3>
+<ul>
+  <li>2.2-3.3V</li>
+  <li>Powered by CR2032 coin cell battery</li>
+  <li>Can be externally powered by soldering to the 3V3 and GND through holes on the PCB</li>
+</ul>
+
+<h3 id="functional">Functional</h3>
+<ul>
+  <li>Standard JemRF wireless sensor, refer <a href="rf_basics.html">RF Communications section</a> for all the details</li>
+  <li><a href="configuration_overview.html">Highly configurable</a></li>
+  <li>If the RF module cannot find the BME280 sensor then it will report back (NOSENSOR). Check the wiring and power to the BME280 module.</li>
+</ul>
+
+<h3 id="messaging-details">Messaging details</h3>
+<ul>
+  <li>TMPA99.99 (temperature reading format)</li>
+  <li>HUM99.99 (temperature reading format)</li>
+  <li>HTU21 (the SHT21 command requests the sensor to transmit a temperature and humidity reading)</li>
+</ul>
+
+<h3 id="physical">Physical</h3>
+<ul>
+  <li>51mm x 36mm x 20mm case size (2” x 1.42” x .79”)</li>
+</ul>
+
+<h2 id="default-configuration">Default configuration</h2>
+<ul>
+  <li>Type 10 (<a href="types.html">Type</a> 10 sensor)</li>
+  <li>NOMSG2 (Sends 2 temperature &amp; humidity readings every cycle)</li>
+  <li>INTVL005 (Sends a temperature reading every 5 minutes)</li>
+  <li>CYCLE (put the device into a <a href="sleep_modes.html">timed sleep cycle</a>)</li>
+  <li>Refer <a href="configuration_overview.html">device configuration</a> for more details</li>
+</ul>
+
+:ET
