@@ -9,7 +9,9 @@ permalink: wireless_pressure_temperature_and_humidity_sensor.html
 folder: mydoc
 ---
 
-<img src="images/temperature and humidity sensor 1 small.JPG" width="425"/>     <img src="images/BME280 Pressure, Humidity and Temperature small.JPG" width="425"/> 
+<img src="images/temperature and humidity sensor 1 small.JPG" width="425"/>
+
+<img src="images/BME280 Pressure, Humidity and Temperature small.JPG" width="425"/>
 
 ## Product Description
 Wireless environmental sensor with temperature, barometric pressure and humidity. The sensor provides a high degree of accuracy (+-3% humidity, +-1hPa and 1C). Very low power and can last 6 months on a single CR2032 coin cell battery when configured to send readings every 10 minutes. 
