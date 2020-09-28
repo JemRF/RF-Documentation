@@ -194,28 +194,28 @@ The LED will switch on when the door is closed and off when the door is open.  U
 
 ```
 if data.startswith('BUTTONON') or data.startswith('STATEON'):
-devID=str(int(devID)+30)
-sensordata=1
-PEPFunction=26
+  devID=str(int(devID)+30)
+  sensordata=1
+  PEPFunction=26
 
 if data.startswith('BUTTONOFF') or data.startswith('STATEOFF'):
-devID=str(int(devID)+30)
-sensordata=255
-PEPFunction=26
+  devID=str(int(devID)+30)
+  sensordata=255
+  PEPFunction=26
 ```
 
 You might also want to use  a Label widget instead of an LED by applying the following changes to the code:
 
 ```
 if data.startswith('BUTTONON') or data.startswith('STATEON'):
-devID=str(int(devID)+30)
-sensordata="Door Closed"
-PEPFunction=26
+  devID=str(int(devID)+30)
+  sensordata="Door Closed"
+  PEPFunction=26
 
 if data.startswith('BUTTONOFF') or data.startswith('STATEOFF'):
-devID=str(int(devID)+30)
-sensordata="Door Open"
-PEPFunction=26
+  devID=str(int(devID)+30)
+  sensordata="Door Open"
+  PEPFunction=26
 ```
  
 
