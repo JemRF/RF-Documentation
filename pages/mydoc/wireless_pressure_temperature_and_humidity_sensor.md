@@ -9,7 +9,7 @@ permalink: wireless_pressure_temperature_and_humidity_sensor.html
 folder: mydoc
 ---
 
-<img src="../../images/temperature and humidity sensor 1 small.JPG" width="425"/>
+<img src="temperature and humidity sensor 1 small.JPG" width="425"/>
 
 <img src="../images/BME280 Pressure, Humidity and Temperature small.JPG" width="425"/>
 
