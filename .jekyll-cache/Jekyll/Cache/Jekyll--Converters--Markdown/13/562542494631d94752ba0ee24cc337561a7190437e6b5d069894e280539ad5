@@ -1,0 +1,78 @@
+I"d<p><img src="images/temperature and humidity sensor 1 small.jpg" width="425" /><img src="images/BME280 Pressure, Humidity and Temperature small.jpg" width="425" /></p>
+
+<h2 id="product-description">Product Description</h2>
+<p>Wireless environmental sensor with temperature, barometric pressure and humidity. The sensor provides a high degree of accuracy (+-3% humidity, +-1hPa and 1C). Very low power and can last 6 months on a single CR2032 coin cell battery when configured to send readings every 10 minutes.</p>
+
+<h2 id="installation">Installation</h2>
+<p>Install battery and close enclosure as described <a href="sensor_installation.html">here</a>.</p>
+
+<h2 id="sensor-testing">Sensor testing</h2>
+<ul>
+  <li>See the <a href="sensor_testing.html">testing section</a> of this documentation</li>
+</ul>
+
+<h2 id="product-specifications">Product Specifications</h2>
+<ul>
+  <li>+-1hPa barometric pressure accuracy</li>
+  <li>~1°C temperature accuracy</li>
+  <li>+-3% humidity accuracy</li>
+  <li>Based on BOSCH BME280 sensor</li>
+  <li><a href="rf_device_specs.html">Device specifications</a></li>
+</ul>
+
+<h3 id="electrical">Electrical</h3>
+<ul>
+  <li>2.2-3.3V</li>
+  <li>Powered by CR2032 coin cell battery</li>
+  <li>Can be externally powered by soldering to the 3V3 and GND through holes on the PCB</li>
+</ul>
+
+<h3 id="functional">Functional</h3>
+<ul>
+  <li>Standard JemRF wireless sensor, refer <a href="rf_basics.html">RF Communications section</a> for all the details</li>
+  <li><a href="configuration_overview.html">Highly configurable</a></li>
+  <li>If the RF module cannot find the BME280 sensor then it will report back (NOSENSOR). Check the wiring and power to the BME280 module.</li>
+</ul>
+
+<h3 id="messaging-details">Messaging details</h3>
+
+<p>Unlike all our other sensors, this sensor transmits illegible raw data from the BME280 over 5 <a href="rf_message_format.html">LLAP</a> messages. Each message follows the traditional message format of start character, followed by the ID and then 9 bytes of data.  Data from this sensor is transmitted 40 bytes in total and shown in the table below:</p>
+
+<figure><img class="docimage" src="images/BME280 message details.png" alt="BME280 message details" /></figure>
+
+<p>The host application needs to decode the 40 bytes to derive the pressure, temperature and humidity. Our <a href="utilities.html">RF Tools</a> have been updated to do this conversion and output the following standard LLAP messages:</p>
+
+<ul>
+  <li>PA9999.9- (pressure reading in hPa)</li>
+  <li>TMPA99.99 (temperature reading in Celcius)</li>
+  <li>HUM99.99 (humidity reading in %)</li>
+  <li>BME280 (the BME280 command requests the sensor to transmit a pressure, temperature and humidity reading)</li>
+</ul>
+
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Upgrade to the latest <a href="utilities.html">RF Tools</a> that are compatible with this sensor. If you are using an older version of serial_mon.py, or another serial monitor application, then you will see the 5 messages of raw data which is meaningless without conversion.</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can find the python code for the conversion in bme280.py for an example of how to do the conversion.</div>
+
+<p><strong>If you are interested in writing your own code for this sensor then the following will help, but as long as you are using our <a href="utilities.html">utilities</a> then all of this is irrelevant.</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>“BMP--” is the marker for the start of a BME280 sensor reading. The 40 bytes, indicated in red in the above diagram, represent the data elements from the sensor. In this manual we will not go into the conversion of these data elements to the actual temperature, humidity and pressure readings but these details can be found in bme280.py, or in the Bosch BME280 datasheet. When the number of messages (NOMSG) setting is set to more than 1 then duplicates need to be removed before decoding the 40 bytes. Refer rflib.py for an example on how to remove
+duplicates. It is recommended to use a NOMSG setting of 2 or 3 to improve transmission reliability. We have incorporated bme280.py into our utilities (serial_mon.py and rf_config.py) so that BME280 sensor data is converted to a standard human readable radio message format shown above.
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You may be wondering why we decided to transmit raw sensor data over the air instead of doing the conversion on the radio device before transmission. The reason for this is due to the computational overheads (i.e. memory) required to perform the conversion is beyond what we can afford in the RF module.</div>
+
+<h3 id="physical">Physical</h3>
+<ul>
+  <li>51mm x 36mm x 20mm case size (2” x 1.42” x .79”)</li>
+</ul>
+
+<h2 id="default-configuration">Default configuration</h2>
+<ul>
+  <li>Type 9 (<a href="types.html">Type</a> 9 sensor)</li>
+  <li>NOMSG1 (Sends 1 set of 5 LLAP messages with sensor raw data)</li>
+  <li>INTVL005 (Sends a temperature reading every 5 minutes)</li>
+  <li>CYCLE (put the device into a <a href="sleep_modes.html">timed sleep cycle</a>)</li>
+  <li>Refer <a href="configuration_overview.html">device configuration</a> for more details</li>
+</ul>
+
+:ET
