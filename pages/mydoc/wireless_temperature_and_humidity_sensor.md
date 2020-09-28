@@ -9,6 +9,8 @@ permalink: wireless_temperature_and_humidity_sensor.html
 folder: mydoc
 ---
 
+Introduction
+
 <img src="images/temperature and humidity sensor 1 small.JPG" width="425"/> <img src="images/temperature and humidity sensor 2 small.JPG" width="425"/> 
 
 ## Product Description
