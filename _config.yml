@@ -38,18 +38,18 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: JemRF Feedback
+# feedback_subject_line: JemRF Feedback
 
-feedback_email: sales@jemrf.com
+#feedback_email: sales@jemrf.com
 # used as a contact email for the Feedback link in the top navigation bar
 
-# feedback_disable: true
+#feedback_disable: true
 # if you uncomment the previous line, the Feedback link gets removed
 
 # feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
-# feedback_link: "http://helpy.io/"
+feedback_link: "https://www.jemrf.com/pages/contact-us/"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
