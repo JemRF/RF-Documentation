@@ -9,7 +9,7 @@ permalink: wireless_switch_sensor.html
 folder: mydoc
 ---
 
-{% include image.html file="big wireless switch.jpg" alt="Wireless Switch Sensor"%}
+{% include image.html file="big wireless switchSep 28, 2020" alt="Wireless Switch Sensor"%}
 
 
 ## Product Description

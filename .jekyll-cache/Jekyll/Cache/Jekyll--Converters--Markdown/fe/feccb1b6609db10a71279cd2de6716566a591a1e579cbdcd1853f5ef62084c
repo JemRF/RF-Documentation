@@ -1,0 +1,229 @@
+I"�-<p>Examples of Bynk App Screens using sensors from JemRF:</p>
+
+<p><img src="images/IMG-7238_large.png" width="425" /> <img src="images/5.5_Device_1_largeSep 28, 2020" width="425" /></p>
+
+<h2 id="interfacing-with-blynk">Interfacing with Blynk</h2>
+<p>If you are looking for a beautiful looking app to dashboard your sensors and control things then Blynk is a really great option. Blynk supports Android and IOS and makes connecting sensors and actuators to the app really simple. Here are some examples:</p>
+
+<p>We have created an interface that support the following JemRF sensor functions:</p>
+
+<ul>
+  <li>Temperature sensor (All modules)</li>
+  <li>DS18B20 Temperature Sensor (Flex Module)</li>
+  <li>DHT22 Temperature and Humidity Sensor (Flex module)</li>
+  <li>Wireless switch sensor (all modules)</li>
+  <li>Battery levels (All modules)</li>
+  <li>Relay A and B for remote control from the Blynk app (Flex module)</li>
+  <li>Analog A and B sensors (Flex module)</li>
+  <li>JemRF to Blynk Temperature Gauge Tutorial</li>
+</ul>
+
+<h2 id="what-you-will-need">What you will need</h2>
+
+<ul>
+  <li>Any model Raspberry Pi with preferably the full Raspbian distro (you can use Rasbian Lite but will need to install Python and PIP)</li>
+  <li><a href="iot_gateway.html">IoT Gateway</a> for Raspberry Pi or Flex RF Module</li>
+  <li>Any <a href="https://www.jemrf.com/collections/all/rf-sensors">wireless sensor</a></li>
+</ul>
+
+<h2 id="what-you-need-to-know-beforehand">What you need to know beforehand:</h2>
+<ul>
+  <li>How to operate a Raspberry Pi</li>
+  <li>You have already set up your <a href="iot_gateway.html">IoT Gateway</a> and <a href="sensor_testing.html">tested your sensor</a></li>
+  <li>Some Python programming knowledge is preferable but not mandatory as we provide you with the source code and instruction on how to run it</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="step-1-download-the-app">STEP 1: DOWNLOAD THE APP</h3>
+<p>Download the Blynk app and start a new project. The app will ask you which hardware you have. Select Raspberry Pi Device and take note of the Auth Token. There is also useful option to have the token sent to you via email.</p>
+
+<h3 id="step-2-configure-the-app">STEP 2: CONFIGURE THE APP</h3>
+<p>Tap on the dotted canvas of the project that will bring up the widget box and select Gauge. A gauge frame will now be visible on the canvas.</p>
+
+<p><img src="images/IMG-7229_large.png" width="425" /></p>
+
+<ul>
+  <li>
+    <p>Click on the gage and give your sensor a name and color.</p>
+  </li>
+  <li>
+    <p>In the input section link the gage to your JemRF temperature Sensor ID by clicking in the PIN box and changing the scroll wheel to “Virtual” (if it’s not already Virtual) and then change the ID on the right to VXX where XX is your JemRF sensor ID.</p>
+  </li>
+  <li>
+    <p>Set the two values to the Min and Max of the gauge. I chose “0” and “30”.</p>
+  </li>
+  <li>
+    <p>In the Label section change the value to /pin/C or /pin/F – depending on whether your sensor values are in Celsius to Fahrenheit.</p>
+  </li>
+  <li>
+    <p>Refresh interval is “PUSH”</p>
+  </li>
+</ul>
+
+<p><img src="images/IMG-7231_large.png" width="425" /></p>
+
+<ul>
+  <li>Click OK and the press the play triangle on the top right. It will say “New Project is Offline”.</li>
+</ul>
+
+<h3 id="step-3-connect-your-raspberry-pi-to-blynk">STEP 3: CONNECT YOUR RASPBERRY PI TO BLYNK</h3>
+
+<ul>
+  <li>
+    <p>Open up your Raspberry PI terminal and download the Blynk JemRF interface.</p>
+  </li>
+  <li>
+    <p>Install the Blynk libraries as follows:</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade
+
+sudo apt-get install python-pip
+
+sudo pip install blynklib
+</code></pre></div></div>
+
+<ul>
+  <li>Download the JemRF interface for Blynk:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/JemRF/rf_tools.git
+
+cd rf_tools
+</code></pre></div></div>
+
+<p>Open up rf2blynk.py:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano rf2blynk.py
+</code></pre></div></div>
+
+<p>Page down to where it says:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BLYNK_AUTH = 'YourTokenHere'
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Replace YourTokenHere with the token you emailed yourself earlier.</p>
+  </li>
+  <li>
+    <p>Exit and Save by pressing “ctrl-x” then “y”, then “ENTER KEY”.</p>
+  </li>
+  <li>
+    <p>Now run the application by typing:</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf2blynk.py
+</code></pre></div></div>
+
+<p>You should see something like this:</p>
+
+<p><img src="images/RPI-JemRF-Blynk_grande.png" width="425" /></p>
+
+<h3 id="step-4-check-your-app-is-online-and-updating">STEP 4: CHECK YOUR APP IS ONLINE AND UPDATING</h3>
+<ul>
+  <li>Open up the app and you should now see the project is online as shown below:</li>
+</ul>
+
+<p><img src="images/IMG-7232_3.png" width="425" /></p>
+
+<ul>
+  <li>Wait for a temperature reading to be processed and then you should see the temperature gauge update:</li>
+</ul>
+
+<p><img src="images/IMG-7233_large.png" width="425" /></p>
+
+<h2 id="add-a-superchart">Add a SuperChart</h2>
+<p>Now that you have your project on-line and updating you can start to easily add other widgets. The SuperChart is a good option if you plan to display temperature and humidity. You can add multiple sensors to the same chart which saves space on the dashboard.</p>
+
+<p>Tap the dotted canvas as before and select the SuperChart. The chart has may configurations you can play with. I will focus on the important ones. Use DATASTREAMS to link lines on the graph with sensors. Add a data stream, give it a name and  and click on the settings icon alongside it.</p>
+
+<p><img src="images/IMG-7235_large.png" width="425" /></p>
+
+<p>In the INPUT section configure a Virtual Input with the device ID of the JemRF temperature sensor we configured in the previous section. Give it a suffix of C or F and make the decimals configuration #.# for one decimal place.</p>
+
+<p><img src="images/IMG-7236_large.png" width="425" /></p>
+
+<p>You can configure how the chart aggregates your data. I found the high resolution of 1d useful to give me a detailed chart of the past 24 hours. The chart has a full screen option that provides a view of the chart in landscape mode using the full screen of your device.</p>
+
+<p>It will take some time to build up the data but initially you probably want to start with the Live feed option so you can see if the data is populating the chart and then switch to 1h and then 1d as the data history gets populated.</p>
+
+<p>Here is an example of a chart with two datastreams:</p>
+
+<p><img src="images/IMG-7238_grande.png" width="425" /></p>
+
+<h2 id="remote-control-jemrf-modules-from-blynk">Remote control JemRF modules from Blynk</h2>
+
+<p><img src="images/JemRF_to_Blynk_large.gif" width="425" /></p>
+
+<p>If you followed the above sections you should now be comfortable with configuring the Blynk dashboard and connecting dashboard widgets to your JemRF sensors.  In this section I’ll explain how to switch a relay connected to the JemRF Flex radio module, using the Blynk button widget.</p>
+
+<p>In the above video you can see how the Blynk button can be used to send on/off messages to your RapberryPi, which can send messages over the air to the Flex RF module. We’ve hooked up a couple LED’s to GPIO1 and GPIO2 pins of the Flex module to demonstrate how these pins can be turned high/low from the Blynk dashboard.</p>
+
+<p>We have a separate tutorial on the Flex module that explains how to configure and wire the Flex module to a remote relay switch that you can use to switch high voltage appliances and lights.</p>
+
+<h3 id="step-1---add-the-button-widget-to-your-blynk-dashboard">STEP 1 - ADD THE BUTTON WIDGET TO YOUR BLYNK DASHBOARD</h3>
+<p>Select the “button” widget from the Blynk Widget Box and click on it to configure it. Give it a name and in the output section give it a unique virtual pin ID. Make sure this ID does not conflict with any of your JemRF modules.</p>
+
+<h3 id="step-2---configure-the-raspberry-pi-interface">STEP 2 - CONFIGURE THE RASPBERRY PI INTERFACE</h3>
+<p>Open up rf2blynk.py on your Raspberry Pi and configure these three settings:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>button1=13 ##This is the Blynk virtual ID
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+If you change the above from 13 to something else then you also need to change the ‘13’ in the following lines further down in rf2blynk.py:
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@blynk.handle_event('write V13')
+def v13_write_handler(pin, value):
+
+button1RFRelayID=3 ##This is the JemRF module ID
+button1RFRelay="A" ##'A' for RELAYA, 'B' for RELAYB
+</code></pre></div></div>
+
+<p>They should be self explanatory. Change button1 to be equal to the ID you configured for the button, change the button1RFRelayID equal to the ID of your Flex module and lastly configure button1RFRelay to “A” or “B”, depending on which relay pin you want to control.</p>
+
+<p>Now run the application:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rf2blynk.py
+</code></pre></div></div>
+
+<p>Click the button on the dashboard and you should see messages being printed to the screen every time you click the button.</p>
+
+<h2 id="configure-a-wireless-switch-indicator">Configure a Wireless Switch Indicator</h2>
+<p>You can easily configure the JemRF wireless switch with Blynk. Simply add an LED widget in your Bylnk project and assign the virtual p;in number to the same number as your wireless switch.</p>
+
+<p>The LED will switch on when the door is closed and off when the door is open.  Unfortunately you can’t change that around like you can with some of the other widgets but you can adjust rf2blynk.py to swap it around by applying the changes in red below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if data.startswith('BUTTONON') or data.startswith('STATEON'):
+  devID=str(int(devID)+30)
+  sensordata=1
+  PEPFunction=26
+
+if data.startswith('BUTTONOFF') or data.startswith('STATEOFF'):
+  devID=str(int(devID)+30)
+  sensordata=255
+  PEPFunction=26
+</code></pre></div></div>
+
+<p>You might also want to use  a Label widget instead of an LED by applying the following changes to the code:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if data.startswith('BUTTONON') or data.startswith('STATEON'):
+  devID=str(int(devID)+30)
+  sensordata="Door Closed"
+  PEPFunction=26
+
+if data.startswith('BUTTONOFF') or data.startswith('STATEOFF'):
+  devID=str(int(devID)+30)
+  sensordata="Door Open"
+  PEPFunction=26
+</code></pre></div></div>
+
+<h2 id="display-a-battery-indicator">Display a battery indicator</h2>
+<p>There are two widgets that make this possible. Either use a Label widget to display the numerical battery reading, or use a Level widget using a min value of 1.9V and max of 3.3V (use 1.9 as min because JemRF wireless devices stop operating at below 2V).</p>
+
+:ET

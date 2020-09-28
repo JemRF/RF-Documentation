@@ -9,8 +9,6 @@ permalink: wireless_temperature_sensor.html
 folder: mydoc
 ---
 
-Introduction
-
 <img src="images/wireless temperature sensor 1.JPG" width="425"/> <img src="images/wireless temperature sensor 2.JPG" width="425"/> 
 
 ## Product Description

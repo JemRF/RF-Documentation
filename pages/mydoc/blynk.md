@@ -11,7 +11,7 @@ folder: mydoc
 
 Examples of Bynk App Screens using sensors from JemRF:
 
-<img src="images/IMG-7238_large.png" width="425"/> <img src="images/5.5_Device_1_large.jpg" width="425"/> 
+<img src="images/IMG-7238_large.png" width="425"/> <img src="images/5.5_Device_1_largeSep 28, 2020" width="425"/> 
 
 
 ## Interfacing with Blynk

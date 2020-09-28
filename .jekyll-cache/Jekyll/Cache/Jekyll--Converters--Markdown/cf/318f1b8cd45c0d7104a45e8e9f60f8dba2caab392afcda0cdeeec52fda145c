@@ -1,0 +1,100 @@
+I"�<figure><img class="docimage" src="images/big wireless water sensorSep 28, 2020" alt="Wireless Water Sensor" /></figure>
+
+<h2 id="product-description">Product Description</h2>
+<p>The Wireless Water Sensor can sense the presence of water between the forks of the external water sensor. Usually used for flood alarms for housing, but can also be used as a rain detector.</p>
+
+<h2 id="installation">Installation</h2>
+
+<ul>
+  <li>There are three external parts in addition to the RF module, shown in the below diagram. The device on the right hand side of below picture is a variable analog to digital convertor that can be discarded or used for one of your other projects.</li>
+</ul>
+
+<figure><img class="docimage" src="images/IMG_5042Sep 28, 2020" alt="Wireless Water Sensor" /></figure>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> The variable analog to digital converter measures the analog reading across the two analog inputs and triggers the digital pin HIGH when the analog reading exceeds the variable setting (set by the screw adjuster).This part is not needed for this project but can be used for moisture level detection (e.g. the moisture level of soil). There is also an analog output on the device that gives you an analog reading of the moisture level.</div>
+
+<ul>
+  <li>Cut off the female connectors from one side of the two jumper wires provided and strip away some of the shielding.</li>
+</ul>
+
+<figure><img class="docimage" src="images/IMG_5043Sep 28, 2020" alt="Wireless Water Sensor" /></figure>
+
+<figure><img class="docimage" src="images/IMG_5044Sep 28, 2020" alt="Wireless Water Sensor" /></figure>
+
+<ul>
+  <li>Solder the two wires to the RF Module contacts labeled BTN and connect the two female jumper connectors to the forked water sensor.</li>
+</ul>
+
+<figure><img class="docimage" src="images/RF-Multi-Water.JPG" alt="Wireless Water Sensor" /></figure>
+
+<ul>
+  <li>
+    <p>The RF module is installed in the sensor enclosure by removing the two female jumper connectors and threading them through the sensor case hole and re-attaching them to the forked water sensor.</p>
+  </li>
+  <li>
+    <p>Install battery and close enclosure as described <a href="sensor_installation.html">here</a>.</p>
+  </li>
+  <li>
+    <p>Thread the antennae through the the case enclosure and push the sensor into place within the enclose</p>
+  </li>
+</ul>
+
+<figure><img class="docimage" src="images/IMG_2198.JPG" alt="Wireless Water Sensor" /></figure>
+
+<figure><img class="docimage" src="images/IMG_2208.JPG" alt="Wireless Water Sensor" /></figure>
+
+<ul>
+  <li>Close the enclosure case using a Phillips screw driver</li>
+</ul>
+
+<figure><img class="docimage" src="images/IMG_2177.JPG" alt="Wireless Water Sensor" /></figure>
+
+<h2 id="sensor-testing">Sensor testing</h2>
+<ul>
+  <li>See the <a href="sensor_testing.html">testing section</a> of this documentation</li>
+</ul>
+
+<h2 id="product-specifications">Product Specifications</h2>
+<ul>
+  <li><a href="rf_device_specs.html">Device specifications</a></li>
+</ul>
+
+<h3 id="electrical">Electrical</h3>
+<ul>
+  <li>2.2-3.3V</li>
+  <li>Powered by CR2032 coin cell battery</li>
+  <li>Can be externally powered by soldering to the 3V3 and GND through holes on the PCB</li>
+  <li>If used for flood sensing then this device will normally trigger infrequently and the battery will last over a year</li>
+</ul>
+
+<h3 id="functional">Functional</h3>
+<ul>
+  <li>Standard JemRF wireless sensor, refer <a href="rf_basics.html">RF Communications section</a> for all the details</li>
+  <li><a href="configuration_overview.html">Highly configurable</a></li>
+</ul>
+
+<h3 id="messaging-details">Messaging details</h3>
+<ul>
+  <li>BUTTONON- (sent when transitioning from water to no water between the forks)</li>
+  <li>BUTTONOFF (sent when water is detected)</li>
+  <li>STATEON- (the sensor state is sent every INYVL minutes if no water detected)</li>
+  <li>STATEOFF (the sensor state is sent every INTVL minutes if water is detected)</li>
+  <li>BUTTON (the BUTTON command requests the the state from the sensor)</li>
+</ul>
+
+<h3 id="physical">Physical</h3>
+<ul>
+  <li>36mm x 36mm x 15mm case size (1.42” x 1.42” x .59”)</li>
+</ul>
+
+<h2 id="default-configuration">Default configuration</h2>
+<ul>
+  <li>Type 1 (<a href="types.html">Type</a> 1 sensor)</li>
+  <li>NOMSG3 (Sends 3 sensor readings every time the sensor state changes)</li>
+  <li>INTVL030 (Sends the sensor state every 30 minutes)</li>
+  <li>SLEEP (puts the device into <a href="sleep_modes.html">sleep mode</a>)</li>
+  <li>Refer <a href="configuration_overview.html">device configuration</a> for more details</li>
+</ul>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Did you know this sensor is also a <a href="multi function sensors.html">multi function sensor</a>?</div>
+:ET
