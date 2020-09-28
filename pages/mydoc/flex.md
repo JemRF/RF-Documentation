@@ -9,7 +9,7 @@ permalink: flex.html
 folder: mydoc
 ---
 
-{% include image.html file="flex rf module tn.PNG" alt="Flex Radio Module"%}
+{% include image.html file="flex rf module tn.png" alt="Flex Radio Module"%}
 
 ## Product Description
 The Flex RF Module is an all purpose module designed for prototyping on breadboards but can also be deployed on a PCB using 2.54mm 10 pin headers. It is commonly used in alarm systems, weather stations, remote control (e.g. lights, garage doors), temperature and humidity monitoring or lightweight wireless communications.
@@ -18,7 +18,7 @@ The Flex RF Module is an all purpose module designed for prototyping on breadboa
 
 ## Pinout
 
-{% include image.html file="flex pinout v2.PNG" alt="Flex Radio Pinout"%}
+{% include image.html file="flex pinout v2.png" alt="Flex Radio Pinout"%}
 
 <BR>
 **Pin Description**

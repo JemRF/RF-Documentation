@@ -29,7 +29,7 @@ Install battery and close enclosure as described [here](sensor_installation.html
 <BR>
 
 **Sensor (SHT21) Performance:**
-{% include image.html file="temperature_and_humidity_graphs_2_1024x1024.PNG" alt="Wireless Sensor Graphs"%} 
+{% include image.html file="temperature_and_humidity_graphs_2_1024x1024.png" alt="Wireless Sensor Graphs"%} 
 
 ### Electrical
 * 2.2-3.3V 

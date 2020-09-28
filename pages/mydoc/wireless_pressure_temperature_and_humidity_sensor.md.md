@@ -44,7 +44,7 @@ Install battery and close enclosure as described [here](sensor_installation.html
 
 Unlike all our other sensors, this sensor transmits illegible raw data from the BME280 over 5 [LLAP](rf_message_format.html) messages. Each message follows the traditional message format of start character, followed by the ID and then 9 bytes of data.  Data from this sensor is transmitted 40 bytes in total and shown in the table below:
 
-{% include image.html file="BME280 message details.PNG" alt="BME280 message details"%}
+{% include image.html file="BME280 message details.png" alt="BME280 message details"%}
 
 The host application needs to decode the 40 bytes to derive the pressure, temperature and humidity. Our [RF Tools](utilities.html) have been updated to do this conversion and output the following standard LLAP messages:
 
