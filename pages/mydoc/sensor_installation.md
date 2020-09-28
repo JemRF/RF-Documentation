@@ -26,45 +26,45 @@ All sensors are pre-configured in a sleep mode which conserves battery power con
 
 Insert a CR2032 coin cell battery with the flat side (+) facing upwards as show in the picture below.
 
-{% include image.html file="IMG_2095.JPG" alt="Install battery"%}
+{% include image.html file="IMG_2095.jpg" alt="Install battery"%}
 
-{% include image.html file="IMG_2107.JPG" alt="Install battery"%}
+{% include image.html file="IMG_2107.jpg" alt="Install battery"%}
 
 ### Replacing the Battery
 
 Remove the sensor from the case using a small screw driver to lever the PCB out of the case, per diagram below.
 
-{% include image.html file="IMG_2218.JPG" alt="Install battery"%}
+{% include image.html file="IMG_2218.jpg" alt="Install battery"%}
 
 To replace the battery use a small screw driver or some other suitable tool to push out the battery, per diagrams below.
 
-{% include image.html file="IMG_2117.JPG" alt="Install battery"%}
+{% include image.html file="IMG_2117.jpg" alt="Install battery"%}
 
-{% include image.html file="IMG_2097.JPG" alt="Install battery"%}
+{% include image.html file="IMG_2097.jpg" alt="Install battery"%}
 
 
 ### Opening and Closing the Sensor Case
 
 Use a Phillips head screw driver to open and close the sensor case per diagrams below.
 
-{% include image.html file="IMG_2177.JPG" alt="Install battery"%}
+{% include image.html file="IMG_2177.jpg" alt="Install battery"%}
 
-{% include image.html file="IMG_2147.JPG" alt="Install battery"%}
+{% include image.html file="IMG_2147.jpg" alt="Install battery"%}
 
 ### Inserting the sensor into the sensor case
 
 Thread the antennae through the hole inside the case and put the sensor into the case, per diagrams below.
 
-{% include image.html file="IMG_2157.JPG" alt="Install battery"%}
+{% include image.html file="IMG_2157.jpg" alt="Install battery"%}
 
-{% include image.html file="IMG_2127.JPG" alt="Install battery"%}
+{% include image.html file="IMG_2127.jpg" alt="Install battery"%}
 
 
 
 Once the antennae is threaded through the hole gently push the sensor into place. 
 
-{% include image.html file="IMG_2167.JPG" alt="Install battery"%}
-{% include image.html file="IMG_2137.JPG" alt="Install battery"%}
+{% include image.html file="IMG_2167.jpg" alt="Install battery"%}
+{% include image.html file="IMG_2137.jpg" alt="Install battery"%}
 
 
 

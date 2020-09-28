@@ -9,7 +9,7 @@ permalink: wireless_waterproof_temperature_sensor.html
 folder: mydoc
 ---
 
-{% include image.html file="IMG_6681_1024_small.JPG" alt="Wireless Waterproof Temperature Sensor"%}
+{% include image.html file="IMG_6681_1024_small.jpg" alt="Wireless Waterproof Temperature Sensor"%}
 
 ## Product Description
 Wireless waterproof temperature sensor with accuracy of ~1°C accuracy. The sensor is on 3 feet of wire. Wire and sensor are waterproof. The RF Module in the cream case is not waterproof. Very low power and can last up to a year on a single CR2032 coin cell battery when configured to send readings every 10 minutes. 

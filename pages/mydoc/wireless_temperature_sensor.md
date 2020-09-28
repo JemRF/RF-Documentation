@@ -9,7 +9,7 @@ permalink: wireless_temperature_sensor.html
 folder: mydoc
 ---
 
-<img src="images/wireless temperature sensor 1.JPG" width="425"/> <img src="images/wireless temperature sensor 2.JPG" width="425"/> 
+<img src="images/wireless temperature sensor 1.jpg" width="425"/> <img src="images/wireless temperature sensor 2.jpg" width="425"/> 
 
 ## Product Description
 Wireless temperature sensor with accuracy of ~1°C accuracy. Very low power and can last up to a year on a single CR2032 coin cell battery when configured to send readings every 10 minutes. 

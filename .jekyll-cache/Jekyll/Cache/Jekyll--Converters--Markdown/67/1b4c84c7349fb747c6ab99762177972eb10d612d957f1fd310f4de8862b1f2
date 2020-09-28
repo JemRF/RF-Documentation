@@ -1,0 +1,27 @@
+I"�<h2 id="introduction-to-rf-networks">Introduction to RF Networks</h2>
+
+<h3 id="star-network">Star Network</h3>
+<p>Any number of nodes transmitting and receiving data from one central hub. Sensor nodes can sleep to
+conserve battery power. No direct communication between the sensor nodes.</p>
+
+<figure><img class="docimage" src="images/Slide1.jpg" alt="Star Network" /></figure>
+
+<h3 id="multiple-star-networks">Multiple Star Networks</h3>
+<p>Start networks can be combined by creating multiple star networks on their own PanId’s. Messages can
+be directed to specific gateways by assigning PanId’s to each sensor.</p>
+
+<figure><img class="docimage" src="images/Slide2.jpg" alt="Multiple Star Networks" /></figure>
+
+<h3 id="redundant-network">Redundant network</h3>
+<p>Multiple gateways can be configured on the same PanId to create a redundant network. All radio traffic
+travels to all gateways so if you lose a gateway then you have a hot backup. Additional gateways can also
+be installed in areas of poor reception to improve network coverage. Message de-duplication logic must be
+built either within the gateway or further down in back end systems connected to the network.</p>
+
+<figure><img class="docimage" src="images/Slide3.jpg" alt="Redundant Network" /></figure>
+
+<h3 id="point-to-point-communications">Point-to-point Communications</h3>
+<p>Two or more MCU’s can communicate directly with each other as shown below.</p>
+<figure><img class="docimage" src="images/Slide4.jpg" alt="Point-to-Point" /></figure>
+
+:ET

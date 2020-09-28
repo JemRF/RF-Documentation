@@ -11,7 +11,7 @@ folder: mydoc
 
 The following diagram describes how communication works between the micro-controller (MCU) and Gateway.
 
-{% include image.html file="Slide5.JPG" alt="RF Communication Basics"%}
+{% include image.html file="Slide5.jpg" alt="RF Communication Basics"%}
 
 Messages are sent by the MCU to the IoT Gateway via serial and automatically transferred to radio waves that can be received by any other JemRF radio device. Conversely a sensor node can transmit messages which are received by the IoT Gateway and converted to serial input to the MCU. 
 

@@ -9,7 +9,7 @@ permalink: wireless_motion_sensor.html
 folder: mydoc
 ---
 
-{% include image.html file="IMG_6846_448x336Sep 28, 2020" alt="Wireless Motion Sensor"%} 
+{% include image.html file="IMG_6846_448x336.jpg" alt="Wireless Motion Sensor"%} 
 
 ## Product Description
 The wireless motion sensor is a kit that requires some basic construction of the following components as described in this tutorial:

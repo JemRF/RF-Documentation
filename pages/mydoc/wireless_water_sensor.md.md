@@ -9,7 +9,7 @@ permalink: wireless_water_sensor.html
 folder: mydoc
 ---
 
-{% include image.html file="big wireless water sensorSep 28, 2020" alt="Wireless Water Sensor"%} 
+{% include image.html file="big wireless water sensor.jpg" alt="Wireless Water Sensor"%} 
 
 ## Product Description
 The Wireless Water Sensor can sense the presence of water between the forks of the external water sensor. Usually used for flood alarms for housing, but can also be used as a rain detector.
@@ -18,19 +18,19 @@ The Wireless Water Sensor can sense the presence of water between the forks of t
 
 * There are three external parts in addition to the RF module, shown in the below diagram. The device on the right hand side of below picture is a variable analog to digital convertor that can be discarded or used for one of your other projects. 
 
-{% include image.html file="IMG_5042Sep 28, 2020" alt="Wireless Water Sensor"%} 
+{% include image.html file="IMG_5042.jpg" alt="Wireless Water Sensor"%} 
 
 {% include tip.html content="The variable analog to digital converter measures the analog reading across the two analog inputs and triggers the digital pin HIGH when the analog reading exceeds the variable setting (set by the screw adjuster).This part is not needed for this project but can be used for moisture level detection (e.g. the moisture level of soil). There is also an analog output on the device that gives you an analog reading of the moisture level." %}
 
 * Cut off the female connectors from one side of the two jumper wires provided and strip away some of the shielding.
 
-{% include image.html file="IMG_5043Sep 28, 2020" alt="Wireless Water Sensor"%} 
+{% include image.html file="IMG_5043.jpg" alt="Wireless Water Sensor"%} 
 
-{% include image.html file="IMG_5044Sep 28, 2020" alt="Wireless Water Sensor"%} 
+{% include image.html file="IMG_5044.jpg" alt="Wireless Water Sensor"%} 
 
 * Solder the two wires to the RF Module contacts labeled BTN and connect the two female jumper connectors to the forked water sensor.
 
-{% include image.html file="RF-Multi-Water.JPG" alt="Wireless Water Sensor"%} 
+{% include image.html file="RF-Multi-Water.jpg" alt="Wireless Water Sensor"%} 
 
 * The RF module is installed in the sensor enclosure by removing the two female jumper connectors and threading them through the sensor case hole and re-attaching them to the forked water sensor.
 
@@ -38,13 +38,13 @@ The Wireless Water Sensor can sense the presence of water between the forks of t
 
 * Thread the antennae through the the case enclosure and push the sensor into place within the enclose
 
-{% include image.html file="IMG_2198.JPG" alt="Wireless Water Sensor"%} 
+{% include image.html file="IMG_2198.jpg" alt="Wireless Water Sensor"%} 
 
-{% include image.html file="IMG_2208.JPG" alt="Wireless Water Sensor"%} 
+{% include image.html file="IMG_2208.jpg" alt="Wireless Water Sensor"%} 
 
 * Close the enclosure case using a Phillips screw driver
 
-{% include image.html file="IMG_2177.JPG" alt="Wireless Water Sensor"%} 
+{% include image.html file="IMG_2177.jpg" alt="Wireless Water Sensor"%} 
 
 ## Sensor testing
 * See the [testing section](sensor_testing.html) of this documentation 

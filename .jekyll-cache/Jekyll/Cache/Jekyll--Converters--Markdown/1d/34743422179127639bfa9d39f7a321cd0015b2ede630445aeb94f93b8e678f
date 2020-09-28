@@ -1,0 +1,83 @@
+I"�<figure><img class="docimage" src="images/big wireless switch.jpg" alt="Wireless Switch Sensor" /></figure>
+
+<h2 id="product-description">Product Description</h2>
+<p>The Wireless Switch Sensor can sense the opening or closing of a tactile switch. Usually used for door window sensing for alarm system, but is also the foundation for other sensors like water sensor and motion sensor.</p>
+
+<h2 id="installation">Installation</h2>
+<ul>
+  <li>Thread the tactile switch wires through the case enclosure opening and solder the two sires to the through holes labeled BTN.</li>
+</ul>
+
+<figure><img class="docimage" src="images/IMG_2187.jpg" alt="Wireless Switch Sensor" /></figure>
+
+<ul>
+  <li>
+    <p>Install battery and close enclosure as described <a href="sensor_installation.html">here</a>.</p>
+  </li>
+  <li>
+    <p>Thread the antennae through the the case enclosure and push the sensor into place within the enclose</p>
+  </li>
+</ul>
+
+<figure><img class="docimage" src="images/IMG_2198.jpg" alt="Wireless Switch Sensor" /></figure>
+
+<figure><img class="docimage" src="images/IMG_2208.jpg" alt="Wireless Switch Sensor" /></figure>
+
+<ul>
+  <li>Close the enclosure case using a Phillips screw driver</li>
+</ul>
+
+<figure><img class="docimage" src="images/IMG_2177.jpg" alt="Wireless Switch Sensor" /></figure>
+
+<h2 id="sensor-testing">Sensor testing</h2>
+<ul>
+  <li>See the <a href="sensor_testing.html">testing section</a> of this documentation</li>
+</ul>
+
+<h2 id="product-specifications">Product Specifications</h2>
+<ul>
+  <li><a href="rf_device_specs.html">Device specifications</a></li>
+</ul>
+
+<h3 id="electrical">Electrical</h3>
+<ul>
+  <li>2.2-3.3V</li>
+  <li>Powered by CR2032 coin cell battery</li>
+  <li>Can be externally powered by soldering to the 3V3 and GND through holes on the PCB</li>
+  <li>Most energy efficient when the BTN contacts are not connected, therefore use a normally closed switch to monitor a door/window that is normally closed and a normally open switch to monitor a door/window that is normally open</li>
+  <li>Tested at 288 (144 door open/door close) messages per day for 1 year on one battery</li>
+</ul>
+
+<h3 id="functional">Functional</h3>
+<ul>
+  <li>Standard JemRF wireless sensor, refer <a href="rf_basics.html">RF Communications section</a> for all the details</li>
+  <li><a href="configuration_overview.html">Highly configurable</a></li>
+  <li>Opening or closing the switch will cause the device to come out of sleep mode, transmit a reading and then go back to sleep</li>
+  <li>For Flex modules use Pin 6 and Pin 10 to connect to the external switch</li>
+</ul>
+
+<h3 id="messaging-details">Messaging details</h3>
+<ul>
+  <li>BUTTONON- (sent when the switch is open)</li>
+  <li>BUTTONOFF (sent when the switch is closed)</li>
+  <li>STATEON- (the switch state is sent every INYVL minutes if the switch is open)</li>
+  <li>STATEOFF (the switch state is sent every INTVL minutes if the switch is closed)</li>
+  <li>BUTTON (the BUTTON command requests the the switch state from the sensor)</li>
+</ul>
+
+<h3 id="physical">Physical</h3>
+<ul>
+  <li>36mm x 36mm x 15mm case size (1.42” x 1.42” x .59”)</li>
+</ul>
+
+<h2 id="default-configuration">Default configuration</h2>
+<ul>
+  <li>Type 1 (<a href="types.html">Type</a> 1 sensor)</li>
+  <li>NOMSG3 (Sends 3 switch readings every time the switch state changes)</li>
+  <li>INTVL030 (Sends the switch state every 30 minutes)</li>
+  <li>SLEEP (puts the device into <a href="sleep_modes.html">sleep mode</a>)</li>
+  <li>Refer <a href="configuration_overview.html">device configuration</a> for more details</li>
+</ul>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Did you know this sensor is also a <a href="multi function sensors.html">multi function sensor</a>?</div>
+:ET

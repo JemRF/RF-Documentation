@@ -1,0 +1,56 @@
+I"C<h2 id="sensors">Sensors</h2>
+<p>We have a growing list of sensors that you can see in the Products section of this documentation. The sensors do not require any configuration before its intended use. Each sensor comes pre-configured with settings you can find on each product page. For example if you bought a temperature sensors then it would be configured as a temperature sensor and have the required hardware.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+You can read more about sensor hardware <a href="hardware_and_firmware.html">here</a>.<br />
+</div>
+
+<p>You may, however, want to change some of the configuration of a sensor, like give it a different Device ID, or change the reporting interval. See the <a href="configuration_overiview.html">configuration section</a> of the documentation for more details on changing configuration.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+All sensors are pre-configured in a sleep mode which conserves battery power consumption. Read more about SLEEP and AWAKE functions <a href="sleep_and_wake.html">here</a>.<br />
+</div>
+
+<h3 id="battery-installation">Battery Installation</h3>
+
+<p>Insert a CR2032 coin cell battery with the flat side (+) facing upwards as show in the picture below.</p>
+
+<figure><img class="docimage" src="images/IMG_2095.jpg" alt="Install battery" /></figure>
+
+<figure><img class="docimage" src="images/IMG_2107.jpg" alt="Install battery" /></figure>
+
+<h3 id="replacing-the-battery">Replacing the Battery</h3>
+
+<p>Remove the sensor from the case using a small screw driver to lever the PCB out of the case, per diagram below.</p>
+
+<figure><img class="docimage" src="images/IMG_2218.jpg" alt="Install battery" /></figure>
+
+<p>To replace the battery use a small screw driver or some other suitable tool to push out the battery, per diagrams below.</p>
+
+<figure><img class="docimage" src="images/IMG_2117.jpg" alt="Install battery" /></figure>
+
+<figure><img class="docimage" src="images/IMG_2097.jpg" alt="Install battery" /></figure>
+
+<h3 id="opening-and-closing-the-sensor-case">Opening and Closing the Sensor Case</h3>
+
+<p>Use a Phillips head screw driver to open and close the sensor case per diagrams below.</p>
+
+<figure><img class="docimage" src="images/IMG_2177.jpg" alt="Install battery" /></figure>
+
+<figure><img class="docimage" src="images/IMG_2147.jpg" alt="Install battery" /></figure>
+
+<h3 id="inserting-the-sensor-into-the-sensor-case">Inserting the sensor into the sensor case</h3>
+
+<p>Thread the antennae through the hole inside the case and put the sensor into the case, per diagrams below.</p>
+
+<figure><img class="docimage" src="images/IMG_2157.jpg" alt="Install battery" /></figure>
+
+<figure><img class="docimage" src="images/IMG_2127.jpg" alt="Install battery" /></figure>
+
+<p>Once the antennae is threaded through the hole gently push the sensor into place.</p>
+
+<figure><img class="docimage" src="images/IMG_2167.jpg" alt="Install battery" /></figure>
+
+<figure><img class="docimage" src="images/IMG_2137.jpg" alt="Install battery" /></figure>
+
+:ET

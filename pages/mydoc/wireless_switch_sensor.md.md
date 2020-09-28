@@ -9,7 +9,7 @@ permalink: wireless_switch_sensor.html
 folder: mydoc
 ---
 
-{% include image.html file="big wireless switchSep 28, 2020" alt="Wireless Switch Sensor"%}
+{% include image.html file="big wireless switch.jpg" alt="Wireless Switch Sensor"%}
 
 
 ## Product Description
@@ -18,19 +18,19 @@ The Wireless Switch Sensor can sense the opening or closing of a tactile switch.
 ## Installation
 * Thread the tactile switch wires through the case enclosure opening and solder the two sires to the through holes labeled BTN.
 
-{% include image.html file="IMG_2187.JPG" alt="Wireless Switch Sensor"%} 
+{% include image.html file="IMG_2187.jpg" alt="Wireless Switch Sensor"%} 
 
 * Install battery and close enclosure as described [here](sensor_installation.html).
 
 * Thread the antennae through the the case enclosure and push the sensor into place within the enclose
 
-{% include image.html file="IMG_2198.JPG" alt="Wireless Switch Sensor"%} 
+{% include image.html file="IMG_2198.jpg" alt="Wireless Switch Sensor"%} 
 
-{% include image.html file="IMG_2208.JPG" alt="Wireless Switch Sensor"%} 
+{% include image.html file="IMG_2208.jpg" alt="Wireless Switch Sensor"%} 
 
 * Close the enclosure case using a Phillips screw driver
 
-{% include image.html file="IMG_2177.JPG" alt="Wireless Switch Sensor"%} 
+{% include image.html file="IMG_2177.jpg" alt="Wireless Switch Sensor"%} 
 
 
 ## Sensor testing
