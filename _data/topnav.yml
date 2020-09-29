@@ -36,6 +36,8 @@ topnav_dropdowns:
           url: /wireless_pressure_temperature_and_humidity_sensor.html
         - title: Wireless Motion Sensor
           url: /wireless_motion_sensor.html
+        - title: Wireless Light Sensor
+          url: /wireless_light_sensor.html
         - title: Flex RF Module
           url: /flex.html
         - title: IoT Gateway

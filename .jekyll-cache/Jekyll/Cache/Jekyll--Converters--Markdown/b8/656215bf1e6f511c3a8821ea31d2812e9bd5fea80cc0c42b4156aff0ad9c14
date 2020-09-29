@@ -1,0 +1,70 @@
+I"�<p><img src="images/IMG_6859.jpg" style="width:200px;" />
+<br /> 
+<img src="images/Sunrise_Graph.png" style="width:424px;" /></p>
+
+<h2 id="product-description">Product Description</h2>
+
+<ul>
+  <li>
+    <p>Battery operated wireless light sensor transmitter.</p>
+  </li>
+  <li>
+    <p>Can be used for detecting dusk/dawn or interior light levels. Typically used to trigger an event, like switch a light on/off or opening closing automatic blinds or switching anything on off.</p>
+  </li>
+  <li>
+    <p>The device transmits a value between 0 (dark) and 32,000 (light) and all light levels in between.</p>
+  </li>
+</ul>
+
+<p>The sensor is pre-configured to transmit a temperature reading every 5 minutes. The device sleeps in between transmission in order to save battery power and is awoken every 5 minutes by an internal timer. This allows the device to be used for around 1 year on a single coin cell battery. The transmission interval can be configured between 1 minute and 999 minutes. If powered externally then the device can operate in a fully awake mode and luminescence readings can be requested from the sensor in a request/reply fashion.</p>
+
+<h2 id="installation">Installation</h2>
+<p>Install battery and close enclosure as described <a href="sensor_installation.html">here</a>.</p>
+
+<h2 id="sensor-testing">Sensor testing</h2>
+<ul>
+  <li>See the <a href="sensor_testing.html">testing section</a> of this documentation</li>
+</ul>
+
+<h2 id="product-specifications">Product Specifications</h2>
+<ul>
+  <li>Photo-resistor type 5516, 100V, 540nM, 5-10K(light), 500k(dark)</li>
+  <li><a href="rf_device_specs.html">Device specifications</a></li>
+</ul>
+
+<h3 id="electrical">Electrical</h3>
+<ul>
+  <li>2.2-3.3V</li>
+  <li>Powered by CR2032 coin cell battery</li>
+  <li>Can be externally powered by soldering to the 3V3 and GND through holes on the PCB</li>
+</ul>
+
+<h3 id="functional">Functional</h3>
+<ul>
+  <li>Standard JemRF wireless sensor, refer <a href="rf_basics.html">RF Communications section</a> for all the details</li>
+  <li><a href="configuration_overview.html">Highly configurable</a></li>
+</ul>
+
+<h3 id="messaging-details">Messaging details</h3>
+<ul>
+  <li>ANA99999 (temperature reading format)</li>
+  <li>ANAA (the ANAA command requests the sensor to transmit a temperature reading)</li>
+</ul>
+
+<h3 id="physical">Physical</h3>
+<ul>
+  <li>36mm x 36mm x 15mm case size (1.42” x 1.42” x .59”)</li>
+</ul>
+
+<h2 id="default-configuration">Default configuration</h2>
+<ul>
+  <li>Type 5 (<a href="types.html">Type</a> 5 sensor)</li>
+  <li>NOMSG1 (Sends 1 temperature reading every cycle)</li>
+  <li>INTVL005 (Sends a temperature reading every 5 minutes)</li>
+  <li>CYCLE (put the device into a <a href="sleep_modes.html">timed sleep cycle</a>)</li>
+  <li>Refer <a href="configuration_overview.html">device configuration</a> for more details</li>
+</ul>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Did you know this sensor is also a <a href="multi function sensors.html">multi function sensor</a>?</div>
+
+:ET
