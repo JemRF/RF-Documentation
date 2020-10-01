@@ -14,7 +14,7 @@ topnav_dropdowns:
       folderitems:
         - title: JemRF Forum
           external_url: https://groups.google.com/forum/#!forum/privateeyepi
-        - title: FAQs HELLO
+        - title: FAQs
           url: /faq.html
         - title: Contact Us
           external_url: https://www.jemrf.com/pages/contact-us
