@@ -1,29 +1,18 @@
 ---
-title: Wireless Light Sensor
-keywords: wireless light, light, photoresistor, photo resistor, photo-resistor
+title: Wireless Temperature Sensor
+keywords: wireless temperature, temperature, sensor, 10k, thermistor
 last_updated: Sep 28, 2020
 tags:  
-summary: "This page explains the JEMRF Wireless Light Sensor"
+summary: "This page explains the JEMRF Wireless Temperature Sensor"
 sidebar: mydoc_sidebar
-permalink: wireless_light_sensor.html
+permalink: wireless_temperature_sensor.html
 folder: mydoc
 ---
 
-<img src="images/IMG_6859.jpg" style="width:200px;">
+<img src="images/wireless temperature sensor 1.jpg" width="425"/> <img src="images/wireless temperature sensor 2.jpg" width="425"/> 
 
 ## Product Description
-
-* Battery operated wireless light sensor transmitter.
-
-* Can be used for detecting dusk/dawn or interior light levels. Typically used to trigger an event, like switch a light on/off or opening closing automatic blinds or switching anything on off. 
-
-* The device transmits a value between 0 (dark) and 32,000 (light) and all light levels in between. 
-
-The sensor is pre-configured to transmit a temperature reading every 5 minutes. The device sleeps in between transmission in order to save battery power and is awoken every 5 minutes by an internal timer. This allows the device to be used for around 1 year on a single coin cell battery. The transmission interval can be configured between 1 minute and 999 minutes. If powered externally then the device can operate in a fully awake mode and luminescence readings can be requested from the sensor in a request/reply fashion.
-
-Here is a graph showing a sunrise where the reading has been converted to a value between 0 and 60:
-
-<img src="images/Sunrise_Graph.png"> 
+Wireless temperature sensor with accuracy of ~1°C accuracy. Very low power and can last up to a year on a single CR2032 coin cell battery when configured to send readings every 10 minutes. 
 
 ## Installation
 Install battery and close enclosure as described [here](sensor_installation.html).
@@ -32,7 +21,8 @@ Install battery and close enclosure as described [here](sensor_installation.html
 * See the [testing section](sensor_testing.html) of this documentation 
 
 ## Product Specifications
-* Photo-resistor type 5516, 100V, 540nM, 5-10K(light), 500k(dark)
+* ~1°C accuracy
+* 10K (NTCLE100E3103JB0) thermistor sensor
 * [Device specifications](rf_device_specs.html)
 
 ### Electrical
@@ -45,14 +35,14 @@ Install battery and close enclosure as described [here](sensor_installation.html
 * [Highly configurable](configuration_overview.html)
 
 ### Messaging details
-* ANA99999 (temperature reading format)
-* ANAA (the ANAA command requests the sensor to transmit a temperature reading)
+* TMPA99.99 (temperature reading format)
+* TEMP (the TEMP command requests the sensor to transmit a temperature reading)
 
 ### Physical
 * 36mm x 36mm x 15mm case size (1.42" x 1.42" x .59")
 
 ## Default configuration
-* Type 5 ([Type](types.html) 5 sensor)
+* Type 1 ([Type](types.html) 1 sensor)
 * NOMSG1 (Sends 1 temperature reading every cycle)
 * INTVL005 (Sends a temperature reading every 5 minutes)
 * CYCLE (put the device into a [timed sleep cycle](sleep_modes.html))
