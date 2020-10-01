@@ -1,5 +1,5 @@
 ---
-title: Frequenty asked questions
+title: Frequently Asked Questions
 keywords: help, trouble, faq, tip, tips, 
 last_updated: Oct 1, 2020
 tags:  
