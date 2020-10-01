@@ -40,7 +40,7 @@ aXXSTARTED
  - The most likely cause of this is a low battery from one of your sensors. When the battery runs low this causes the device to restart continuously because it is unable to maintain a charge to stay alive.
 
 
-### What do I do if I have lost contact with my IoT Gateway
+### What to do I do if I have lost contact with my IoT Gateway
 
  - This is most frequently caused by a configuration sent to the gateway (e.g. CHDEVID which changes the device ID, or frequency, channel or PanID were changed). You can fix this by resetting your IoT Gateway back to factory setting using the RESET command:
 
