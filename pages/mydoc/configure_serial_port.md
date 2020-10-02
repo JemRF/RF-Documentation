@@ -45,7 +45,6 @@ sudo nano /boot/config.txt
 ```
 
 Page down to the bottom of the file and add the following line:
-Add the following line:
  
 ```
 dtoverlay=pi3-disable-bt

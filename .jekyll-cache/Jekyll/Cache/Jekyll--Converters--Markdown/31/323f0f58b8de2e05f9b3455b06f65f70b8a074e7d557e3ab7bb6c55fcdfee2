@@ -1,0 +1,41 @@
+I"�<h2 id="overview">Overview</h2>
+<p>The Raspberry Pi (RPI) has the serial port (pins 8-Tx &amp; 10-Rx) configured for a login shell by default, therefore you have to configure it for serial use in order for the Wireless Gateway to communicate with the RPI.</p>
+
+<p>Open up a terminal window and type:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo raspi-config
+</code></pre></div></div>
+
+<p>Select “Interface options”</p>
+
+<p><img src="images/Interface_Options_large.png" width="425" /></p>
+
+<p>Then select “P6 Serial” option.</p>
+
+<p><img src="images/serial_large.png" width="425" /></p>
+
+<p>Say “No” to the question “Would you like a login shell to be accessible over serial”?</p>
+
+<p><img src="images/no_large.png" width="425" /></p>
+
+<p>The reply “Yes” to the question “Would you like the serial port hardware enabled?”</p>
+
+<p><img src="images/yes_large.png" width="425" /></p>
+
+<p>Exit, save and reboot (ctrl-x followed by “y”).</p>
+
+<h2 id="special-instructions-for-raspberry-pi-3--4-only">Special instructions for Raspberry Pi 3 &amp; 4 only</h2>
+<p>You need to disable Bluetooth so that the serial port will work.
+Edit config.txt</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano /boot/config.txt
+</code></pre></div></div>
+
+<p>Page down to the bottom of the file and add the following line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dtoverlay=pi3-disable-bt
+</code></pre></div></div>
+
+<p>Exit, save and reboot (ctrl-x followed by “y”).</p>
+
+:ET
