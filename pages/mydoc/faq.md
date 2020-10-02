@@ -55,8 +55,10 @@ python rf_config.py RESET -V
 - The sensors have a capacitor that can retain a charge that keeps the sensor alive. Removing the battery does not discharge the capacitor. You can safely discharge the capacitor by removing the battery and then shorting the 3V and GND marked pads. Alternately you can remove the battery and wait a few minutes for the capacitor to discharge naturally.
 
 ### My IoT Gateway does not appear to be working
+### or get the following error: "Permission denied: /dev/ttyAMA0"
+### or get the following error: "Inappropriate ioctl for device"
  - Run serial_mon.py and power up a sensor (making sure the sensor is more than 3 feet away from the gateway). If you see STARTED messages then the Gateway is likely working. 
- - Make sure you have configured the serial port correctly
+ - Make sure you have [configured the serial port correctly](configure_serial_port.html)
  - Check if there are multiple applications using the serial port. Only one application can use the serial port at a time. Do a "ps ax" and look for other programs like rfsensor.py or serial_mon.py using the serial port. You can kill background processes using the "sudo kill [pid]" command. If you have a cron job configured to autostart rfsensor.py then disable the cron job (sudo service cron stop). 
  - Check the serial port is installed (dir /dev) and look for the ttyAMA0 port. If it is not installed then revert back to the serial port configuration in point 1 above. 
  - Do a loop-back test to test if the port is working
