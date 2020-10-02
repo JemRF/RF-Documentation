@@ -32,7 +32,9 @@ The picture below show how the gateway fits on to the Raspberry Pi.
 
 3. In order to remove the gateway from the raspberry Pi power off the Raspberry Pi and then hold the Raspberry Pi firmly with one hand and gently wiggle the Gateway loose with your other hand. Wiggling it from side to side is easier than pulling it directly upwards.
 
-4. The gateway receiver uses the Raspberry Pi serial port in order to communicate. Follow this link to configure the Raspberry Pi serial port: Enable the Serial port on the Raspberry Pi
+4. The gateway receiver uses the Raspberry Pi serial port in order to communicate. 
+
+{% include important.html content="Follow [this link](configure_serial_port.html) to configure the Raspberry Pi serial port"%}
 
 ## Testing the Gateway
 
