@@ -3,7 +3,7 @@ title: Frequently Asked Questions
 keywords: help, trouble, faq, tip, tips, 
 last_updated: Oct 1, 2020
 tags:  
-summary: "This page explains contains frequently asked questions and answers"
+summary: "This page contains frequently asked questions and answers"
 sidebar: mydoc_sidebar
 permalink: faq.html
 folder: mydoc
