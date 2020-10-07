@@ -10,7 +10,7 @@ folder: mydoc
 ---
 
 ### Description
-The RFLIB library makes sending and receiving radio messages easier. Sending and receiving messages through a JemRF radio is easily achieved by reading and writing to the serial port (see this example) but this library has some more advanced features that you may need:
+The RFLIB library makes sending and receiving radio messages easier. Sending and receiving messages through a JemRF radio is easily achieved by reading and writing to the serial port (see [this example](https://github.com/JemRF/rflib/blob/master/examples/simple_tx/simple_tx.ino)) but this library has some more advanced features that you may need:
 
  - **Multiprocessing** on an Arduino is inherently difficult due to its single processor. Therefore monitoring the serial port for incoming messages as well as carrying out other tasks (e.g. switch a light on/off) can become difficult. This library implements a non-blocking, also sometimes called "round-robin", technique to ensure you never miss an in-coming radio message and can also do other processing.
  
