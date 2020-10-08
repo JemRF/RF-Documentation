@@ -87,6 +87,20 @@ rflib.transmit("a62RELAYA---",3);
  
  - This method should be placed in the loop() function within your Arduino code. Do not put code that could slow down or block this routine from being executed, otherwise you may miss some in-coming radio messages. See [Automation 1](automation1.html) for an example on how to write non-blocking code. 
  
+#### RegisterCallback(InputEvent InEvent)
+
+ - This method registers a callback routine in the user application code that is called whenever a valid LLAP message is received (and put in rflib.message_in).
+
+**Where:**
+ - *InEvent* - the name of the callback function in the user code.
+ 
+**Example:**
+```
+rflib.RegisterCallback(myFunc);
+```
+
+Also refer the code example above.
+ 
 ### Properties
 
 #### *filter_duplicates*
