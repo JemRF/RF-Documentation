@@ -176,7 +176,7 @@ entries:
       url: /thingsboard.html
       output: web, pdf
 
-  - title: Development Languages
+  - title: Development Libraries
     output: web, pdf
     folderitems:
 
@@ -185,6 +185,6 @@ entries:
       output: web, pdf
 
     - title: Python
-      url: /under_construction.html
+      url: /python_rflib.html
       output: web, pdf
 

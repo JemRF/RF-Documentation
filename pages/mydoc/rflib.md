@@ -1,6 +1,6 @@
 ---
 title: Arduino RFLIB library
-keywords: help, trouble, faq, tip, tips, 
+keywords: arduino, c++, code, rflib
 last_updated: Oct 1, 2020
 tags:  
 summary: "This page explains the Arduino RFLIB library"
@@ -22,7 +22,7 @@ The RFLIB library makes sending and receiving radio messages easier. Sending and
  
  - **Debug** your code using the debug feature that will output debug information to the serial monitor.
  
- - **Duplicate filtering** will filter duplicate messages being received.
+ - **Duplicate filtering** will filter duplicate messages received.
 
 ### Example code
 
@@ -76,7 +76,9 @@ void loop() {
 
 **Where:**
  - *message* - 12 character message that will be sent to the radio for transmission. The message should be in [LLAP format](rf_message_format.html).
- - *retries* (Optional) - When set, the message will be transmitted *retries* times when an acknowledgment is not received from the destination node. If no acknowledgment is received after *retires* times then the no_ack property is set to true.
+ - *retries* (Optional) - When set, the message will be transmitted *retries* times when an acknowledgment is not received from the destination node. If no acknowledgment is received after *retires* attempts then the got_ack property is set to false and *timeout* property set to false.
+
+**Returns:** void (nothing)
  
 **Example:**
 ```
@@ -86,6 +88,8 @@ rflib.transmit("a62RELAYA---",3);
 #### process_rf(void)
  
  - This method should be placed in the loop() function within your Arduino code. Do not put code that could slow down or block this routine from being executed, otherwise you may miss some in-coming radio messages. See [Automation 1](automation1.html) for an example on how to write non-blocking code. 
+
+**Returns:** void (nothing)
  
 #### RegisterCallback(InputEvent InEvent)
 
@@ -93,6 +97,8 @@ rflib.transmit("a62RELAYA---",3);
 
 **Where:**
  - *InEvent* - the name of the callback function in the user code.
+ 
+**Returns:** void (nothing)
  
 **Example:**
 ```
@@ -121,4 +127,15 @@ Also refer the code example above.
 #### *timeout*
  - Set to *true* if the number of *retries* has been exceeded.
 
+### Debugging
+ - Uncomment the line below to enable debug messages to be sent to the Arduino serial monitor. Make sure you have enabled the monitor in your code (see above example).
+ 
+In rflib.h change:
+```
+//#define DEBUG
+```
 
+To:
+```
+#define DEBUG
+ ```
