@@ -14,7 +14,7 @@ The RFLIB library makes sending and receiving radio messages easier. Sending and
 
  - **Multiprocessing** on an Arduino is inherently difficult due to its single processor. Therefore monitoring the serial port for incoming messages as well as carrying out other tasks (e.g. switch a light on/off) can become difficult. This library implements a non-blocking, also sometimes called "round-robin", technique to ensure you never miss an in-coming radio message and can also do other processing.
  
- - **Messaging Receipt Reliability** or also sometimes called "request-reply" messaging will retransmit messages not received by the intended recipient, and timeout after some predefined amount of retry attempts. This is useful for time when you want to ensure your messages are being received and take some action if they are not received. 
+ - **Messaging Receipt Reliability** messaging will retransmit messages not received by the intended recipient, and timeout after some predefined amount of retry attempts. This is useful for time when you want to ensure your messages are being received and take some action if they are not received. 
  
  - **Serial Port Abstraction** hides the technicality of opening closing, reading and writing to the serial port. This library has a simple transmit method you can use to transmit radio messages and a callback function that is called when a message is received.
  
