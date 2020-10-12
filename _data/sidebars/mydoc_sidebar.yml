@@ -184,7 +184,7 @@ entries:
       url: /rflib.html
       output: web, pdf
 
-    - title: Python
+    - title: Python - RFLIB Library
       url: /python_rflib.html
       output: web, pdf
 
