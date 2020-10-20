@@ -58,9 +58,6 @@ rflib.init()
  - This function reads and send data to the serial port. All incoming data from the radio module is added to an in-memory list called *message_queue*.
  - The function initiates a continuous loop that monitors the serial port that will only exit once the *event* global variable is set:
 
-**Returns**
-- Nothing
-
 ```
 event.set()
 ```
@@ -75,6 +72,9 @@ from threading import Thread
     a=Thread(target=rf2serial, args=())
     a.start()
  ```
+
+**Returns**
+ - Nothing
 
 #### getMessage() function
 - This function fetches the next message from the *message_queue* (see rf2serial function), performs some preprocessing on the data (removal of duplicates and deconstruction of the LLAP message into sub components (see below example) and returns the data through the message class.

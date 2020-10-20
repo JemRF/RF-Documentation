@@ -15,6 +15,8 @@ folder: mydoc
  - If all your sensors are not communicating then it is likely an issue with the IoT Gateway
 
  - Check the battery
+ 
+ - Make sure the battery is installed correctly with the flat side (+VE) facing up
 
 If you have your sensors communicating to PrivateEyePi you can check the battery status on the dashboard by doing a mouse over on the battery indicator. You will see the last time the battery voltage was recorded as well as the last known voltage. If the value is below 2.2V then a new battery is required.
 
