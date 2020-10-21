@@ -23,6 +23,14 @@ Download command :
 git clone https://github.com/JemRF/rf_tools.git
 ```
 
+### Install Python
+
+Raspberry Pi comes with Python 2 installed but you may need to install the following add-ons:
+
+```
+sudo apt-get install python-serial python-numpy
+```
+
 ### Upgrade
 
 Navigate to the rf_tools directory
