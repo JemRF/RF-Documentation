@@ -42,7 +42,7 @@ The SLEEP command simply puts the RF module to sleep. The device will wake when 
 
 Use the INTVL command to set the interval you want to set for the button state to be sent. When the device is put to sleep using the SLEEP command then it will wake every INTVL minutes to report the state (a03STATEON-- or a03STATEOFF-) of the button contact. 
 
-{% include important.html content="When the button contacts are bridged the device will wake and transmit the event over the radio **regardless of whether the device is in CYCLE sleep mode or SLEEP sleep mode**. This is an important feature of our devices because it allows you to combine functionality of a contact switch based sensor (like a door sensor, motion sensor or water sensor) with a cycle sleep mode sensor like temperature, pressure, humidity and analog. See the [multi-function sensor section](multi_function_sensors.html) of this documentation for more details." %} 
+{% include important.html content="When the button contacts are bridged the device will wake and transmit the event over the radio **regardless of whether the device is in CYCLE sleep mode or SLEEP sleep mode**. This is an important feature of our devices because it allows you to combine functionality of a contact switch based sensor (like a door sensor, motion sensor or water sensor) with a cycle sleep mode sensor like temperature, pressure, humidity and analog. See the [multi-function sensor section](multi function sensors.html) of this documentation for more details." %} 
 
 The example below sets the reporting interval to 25 minutes and puts the device to sleep:
 
