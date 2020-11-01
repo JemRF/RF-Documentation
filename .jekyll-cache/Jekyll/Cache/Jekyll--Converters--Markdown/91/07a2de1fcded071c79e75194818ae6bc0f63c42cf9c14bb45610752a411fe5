@@ -1,4 +1,4 @@
-I"<h3 id="description">Description</h3>
+I"�<h3 id="description">Description</h3>
 <p>The RFLIB Python library contains a series of functions that make sending and receiving radio messages easier. Sending and receiving messages through a JemRF radio is easily achieved by reading and writing to the serial port but this library has some more advanced features that you may need:</p>
 
 <ul>
@@ -33,7 +33,7 @@
   <li>serial_mon.py (a utility that print all in coming messages to the screen)</li>
   <li>rf_config.py (a utility to transmit a radio message and print the reply)</li>
   <li>rf2mqtt.py (publishes all incoming messages to an MQTT message broker)</li>
-  <li>rf2adafuitio.py (interfaces with the AdafruiIO cloud service)</li>
+  <li>rf2adafuitio.py (interfaces with the AdafruitIO cloud service)</li>
   <li>…</li>
 </ul>
 
@@ -52,16 +52,24 @@
 </ul>
 
 <p><strong>Example:</strong></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> rflib.init()
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rflib.init()
 </code></pre></div></div>
+
+<p><strong>Returns</strong></p>
+<ul>
+  <li>Nothing</li>
+</ul>
 
 <h4 id="rf2serial-function">rf2serial() function</h4>
 <ul>
   <li>This function reads and send data to the serial port. All incoming data from the radio module is added to an in-memory list called <em>message_queue</em>.</li>
-  <li>The function initiates a continuous loop that monitors the serial port that will only exit once the <em>event</em> global variable is set:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>event.set()
-</code></pre></div>    </div>
-  </li>
+  <li>The function initiates a continuous loop that monitors the serial port that will only exit once the <em>event</em> global variable is set:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>event.set()
+</code></pre></div></div>
+
+<ul>
   <li>Call this function in a thread of it’s own:</li>
 </ul>
 
@@ -73,9 +81,50 @@
     a.start()
 </code></pre></div></div>
 
+<p><strong>Returns</strong></p>
+<ul>
+  <li>Nothing</li>
+</ul>
+
 <h4 id="getmessage-function">getMessage() function</h4>
 <ul>
   <li>This function fetches the next message from the <em>message_queue</em> (see rf2serial function), performs some preprocessing on the data (removal of duplicates and deconstruction of the LLAP message into sub components (see below example) and returns the data through the message class.</li>
+</ul>
+
+<p><strong>Returns</strong></p>
+
+<ul>
+  <li><em>sensordata</em> - The sensor reading data (e.g. for the following message : a99TMP22.25- <em>sensor_data</em> will contain 22.25)</li>
+  <li><em>devID</em> - contains the two character sensor ID</li>
+  <li><em>data</em> - contains the message portion of LLAP message (e.g. TMP22.25-)</li>
+  <li><em>type</em> - a number that indicates the type of message
+    <ul>
+      <li>1 = Button</li>
+      <li>2 = State</li>
+      <li>3 = Temperature A</li>
+      <li>4 = Analog A</li>
+      <li>5 = Temperature B</li>
+      <li>6 = Temperature C</li>
+      <li>7 = Humidity</li>
+      <li>8 = Pressure</li>
+      <li>9 = Battery</li>
+      <li>10 = Analog B</li>
+    </ul>
+  </li>
+  <li><em>description</em> - a description of the message
+    <ul>
+      <li>ANAA</li>
+      <li>ANAB</li>
+      <li>BATT</li>
+      <li>BUTTON</li>
+      <li>HUM</li>
+      <li>PA</li>
+      <li>STATE</li>
+      <li>TMPA</li>
+      <li>TMPB</li>
+      <li>TMPC</li>
+    </ul>
+  </li>
 </ul>
 
 <p><strong>Example:</strong></p>
@@ -91,11 +140,11 @@ if message.sensordata &lt;&gt; "":
 <h4 id="add-items-to-the-transmission_queue-to-transmit-radio-messages-see-also-the-request_reply-function">Add items to the <em>transmission_queue</em> to transmit radio messages (see also the <em>request_reply</em> function)</h4>
 <ul>
   <li>This method of transmitting a radio message simply transmits the LLAP message provided per example below.</li>
-  <li>If you want to monitor for a reply message then you can do it using the <em>getMessage()</em> function but rather use the <em>request_reply()</em> function
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rflib.transmission_queue.insert(0,"a80HELLO----")
-</code></pre></div>    </div>
-  </li>
+  <li>If you want to monitor for a reply message then you can do it using the <em>getMessage()</em> function but rather use the <em>request_reply()</em> function</li>
 </ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rflib.transmission_queue.insert(0,"a80HELLO----")
+</code></pre></div></div>
 
 <h4 id="request_replycommand">request_reply(command)</h4>
 <ul>
@@ -116,7 +165,7 @@ if message.sensordata &lt;&gt; "":
   <li>message : a list of LLAP message content</li>
 </ul>
 
-<p><em>*Example:</em></p>
+<p><strong>Example:</strong></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>request=request_reply("a80HELLO----") 
 if (request.rt==1):
@@ -124,7 +173,7 @@ if (request.rt==1):
         print "RECEIVED : " + str(request.id[x]) + str(request.message[x])
 </code></pre></div></div>
 
-<h4 id="debugging">Debugging</h4>
+<h3 id="debugging">Debugging</h3>
 <ul>
   <li>Set the following global variable in rflib.py in order to print debug data to the screen:</li>
 </ul>

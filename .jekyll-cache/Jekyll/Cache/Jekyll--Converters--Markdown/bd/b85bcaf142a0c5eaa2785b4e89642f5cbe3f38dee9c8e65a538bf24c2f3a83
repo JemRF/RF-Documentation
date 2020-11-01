@@ -1,4 +1,4 @@
-I"²<h3 id="install-git-if-you-dont-have-it">Install GIT if you donâ€™t have it</h3>
+I"ö<h3 id="install-git-if-you-dont-have-it">Install GIT if you donâ€™t have it</h3>
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">sudo</span> <span class="nx">apt</span><span class="o">-</span><span class="kd">get</span> <span class="nx">install</span> <span class="nx">git</span>
 </code></pre></div></div>
 
@@ -8,6 +8,13 @@
 Download command :</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">git</span> <span class="nx">clone</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//github.com/JemRF/rf_tools.git</span>
+</code></pre></div></div>
+
+<h3 id="install-python">Install Python</h3>
+
+<p>Raspberry Pi comes with Python 2 installed but you may need to install the following add-ons:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install python-serial python-numpy
 </code></pre></div></div>
 
 <h3 id="upgrade">Upgrade</h3>

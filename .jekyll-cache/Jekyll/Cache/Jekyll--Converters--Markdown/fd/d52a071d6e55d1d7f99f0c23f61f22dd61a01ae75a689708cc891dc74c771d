@@ -37,7 +37,7 @@ RECEIVED : 03SLEEPING-
 
 <p>Use the INTVL command to set the interval you want to set for the button state to be sent. When the device is put to sleep using the SLEEP command then it will wake every INTVL minutes to report the state (a03STATEON– or a03STATEOFF-) of the button contact.</p>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> When the button contacts are bridged the device will wake and transmit the event over the radio <strong>regardless of whether the device is in CYCLE sleep mode or SLEEP sleep mode</strong>. This is an important feature of our devices because it allows you to combine functionality of a contact switch based sensor (like a door sensor, motion sensor or water sensor) with a cycle sleep mode sensor like temperature, pressure, humidity and analog. See the <a href="multi_function_sensors.html">multi-function sensor section</a> of this documentation for more details.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> When the button contacts are bridged the device will wake and transmit the event over the radio <strong>regardless of whether the device is in CYCLE sleep mode or SLEEP sleep mode</strong>. This is an important feature of our devices because it allows you to combine functionality of a contact switch based sensor (like a door sensor, motion sensor or water sensor) with a cycle sleep mode sensor like temperature, pressure, humidity and analog. See the <a href="multi function sensors.html">multi-function sensor section</a> of this documentation for more details.</div>
 
 <p>The example below sets the reporting interval to 25 minutes and puts the device to sleep:</p>
 

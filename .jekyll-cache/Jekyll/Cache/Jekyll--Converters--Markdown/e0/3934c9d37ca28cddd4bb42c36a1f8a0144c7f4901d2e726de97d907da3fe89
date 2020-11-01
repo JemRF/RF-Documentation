@@ -1,4 +1,4 @@
-I"æ<p>The Personal Area Network ID (PanID) defines the ID associate with the network of sensors. As defined in the <a href="index.html">Overview Section</a> you can have groups of sensors assigned to different networks. This enables you to sub-divide your sensor networks and direct traffic to specific receivers. The PanID is a 5 digit numeric (00000-99999).</p>
+I"ä<p>The Personal Area Network ID (PanID) defines the ID associate with the network of sensors. As shown in the <a href="index.html">Overview Section</a> you can group sensors by assigning them to different networks. This enables you to sub-divide your sensor networks and direct traffic to specific receivers. The PanID is a 5 digit numeric (00000-99999).</p>
 
 <p>For two devices to communicate they must have the same <a href="frequency.html">Frequency</a> and <a href="channel.html">channel</a> and PanID.</p>
 

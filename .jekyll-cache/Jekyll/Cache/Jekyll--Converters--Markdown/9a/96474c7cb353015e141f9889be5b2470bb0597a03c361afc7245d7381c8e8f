@@ -1,0 +1,55 @@
+I"�<p><img src="images/wireless light sensor.jpg" width="425" /></p>
+
+<h2 id="product-description">Product Description</h2>
+<p>The device transmits a value between 0 (dark) and 32,000 (light) and all light levels in between. Very low power and can last up to a year on a single CR2032 coin cell battery when configured to send readings every 10 minutes.</p>
+
+<h2 id="installation">Installation</h2>
+<p>Install battery and close enclosure as described <a href="sensor_installation.html">here</a>.</p>
+
+<h2 id="sensor-testing">Sensor testing</h2>
+<ul>
+  <li>See the <a href="sensor_testing.html">testing section</a> of this documentation</li>
+</ul>
+
+<h2 id="product-specifications">Product Specifications</h2>
+<ul>
+  <li>Photo-resistor 5516 100V 540mm Light 5-10k Dark 500k</li>
+  <li><a href="rf_device_specs.html">Device specifications</a></li>
+</ul>
+
+<h3 id="electrical">Electrical</h3>
+<ul>
+  <li>2.2-3.3V</li>
+  <li>Powered by CR2032 coin cell battery</li>
+  <li>Can be externally powered by soldering to the 3V3 and GND through holes on the PCB</li>
+</ul>
+
+<h3 id="functional">Functional</h3>
+<ul>
+  <li>Standard JemRF wireless sensor, refer <a href="rf_basics.html">RF Communications section</a> for all the details</li>
+  <li><a href="configuration_overview.html">Highly configurable</a></li>
+</ul>
+
+<h3 id="messaging-details">Messaging details</h3>
+<ul>
+  <li>ANAA99.99 (analog reading format)</li>
+  <li>ANAA (the ANAA command requests the sensor to transmit an analog reading)</li>
+</ul>
+
+<h3 id="physical">Physical</h3>
+<ul>
+  <li>36mm x 36mm x 15mm case size (1.42” x 1.42” x .59”)</li>
+</ul>
+
+<h2 id="default-configuration">Default configuration</h2>
+<ul>
+  <li>Type 5 (<a href="types.html">Type</a> 5 sensor)</li>
+  <li>NOMSG1 (Sends 1 luminescence reading every cycle)</li>
+  <li>INTVL005 (Sends a reading every 5 minutes)</li>
+  <li>CYCLE (put the device into a <a href="sleep_modes.html">timed sleep cycle</a>)</li>
+  <li>Refer <a href="configuration_overview.html">device configuration</a> for more details</li>
+</ul>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Did you know this sensor is also a <a href="multi function sensors.html">multi function sensor</a>?</div>
+
+:ET
