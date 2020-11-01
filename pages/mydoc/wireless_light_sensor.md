@@ -9,7 +9,7 @@ permalink: wireless_light_sensor.html
 folder: mydoc
 ---
 
-<img src="images/wireless light sensor.jpg" width="425"/> 
+<img src="images/wireless light sensor.jpg" width="225"/> 
 
 ## Product Description
 The device transmits a value between 0 (dark) and 32,000 (light) and all light levels in between. Very low power and can last up to a year on a single CR2032 coin cell battery when configured to send readings every 10 minutes. 
