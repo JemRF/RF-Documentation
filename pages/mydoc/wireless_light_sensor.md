@@ -1,11 +1,11 @@
 ---
-title: Wireless Temperature Sensor
+title: Wireless Light Sensor
 keywords: wireless temperature, temperature, sensor, 10k, thermistor
 last_updated: Sep 28, 2020
 tags:  
 summary: "This page explains the JEMRF Wireless Temperature Sensor"
 sidebar: mydoc_sidebar
-permalink: wireless_temperature_sensor.html
+permalink: wireless_light_sensor.html
 folder: mydoc
 ---
 
