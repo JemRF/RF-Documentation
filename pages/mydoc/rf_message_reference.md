@@ -34,6 +34,8 @@ folder: mydoc
 | `MX[4 chars]` <br/> `(Version 5 and up)` |  Provides configuration for the wireless display MAZ7219. The four character configuration is as follows: 1 : “T” = display incoming temperature and humidity readings 2&3 : the ID of the sensor transmitting the temperature and humidity readings 4 : the suffix (e.g. “c” or “F”). Can be any character (means display temperature readings from sensor ID 99 in Fahrenheit) | `a99MXT99F---` |
 | `NOMSG[num]` <br/> `E.g. NOMSG3` | A numeric value between 1 and 9 that specifies how many messages to be sent after each trigger or request. |  `a99NOMSG9---` |
 | `PREAMBLE[num]` | A numeric value 1 or 0. If set to 1 then the device will add additional message data to the serial port. <br/> [Index][PanID][Message][RSSI][LQI] <br/> Index - Packet Length <br/> PanID - Refer PanID section <br/> Message - 12 character message <br/> RSSI - Received Signal Strength Indicator in dBm <br/> LQI - The Link Quality Indicator estimates how easily a received signal can be demodulated | `a99PREAMBLE9` |
+| `RELAYA` |  Returns the status of relay A | `a99RELAYAON-` or `a99RELAYAOFF` |
+| `RELAYB` |  Returns the status of relay B | `a99RELAYBON-` or `a99RELAYBOFF` |
 | `RELAYAON` |  Switches Relay A on | `a99RELAYAON-` |
 | `RELAYAOFF` |  Switches Relay A off | `a99RELAYAOFF` |
 | `RELAYBON` |  Switches Relay B on | `a99RELAYBON-` |
