@@ -1,0 +1,37 @@
+I"<h2 id="description">Description</h2>
+
+<p>Below are some pictures of a remote switch project that is used to switch on/off whatever is connected to the power output of the extension power cable. The extension power cable has been cut in the middle and spliced with this remote controlled switch. Useful for controlling lights.</p>
+
+<p>The case is a beautiful weather resistant and rugged project box with transparent case. Inside are a number of components described in the second picture and listed below.</p>
+
+<p><img src="images/IMG_0192.jpg" width="425" /></p>
+
+<p><img src="images/IMG_0194.jpg" width="425" /></p>
+
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> This project does require knowledge in working with high voltage. If you are not experienced in this regard you should avoid this project or get assistance from a qualified electrician. It should go without saying but I’ll say it anyway : High voltages can kill you or cause fires</div>
+
+<h2 id="parts">Parts</h2>
+
+<ol>
+  <li>Case - Wireless Switch Tool Accessories Case Outdoor Cable IP66 Waterproof Junction Box For Lights Smart Home Practical Wire Connector. <a href="https://www.aliexpress.com/item/4000101862722.html?spm=a2g0s.9042311.0.0.27424c4dYoWxCo">Aliexpress link</a>.</li>
+  <li><a href="https://www.jemrf.com/collections/rf-sensors/products/flex-rf-module">Flex Radio module</a>.</li>
+  <li><a href="https://www.jemrf.com/collections/rf-sensors/products/wireless-developer-board-case">Wireless developer board</a>.</li>
+  <li><a href="https://www.ebay.com/itm/AC-DC-110V-220V-230V-to-3-3V-5V-9V-12V-15V-24V-Step-Down-Converter-Power-Supply/192281294606?ssPageName=STRK%3AMEBIDX%3AIT&amp;_trksid=p2057872.m2749.l2649">110V AC to 5V DC step down</a>.</li>
+  <li><a href="https://www.jemrf.com/collections/accessories/products/dc-5v-to-3-3v-step-down">5v to 3.3V step down</a>.</li>
+  <li><a href="https://www.jemrf.com/collections/accessories/products/relay-for-raspberry-pi-or-arduino-1-channel-5v-relay-module-250v-10a">Relay Module</a>.</li>
+  <li>NPN222A transistor.</li>
+  <li>10k resistor.</li>
+  <li>2 connector screw terminals.</li>
+  <li>A standard extension power cable that has been cut in half and wires stripped.</li>
+</ol>
+
+<h2 id="wiring">Wiring</h2>
+<p>This <a href="https://www.jemrf.com/pages/how-to-use-the-flex-module-for-remote-control">tutorial</a> describes how to use the Flex radio module for remote control and how to construct the circuit. Note that some of the parts in the list above are not displayed in the above picture because the parts are on the underside or the developer board.</p>
+
+<h2 id="application-integration">Application integration</h2>
+<p>See the integration section of the <a href="https://www.jemrf.com/pages/documentation">JemRF Documentation</a> for details on how to integrate this remote switch with the application of your choice (e.g. Home Assistant, AdafruitIO, Blynk, PrivatetePi, Thingsboard etc…).</p>
+
+<h2 id="code">Code</h2>
+<p>See <a href="https://github.com/JemRF/rf_tools/blob/master/rf2ha.py">this example</a> code for how to integrate this remote switch with Home Assistant. This will allow you to switch the device on/off from the Home Assistant dashboard and also create automations like switching a light on on sunset and light off on sunrise.</p>
+
+:ET
