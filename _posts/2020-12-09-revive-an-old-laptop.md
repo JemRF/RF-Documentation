@@ -63,38 +63,38 @@ Once you are passed step 3 the rest is a breeze. You will see the following scre
 Select "Install Lubuntu from the menu".
 
 Select your preferred language:
-<img src="images/IMG_0173.JPG" width="425"/>
+<img src="images/IMG_0173.jpg" width="425"/>
 
 Select your keyboard layout
-<img src="images/IMG_0175.JPG" width="425"/>
+<img src="images/IMG_0175.jpg" width="425"/>
 
 You can enter your wi-fi details here and it will download the latest updates but I prefer to do that later, so select "I don't want to connect to a wi-fi right now"
 
 ### (Optional) Connect to wi-fi
-<img src="images/IMG_0176.JPG" width="425"/>
+<img src="images/IMG_0176.jpg" width="425"/>
 
 ### Installation type
 Select "Erase disk and install Lubuntu". 
 
 {% include note.html content="you can select the *something else* option and if you have free disk space on a partition then you can create a dual boot system that gives you a menu when you PC boots where you can choose whether you want Ubuntu or your previous Windows. I did do this on one of my laptops and is works fine, but for the purposes of this tutorial we will go with the *Erase disk and install Lubuntu* option."%}
 
-<img src="images/IMG_0178.JPG" width="425"/>
+<img src="images/IMG_0178.jpg" width="425"/>
 
 
 Select "continue".
 
-<img src="images/IMG_0184.JPG" width="425"/>
+<img src="images/IMG_0184.jpg" width="425"/>
 
 ### Where are you?
 Select your time-zone from from the map.
-<img src="images/IMG_0185.JPG" width="425"/>
+<img src="images/IMG_0185.jpg" width="425"/>
 
 Enter the personal details of the user (name, user name and password).
-<img src="images/IMG_0186.JPG" width="425"/>
+<img src="images/IMG_0186.jpg" width="425"/>
 
 ### All done!
 The installation takes about 10 mins.
-<img src="images/IMG_0187.JPG" width="425"/>
+<img src="images/IMG_0187.jpg" width="425"/>
 
 ## Setup your operating system
 Now that you have Lubuntu installed there is a small learning curve to get used to the new interface. I found it fairly intuitive but there were a couple things I need to research so I have included them below to get you up and running quickly. 
