@@ -58,7 +58,7 @@ Insert the USB key into your old laptop or PC. The next step differs from PC to 
 
 Once you are passed step 3 the rest is a breeze. You will see the following screen:
 
-<img src="images/IMG_0172.JPG" width="425"/>
+<img src="images/IMG_0172.jpg" width="425"/>
 
 Select "Install Lubuntu from the menu".
 
