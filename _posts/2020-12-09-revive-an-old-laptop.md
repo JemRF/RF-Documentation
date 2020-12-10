@@ -42,7 +42,7 @@ Use a disk imaging tool to copy the image you downloaded in step 1 to your USB k
 Download Etcher from here: [https://www.balena.io/etcher/](https://www.balena.io/etcher/)
 
 Launch the Etcher application and click "Flash from file" option and select the file you downloaded in step 1. 
-<img src="images/Etcher-1.PNG" width="425"/>
+<img src="images/Etcher-1.png" width="425"/>
 
 Insert your USB key and it should be detected. If not then click "Change" and select the USB drive. Then click "Flash!".
 
@@ -105,7 +105,7 @@ In the bottom right tray there is a wi-fi indicator that you can left-click and 
 ### Open a browser 
 The standard browser is Mozilla Firefox, but I prefer Google Chrome so I have included steps below for how to install Chrome. You should be able to perform all your usual acitvities in the browser like access your email, use online streaming applications, Office 365, Google Docs etc...
 
-<img src="images/image_1.PNG" width="425"/>
+<img src="images/image_1.png" width="425"/>
 
 ### How to install new applications
 Installation of new applications is a little different to Windows. Firstly, Windows applications can't be installed on Linux. However Linux is starting to be supported by the mainstream software houses and you can find Linux clients for mostly anything. For example below are the steps to install the MS-Teams client, Zoom client and Google Chrome.
@@ -123,43 +123,43 @@ The below examples follow these 5 steps.
 ### Install Chrome
 Install Chrome by using the Firefox browser to go to www.google.com and search up "Download Chrome". Then download the 64-bit Debain/Ubuntu .DEB file.
 
-<img src="images/image_10.PNG" width="425"/>
+<img src="images/image_10.png" width="425"/>
 
 Click the "Save file" option. This will save the file to the download folder in File Manager.
 
-<img src="images/image_9.PNG" width="425"/>
+<img src="images/image_9.png" width="425"/>
 
 Open up File Manager (left hand side of the system tray) and open the Downloads folder. Right click the chrom .DEB file and click "Install Software".
-<img src="images/image_8.PNG" width="425"/>
+<img src="images/image_8.png" width="425"/>
 
 Click install.
-<img src="images/image_7.PNG" width="425"/>
+<img src="images/image_7.png" width="425"/>
 
 ### Install Zoom
 
 Browse to the Zoom downloads page and select Ubuntu, 64 bit, and the latest version. Click Download and do the same steps shown above.
 
-<img src="images/image_6.PNG" width="425"/>
+<img src="images/image_6.png" width="425"/>
 
 ### Install MS-Teams
 
 Browse to the Teams downloads page and select Linux Debian (64-bit). Do the same steps shown above in the Chrome installation. 
 
-<img src="images/image_5.PNG" width="425"/>
+<img src="images/image_5.png" width="425"/>
 
 Start Teams by clicking the start button (bottom left in the system tray) and the "Run from this computer" option and type Teams and then click OK. You should see the following pop-up where you can log into your Teams account.
 
-<img src="images/image_4.PNG" width="425"/>
+<img src="images/image_4.png" width="425"/>
 
 
 ### Install a printer
 
 Plug your printer into the computer and select Start, then System Tools, then Printers. Click "Add".
 
-<img src="images/image_3.PNG" width="425"/>
+<img src="images/image_3.png" width="425"/>
 
 Your printer should be automatically detected. Select your printer and then click "Forward". You will be able to print a test page and then complete the setup.
-<img src="images/image_2.PNG" width="425"/>
+<img src="images/image_2.png" width="425"/>
 
 
 
