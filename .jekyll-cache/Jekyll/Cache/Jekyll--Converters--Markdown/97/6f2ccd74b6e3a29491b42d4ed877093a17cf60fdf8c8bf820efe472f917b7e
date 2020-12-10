@@ -1,0 +1,89 @@
+I"�<h2 id="introduction">Introduction</h2>
+
+<p>The COVID lock down has us all glued to our devices and the hunt is on for new devices for everyone in the family. After looking at new PC’s, laptops, Chromebooks and Macbooks I decided to look into installing Linux on a couple of old laptops I have lying around. Microsoft was very keen to get us all to upgrade to Windows 10 but I found that my old laptop (Acer Aspire V5-471, 1.90Ghz, i3, 4GB memory) was so slow it was basically unusable with MS-Windows so it got thrown on the heap of old electronics and forgotten.</p>
+
+<p>I know what you must be thinking - Linux - really?? - visions of green font terminals with no graphics and complicated command line arguments! Linux has progressed leaps and bounds over the years and is now a very easy to install and has a Windows-like graphical interface that is very easy to use. But most importantly Linux is <strong>FAST</strong>.</p>
+
+<p>I have managed to revive two old laptops, the Acer mentioned above and also an old HP-G60 that only gas 2GB memory. Both run fast and I am able to access all my web applications (Office 365, Google Docs, Google Drive, Netflix, Disney++ etc…) without any problems at all. And most importantly no staring at the Windows hourglass for things to load.</p>
+
+<h2 id="what-you-will-need">What you will need</h2>
+
+<ul>
+  <li>An old PC or laptop (not Macbook unfortunately)</li>
+  <li>A 4GB USB stick (although 2GB is probably good enough)</li>
+</ul>
+
+<h2 id="1-download-a-linux-distribution">1. Download a Linux distribution.</h2>
+
+<p>The first step is to download a Linux image that we will burn on to the USB drive. There are many Linux based operating systems out there but we will be using Ubuntu. Ubuntu has may distributions but I chose Lububtu because of its clean and simple user interface, easy of installation and lightweight footprint.</p>
+
+<p>You can see the various  Ubuntu ditros here:</p>
+
+<p><a href="http://cdimage.ubuntu.com">http://cdimage.ubuntu.com</a></p>
+
+<p>In this tutorial I am using Lubuntu 18.04.5 LTS (Bionic Beaver), that can be downloaded here:</p>
+
+<p><a href="http://cdimage.ubuntu.com/lubuntu/releases/18.04.5/release/">http://cdimage.ubuntu.com/lubuntu/releases/18.04.5/release/</a></p>
+
+<h2 id="create-a-cd-image">Create a CD image</h2>
+<p>https://www.balena.io/etcher/</p>
+
+<p><img src="images/Etcher-1.PNG" width="425" />
+<img src="images/Etcher-2.png" width="425" /></p>
+
+<p>Takes about 5 mins to burn and validate the image.</p>
+
+<h2 id="update-bios-to-boot-from-usb">Update BIOS to boot from USB</h2>
+
+<h2 id="lubuntu-installation">Lubuntu installation</h2>
+
+<h3 id="select-install-lubuntu-from-the-menu">Select “Install Lubuntu from the menu”</h3>
+<p><img src="images/IMG_0172.JPG" width="425" /></p>
+
+<h3 id="select-your-preferred-language">Select your preferred language</h3>
+<p><img src="images/IMG_0173.JPG" width="425" /></p>
+
+<h3 id="select-your-keyboard-layout">Select your keyboard layout</h3>
+<p><img src="images/IMG_0175.JPG" width="425" /></p>
+
+<h3 id="optional-connect-to-wifi">(Optional) Connect to WIFI</h3>
+<p><img src="images/IMG_0176.JPG" width="425" /></p>
+
+<h3 id="updates-and-other-software">Updates and other software</h3>
+<p><img src="images/IMG_0178.JPG" width="425" /></p>
+
+<h3 id="installation-type">Installation type</h3>
+<p><img src="images/IMG_0184.JPG" width="425" /></p>
+
+<h3 id="where-are-you">Where are you?</h3>
+<p><img src="images/IMG_0185.JPG" width="425" />
+<img src="images/IMG_0186.JPG" width="425" /></p>
+
+<h3 id="all-done">All done!</h3>
+<p><img src="images/IMG_0187.JPG" width="425" /></p>
+
+<h2 id="setup-your-operating-system">Setup your operating system</h2>
+
+<h3 id="connect-to-wifi">Connect to WIFI</h3>
+<h3 id="open-a-browser">Open a browser</h3>
+<p><img src="images/image_1.PNG" width="425" /></p>
+
+<h3 id="how-to-install-new-applications">How to install new applications</h3>
+<h3 id="install-chrome">Install Chrome</h3>
+<p><img src="images/image_10.PNG" width="425" />
+<img src="images/image_9.PNG" width="425" />
+<img src="images/image_8.PNG" width="425" />
+<img src="images/image_7.PNG" width="425" /></p>
+
+<h3 id="install-zoom">Install Zoom</h3>
+<p><img src="images/image_6.PNG" width="425" /></p>
+
+<h3 id="install-ms-teams">Install MS-Teams</h3>
+<p><img src="images/image_5.PNG" width="425" />
+<img src="images/image_4.PNG" width="425" /></p>
+
+<h3 id="install-a-printer">Install a printer</h3>
+<p><img src="images/image_3.PNG" width="425" />
+<img src="images/image_2.PNG" width="425" /></p>
+
+:ET

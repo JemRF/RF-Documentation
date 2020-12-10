@@ -1,0 +1,157 @@
+I"w%<h2 id="introduction">Introduction</h2>
+
+<p>The COVID lock down has us all glued to our devices and the hunt is on for new devices for everyone in the family. After looking at new PC’s, laptops, Chrome-books and Mac-books I decided to look into installing Linux on a couple of old laptops I have lying around. Microsoft was very keen to get us all to upgrade to Windows 10 but I found that my old laptop (Acer Aspire V5-471, 1.90Ghz, i3, 4GB memory) was so slow it was basically unusable with MS-Windows so it got thrown on the heap of old electronics and forgotten.</p>
+
+<p>I know what you must be thinking - Linux - really?? - visions of green font terminals with no graphics and complicated command line arguments! Linux has progressed leaps and bounds over the years and is now a very easy to install and has a Windows-like graphical interface that is very easy to use. But most importantly Linux is <strong>FAST</strong> on old hardware!</p>
+
+<p>I have managed to revive two old laptops, the Acer mentioned above and also an old HP-G60 that only gas 2GB memory. Both run fast and I am able to access all my web applications (Office 365, Google Docs, Google Drive, Netflix, Disney++ etc…) without any problems at all. And most importantly no staring at the Windows hourglass for things to load.</p>
+
+<h2 id="what-you-will-need">What you will need</h2>
+
+<ul>
+  <li>An old PC or laptop (not Macbook unfortunately)</li>
+  <li>A 4GB USB stick (although 2GB is probably good enough)</li>
+</ul>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Make sure you backup your files from the old PC before proceeding. Your hard drive is going to get wiped in this installation.</div>
+
+<h2 id="1-download-a-linux-distribution">1. Download a Linux distribution.</h2>
+
+<p>The first step is to download a Linux image that we will burn on to the USB drive. There are many Linux based operating systems out there but we will be using Ubuntu. Ubuntu has may distributions but I chose Lububtu because of its clean and simple user interface, easy of installation and lightweight footprint.</p>
+
+<p>You can see the various  Ubuntu ditros here:</p>
+
+<p><a href="http://cdimage.ubuntu.com">http://cdimage.ubuntu.com</a></p>
+
+<p>In this tutorial I am using Lubuntu 18.04.5 LTS (Bionic Beaver), that can be downloaded here:</p>
+
+<p><a href="http://cdimage.ubuntu.com/lubuntu/releases/18.04.5/release/">http://cdimage.ubuntu.com/lubuntu/releases/18.04.5/release/</a></p>
+
+<p>You can download a 32-bit version or 64-bit version. I downloaded the 64-bit version. Even though it says its for AMD architecture it works fine on Intel processors too.</p>
+
+<h2 id="2-create-a-cd-image">2. Create a CD image</h2>
+<p>Use a disk imaging tool to copy the image you downloaded in step 1 to your USB key. I like the Etcher tool.</p>
+
+<p>Download Etcher from here: <a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a></p>
+
+<p>Launch the Etcher application and click “Flash from file” option and select the file you downloaded in step 1. 
+<img src="images/Etcher-1.PNG" width="425" /></p>
+
+<p>Inset your USB key and it should be detected. If not then click “Change” and select the USB drive. Then click “Flash!”.</p>
+
+<p><img src="images/Etcher-2.png" width="425" /></p>
+
+<p>It will take about 5 mins to burn and validate the image.</p>
+
+<h2 id="3-update-bios-to-boot-from-usb">3. Update BIOS to boot from USB</h2>
+
+<p>Insert the USB key into your old laptop or PC. The next step differs from PC to PC and is probably the hardest step in this tutorial. You need to tell your old PC to boot up from the USB key. The step usually entails hitting a key, like ESC or DEL right after you power up the PC. If you don’t know how to boot from USB key then see this tutorial from <a href="https://www.tomshardware.com/reviews/bios-keys-to-access-your-firmware,5732.html">Tom’s Hardware</a>. Once you are in the BIOS then look for the option that specifies boot order and change it to boot up from the USB drive (sometimes called USB_HDD).</p>
+
+<h2 id="4-lubuntu-installation">4. Lubuntu installation</h2>
+
+<p>Once you are passed step 3 the rest is a breeze. You will see the following screen:</p>
+
+<p><img src="images/IMG_0172.JPG" width="425" /></p>
+
+<p>Select “Install Lubuntu from the menu”.</p>
+
+<p>Select your preferred language:
+<img src="images/IMG_0173.JPG" width="425" /></p>
+
+<p>Select your keyboard layout
+<img src="images/IMG_0175.JPG" width="425" /></p>
+
+<p>You can enter your wi-fi details here and it will download the latest updates but I prefer to do that later, so select “I don’t want to connect to a wi-fi right now”</p>
+
+<h3 id="optional-connect-to-wi-fi">(Optional) Connect to wi-fi</h3>
+<p><img src="images/IMG_0176.JPG" width="425" /></p>
+
+<h3 id="installation-type">Installation type</h3>
+<p>Select “Erase disk and install Lubuntu”.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> you can select the <em>something else</em> option and if you have free disk space on a partition then you can create a dual boot system that gives you a menu when you PC boots where you can choose whether you want Ubuntu or your previous Windows. I did do this on one of my laptops and is works fine, but for the purposes of this tutorial we will go with the <em>Erase disk and install Lubuntu</em> option.</div>
+
+<p><img src="images/IMG_0178.JPG" width="425" /></p>
+
+<p>Select “continue”.</p>
+
+<p><img src="images/IMG_0184.JPG" width="425" /></p>
+
+<h3 id="where-are-you">Where are you?</h3>
+<p>Select your time-zone from from the map.
+<img src="images/IMG_0185.JPG" width="425" /></p>
+
+<p>Here you enter the personal details of the user (name, user name and password).
+<img src="images/IMG_0186.JPG" width="425" /></p>
+
+<h3 id="all-done">All done!</h3>
+<p>The installation takes about 10 mins.
+<img src="images/IMG_0187.JPG" width="425" /></p>
+
+<h2 id="setup-your-operating-system">Setup your operating system</h2>
+<p>Now that you have Lubuntu installed there is a small learning curve to get used to the new interface. I found it fairly intuitive but there were a couple things I need to research so I have included them below to get you up and running quickly.</p>
+
+<h3 id="connect-to-wi-fi">Connect to wi-fi</h3>
+<p>In the bottom right tray there is a wi-fi indicator that you can left-click and a menu will pop-up where you can select your wi-fi SSID and enter your wi-fi password.</p>
+
+<h3 id="open-a-browser">Open a browser</h3>
+<p>The standard browser is Mozilla Firefox, but I prefer Google Chrome so I have included steps below for how to install Chrome. You should be able to perform all your usual acitvities in the browser like access your email, use online streaming applications, Office 365, Google Docs etc…</p>
+
+<p><img src="images/image_1.PNG" width="425" /></p>
+
+<h3 id="how-to-install-new-applications">How to install new applications</h3>
+<p>Installation of new applications is a little different to Windows. Firstly, Windows applications can’t be installed on Linux. However Linux is starting to be supported by the mainstream software houses and you can find Linux clients for mostly anything. For example below are the steps to install the MS-Teams client, Zoom client and Google Chrome.</p>
+
+<p>The steps to install a new application are:</p>
+
+<ol>
+  <li>Download the .DEB file</li>
+  <li>Open the File Manager (left hand side of the system tray)</li>
+  <li>Select the Downloads folder</li>
+  <li>Right click the .DEB file and click “Install Software”</li>
+  <li>Follow the on screen prompts</li>
+</ol>
+
+<p>The below examples follow these 5 steps.</p>
+
+<h3 id="install-chrome">Install Chrome</h3>
+<p>Install Chrome by using the Firefox browser to go to www.google.com and search up “Download Chrome”. Then download the 64-bit Debain/Ubuntu .DEB file.</p>
+
+<p><img src="images/image_10.PNG" width="425" /></p>
+
+<p>Click the “Save file” option. This will save the file to the download folder in File Manager.</p>
+
+<p><img src="images/image_9.PNG" width="425" /></p>
+
+<p>Open up File Manager (left hand side of the system tray) and open the Downloads folder. Right click the chrom .DEB file and click “Install Software”.
+<img src="images/image_8.PNG" width="425" /></p>
+
+<p>Click install.
+<img src="images/image_7.PNG" width="425" /></p>
+
+<h3 id="install-zoom">Install Zoom</h3>
+
+<p>Browse to the Zoom downloads page and select Ubuntu, 64 bit, and the latest version. Click Download and do the same steps shown above.</p>
+
+<p><img src="images/image_6.PNG" width="425" /></p>
+
+<h3 id="install-ms-teams">Install MS-Teams</h3>
+
+<p>Browse to the Teams downloads page and select Linux Debian (64-bit). Do the same steps shown above in the Chrome installation.</p>
+
+<p><img src="images/image_5.PNG" width="425" /></p>
+
+<p>Start Teams by clicking the start button (bottom left in the system tray) and the “Run from this computer” option and type Teams and then click OK. You should see the following pop-up where you can log into your Teams account.</p>
+
+<p><img src="images/image_4.PNG" width="425" /></p>
+
+<h3 id="install-a-printer">Install a printer</h3>
+
+<p>Plug your printer into the computer and select Start, then System Tools, then Printers. Click “Add”.</p>
+
+<p><img src="images/image_3.PNG" width="425" /></p>
+
+<p>Your printer should be automatically detected. Select your printer and then click “Forward”. You will be able to print a test page and then complete the setup.
+<img src="images/image_2.PNG" width="425" /></p>
+
+:ET

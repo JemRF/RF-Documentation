@@ -3,6 +3,9 @@
 topnav:
 - title: Topnav
   items:
+    - title: Blog
+      url: /news.html
+
     - title: GitHub
       external_url: https://github.com/jemrf
 
