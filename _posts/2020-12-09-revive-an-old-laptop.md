@@ -7,6 +7,8 @@ permalink: revive-old-laptop.html
 summary: "Step by step guide to reviving an old laptop or PC by installing Linux"
 ---
 
+<img src="images/image_1.png" width="425"/>
+
 ## Introduction
 
 The COVID lock down has us all glued to our devices and the hunt is on for new devices for everyone in the family. After looking at new PC's, laptops, Chrome-books and Mac-books I decided to look into installing Linux on a couple of old laptops I have lying around. Microsoft was very keen to get us all to upgrade to Windows 10 but I found that my old laptop (Acer Aspire V5-471, 1.90Ghz, i3, 4GB memory) was so slow it was basically unusable with MS-Windows so it got thrown on the heap of old electronics and forgotten. 
