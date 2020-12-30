@@ -1,0 +1,107 @@
+I"<p><img src="images/ESP32-Alarm-System-Schematic.png" /></p>
+
+<h2 id="what-you-will-need">What you will need</h2>
+<ul>
+  <li>ESP32 Development board. There are many variants available but any one will do. If you plan also connect <a href="esp32-jemrf.html">JemRF wireless sensors</a> then make sure GPIO pins 16 (TX2) and 17 (RX2) (Serial Port 2) are exposed.</li>
+  <li>Micro USB to USB 2.0 connector to connect the ESP32 to a PC.</li>
+  <li>A PC is required to load firmware on the ESP32. We will be using the Arduino IDE that has client available for Windows, Mac or Linux.</li>
+  <li>Arduino ESP32 development environment setup (covered in the <a href="esp32-install.html">previous tutorial</a>).</li>
+  <li>Alarm system switches (reed switches, or any tactile switch circuit that open and closes a circuit - e.g. a motion sensor like <a href="https://www.jemrf.com/collections/accessories/products/pir-motion-sensor">this</a>)), and some wire.</li>
+</ul>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Although the above diagram has only two alarm switches, you can connect as many switches as there are digital inputs on your ESP32 development board.</div>
+
+<h2 id="what-you-need-to-know">What you need to know</h2>
+<ul>
+  <li>Some basic low voltage electrical experience is advantageous but not necessary. The electrical construction is very basic and could be achieved with no knowledge of electronics.</li>
+  <li>Some basic programming knowledge and prior experience with the Arduino IDE. Again not absolutely necessary but it will make the learning curve a bit easier.</li>
+</ul>
+
+<h2 id="step-1---connect-switches-to-the-esp32-development-board">Step 1 - Connect switches to the ESP32 Development Board</h2>
+
+<p>Following the wiring shown in the top picture connect the two connectors of the tactile switch. One wire goes to a free <code class="language-plaintext highlighter-rouge">GPIO</code> pin labeled <code class="language-plaintext highlighter-rouge">DXX</code> on the ESP32 Development Board (any one will do), and the other wire goes to GND. The ESP32 Development Board has two GND connectors you can use. If you have multiple switches then connect all the GND wires together (as shown with the two black wires in the picture) and connect to a single GND on the ESP32 Development Board.</p>
+
+<h2 id="step-2---configure-the-sketch-with-your-wifi-and-privateeyepi-details">Step 2 - Configure the sketch with your WIFI and PrivateEyePi details</h2>
+
+<p>In the [previous tutorial}(esp32-install.html) we showed you how to setup up the development environment and you downloaded the (JemRF RFLIB)[https://github.com/JemRF/rflib] library. Now open up the <code class="language-plaintext highlighter-rouge">privateeyepi</code> sketch from the <code class="language-plaintext highlighter-rouge">examples</code> folder (<strong>File-&gt;Examples-&gt;rflib-master-&gt;privateeyepi</strong>).</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you do not see the <code class="language-plaintext highlighter-rouge">rflib-master</code> example folder then you may not have shut down the Arduino IDE and started it up again.</div>
+
+<p><img src="images/open-privateeyepi-sketch.png" /></p>
+
+<p>Now save a copy of the example sketch by selecting <strong>File-&gt;Save As</strong> from the main menu and giving it a new name. This will create a new folder in your Arduino directory with the name you gave to it, as well as an .ino file in the new directory.</p>
+
+<p>Near the top of the sketch you will see the following code:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+const char* pep_token = ""; //Enter your PrivateEyePi token between quotes
+const char* ssid      = ""; //Enter your WIFI router SSID between quotes
+const char* password  = ""; //Enter your WIFI password SSID between quotes
+//Enter wired sensors here
+//Add ,{xx,'s',0} settings for every wired sensor whee xx is the GPIO number
+//GPIO 15 and 19 are configures as follows:
+uint8_t wired_sensors[20][3] = {{15,'s',0},{19,'s',0}}; 
+
+</code></pre></div></div>
+
+<p>Make the following changes:</p>
+<ol>
+  <li>Enter your PrivateEyePi token in between the quotes after <code class="language-plaintext highlighter-rouge">pep_token =</code>.</li>
+  <li>Enter your WIFI SSID name in between the quotes after <code class="language-plaintext highlighter-rouge">ssid =</code>. The SSID is the name your WIFI router advertises.</li>
+  <li>Enter your WIFI password in between the quotes <code class="language-plaintext highlighter-rouge">password =</code>.</li>
+  <li>Lastly change the following line to reflect the GPIO numbers you want to connect to reed switches.</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+uint8_t wired_sensors[20][3] = {{15,'s',0},{19,'s',0}}; 
+
+</code></pre></div></div>
+
+<p>For example in the picture at the top of this tutorial the two switches are connected to <code class="language-plaintext highlighter-rouge">D25</code> and <code class="language-plaintext highlighter-rouge">D33</code>. Therefore you would change the configuration to be the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+uint8_t wired_sensors[20][3] = {{25,'s',0},{33,'s',0}}; 
+
+</code></pre></div></div>
+
+<p>If you wanted to have three switches and add another switch to <code class="language-plaintext highlighter-rouge">D32</code> then you would change the configuration to the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+uint8_t wired_sensors[20][3] = {{25,'s',0},{33,'s',0},{32,'s',0}}; 
+
+</code></pre></div></div>
+
+<h2 id="step-3---load-the-privateeyepi-sketch-onto-the-esp-32-development-board">Step 3 - Load the privateeyepi sketch onto the ESP 32 Development Board</h2>
+
+<p>Click the right arrow button near the top left of the Arduino IDE.</p>
+
+<p><img src="images/esp32-download-sketch-button.png" /></p>
+
+<p>The sketch will compile and you will a green progress bar as it is loaded onto the ESP32 Development Board. Once the upload is complete you will see <code class="language-plaintext highlighter-rouge">Done uploading.</code> in the status bar.</p>
+
+<h2 id="step-4---test-the-alarm-system">Step 4 - Test the alarm system</h2>
+
+<p>Click the serial monitor on the top right of the Arduino IDE and observe the messages on the screen.</p>
+
+<p><img src="images/esp32-serial-monitor.png" /></p>
+
+<p>Set the baud rate to <code class="language-plaintext highlighter-rouge">9600</code> using the drop down box on the bottom right of the monitor window:</p>
+
+<p><img src="images/arduino-monitor-baud-rate.png" /></p>
+
+<p>Push the <code class="language-plaintext highlighter-rouge">EN</code> button the ESP32 Development Board to reset the device.</p>
+
+<p><img src="images/esp32-reset-board.png" /></p>
+
+<p>Monitor the progress as it logs into your WIFI router and configures the switches you configure in Step 2. You should see something like this:</p>
+
+<p><img src="images/esp32-monitor-startup.png" /></p>
+
+<p>Open and close one of the your switches to confirm that the device is able to detect the open/close and data is being sent OK to PrivateEyePi. You should see something like this:</p>
+
+<p><img src="images/esp32-door-open-close.png" /></p>
+
+<p><br /></p>
+<p style="text-align: left"><a href="esp32-install.html">&lt;- Back</a></p>
+<p style="text-align: right"><a href=" esp32-temperature.html">Next - Build Temperature Monitor -&gt;</a></p>
+:ET

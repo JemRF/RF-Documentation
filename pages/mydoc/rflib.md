@@ -63,7 +63,13 @@ void loop() {
 ### Installation
 
  - Download the library from here: [https://github.com/JemRF/rflib.git](https://github.com/JemRF/rflib.git)
- - Open up the Arduino IDE and click on Sketch->Include Library->Add .ZIP library and select the library downloaded in the previous step
+ 
+ <img src="images/download jemrf.png"/>
+ 
+ - Open up the Arduino IDE and click on **Sketch->Include Library->Add .ZIP** library and select the library downloaded in the previous step
+ 
+ <img src="images/add zip file.png"/>
+ 
  - Close all instances of the Arduino IDE and restart the IDE
  
 ### Methods

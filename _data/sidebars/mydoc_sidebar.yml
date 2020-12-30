@@ -188,3 +188,7 @@ entries:
       url: /python_rflib.html
       output: web, pdf
 
+    - title: ESP32 c++ - PrivateEyePi
+      url: /esp32-gateway.html
+      output: web, pdf
+

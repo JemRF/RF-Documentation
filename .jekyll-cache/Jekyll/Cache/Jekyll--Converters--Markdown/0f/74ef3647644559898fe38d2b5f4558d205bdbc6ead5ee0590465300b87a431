@@ -1,0 +1,29 @@
+I"«	<p><img src="images/ESP32-Alarm-System-Schematic.png" /></p>
+
+<h2 id="what-you-will-need">What you will need</h2>
+<ul>
+  <li>ESP32 Development board. There are many variants available but any one will do. If you plan also connect <a href="esp32-jemrf.html">JemRF wireless sensors</a> then make sure GPIO pins 16 (TX2) and 17 (RX2) (Serial Port 2) are exposed.</li>
+  <li>Micro USB to USB 2.0 connector to connect the ESP32 to a PC.</li>
+  <li>A PC is required to load firmware on the ESP32. We will be using the Arduino IDE that has client available for Windows, Mac or Linux.</li>
+  <li>Arduino ESP32 development environment setup (covered in the <a href="esp32-install.html">previous tutorial</a>).</li>
+  <li>Alarm system switches (reed switches, or any tactile switch circuit that open and closes a circuit - e.g. a motion sensor like <a href="https://www.jemrf.com/collections/accessories/products/pir-motion-sensor">this</a>)).</li>
+</ul>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Although the above diagram has only two alarm switches, you can connect as many switches as there are digital inputs on your ESP32 development board.</div>
+
+<h2 id="what-you-need-to-know">What you need to know</h2>
+<ul>
+  <li>Some basic low voltage electrical experience is advantageous but not necessary. The electrical construction is very basic and could be achieved with no knowledge of electronics.</li>
+  <li>Some basic programming knowledge and prior experience with the Arduino IDE. Again not absolutely necessary but it will make the learning curve a bit easier.</li>
+</ul>
+
+<h2 id="step-1---load-the-privateeyepi-sketch-onto-the-esp32-development-board">Step 1 - Load the PrivateEyePi sketch onto the ESP32 development board</h2>
+
+<p>In the [previous tutorial}(esp32-install.html) we showed you how to setup up the development environment and you downloaded the (JemRF RFLIB)[https://github.com/JemRF/rflib] library. Now open up the <code class="language-plaintext highlighter-rouge">privateeyepi</code> sketch from the <code class="language-plaintext highlighter-rouge">examples</code> folder (<strong>File-&gt;Examples-&gt;rflib-master-&gt;privateeyepi</strong>).</p>
+
+<p><img src="images/open-privateeyepi-sketch.png" /></p>
+
+<p><br /></p>
+<p style="text-align: left"><a href="esp32-install.html">&lt;- Back</a></p>
+<p style="text-align: right"><a href=" esp32-temperature.html">Next - Build Temperature Monitor -&gt;</a></p>
+:ET
