@@ -82,7 +82,7 @@ uint8_t wired_sensors[20][3] = {{25,'s',0},{33,'s',0},{32,'s',0}};
 {% endraw %}
 ```
 
-## Step 3 - Load the privateeyepi sketch onto the ESP 32 Development Board
+## Step 3 - Load the `privateeyepi` sketch onto the ESP 32 Development Board
 
 Click the right arrow button near the top left of the Arduino IDE.
 
