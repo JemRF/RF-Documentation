@@ -13,10 +13,10 @@ summary: "How to use an ESP development board and Flex RF Module to interface to
 
 [PrivateEyePi](http://projects.privateeyepi.com) is a cloud based home alarm, automation and monitoring system. In this tutorial we will show you how to use the relatively inexpensive ESP32 development board (depicted above in the background) to interface with PrivateEyePi instead of using a [RaspberryPi](http://www.raspberrypi.org). 
 
-//ToDo Add advantages....
-
 ## What is the ESP32 Development Board?
-The ESP32, by Espressif systems, is an extremely popular platform for the Internet Of Things. It is a low cost fully programmable chip with WIFI and Bluetooth that allows you to quickly connect Things to the Internet. 
+The ESP32, by Espressif systems, is an extremely popular platform for the Internet Of Things. It is a low cost fully programmable chip with WIFI, Bluetooth, two serial ports and powerful dual processor that allows you to quickly connect Things to the Internet. 
+
+The advantage of using a board like this over the Raspberry Pi is you can treat this board like a single purpose appliance. You don't need to gracefully shut it down or upgrade patches like you do with an Linux or Windows. 
 
 ## Tutorials
 
