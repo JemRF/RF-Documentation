@@ -24,7 +24,7 @@ The ESP32 has a powerful dual processor, Bluetooth, two hardware serial ports, a
  - Some basic programming knowledge and prior experience with the Arduino IDE. Again not absolutely necessary but it will make the learning curve a bit easier. 
 
 ## Pre-requisite tutorials:
- - [Setup the Arduino development environment for ESP32](install.html)
+ - [Setup the Arduino development environment for ESP32](esp32-install.html)
 
 ## Step 1- Wiring
  - You can power the Flex Module from the 3V3 pin on the ESP32 Development Board
