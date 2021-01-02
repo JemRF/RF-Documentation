@@ -114,5 +114,37 @@ Push the `EN` button the ESP32 Development Board to reset the device.
  
 Lastly log in to PrivateEyePi and verify the switch status indicators are changing from green to red as the switches open.
 
+## Step 4 - Set up email alerts
+
+PrivateEyePi has the ability to configure email alerts when an alarm is triggered. Emails can be triggered using the `Standard Alarm Rules` setting in the PrivateEyePi `Config` menu option or through rules you have configured with an email action. When an email alert is triggered a message is passed back to the ESP32 Development Board notifying it of an email alert. If you want email alerts then you need to configure your email account details within the ESP32 code. 
+
+There are four settings you need to know:
+
+1. Email user name (usually the email address)
+2. Email password
+3. SMTP Server
+4. SMTP Port
+
+You usually obtain these details from your email provider, however there are a number of third party email delivery service providers that you can use to send emails for you. 
+
+{% include warning.html content="We wouldn't advise using the login details for your personal email, rather set up a dummy account or use a third party delivery provider. If for some reason you send too many emails you will avoid getting your personal email blacklisted by email service providers."%}
+
+The above four settings can be configured in your `privateeyepi` sketch. Look for the following lines near the top of the sketch:
+
+```
+//Email alert configuration
+const char* smtp_corp="";
+const char* smtp_password="";
+const char* smtp_user="";
+const uint8_t smtp_port=80;
+```
+
+Enter the `SMTP Corporation address`, `user name` and `password` between the quotes, and replace the `80` with the `SMTP port` of your provider. 
+
+Upload the sketch as you did in Step 3 and trigger an alarm to test if you receive an email. Highlighted in red below are descriptions of the communications between the ESP32 and PrivateEyePi to obtain email addresses that will receive the alert in addition to the message body details (sensor number and alarm zone description).
+
+ <img src="images/esp32-email-alert.png"/>
+
+
 <BR>
 <p style="text-align: left"><a href="esp32-install.html"><- Back</a></p> <p style="text-align: right"><a href=" esp32-temperature.html">Next - Build Temperature Monitor -></a></p>
