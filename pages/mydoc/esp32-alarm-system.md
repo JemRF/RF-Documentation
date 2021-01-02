@@ -16,6 +16,7 @@ summary: "How to build an alarm system with ESP32 development board and interfac
  - Arduino ESP32 development environment setup (covered in the [previous tutorial](esp32-install.html)).
  - Alarm system switches (reed switches, or any tactile switch circuit that open and closes a circuit - e.g. a motion sensor like [this](https://www.jemrf.com/collections/accessories/products/pir-motion-sensor)), and some wire.
   - [Prototyping breadboard](https://www.jemrf.com/collections/accessories/products/400-point-prototyping-breadboard) (optional). 
+  - If you want all alarm related parts in a kit then have a look at the [DIY Alarm Kit](https://www.jemrf.com/collections/accessories/products/diy-alarm-kit-motion-sensor-door-contacts-temperature-buzzer-siren)
  
  {% include note.html content="Although the above diagram has only two alarm switches, you can connect as many switches as there are digital inputs on your ESP32 development board."%}
 
@@ -114,9 +115,9 @@ Push the `EN` button the ESP32 Development Board to reset the device.
  
 Lastly log in to PrivateEyePi and verify the switch status indicators are changing from green to red as the switches open.
 
-## Step 4 - Set up email alerts
+## Step 5 - Set up email alerts
 
-PrivateEyePi has the ability to configure email alerts when an alarm is triggered. Emails can be triggered using the `Standard Alarm Rules` setting in the PrivateEyePi `Config` menu option or through rules you have configured with an email action. When an email alert is triggered a message is passed back to the ESP32 Development Board notifying it of an email alert. If you want email alerts then you need to configure your email account details within the ESP32 code. 
+PrivateEyePi has the ability to configure email alerts when an alarm is triggered. Emails can be triggered using the `Standard Alarm Rules` setting in the PrivateEyePi `Config` menu option or through rules you have configured with an email action. When an email alert is triggered a message is passed back to the ESP32 Development Board notifying it of an email alert and the ESP32 sends the email (not the server). If you want email alerts then you need to configure your email account details within the ESP32 code. Also remember to add the email addresses (using the Email menu option in PrivateEyePi) to which you want the notifications sent to.
 
 There are four settings you need to know:
 
@@ -144,6 +145,29 @@ Enter the `SMTP Corporation address`, `user name` and `password` between the quo
 Upload the sketch as you did in Step 3 and trigger an alarm to test if you receive an email. Highlighted in red below are descriptions of the communications between the ESP32 and PrivateEyePi to obtain email addresses that will receive the alert in addition to the message body details (sensor number and alarm zone description).
 
  <img src="images/esp32-email-alert.png"/>
+
+## Step 6 - Set up a chime and alarm
+
+PrivateEyePi has two audible notification features : `Alarm` and `Chime`. `Alarm` is triggered with through the `Standard alarm rules` set in the Config menu option in PrivateEyePi or as a rule action. A `Chime` is a rule action (e.g. when door open sound the chime). Below are the instructions for building the Alarm and Chime circuit and making configuration changes on the ESP32 Development Board.
+
+ - Connect the positive (+) leg of the Piezzo buzzer to pin D5 on the ESP32 Development Board using a 1k-10k resistor
+ - Connect the negative (-) leg of the Piezzo buzzer to Ground (GND)
+
+<img src="images/esp32-piezzo-buzzer.png"/>
+
+ - You can find the configuration for Chime and Alarm in `~\Adruino\Libraries\rflib-master\pep.h`
+ 
+```
+#define SIREN_PIN 2
+#define SIREN_DURATION 120
+#define SIREN_DELAY  30
+#define CHIME_PIN 2
+```
+
+ - The `SIREN_DURATION` is the amount of time the siren will sound when an alarm is triggered.
+ - The `SIREN_DELAY` is the amount of time that will elapse between an alarm being triggered and the alarm sounding. During this time the buzzer will beep slowly allowing you time to switch off the alarm before it sounds. 
+ - `SIREN_PIN` and `CHIME_PIN` are the pin numbers for the chime and alarm (you can use one Piezzo buzzer for both, or separate buzzers)
+ 
 
 
 <BR>

@@ -1,0 +1,79 @@
+I"A<p><img src="images/esp32-jemrf-flex-wiring.png" style="width:640px;height:400px;" /></p>
+
+<h2 id="what-you-will-need">What you will need</h2>
+<ul>
+  <li>ESP32 Development board. There are many variants available but make sure GPIO pins 16 (TX2) and 17 (RX2) (Serial Port 2) are exposed. The ESP32 has two hardware serial ports and we will be using Serial Port 2 to connect the Flex RF module, so that you can use Serial Port 1 for debugging.</li>
+  <li><a href="https://www.jemrf.com/collections/rf-sensors/products/flex-rf-module">FlexRF Module</a> (optional if you want to interface JemRF wireless sensors).</li>
+  <li><a href="https://www.jemrf.com/collections/accessories/products/400-point-prototyping-breadboard">Breadboard</a>(optional if you want to interface JemRF sensors) for easy installation. Both the ESP32 Development Board and the Flex Module are designed for prototyping breadboards but, of course, could be soldered together if that is your preference.</li>
+  <li><a href="https://www.jemrf.com/collections/accessories/products/jumper-wires">Jumper wires</a></li>
+  <li>Micro USB to USB 2.0 connector to connect the ESP32 to a PC</li>
+  <li>A PC is required to load firmware on the ESP32. We will be using the Arduino IDE that has client available for Windows, Mac or Linux.</li>
+</ul>
+
+<h2 id="what-you-need-to-know">What you need to know</h2>
+<ul>
+  <li>Some basic low voltage electrical experience is advantageous but not necessary. The electrical construction is very basic and could be achieved with no knowledge of electronics.</li>
+  <li>Some basic programming knowledge and prior experience with the Arduino IDE. Again not absolutely necessary but it will make the learning curve a bit easier.</li>
+</ul>
+
+<h2 id="step-1---install-and-configure-the-arduino-integrated-development-environment">Step 1 - Install and configure the Arduino Integrated Development Environment</h2>
+<ul>
+  <li>Visit the <a href="https://www.arduino.cc/en/software">Arduino site</a> and download and install the software. Follow their guide for installation. Its quite easy to install - next, next, finish etc.. They also have a very well documented <a href="https://www.arduino.cc/en/Guide">getting started guide</a> that will help you if required. Note that the Arduino IDE is primarily designed for their Arduino ATMega platforms but they also support a number of other development boards, including ESP32!</li>
+</ul>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> We chose the Arduino development environment primarily for this tutorial because of its ease of use, but you can also program the ESP32 on Lua or Micro-Python, but we do not provide the software for those platforms.</div>
+
+<ul>
+  <li>In the Arduino IDE go to <strong>File-&gt;Preferences and enter:<br /></strong>
+ <code class="language-plaintext highlighter-rouge">https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json</code></li>
+</ul>
+
+<p><img src="images/esp32-jemrf-flex-wiring.png" style="width:400px;height:400px;" /></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you already have other preferences in the input box then you can separate the URLs with a comma.</div>
+
+<ul>
+  <li>Open the Boards Manager and select the <code class="language-plaintext highlighter-rouge">ESP32 Dev Module</code>  <strong>Tools-&gt;Boards-&gt;Boards Manager…</strong> and click <strong>Install</strong></li>
+</ul>
+
+<p><img src="images/esp32 boards manager.png" /></p>
+
+<ul>
+  <li>Select the board <strong>Tools-&gt;Board-&gt;ESP32 Dev Module</strong></li>
+</ul>
+
+<p><img src="images/esp32 dev module.png" /></p>
+
+<ul>
+  <li>Connect the ESP32 to the PC using the USB cable then select the port <strong>Tools-&gt;Port</strong> and then select the COM port from the list.</li>
+</ul>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The COM port number will vary. I am using COM port 7 but your will likely be a different number.</div>
+
+<p><img src="images/ESP32-port.png" /></p>
+
+<p>Thats it! Now you are ready to load firmware onto the ESP32 Development Board.</p>
+
+<h2 id="step-2---download-the-jemrf-arduino-software">Step 2 - Download the JemRF Arduino software</h2>
+
+<ul>
+  <li>Download the library from here: <a href="https://github.com/JemRF/rflib.git">https://github.com/JemRF/rflib.git</a></li>
+</ul>
+
+<p><img src="images/download jemrf.png" /></p>
+
+<ul>
+  <li>Open up the Arduino IDE and click on <strong>Sketch-&gt;Include Library-&gt;Add</strong> .ZIP library and select the library downloaded in the previous step</li>
+</ul>
+
+<p><img src="images/add zip file.png" /></p>
+
+<ul>
+  <li>Close all instances of the Arduino IDE and restart the IDE</li>
+</ul>
+
+<p><br /></p>
+<p style="text-align: left"><a href="esp32-temperature.html">&lt;- Back</a></p>
+<p style="text-align: right">
+</p>
+:ET

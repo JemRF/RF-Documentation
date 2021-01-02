@@ -1,0 +1,48 @@
+I"ó<p>The ESP32 has a powerful dual processor, Bluetooth, two hardware serial ports, and 34 GPIO pins making it a very popular gateway hub device for the Internet Of Things (IoT). In his tutorial we will how you how to connect the JemRF Flex module to the ESP32 Development Board so you can interface all the JemRF sensors with PrivateEyePi.</p>
+
+<p><img src="images/esp32-banner-large.png" /></p>
+
+<h2 id="what-you-will-need">What you will need</h2>
+<ul>
+  <li>ESP32 Development board. There are many variants available but make sure GPIO pins 16 (TX2) and 17 (RX2) (Serial Port 2) are exposed. The ESP32 has two hardware serial ports and we will be using Serial Port 2 to connect the Flex RF module, so that you can use Serial Port 1 for debugging.</li>
+  <li><a href="https://www.jemrf.com/collections/rf-sensors/products/flex-rf-module">FlexRF Module</a>.</li>
+  <li><a href="https://www.jemrf.com/collections/accessories/products/400-point-prototyping-breadboard">Breadboard</a>(optional if you want to interface JemRF sensors) for easy installation. Both the ESP32 Development Board and the Flex Module are designed for prototyping breadboards but, of course, could be soldered together if that is your preference.</li>
+  <li><a href="https://www.jemrf.com/collections/accessories/products/jumper-wires">Jumper wires</a></li>
+  <li>Micro USB to USB 2.0 connector to connect the ESP32 to a PC</li>
+  <li>A PC is required to load firmware on the ESP32. We will be using the Arduino IDE that has client available for Windows, Mac or Linux.</li>
+</ul>
+
+<h2 id="what-you-need-to-know">What you need to know</h2>
+<ul>
+  <li>Some basic low voltage electrical experience is advantageous but not necessary. The electrical construction is very basic and could be achieved with no knowledge of electronics.</li>
+  <li>Some basic programming knowledge and prior experience with the Arduino IDE. Again not absolutely necessary but it will make the learning curve a bit easier.</li>
+</ul>
+
+<h2 id="pre-requisite-tutorials">Pre-requisite tutorials:</h2>
+<ul>
+  <li><a href="install.html">Setup the Arduino development environment for ESP32</a></li>
+</ul>
+
+<h2 id="wiring">Wiring</h2>
+<ul>
+  <li>You can power the Flex Module from the 3V3 pin on the ESP32 Development Board</li>
+  <li>The Flex RF Module and the ESP32 Development board need to share the same Ground so connect GND on the ESP32 to pin 10 on the Flex module</li>
+  <li>Connect the TX2 on the ESP32 to Flex RX pin (pin 16)</li>
+  <li>Connect the RX2 on the ESP32 to Flex TX pin (pin 15)</li>
+</ul>
+
+<p><img src="images/esp32-jemrf-flex-wiring.png" /></p>
+
+<p>For reference here is the Flex Module pin assignment:</p>
+
+<p><img src="images/flex pinout v2.png" /></p>
+
+<h2 id="configure-the-flex-module">Configure the Flex Module</h2>
+
+<p>The Flex module comes shipped with an ID of 03 and Type 1 (sensor mode). You need to configure the Flex Module for Type 2 (Gateway Mode).</p>
+
+<p><br /></p>
+<p style="text-align: left"><a href="esp32-temperature.html">&lt;- Back</a></p>
+<p style="text-align: right">
+</p>
+:ET

@@ -1,0 +1,25 @@
+I"x<p><img src="images/esp32-banner-large.png" /></p>
+
+<h2 id="description">Description</h2>
+
+<p><a href="http://projects.privateeyepi.com">PrivateEyePi</a> is a cloud based home alarm, automation and monitoring system. In this tutorial we will show you how to use the relatively inexpensive ESP32 development board (depicted above in the background) to interface with PrivateEyePi instead of using a <a href="http://www.raspberrypi.org">RaspberryPi</a>.</p>
+
+<p>//Add advantages….</p>
+
+<h2 id="what-is-the-esp32-development-board">What is the ESP32 Development Board?</h2>
+<p>The ESP32, by Espressif systems, is an extremely popular platform for the Internet Of Things. It is a low cost fully programmable chip with WIFI and Bluetooth that allows you to quickly connect Things to the Internet.</p>
+
+<h2 id="tutorials">Tutorials</h2>
+
+<ol>
+  <li><a href="esp32-install.html">Download the PrivateEyePi sketch to the ESP32 Development Board.</a></li>
+  <li><a href="esp32-alarm-system.html">Build a wired alarm system with email alerts, door chime and siren.</a></li>
+  <li><a href="esp32-temperature.html">Web based temperature monitoring system using DS18B20 temperature sensor.</a></li>
+  <li><a href="esp32-jemrf.html">Connect JemRF wireless sensors to PrivateEyePi.</a></li>
+</ol>
+
+<p><br /></p>
+
+<p style="text-align: right"><a href="esp32-install.html">Next - Download and Install -&gt;</a></p>
+
+:ET
