@@ -1,0 +1,28 @@
+I"{
+<h2 id="description">Description</h2>
+
+<p>The <a href="https://www.jemrf.com/collections/wifi-enabled-devices/products/esp-32-development-board">ESP-32</a> is a versatile board with WIFI and Blue-tooth, and is big brother of the ESP8266 chip from Esspressif Systems that took the world by storm a few years back by bringing WIFI and Blue-tooth to IoT devices for as little as $4-$5. The ESP-32 packs a punch with it’s Xtensa Dual Core 32-bit processor, 520kB internal RAM and 4MB external flash. The development board has 30 pins exposing most of what the chip has to offer, plus a built-in Micro-USB port for loading new firmware very easily.</p>
+
+<h2 id="pinout">Pinout</h2>
+<p><img src="images/ESP32-Development-Board-Pinout.png" width="425" /></p>
+
+<h2 id="pin-overview">Pin Overview</h2>
+<p>ESP-32 Development Board Highlights:</p>
+<ul>
+  <li>2 Processors</li>
+  <li>WIFI</li>
+  <li>Blue-tooth</li>
+  <li>23 GPIO pins (General Purpose4 IO Pins)</li>
+  <li>15 ADC (Analog to Digital) pins</li>
+  <li>2 UART serial ports</li>
+  <li>Capacitive touch, ADC (analog to digital converter), DAC (digital to analog converter), I2C (Inter-Integrated Circuit), UART (universal asynchronous receiver/transmitter), SPI (Serial Peripheral Interface), I2S (Integrated Inter-IC Sound), RMII (Reduced Media-Independent Interface), PWM (pulse width modulation), and more.</li>
+  <li>Built-in hall effect sensor and built-in temperature sensor</li>
+</ul>
+
+<h2 id="tutorials">Tutorials</h2>
+
+<p>The ESP-32 is well supported on multiple development platforms and is continuously being developed. The Arduino Integrated Development Environment has very good support for the ESP-32 so we have chosen to use this platform for our tutorials due to it’s simplicity and wide spread support. Our tutorials are ideal for beginners, DIY electronics enthusiasts right through to university students looking to create IoT projects.</p>
+
+<p>We have created some step-by-step tutorials that will have you up and running in no time. You will learn how to set up the development environment and download new firmwares to the device using software examples provided by us. Through our examples you will learn how to interface with sensors (e.g. a temperature sensors), connect the ESP-32 to your WIFI network, and communicate with cloud services over the Internet (e.g. PrivateEyePi monitoring and home alarm system). Lastly we will show you how to connect and interface the ESP-32 board with our RF modules so you can create wireless IoT sensors and actuators (e.g. remote temperature sensor, remote wireless switch etc..) using the ESP-32 as a hub for the wireless devices and a gateway to the Internet.</p>
+
+:ET
