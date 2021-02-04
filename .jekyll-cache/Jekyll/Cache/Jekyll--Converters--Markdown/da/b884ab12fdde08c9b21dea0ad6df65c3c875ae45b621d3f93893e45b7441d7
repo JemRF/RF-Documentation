@@ -1,0 +1,35 @@
+I"~<p><img src="images/raspberry pi pico pinout.png" width="425" /></p>
+
+<h2 id="description">Description</h2>
+<p>As you can see from the diagram above the Raspberry Pi PICO is a very capable microcontroller board with many interfaces. In this tutorial we will be making use of the Serial Port - uart0 (pins 1 and 2) by default but you can easily also use pins uart1 (pins 11 and 12) on the PICO board. We will show you how to download the JemRF software for the PICO board which leverages the <a href="https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf">c/c++ Raspberry Pi PICO SDK</a>. There are many different development environment options you can use for development on the Raspberry Pi PICO. If you have not set up a development environment for the Raspberry Pi PICO then please first review the <a href="https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf">Raspberry Pi PICO Getting Started</a> page for details on how to do that. Familiarize yourself with how to compile code and download applications to the PICO module.</p>
+
+<h2 id="wiring">Wiring</h2>
+
+<ul>
+  <li>Connect pins 15 and 16 of the <a href="flex.html">JemRF Flex Module</a> to pins 1 and 2 (or pins 11 and 12 for uart1) of the Raspberry Pi PICO.</li>
+  <li>Connect pins VCC and GND as shown in the diagram. You can power the Flex module from a separate power source if you prefer, but make sure the two modules share the same GND.</li>
+</ul>
+
+<p><img src="images/Flex RF Module Raspberry Pi PICO.png" width="425" /></p>
+
+<h2 id="download">Download</h2>
+
+<ul>
+  <li>Download the library from here: <a href="https://github.com/JemRF/rflib.git">https://github.com/JemRF/rflib.git</a></li>
+</ul>
+
+<p><img src="images/download jemrf.png" /></p>
+
+<ul>
+  <li>Unzip the compressed folder into a folder in your Raspberry Pi PICO development environment</li>
+</ul>
+
+<p>## Example code</p>
+
+<p>From the examples folder open up the source code for the Raspberry Pi Pico .cpp file called rfsensor.cpp. This example shows how to set up an application to listen for a specific message from a remote sensor and switch on an LED. Compile the code (refer to the getting started documents from Raspberry Pi if you don’t know how to compile), and copy the UF2 file from the <code class="language-plaintext highlighter-rouge">build</code> directory to Raspberry Pi PICO.</p>
+
+<p>If you are using <code class="language-plaintext highlighter-rouge">uart1</code> then you need to change the RX and TX pins that are defined near the top of the rflib.h file.</p>
+
+<h2 id="rflib-libary">RFLIB Libary</h2>
+<p>This example code uses the RFLIB library, which is described here. You can also look through all the other examples that were written for the Arduino/ESP32 platforms for guides on how to use the RFLIB library. The other examples won’t compile for the Raspberry Pi PICO but they will show you how to use the various aspects of the RFLIB library.</p>
+:ET

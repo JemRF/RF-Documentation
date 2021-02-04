@@ -184,6 +184,10 @@ entries:
       url: /rflib.html
       output: web, pdf
 
+    - title: Raspberry Pi PICO c++ - RFLIB Library
+      url: /raspberry-pi-pico.html
+      output: web, pdf
+
     - title: Python - RFLIB Library
       url: /python_rflib.html
       output: web, pdf

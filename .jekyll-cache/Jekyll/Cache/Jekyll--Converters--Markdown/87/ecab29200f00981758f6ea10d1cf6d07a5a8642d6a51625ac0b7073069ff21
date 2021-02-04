@@ -1,0 +1,14 @@
+I"˜<p><img src="images/raspberry pi pico pinout.png" width="425" /></p>
+
+<h2 id="description">Description</h2>
+<p>As you can see from the diagram above the Raspberry Pi PICO is a very capable microcontroller board with many interfaces. In this tutorial we will be making use of the Serial Port - uart0 (pins 1 and 2) by default but you can easily also use pins uart1 (pins 11 and 12) on the PICO board. We will show you how to download the JemRF software for the PICO board which leverages the (c/c++ Raspberry Pi PICO SDK)[https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf]. There are many different development environment options you can use for development on the Raspberry Pi PICO. If you have not set up a development environment for the Raspberry Pi PICO then please first review the (Raspberry Pi PICO Getting Started)[https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf] page for details on how to do that.</p>
+
+<h2 id="download">Download</h2>
+
+<ul>
+  <li>Download the library from here: <a href="https://github.com/JemRF/rflib.git">https://github.com/JemRF/rflib.git</a></li>
+</ul>
+
+<p><img src="images/download jemrf.png" /></p>
+
+:ET
