@@ -5,7 +5,7 @@ last_updated: Sep 28, 2020
 tags:
 summary: "This page is under construction - stay tuned for updates"
 sidebar: mydoc_sidebar
-permalink: under_construction.html
+permalink: programming_rf_devices.html
 folder: mydoc
 ---
 
