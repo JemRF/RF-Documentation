@@ -1,7 +1,7 @@
 ---
-title: Under Construction
+title: Instructions for Programming the Wireless RF Devices
 keywords: construction, under construction
-last_updated: Sep 28, 2020
+last_updated: Oct 28, 2021
 tags:
 summary: "This page is under construction - stay tuned for updates"
 sidebar: mydoc_sidebar
