@@ -1,7 +1,7 @@
 ---
 title: Instructions for Programming the Wireless RF Devices
 keywords: construction, under construction
-last_updated: Oct 28, 2021
+last_updated: Dec 15, 2021
 tags:
 summary: "This page is under construction - stay tuned for updates"
 sidebar: mydoc_sidebar
@@ -11,41 +11,29 @@ folder: mydoc
 
 To update an RF device (sensor, IOT Gateway or Flex IO) requires connecting the device as to a computer as shown in [Hardware & Firmware](hardware_and_firmware.html).
 Once complete you will need a ccti-programmer applicaition.
-To download an executable for Windows [Windows CCTI Programmer](link_to_programmer).
-To download an executable for Raspberry Pi [Raspberry Pi CCTI Programmer](link_to_programmer).
+Download [ccti-prog zip](../apps/ccti-prog.zip) for the Windows app ccti-prog.exe.
 
-To compile your own download [ccti-prog zip](ccti-prog.zip).
-```
-wget tool command
-```
-To compile
+If you want to use a Raspberry Pi the source for the ccti-prog is included with a Makefile.
+
+To compile your own
 ```
 make
 gcc -o ccti-prog -Wall ccti-prog.c hex.c
 ```
-Make a new RF bin file using the cmp.bat file (called iot2.hex below) and copy it to the RaspberryPi. Make sure you upped the version in the code. Change 7.2 below in BOTH locations to a new version
-
-```
-if (strncmp(command, "VERSION", 5) == 0) {
-        strncpy(command, "VER7.2---", 9);
-        cons_llap("VER7.2---");
-        sendllap(command,0,1,0);
-        return(3);
-        }
-```
-
 Make sure an RF Gateway is attached to the Pi and nothing is using the serial port (e.g. rfsensor.py).
 
+The lastest firmware for the RF sensors is [rf_rev7-4.hex](../apps/rf_rev7-4.hex)
 Run the utility:
-
-pi@raspberrypi:~/pep/cctl-prog2 $ sudo ./cctl-prog  -d /dev/ttyAMA0 -f iot2.hex
+```
+pi@raspberrypi:~/pep/cctl-prog2 $ sudo ./cctl-prog  -d /dev/Serial0 -f iot2.hex
+```
 Waiting 10s for bootloader, reset board now
 ...Bootloader detected
-Erasing page 1
-Erasing, programming and verifying page 2
-Erasing, programming and verifying page 3
-Erasing, programming and verifying page 4
-Erasing, programming and verifying page 5
+Erasing page 1<br />
+Erasing, programming and verifying page 2<br />
+Erasing, programming and verifying page 3<br />
+Erasing, programming and verifying page 4<br />
+Erasing, programming and verifying page 5<br />
 Erasing, programming and verifying page 6
 Erasing, programming and verifying page 7
 Erasing, programming and verifying page 8
@@ -76,43 +64,19 @@ Programming complete
 
 The chip now has a new production version installed. Verify it worked by checking the version (rf_config.py 01 VERSION).
 
-To verify your new version, send the device the Version command.
-The default device id is 03.
-
 Example:
 
 ```
-python rf_config.py 03 VERSION
+python rf_config.py 01 VERSION
 SENT     : 03VERSION
 RECEIVED : 03VER7.x---
 ```
-
-
-| Type Number| Description | Mode |
-|------------|-------------|
-| 1  | Thermistor Temperature Sensor| Sensor Mode |
-| 2  | Gateway | Gateway Mode|
-| 3  | DHT22 Humidity Sensor |Sensor Mode|
-| 4  | DS18B20 Temperature Sensor |Sensor Mode |
-| 5  | Analog A | Sensor Mode|
-| 6  | Analog B | Sensor Mode|
-| 7  | Relay | Actuator Mode |
-| 8  | SHT21 Humidity and Temperature Sensor| Sensor Mode |
-| 9  | BME280 Pressure, Humidity and Temperature Sensor| Sensor Mode |
-| 10 | HTU21 Humidity and Temperature Sensor| Sensor Mode |
-
-
-**Command:** TYPE[*p1*] <br>
-**Response:** TYPE[*p1*]
-
-*Where*: p1 = Type Number from the above table
-
-Example:
-
+You will need to change the device id to another id, care must be taken because the default device ID for the IOT Raspberry Pi is 01.
 ```
-python rf_config.py 03 TYPE1
-SENT     : 03TYPE1
-RECEIVED : 03TYPE1----
+python rf_config.py 01 CHDEVIDxx
+SENT     : 01CHDEVIDxx
+RECEIVED : 01CHDEVIDxx
 ```
+
 
 
