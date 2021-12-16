@@ -28,18 +28,17 @@ There are two loops to the test cycle, first the internal loop runs the load cyc
 The test will run until two or more batteries have a voltages drop below 2.5 volts. Then I export the data and l plot the results.
 
 ### Test Run 1
-The first test was a test to validate the test set.
-First the test stand was working and correct any wiring and connection issues.
-Next was adjusting the loops to lengthen the time between samples
-Last was creating the database tables and getting the database link to stay connected.  My Synology box was set for nightly full saves, which I discovered disables the database during that time causing the program to fail and exit when it lost the connection. I opted for fail vs software retry because if there were lots of drops then the results would be at risk.
+The first test was to validate the test set. Step one was to verify the test stand was working and correct any wiring and connection issues.
+Next was adjusting the loops to lengthen the time between samples.
+Last was creating the database tables and getting the database link to stay connected.  My Synology box was set for nightly full saves, which I discovered disables the database during that time causing the program to fail and exit when it lost the connection. I opted for fail vs software retry, because if there were lots of drops then the results would be at risk.
 
 ### Test Run 2
-Test 2 was the first real test.  I used two new Energizer 2032 batteries and two new NightKonic CR2032 I found from Amazon. The test ran for 6 days and over 572,000 cycles. Which if extracted to once a minute, would be over a year of sustained usage. Below is the plot of the results.
+Test 2 was the first real test.  I used two new Energizer 2032 batteries and two new NightKonic CR2032 I purchased from Amazon. The test ran for 6 days and over 572,000 cycles. Which if extracted to once a minute, would be over a year of sustained usage. Below is the plot of the results.
 
 {% include image.html file="cr2032_test_2.jpg" alt="Test Run 2 Energizer and NightKonic"%}
 [Test run 2 Results using Energizer and Nightkonic CR 2032 batteries](https://jemrf.github.io/RF-Documentation/images/cr2032_test_2.jpg)
 
-Like all good tests to show off, something strange seems to happen. One of the NightKonic batteries went to almost 0 volts.  While the test was running i did see the #4 led was not coming on. My first thought was that my test set had broken, so I removed the battery and verified its voltage, it was .8 volts.  The test set checked OK. so I thought maybe the cat had walked across the set and shorted the battery. I checked the wire to be sure that would not happen again. I did observe the battery was recovering so I put it back to finish the test.  It was not until I saw the graph that I found out it happened twice. [Link to Full Graph and is it weird.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_2_fullplot.jpg)
+Like all good tests to show off, something strange seems to happen. One of the NightKonic batteries went to almost 0 volts.  While the test was running I did see the #4 led was not coming on. My first thought was that my test set had broken, so I removed the battery and verified its voltage, it was .8 volts.  The test set checked OK, so I thought maybe the cat had walked across the set and shorted the battery. I checked the wire to be sure that would not happen again. I did observe the battery was recovering, so I put it back to finish the test.  It was not until I saw the graph that I found out it happened twice. [Link to Full Graph and is it weird.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_2_fullplot.jpg)
 The two Energizer batteries had very consistent graphs.  The surprise was the performance of the other NightKonic by outlasting the Energizers.
 Links to Amazon where the base cost of Energizer is $1.00 each and the base cost of the NightKonic is $.25.
 
@@ -63,17 +62,17 @@ The Amazon average price for Panasonic is $.50.
 
 
 ### Test 3 Extended.
-In some RF transmitters there performance drops when the voltage is 2.4 and less, that was my reasoning for stopping the test above. But I thought I would continue test 3 for another 24 hours to see if we had reached the end.  The result is you can see the normal lithium rapid drop off for both the Panasonic and Energizer batteries while the NightKonic is just dropping below the usable level.  Again the blip is the same marker from above when I stopped then resumed the test.
+In some RF transmitters their performance drops when the voltage is 2.4 and less, that was my reasoning for stopping the test above. But I thought I would continue test 3 for another 24 hours to see if we had reached the end.  The result is you can see the normal lithium rapid drop off for both the Panasonic and Energizer batteries while the NightKonic is just dropping below the usable level.  Again the blip is the same marker from above when I stopped then, resumed the test.
 
 {% include image.html file="cr2032_test_3_extended.jpg" alt="Test Run 3 Extended"%}
 [Test Run 3 Extended 24 hours with Panasonic, Energizer and NightKonic batteries.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_3_extended.jpg)
 
 ### Test 4 (in work)
-Because my other brands (Duracell, Amazon, JunPower, PGSonic & Joobef) of batteries have not arrived and the strange test results of one of the NightKonic batteries I am testing 3 more NightKonic randomally pulled from 3 deliveries and one Panasonic as control.  It is Dec 16, 2021 and I will update this in a few days with that test results.
+Because the other brands (Duracell, Amazon, JunPower, PGSonic & Joobef) of batteries have not arrived and the strange test results of one of the NightKonic batteries I am testing 3 more NightKonic randomally pulled from 3 deliveries and one Panasonic as control.  It is Dec 16, 2021 and I will update this in a few days with that test result.
 
 ### Conclusion
-My sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced.  Price can validate shelf life and repeatability, but I do not want to spend the next 10 years validating.  I will continue to test different brand batteries.
+For now my sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced.  Price can't validate shelf life and repeatability, but I do not want to spend the next 10 years validating.  I will continue to test different brand batteries.
 
-Testing to date does imply some may do a little better, but for my sensor needs, not the difference I was expecting.  For our car fobs, a burst used to lock and unlock the car, remotes to change the TV channels are not much different at all (well OK, channel surfers maybe).
+Testing to date does imply some may do a little better, but for my sensor needs, not the difference I was expecting.  For our bathroom scales, car fobs, a burst used to lock and unlock the car and remotes to change the TV channels, there is not much different at all (well OK, channel surfers maybe).
 
 For me, this was a surprise, I was exclusively using Energizers, but going forward I am buying the cheaper batteries. My testing will continue until I am satisfied that cheaper is a good answer, or I find a really good battery and a good price.
