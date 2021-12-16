@@ -68,9 +68,12 @@ In some RF transmitters there performance drops when the voltage is 2.4 and less
 {% include image.html file="cr2032_test_3_extended.jpg" alt="Test Run 3 Extended"%}
 [Test Run 3 Extended 24 hours with Panasonic, Energizer and NightKonic batteries.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_3_extended.jpg)
 
+### Test 4 (in work)
+Because my other brands (Duracell, Amazon, JunPower, PGSonic & Joobef) of batteries have not arrived and the strange test results of one of the NightKonic batteries I am testing 3 more NightKonic randomally pulled from 3 deliveries and one Panasonic as control.  It is Dec 16, 2021 and I will update this in a few days with that test results.
+
 ### Conclusion
 My sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced.  Price can validate shelf life and repeatability, but I do not want to spend the next 10 years validating.  I will continue to test different brand batteries.
 
 Testing to date does imply some may do a little better, but for my sensor needs, not the difference I was expecting.  For our car fobs, a burst used to lock and unlock the car, remotes to change the TV channels are not much different at all (well OK, channel surfers maybe).
 
-For me, this was a surprise, I was exclusively using Energizers, but going forward I am buying the cheaper batteries. My testing until I am satisfied that is a good answer, or I find a really good battery and a good price.
+For me, this was a surprise, I was exclusively using Energizers, but going forward I am buying the cheaper batteries. My testing will continue until I am satisfied that cheaper is a good answer, or I find a really good battery and a good price.
