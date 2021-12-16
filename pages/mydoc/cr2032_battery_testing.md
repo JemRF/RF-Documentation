@@ -16,7 +16,7 @@ So the question is: Is there a difference between different brands of CR2032 bat
 We can search the Internet for testing of CR2032 batteries.  Most of what we find is that the more expensive manufacturers provide lots of test results, the cheap batteries do not provide that much information.
 What we see from the manufacturer's steady state testing is the normal lithium battery characteristics, a voltage drop when put under load, a long slow drop then a fast roll off.
 
-In most real world usage such as with the JemRF devices, the usage of the CR2032 battery is not a steady load, but a pulse load when the device transmits. Then there is a relatively long rest time before transmitting again. This cycle is a few milliseconds to transmit then 1 to 5 minute sleep period. I have also observed that a lithium battery will recover some when the load is removed. I assume this mode would lengthen the life time of the battery, but would that change the curve?
+In most real world usage such as with the [JemRF devices](https://www.jemrf.com), the usage of the CR2032 battery is not a steady load, but a pulse load when the device transmits. Then there is a relatively long rest time before transmitting again. This cycle is a few milliseconds to transmit then 1 to 5 minute sleep period. I have also observed that a lithium battery will recover some when the load is removed. I assume this mode would lengthen the life time of the battery, but would that change the curve?
 
 ### Testing Process
 So the test conditions would need to be a pulse of load then a long rest and pulse again.
@@ -34,7 +34,7 @@ Next was adjusting the loops to lengthen the time between samples
 Last was creating the database tables and getting the database link to stay connected.  My Synology box was set for nightly full saves, which I discovered disables the database during that time causing the program to fail and exit when it lost the connection. I opted for fail vs software retry because if there were lots of drops then the results would be at risk.
 
 ### Test Run 2
-Test 2 was the first real test.  I used two new Energizer 2032 batteries and two new NightKonic CR2032 I found from Amazon. The test ran for 6 days and over 572,000 cycles. Below is the plot of the results.
+Test 2 was the first real test.  I used two new Energizer 2032 batteries and two new NightKonic CR2032 I found from Amazon. The test ran for 6 days and over 572,000 cycles. Which if extracted to once a minute, would be over a year of sustained usage. Below is the plot of the results.
 
 {% include image.html file="cr2032_test_2.jpg" alt="Test Run 2 Energizer and NightKonic"%}
 [Test run 2 Results using Energizer and Nightkonic CR 2032 batteries](https://jemrf.github.io/RF-Documentation/images/cr2032_test_2.jpg)
@@ -68,3 +68,9 @@ In some RF transmitters there performance drops when the voltage is 2.4 and less
 {% include image.html file="cr2032_test_3_extended.jpg" alt="Test Run 3 Extended"%}
 [Test Run 3 Extended 24 hours with Panasonic, Energizer and NightKonic batteries.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_3_extended.jpg)
 
+### Conclusion
+My sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced.  Price can validate shelf life and repeatability, but I do not want to spend the next 10 years validating.  I will continue to test different brand batteries.
+
+Testing to date does imply some may do a little better, but for my sensor needs, not the difference I was expecting.  For our car fobs, a burst used to lock and unlock the car, remotes to change the TV channels are not much different at all (well OK, channel surfers maybe).
+
+For me, this was a surprise, I was exclusively using Energizers, but going forward I am buying the cheaper batteries. My testing until I am satisfied that is a good answer, or I find a really good battery and a good price.
