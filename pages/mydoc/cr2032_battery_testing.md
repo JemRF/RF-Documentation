@@ -35,7 +35,8 @@ Last was creating the database tables and getting the database link to stay conn
 
 ### Test Run 2
 Test 2 was the first real test.  I used two new Energizer 2032 batteries and two new NightKonic CR2032 I found from Amazon. The test ran for 6 days and over 572,000 cycles. Below is the plot of the results.
-![Test Run 2 Energizer and NightKonic](../images/cr2032_test_2.jpg)
+
+{% include image.html file="cr2032_test_2.jpg" alt="Test Run 2 Energizer and NightKonic"%}
 Test run 2 Results using Energizer and Nightkonic CR 2032 batteries
 
 Like all good tests to show off, something strange seems to happen. One of the NightKonic batteries went to almost 0 volts.  While the test was running i did see the #4 led was not coming on. My first thought was that my test set had broken, so I removed the battery and verified its voltage, it was .8 volts.  The test set checked OK. so I thought maybe the cat had walked across the set and shorted the battery. I checked the wire to be sure that would not happen again. I did observe the battery was recovering so I put it back to finish the test.  It was not until I saw the graph that I found out it happened twice.
@@ -44,9 +45,9 @@ Links to Amazon where the base cost of Energizer is $1.00 each and the base cost
 [Energizer on Amazon](https://www.amazon.com/s?k=energizer+ecr2032&ref=nb_sb_noss_1)
 [NightKonic on Amazon](https://www.amazon.com/s?k=nightkonic+cr2032+3v+lithium+battery&ref=nb_sb_noss_1)
 
-Test Run 3:
+### Test Run 3:
 Test 3 shows the results using two Panasonic batteries, one Energizer and one NightKonic.  The configuration was #1 and #3 were Panasonic batteries, #2 was Nightkonic and to be sure the slot #4 battery holder was not the problem, I put the Energizer in slot 4 because both had the same result plot in Test 2.  Test results after 6 days and over 572,000 cycles.
-![Test Run 3 Panasonic, Energizer and NightKonic](../images/cr2032_test_3.jpg)
+{% include image.html file="cr2032_test_3.jpg" alt="Test Run 3 Panasonic, Energizer and NightKonic"%}
 
 Test run 3 Results using 2 Panasonic batteries, one Energizer and one NightKonic.
 
@@ -60,6 +61,7 @@ The Amazon average price for Panasonic is $.50.
 
 ### Test 3 Extended.
 In some RF transmitters there performance drops when the voltage is 2.4 and less, that was my reasoning for stopping the test above. But I thought I would continue test 3 for another 24 hours to see if we had reached the end.  The result is you can see the normal lithium rapid drop off for both the Panasonic and Energizer batteries while the NightKonic is just dropping below the usable level.  Again the blip is the same marker from above when I stopped then resumed the test.
-![Test Run 3 Extended]{../images/cr2032_test3_extended.jpg}
+
+{% include image.html file="cr2032_test_3_extended.jpg" alt="Test Run 3 Extended"%}
 Test Run 3 Extended 24 hours with Panasonic, Energizer and NightKonic batteries.
 
