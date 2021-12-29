@@ -11,7 +11,7 @@ folder: mydoc
 
 To update an RF device (sensor, IOT Gateway or Flex IO) requires connecting the device as to a computer as shown in [Hardware & Firmware](hardware_and_firmware.html).
 Once complete you will need a ccti-programmer applicaition.<br />
-Download [ccti-prog zip](../apps/ccti-prog.zip) for the Windows app ccti-prog.exe.
+Download [ccti-prog zip](https://projects.privateeyepi.com/home/home-alarm-system-project/wireless-projects/apps/ccti-prog.zip) for the Windows app ccti-prog.exe.
 
 If you want to use a Raspberry Pi the source for the ccti-prog is included in the zip file with a Makefile.
 
@@ -22,7 +22,7 @@ gcc -o ccti-prog -Wall ccti-prog.c hex.c
 ```
 Make sure an RF Gateway is attached to the Pi and nothing is using the serial port (e.g. rfsensor.py).
 
-The last step is to get lastest firmware for the RF sensors which is [rf_rev7-4.hex](../apps/rf_rev7-4.hex)
+The last step is to get the current firmware for the RF sensors which is [rf_rev7-4.hex](https://projects.privateeyepi.com/home/home-alarm-system-project/wireless-projects/apps/rf_rev7-4.hex)
 
 Then Run the utility:
 
