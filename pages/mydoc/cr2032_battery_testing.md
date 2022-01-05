@@ -38,7 +38,8 @@ Test 2 was the first real test.  I used two new Energizer 2032 batteries and two
 {% include image.html file="cr2032_test_2.jpg" alt="Test Run 2 Energizer and NightKonic"%}
 [Test run 2 Results using Energizer and Nightkonic CR 2032 batteries](https://jemrf.github.io/RF-Documentation/images/cr2032_test_2.jpg)
 
-Like all good tests to show off, something strange seems to happen. One of the NightKonic batteries went to almost 0 volts.  While the test was running I did see the #4 led was not coming on. My first thought was that my test set had broken, so I removed the battery and verified its voltage, it was .8 volts.  The test set checked OK, so I thought maybe the cat had walked across the set and shorted the battery. I checked the wire to be sure that would not happen again. I did observe the battery was recovering, so I put it back to finish the test.  It was not until I saw the graph that I found out it happened twice. [Link to Full Graph and is it weird.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_2_fullplot.jpg)
+Like all good tests to show off, something strange seems to happen. One of the NightKonic batteries went to almost 0 volts.  While the test was running I did see the #4 led was not coming on. My first thought was that my test set had broken, so I removed the battery and verified its voltage, it was .8 volts.  The test set checked OK, so I thought maybe the cat had walked across the set and shorted the battery. I checked the wire to be sure that would not happen again. I did observe the battery was recovering, so I put it back to finish the test.  It was not until I saw the graph that I found out it happened twice. [Link to Full Graph and it is weird.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_2_fullplot.jpg)
+
 The two Energizer batteries had very consistent graphs.  The surprise was the performance of the other NightKonic by outlasting the Energizers.
 Links to Amazon where the base cost of Energizer is $1.00 each and the base cost of the NightKonic is $.25.
 
@@ -67,8 +68,37 @@ In some RF transmitters their performance drops when the voltage is 2.4 and less
 {% include image.html file="cr2032_test_3_extended.jpg" alt="Test Run 3 Extended"%}
 [Test Run 3 Extended 24 hours with Panasonic, Energizer and NightKonic batteries.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_3_extended.jpg)
 
-### Test 4 (in work)
-Because the other brands (Duracell, Amazon, JunPower, PGSonic & Joobef) of batteries have not arrived and the strange test results of one of the NightKonic batteries I am testing 3 more NightKonic randomally pulled from 3 deliveries and one Panasonic as control.  It is Dec 16, 2021 and I will update this in a few days with that test result.
+### Test 4 Panasonic and NightKonic
+This is a retest of both batteries. I let the test run until all batteries were below the 2.4 volt cutoff.
+Because of the strange test result with the first set of NightKonic,
+The real goal is to test three more NightKonic batteries.
+I did a random selection of NightKonic from different purchases.
+The results were without issue, the Panasonic performed just like the previous two tested.
+The NightKonic performed perfectly, again performing above the cut off two days after the Panasonic dropped out.
+You can see some deviations in the NightKonic cures one dropped below cut off a day before the other two.
+That to me would imply some quality control issues with the NightKonic.
+
+{% include image.html file="cr2032_test_4.jpg" alt="Test Run 4 Extended"%}
+[Test Run 4 Panasonic and NightKonic batteries.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_4.jpg)
+
+## Test 5 Amazon and Duracell
+This test was the longest test lasting 11 days.
+This test was interrupted by database lock out on the second day into the test causing the test to be suspended for almost 8 hours.
+Again, as before when this happened, you can see the spike from the batteries recovering.
+The result of the suspension extended the test results a day.
+The real reason for the additional days was the performance of the Duracell batteries.
+While the most expensive tested so far, they lasted the longest before dropping below the 2.4 volt cutoff.
+The Duracell best price I found was $1.17 each.  The Amazon cost $1.37 each.
+A future test will be the Duracell vs the NightKonic.
+
+[Amazon on Amazon](https://www.amazon.com/AmazonBasics-CR2032-Lithium-Coin-Cell/dp/B0787K2XWZ/ref=psdc_15745581_t1_B00HVS2TCQ)
+[Duracell on Amazon](https://www.amazon.com/s?k=panasonic+cr2032+3v+battery&ref=bnav_search_go)
+
+{% include image.html file="cr2032_test_5.jpg" alt="Test Run 5 Extended"%}
+[Test Run 5 Amazon and Duracell batteries.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_5.jpg)
+
+## (in work)
+Other brands JunPower, PGSonic & Joobef of batteries will be tested and I will update this in a few days with that test result.
 
 ### Conclusion
 For now my sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced.  Price can't validate shelf life and repeatability, but I do not want to spend the next 10 years validating.  I will continue to test different brand batteries.
