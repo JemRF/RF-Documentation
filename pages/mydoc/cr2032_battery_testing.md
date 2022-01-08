@@ -43,11 +43,11 @@ Testing to date does imply some may do a little better, it is still a price to p
 
 While the Duracell CR2032 appears a performance winner, the NightKonic performed almost as well. The real difference is toward the end of life the NightKonic results between batteries varies where the Duracell appears more consistent. From cost to performance the NightKonic is one quarter the cost of the Duracell.
 
-For my sensor needs, this was not the difference I was expecting. For our bathroom scales, car fobs, a burst used to lock and unlock the car and remotes to change the TV channels, there is not much difference at all (well OK, channel surfers maybe).
+For my sensor needs, there was not the difference between batteries that I was expecting. For our bathroom scales, car fobs, a burst used to lock and unlock the car and remotes to change the TV channels, there is not much difference at all (well OK, channel surfers maybe).
 
 The last question of will the pulse testing chanage the power curve, the answer is No. The only difference is the drop off is slower that a steady state load.  That's not a real surprise.
 
-I had been exclusively using Energizers for my critical needs, but going forward I am buying the cheaper NightKonic batteries. With the exception for hard-to-reach locations. For those, I will consider using the Duracell CR2032.
+In Summary, all of the battteries tested to date, should last well over a year in my sensors, even updating once a minute.  With the normal update setting of once every 5 minutes, I would not be supprised if it was working for two years or more.
 
 ## Disclaimer
 I have not received any funds, support, or direction of any kind from the different vendors. Testing was done for my own benefit at my cost to help my customers.
