@@ -71,6 +71,9 @@
     </script>
     {% endif %}
 
+{% if site.google_analytics and jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
 </head>
 <body>
 {% include topnav.html %}
@@ -100,7 +103,4 @@
     </div>
 
 </body>
-{% if site.google_analytics and jekyll.environment == 'production' %}
-{% include analytics.html %}
-{% endif %}
 </html>
