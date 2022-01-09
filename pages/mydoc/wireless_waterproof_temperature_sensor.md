@@ -23,7 +23,7 @@ Install battery and close enclosure as described [here](sensor_installation.html
 ## Product Specifications
 * ~1°C accuracy
 * 10K (NTCLE100E3103JB0) thermistor sensor
-* [Sensor Specification][NTCLE100E3103JB0.html]
+* [Sensor Specification](3950thermistor.pdf)
 
 ### Electrical
 * 2.2-3.3V
