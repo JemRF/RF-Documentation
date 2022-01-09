@@ -22,10 +22,10 @@ I have also observed that a lithium battery will recover some when the load is r
 - Will pulse loads change the power curve?
 
 ## Test Plan
-To better match real-world usage, the test conditions would need to be a load pulse , then a long rest and pulse again. To do that, we built a test rig to hold and test 4 CR2032 batteries. The testing was for each battery to turn on an LED for .25 seconds, one at a time, then repeat.  This cycle allowed each battery the same on and off time.  The off time being 3 times longer to allow for some battery recovery.
+To better match real-world usage, the test conditions would need to be a load pulse, then a long rest and pulse again. To do that, we built a test rig to hold and test 4 CR2032 batteries. The testing was for each battery to turn on an LED for .25 seconds, one at a time, then repeat.  This cycle allowed each battery the same on and off time.  The off time being 3 times longer to allow for some battery recovery.
 The normal lithium CR2032 battery operates at 2.8 volts. So testing was run until the batteries were below 2.4 volts.  While batteries in many devices will still operate below 2.4 volts, I picked 2.4 volts based on manufacture data, which show at 2.4 volts the battery has started the fast roll off phase.
-## Batteries Tested
-Here is the summary of the batteries tested so far and their cost (if bought 10 at a time):
+## Batteries Test Results
+Here is the summary of the batteries tested so far, their cost (if bought 10 at a time) and how they performed (Best -> 1 to Worst), and a weighted index of cost to performance of how long they lasted vs their cost:
 
 |Brand	|Code for Testing	|General Cost	|Performance	|Cost Per Performance|
 |-------|-------------------|---------------|---------------|-----------|
@@ -35,7 +35,7 @@ Here is the summary of the batteries tested so far and their cost (if bought 10 
 |Duracell	|DCR2032	|1.21	|1	|4|
 |Amazon	|ACR2032	|0.79	|3  |5|
 
-The prices are under constant change and are here for relative price comparison.  These prices are at the time I ordered them.  Your cost may be different.
+The prices are under constant change and are here for relative price comparison.  These prices were at the time I ordered them.  Your cost may be different.
 
 ## Conclusion
 For now, my sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced. Price can’t validate shelf life and repeatability, but I do not want to spend the next 10 years validating.
@@ -45,9 +45,9 @@ While the Duracell CR2032 appears a performance winner, the NightKonic performed
 
 For my sensor needs, there was not the difference between batteries that I was expecting. For our bathroom scales, car fobs, a burst used to lock and unlock the car and remotes to change the TV channels, there is not much difference at all (well OK, channel surfers maybe).
 
-The last question of will the pulse testing chanage the power curve, the answer is No. The only difference is the drop off is slower that a steady state load.  That's not a real surprise.
+The last question of will the pulse testing change the power curve, the answer is No. The only difference is the drop off is slower that a steady state load.  That's not a real surprise.
 
-In Summary, all of the battteries tested to date, should last well over a year in my sensors, even updating once a minute.  With the normal update setting of once every 5 minutes, I would not be supprised if it was working for two years or more.
+In Summary, all the batteries tested to date, should last well over a year in my sensors, even updating once a minute.  With the normal update setting of once every 5 minutes, I would not be surprised if it was working for two years or more.
 
 ## Disclaimer
 I have not received any funds, support, or direction of any kind from the different vendors. Testing was done for my own benefit at my cost to help my customers.
@@ -76,7 +76,7 @@ Test 2 was the first real test.  I used two new Energizer 2032 batteries and two
 {% include image.html file="cr2032_test_2.jpg" alt="Test Run 2 Energizer and NightKonic"%}
 [Test run 2 Results using Energizer and Nightkonic CR 2032 batteries](https://jemrf.github.io/RF-Documentation/images/cr2032_test_2.jpg)
 
-Like all good tests to show off, something strange seems to happen. One of the NightKonic batteries went to almost 0 volts.  While the test was running I did see the #4 led was not coming on. My first thought was that my test set had broken, so I removed the battery and verified its voltage, it was .8 volts.  The test set checked OK, so I thought maybe the cat had walked across the set and shorted the battery. I checked the wire to be sure that would not happen again. I did observe the battery was recovering, so I put it back to finish the test.  It was not until I saw the graph that I found out it happened twice. [Link to Full Graph and it is weird.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_2_fullplot.jpg)
+Like all good tests to show off, something strange seems to happen. One of the NightKonic batteries went to almost 0 volts.  While the test was running, I did see the #4 led was not coming on. My first thought was that my test set had broken, so I removed the battery and verified its voltage, it was .8 volts.  The test set checked OK, so I thought maybe the cat had walked across the set and shorted the battery. I checked the wire to be sure that would not happen again. I did observe the battery was recovering, so I put it back to finish the test.  It was not until I saw the graph that I found out it happened twice. [Link to Full Graph and it is weird.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_2_fullplot.jpg)
 
 The two Energizer batteries had very consistent graphs.  The surprise was the performance of the other NightKonic by outlasting the Energizers.
 Links to Amazon where the base cost of Energizer is $.95 each and the base cost of the NightKonic is $.25.
@@ -89,7 +89,7 @@ Links to Amazon where the base cost of Energizer is $.95 each and the base cost 
 Test 3 shows the results using two Panasonic batteries, one Energizer and one NightKonic.  The configuration was #1 and #3 were Panasonic batteries, #2 was Nightkonic and to be sure the slot #4 battery holder was not the problem, I put the Energizer in slot 4 because both had the same result plot in Test 2.  Test results after 6 days and over 572,000 cycles.
 {% include image.html file="cr2032_test_3.jpg" alt="Test Run 3 Panasonic, Energizer and NightKonic"%}
 
-[Test run 3 Results using 2 Panasonic batterlies, one Energizer and one NightKonic.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_3.jpg)
+[Test run 3 Results using 2 Panasonic batteries, one Energizer and one NightKonic.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_3.jpg)
 
 From the results you can see that the Panasonic tracked with the Energizer following the same plot as Test 2.  The NightKonic again had the same plot result as the good battery in test 2.
 
@@ -120,7 +120,7 @@ That to me would imply some quality control issues with the NightKonic.
 
 ### Test 5 Amazon and Duracell
 This test was the longest test, lasting 11 days.
-This test was interrupted by database lock out on the second day into  causing the test to be suspended for almost 8 hours.
+This test was interrupted by database lock out on the second day into causing the test to be suspended for almost 8 hours.
 Again, as before when this happened, you can see the spike from the batteries recovering.
 The result of the suspension extended the test results a day.
 The real reason for the additional days was the performance of the Duracell batteries.
