@@ -63,7 +63,7 @@ My testing will continue with repeat testing the batteries for consistancy of th
 ## Full Test Report
 ### Testing Process
 As described above, the test conditions would create a pulse load, then a long rest and pulse again.
-To do that I built a [test rig](/images/BatteryTestSet.gif) to hold and test 4 CR2032 batteries. I used a 16 bit A/D converter to read the voltage and connected it all up to a Raspberry Pi. The software would pulse a load on each battery one at a time for a few minutes then read the voltage.
+To do that I built a [test rig](https://jemrf.github.io/RF-Documentation/images/BatteryTestSet.gif) to hold and test 4 CR2032 batteries. I used a 16 bit A/D converter to read the voltage and connected it all up to a Raspberry Pi. The software would pulse a load on each battery one at a time for a few minutes then read the voltage.
 Almost immediately we learned logging data every few minutes was a waste of effort because the change was very slow, so logging was changed to every 6 minutes, still too often, but for now it works.
 The test cycle will emulate a brief transmission with an led load of 11 ma, for each battery, one at a time for .25 seconds. There will be 4 batteries tested so each battery will be on .25 seconds and off for .75 seconds.
 
