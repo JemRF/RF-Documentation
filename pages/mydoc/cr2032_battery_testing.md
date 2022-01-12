@@ -1,9 +1,9 @@
 ---
 title: CR2032 Battery Testing
 keywords: 2032, cr2032, coin battery, testing coin battery
-last_updated: Dec 15, 2021
+last_updated: Jan 12, 2022
 tags:
-summary: "This page is under construction - stay tuned for updates"
+summary: "This page is a work in progress - stay tuned for updates"
 sidebar: mydoc_sidebar
 permalink: cr2032_battery_testing.html
 folder: mydoc
@@ -15,17 +15,21 @@ So, the questions are:
 - Is there a difference between different brands of CR2032 batteries?
 - So how can we tell?
 
-We can search the Internet for testing of CR2032 batteries. Most of what we find is that the more expensive manufacturers provide lots of test results. The cheap batteries do not provide that much information. What we see from the manufacturer’s steady state testing (like turning on the lights till the battery dies) is the normal lithium battery characteristics, when testing starts- the voltage will drop when put under load- then a long slow drop, ending with a sudden fast roll off. A good example is the [Energizer CR2032 Product Data Sheet ](https://data.energizer.com/pdfs/cr2032.pdf).
+We can search the Internet for testing of CR2032 batteries. Most of what we find is that the more expensive manufacturers provide lots of test results. The cheap batteries do not provide that much information. What we see from the manufacturer’s steady state testing (like turning on the lights till the battery dies) is the normal lithium battery characteristics, when testing starts, the voltage will drop when you turn on the light, then lithium will go a long time with little voltage drop. Near the end of battery life, roughly the last 10 percent, the voltage will follow fast roll off. A good example is the [Energizer CR2032 Product Data Sheet ](https://data.energizer.com/pdfs/cr2032.pdf).
 
- Most real-world usage for coin batteries, such as with the [JemRF devices](https://www.jemrf.com), are not a steady state load, but a pulse load when the device transmits. Then there is a relatively long rest time before transmitting again. This cycle is a few milliseconds to transmit, then from 1-to-5-minute sleep period. Like using a TV or Garage door opener- a short press of the button then a wait period.
+ Most real-world usage for coin batteries, such as with the [JemRF devices](https://www.jemrf.com), are not a steady state load, but a pulse load when the device transmits. Then there is a relatively long rest time before transmitting again. This cycle is a few milliseconds to transmit, then from 1-to-5-minute sleep period. Like using a TV or Garage door opener, a short press of the button then a wait period.
 I have also observed that a lithium battery will recover some when the load is removed. I assume this mode would lengthen the lifetime of the battery, so one additional question:
 - Will pulse loads change the power curve?
 
 ## Test Plan
 To better match real-world usage, the test conditions would need to be a load pulse, then a long rest and pulse again. To do that, we built a test rig to hold and test 4 CR2032 batteries. The testing was for each battery to turn on an LED for .25 seconds, one at a time, then repeat.  This cycle allowed each battery the same on and off time.  The off time being 3 times longer to allow for some battery recovery.
 The normal lithium CR2032 battery operates at 2.8 volts. So testing was run until the batteries were below 2.4 volts.  While batteries in many devices will still operate below 2.4 volts, I picked 2.4 volts based on manufacture data, which show at 2.4 volts the battery has started the fast roll off phase.
-## Batteries Test Results
-Here is the summary of the batteries tested so far, their cost (if bought 10 at a time) and how they performed (Best -> 1 to Worst), and a weighted index of cost to performance of how long they lasted vs their cost:
+## Testing the Batteries
+Using the test plan, a test cycle would emulate a brief transmission of a wireless device.  The LED load is about that of the [JemRF devices](https://www.jemrf.com) when they transmit.  Each battery has is connected to an individual LED light to emulate the transmission load of about 11 milliamps of power. Each battery was pulsed ¼ of a second. There were 4 batteries tested per set.  Each battery will be on .25 seconds and off for .75 seconds.
+Testing for each set of batteries ran from 6 to almost 10 days.  The process pulsed the batteries once a second, or some 86,400 time a day.  After 6 days, the number of pulses (518,400) would, if stretch out at a pulse rate of once a minute, to about 14 months to complete.
+
+## Test Results
+The results of the batteries tested so far showed all did well, with a couple outlasting all the others.  The chart below is the summary of the batteries tested so far.  It compares, their cost (if bought 10 at a time) and how they performed.  The rating was based on how long they remained above the cut off, with the best being #1.  I weighted the cost of the battery with the performance to create the Cost Per Performance value.
 
 |Brand	|Code for Testing	|General Cost	|Performance	|Cost Per Performance|
 |-------|-------------------|---------------|---------------|-----------|
@@ -35,10 +39,11 @@ Here is the summary of the batteries tested so far, their cost (if bought 10 at 
 |Duracell	|DCR2032	|1.21	|1	|4|
 |Amazon	|ACR2032	|0.79	|3  |5|
 
-The prices are under constant change and are here for relative price comparison.  These prices were at the time I ordered them.  Your cost may be different.
+Because prices are under constant change, they are here for relative price comparison.  These prices were what I paid at the time I ordered them.
 
 ## Conclusion
-For now, my sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced. Price can’t validate shelf life and repeatability, but I do not want to spend the next 10 years validating.
+For now, my sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced. Price could validate a long shelf life and or consistency of performance, but I do not want to spend the next 10 years testing batteries.
+
 Testing to date does imply some may do a little better, it is still a price to performance issue for most of us. For example, the Panasonic, Energizer and Amazon performing almost identically, but vary greatly in price.
 
 While the Duracell CR2032 appears a performance winner, the NightKonic performed almost as well. The real difference is toward the end of life the NightKonic results between batteries varies where the Duracell appears more consistent. From cost to performance the NightKonic is one quarter the cost of the Duracell.
@@ -47,17 +52,18 @@ For my sensor needs, there was not the difference between batteries that I was e
 
 The last question of will the pulse testing change the power curve, the answer is No. The only difference is the drop off is slower that a steady state load.  That's not a real surprise.
 
-In Summary, all the batteries tested to date, should last well over a year in my sensors, even updating once a minute.  With the normal update setting of once every 5 minutes, I would not be surprised if it was working for two years or more.
+In Summary, all the batteries tested to date, should last well over a year in my sensors, even updating once a minute.  With the normal update setting of once every 5 minutes, I would expect devices to be operating just fine for two years or more.
 
 ## Disclaimer
 I have not received any funds, support, or direction of any kind from the different vendors. Testing was done for my own benefit at my cost to help my customers.
 
-My testing will continue until I am satisfied that cheaper is a good answer, or I identify a really good battery at a good price.
+I will repeat testing the batteries for consistancy of the products and
+My testing will continue with repeat testing the batteries for consistancy of the products and until I am satisfied that cheaper is a good answer, or I identify a really good battery at a good price.
 ***
 ## Full Test Report
 ### Testing Process
-As described above, the test conditions would need to be a pulse of load, then a long rest and pulse again.
-To do that I built a test rig to hold and test 4 CR2032 batteries. I used a 16 bit A/D converter to read the voltage and connected it all up to a Raspberry Pi. The software would pulse a load on each battery one at a time for a few minutes then read the voltage.
+As described above, the test conditions would create a pulse load, then a long rest and pulse again.
+To do that I built a [test rig](/images/BatteryTestSet.gif) to hold and test 4 CR2032 batteries. I used a 16 bit A/D converter to read the voltage and connected it all up to a Raspberry Pi. The software would pulse a load on each battery one at a time for a few minutes then read the voltage.
 Almost immediately we learned logging data every few minutes was a waste of effort because the change was very slow, so logging was changed to every 6 minutes, still too often, but for now it works.
 The test cycle will emulate a brief transmission with an led load of 11 ma, for each battery, one at a time for .25 seconds. There will be 4 batteries tested so each battery will be on .25 seconds and off for .75 seconds.
 
