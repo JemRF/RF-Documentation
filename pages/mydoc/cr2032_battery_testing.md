@@ -39,10 +39,11 @@ First I will needed to create a performance rating. To do that I assigned a rank
 |    3   |  8-9   |
 |    4   |  9-10  |
 |    5   |  10-11  |
+
  The chart below is the summary of the batteries tested so far.  It compares, their cost (if bought 10 at a time) and how they performed.  The rating was based on how long they remained above the cut off, with the best being #1.  I weighted the cost of the battery with the performance to create the Cost(C)/ Performance(P) value, and ordered the chart by the C/P Order.
 
 |Brand  |Code for Testing   |General Cost   |Performance    |Cost Per Performance|C/P Order|
-|-------|-------------------|---------------|---------------|--------------|-----------|
+|-------|-------------------|:---------------:|:---------------:|:--------------:|:-----------:|
 |NightKonic |NCR2032    |0.25   |3|.083 |1|
 |PGSonic	|PGCR2032	|0.45 |3 |.150|2|
 |Duracell   |DCR2032    |1.21   |5|.234  |3|
