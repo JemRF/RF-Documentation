@@ -1,7 +1,7 @@
 ---
 title: CR2032 Battery Testing
 keywords: 2032, cr2032, coin battery, testing coin battery
-last_updated: Jan 12, 2022
+last_updated: Jan 13, 2022
 tags:
 summary: "This page is a work in progress - stay tuned for updates"
 sidebar: mydoc_sidebar
@@ -25,12 +25,12 @@ I have also observed that a lithium battery will recover some when the load is r
 To better match real-world usage, the test conditions would need to be a load pulse, then a long rest and pulse again. To do that, we built a test rig to hold and test 4 CR2032 batteries. The testing was for each battery to turn on an LED for .25 seconds, one at a time, then repeat.  This cycle allowed each battery the same on and off time.  The off time being 3 times longer to allow for some battery recovery.
 The normal lithium CR2032 battery operates at 2.8 volts. So testing was run until the batteries were below 2.4 volts.  While batteries in many devices will still operate below 2.4 volts, I picked 2.4 volts based on manufacture data, which show at 2.4 volts the battery has started the fast roll off phase.
 ## Testing the Batteries
-Using the test plan, a test cycle would emulate a brief transmission of a wireless device.  The LED load is about that of the [JemRF devices](https://www.jemrf.com) when they transmit.  Each battery has is connected to an individual LED light to emulate the transmission load of about 11 milliamps of power. Each battery was pulsed ¼ of a second. There were 4 batteries tested per set.  Each battery will be on .25 seconds and off for .75 seconds.
-Testing for each set of batteries ran from 6 to almost 10 days.  The process pulsed the batteries once a second, or some 86,400 time a day.  After 6 days, the number of pulses (518,400) would, if stretch out at a pulse rate of once a minute, to about 14 months to complete.
+Using the test plan, a test cycle would emulate a brief transmission of a wireless device.  The LED load is about that of the [JemRF devices](https://www.jemrf.com) when they transmit.  Each battery is connected to an individual LED light to emulate the transmission load of about 11 milliamps of power. Each battery was pulsed ¼ of a second. There were 4 batteries tested per set.  Each battery will be on .25 seconds and off for .75 seconds.
+Testing for each set of batteries ran from 6 to almost 10 days.  The process pulsed the batteries once a second, or some 86,400 times a day.  After 6 days, the number of pulses (518,400) would, if stretched out at a pulse rate of once a minute, would equate to about 14 months of usage.
 
 ## Test Results
 The results of the batteries tested so far showed all did well, with one outlasting all the others. My method of ranking the batteries was to compare their cost against their performance.
-First I will needed to create a performance rating. To do that I assigned a ranking for the number of days the battery lasted. I then used this chart to assign a ranking to each battery.
+First, I needed to create a performance rating. To do that, I assigned a ranking for the number of days the battery lasted. I then used this chart to assign a ranking to each battery.
 
 |Performance|  Days  |
 |:----:|:------:|
@@ -40,7 +40,7 @@ First I will needed to create a performance rating. To do that I assigned a rank
 |    4   |  9-10  |
 |    5   |  10-11  |
 
- The chart below is the summary of the batteries tested so far.  It compares, their cost (if bought 10 at a time) and how they performed.  The rating was based on how long they remained above the cut off, with the best being #1.  I weighted the cost of the battery with the performance to create the Cost(C)/ Performance(P) value, and ordered the chart by the C/P Order.
+ The chart below is the summary of the batteries tested so far.  It compares their cost (if bought 10 at a time) and how they performed.  The rating was based on how long they remained above the cut off, with the best being #1.  I weighted the cost of the battery with the performance to create the Cost(C)/ Performance(P) value, and ordered the chart by the C/P Order.
 
 |Brand  |Code for Testing   |General Cost   |Performance    |Cost Per Performance|C/P Order|
 |-------|-------------------|:---------------:|:---------------:|:--------------:|:-----------:|
@@ -55,15 +55,15 @@ First I will needed to create a performance rating. To do that I assigned a rank
 Because prices are under constant change, your price could change the Cost to Performance Order.  These prices were what I paid at the time I ordered them.
 
 ## Conclusion
-For now, my sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced. Price could validate a long shelf life and or consistency of performance, but I do not want to spend the next 10 years testing batteries.
+For now, my sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced. Price could validate a long shelf life and/or consistency of performance, but I do not want to spend the next 10 years testing batteries.
 
 Testing to date does imply some may do a little better, it is still a price to performance issue for most of us. For example, the Panasonic, Energizer and Amazon performing almost identically, but vary greatly in price.
 
-While the Duracell CR2032 appears a performance winner, the NightKonic performed almost as well. The real difference is toward the end of life the NightKonic results between batteries varies where the Duracell appears more consistent. From cost to performance the extra long run time of the Duracell makes it a battery worth considering, but with NightKonic at one quarter the cost of the Duracell, the NightKonic appears to be a good choice.
+While the Duracell CR2032 appears a performance winner, the NightKonic performed almost as well. The real difference is toward the end of life, the NightKonic results between batteries varies, where the Duracell appears more consistent. From cost to performance, the extra long run time of the Duracell makes it a battery worth considering; but with NightKonic at one quarter the cost of the Duracell, the NightKonic appears to be a good choice.
 
 For my sensor needs, there was not the difference between batteries that I was expecting. For our bathroom scales, car fobs, a burst used to lock and unlock the car and remotes to change the TV channels, there is not much difference at all (well OK, channel surfers maybe).
 
-The last question of will the pulse testing change the power curve, the answer is No. The only difference is the drop off is slower that a steady state load.  That's not a real surprise.
+The last question of will the pulse testing change the power curve, the answer is No. The only difference is the drop off is slower than a steady state load.  That's not a real surprise.
 
 In Summary, all the batteries tested to date, should last well over a year in my sensors, even updating once a minute.  With the normal update setting of once every 5 minutes, I would expect devices to be operating just fine for two years or more.
 
@@ -152,16 +152,18 @@ The Duracell best price I found was $1.21 each.  The Amazon cost $1.37 each.
 
 [Duracell on Amazon](https://www.amazon.com/gp/product/B019QPD9LG/ref=ox_sc_act_title_1?smid=A19DY5EK03NION&psc=1)
 
-{% include image.html file="cr2032_test_5.jpg" alt="Test Run 5 Extended"%}
+{% include image.html file="cr2032_test_5.jpg" alt="Test Run 5 "%}
 [Test Run 5 Amazon and Duracell batteries.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_5.jpg)
 
-## Test 6 PGSonic and JOOBEF by GutAlkaLi
+### Test 6 PGSonic and JOOBEF by GutAlkaLi
 Test 6 was a smooth test with no interruptions or strange events.  This test lasted almost 9 days. Testing the PGSonic and JOOBEF batteries by GutAlkaLi, with the PGSonic lasting almost two days longer than the JOOBEF.   That adds a new battery to the high performers, the PGSonic curves are very close to the Nightknoic.  A future run off test between the PGSonic and the Nightkonic are needed.
 
 [ JOOBEF by GutAlkaLi on Amazon](https://www.amazon.com/Lithium-Battery-Electronic-Calculators-Watches/dp/B07SBMM72C/ref=sr_1_2?keywords=GutAlkaLi+cr2032&qid=1642128749&sr=8-2)
 
 [PGSonic on Amazon]( https://www.amazon.com/CR2032-3V-Lithium-Battery-10pcs/dp/B098ZW4GDY/ref=sr_1_8?crid=T2PSYLYDYD3D&keywords=pgsonic+cr2032&qid=1642128844&sprefix=pgsonic+cr2032%2Caps%2C1471&sr=8-8)
 
+{% include image.html file="cr2032_test_6.jpg" alt="Test Run 6"%}
+[Test run 6, PGSonic and JOOBEF](https://jemrf.github.io/RF-Documentation/images/cr2032_test_6.jpg)
 ### In Work
 I have three other brands on Amazon to test: JunPower, PGSonic & Nightkonic. It is Janurary 13, 2022, I will update this in a few weeks with those test results as each completes, as well as a joint retest of the Duracell vs the NightKonic.
 
