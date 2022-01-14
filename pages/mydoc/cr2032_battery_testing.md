@@ -31,6 +31,7 @@ Testing for each set of batteries ran from 6 to almost 10 days.  The process pul
 ## Test Results
 The results of the batteries tested so far showed all did well, with one outlasting all the others. My method of ranking the batteries was to compare their cost against their performance.
 First I will needed to create a performance rating. To do that I assigned a ranking for the number of days the battery lasted. I then used this chart to assign a ranking to each battery.
+
 |Performance|  Days  |
 |:----:|:------:|
 |    1   |  6-7   |
