@@ -165,5 +165,5 @@ Test 6 was a smooth test with no interruptions or strange events.  This test las
 {% include image.html file="cr2032_test_6f.jpg" alt="Test Run 6"%}
 [Test run 6, PGSonic and JOOBEF](https://jemrf.github.io/RF-Documentation/images/cr2032_test_6f.jpg)
 ### In Work
-I have three other brands on Amazon to test: JunPower, PGSonic & Nightkonic. It is Janurary 13, 2022, I will update this in a few weeks with those test results as each completes, as well as a joint retest of the Duracell vs the NightKonic.
+I have one other brands on Amazon to test; JunPower. I will match it with PGSonic & Nightkonic. It is Janurary 13, 2022, I will update this in a few weeks with those test results as each completes, as well as a joint retest of the Duracell vs the NightKonic.
 
