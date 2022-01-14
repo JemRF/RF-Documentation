@@ -29,24 +29,35 @@ Using the test plan, a test cycle would emulate a brief transmission of a wirele
 Testing for each set of batteries ran from 6 to almost 10 days.  The process pulsed the batteries once a second, or some 86,400 time a day.  After 6 days, the number of pulses (518,400) would, if stretch out at a pulse rate of once a minute, to about 14 months to complete.
 
 ## Test Results
-The results of the batteries tested so far showed all did well, with a couple outlasting all the others.  The chart below is the summary of the batteries tested so far.  It compares, their cost (if bought 10 at a time) and how they performed.  The rating was based on how long they remained above the cut off, with the best being #1.  I weighted the cost of the battery with the performance to create the Cost Per Performance value.
+The results of the batteries tested so far showed all did well, with one outlasting all the others. My method of ranking the batteries was to compare their cost against their performance.
+First I will needed to create a performance rating. To do that I assigned a ranking for the number of days the battery lasted. I then used this chart to assign a ranking to each battery.
+|Performance|  Days  |
+|:----:|:------:|
+|    1   |  6-7   |
+|    2   |  7-8   |
+|    3   |  8-9   |
+|    4   |  9-10  |
+|    5   |  10-11  |
+ The chart below is the summary of the batteries tested so far.  It compares, their cost (if bought 10 at a time) and how they performed.  The rating was based on how long they remained above the cut off, with the best being #1.  I weighted the cost of the battery with the performance to create the Cost(C)/ Performance(P) value, and ordered the chart by the C/P Order.
 
-|Brand	|Code for Testing	|General Cost	|Performance	|Cost Per Performance|
-|-------|-------------------|---------------|---------------|-----------|
-|NightKonic	|NCR2032	|0.25	|2	|1|
-|Panasonic	|PCR2032	|0.5	|3	|2|
-|Energizer	|ECR2032	|0.76	|3	|3|
-|Duracell	|DCR2032	|1.21	|1	|4|
-|Amazon	|ACR2032	|0.79	|3  |5|
+|Brand  |Code for Testing   |General Cost   |Performance    |Cost Per Performance|C/P Order|
+|-------|-------------------|---------------|---------------|--------------|-----------|
+|NightKonic |NCR2032    |0.25   |3|.083 |1|
+|PGSonic	|PGCR2032	|0.45 |3 |.150|2|
+|Duracell   |DCR2032    |1.21   |5|.234  |3|
+|JOOBEF 	|GCR2032	|0.25 |1|.250|4|
+|Panasonic  |PCR2032    |0.5    |1|.500  |5|
+|Energizer  |ECR2032    |0.76   |1|.710  |6|
+|Amazon |ACR2032    |0.79   |1|.790  |7|
 
-Because prices are under constant change, they are here for relative price comparison.  These prices were what I paid at the time I ordered them.
+Because prices are under constant change, your price could change the Cost to Performance Order.  These prices were what I paid at the time I ordered them.
 
 ## Conclusion
 For now, my sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced. Price could validate a long shelf life and or consistency of performance, but I do not want to spend the next 10 years testing batteries.
 
 Testing to date does imply some may do a little better, it is still a price to performance issue for most of us. For example, the Panasonic, Energizer and Amazon performing almost identically, but vary greatly in price.
 
-While the Duracell CR2032 appears a performance winner, the NightKonic performed almost as well. The real difference is toward the end of life the NightKonic results between batteries varies where the Duracell appears more consistent. From cost to performance the NightKonic is one quarter the cost of the Duracell.
+While the Duracell CR2032 appears a performance winner, the NightKonic performed almost as well. The real difference is toward the end of life the NightKonic results between batteries varies where the Duracell appears more consistent. From cost to performance the extra long run time of the Duracell makes it a battery worth considering, but with NightKonic at one quarter the cost of the Duracell, the NightKonic appears to be a good choice.
 
 For my sensor needs, there was not the difference between batteries that I was expecting. For our bathroom scales, car fobs, a burst used to lock and unlock the car and remotes to change the TV channels, there is not much difference at all (well OK, channel surfers maybe).
 
@@ -142,6 +153,13 @@ The Duracell best price I found was $1.21 each.  The Amazon cost $1.37 each.
 {% include image.html file="cr2032_test_5.jpg" alt="Test Run 5 Extended"%}
 [Test Run 5 Amazon and Duracell batteries.](https://jemrf.github.io/RF-Documentation/images/cr2032_test_5.jpg)
 
+## Test 6 PGSonic and JOOBEF by GutAlkaLi
+Test 6 was a smooth test with no interruptions or strange events.  This test lasted almost 9 days. Testing the PGSonic and JOOBEF batteries by GutAlkaLi, with the PGSonic lasting almost two days longer than the JOOBEF.   That adds a new battery to the high performers, the PGSonic curves are very close to the Nightknoic.  A future run off test between the PGSonic and the Nightkonic are needed.
+
+[ JOOBEF by GutAlkaLi on Amazon](https://www.amazon.com/Lithium-Battery-Electronic-Calculators-Watches/dp/B07SBMM72C/ref=sr_1_2?keywords=GutAlkaLi+cr2032&qid=1642128749&sr=8-2)
+
+[PGSonic on Amazon]( https://www.amazon.com/CR2032-3V-Lithium-Battery-10pcs/dp/B098ZW4GDY/ref=sr_1_8?crid=T2PSYLYDYD3D&keywords=pgsonic+cr2032&qid=1642128844&sprefix=pgsonic+cr2032%2Caps%2C1471&sr=8-8)
+
 ### In Work
-I have three other brands on Amazon to test: JunPower, PGSonic & Joobef/GutAlkaLi. It is Janurary 7, 2022, I will update this in a few weeks with those test results as each completes, as well as a joint retest of the Duracell vs the NightKonic.
+I have three other brands on Amazon to test: JunPower, PGSonic & Nightkonic. It is Janurary 13, 2022, I will update this in a few weeks with those test results as each completes, as well as a joint retest of the Duracell vs the NightKonic.
 
