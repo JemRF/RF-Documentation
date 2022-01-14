@@ -162,8 +162,8 @@ Test 6 was a smooth test with no interruptions or strange events.  This test las
 
 [PGSonic on Amazon]( https://www.amazon.com/CR2032-3V-Lithium-Battery-10pcs/dp/B098ZW4GDY/ref=sr_1_8?crid=T2PSYLYDYD3D&keywords=pgsonic+cr2032&qid=1642128844&sprefix=pgsonic+cr2032%2Caps%2C1471&sr=8-8)
 
-{% include image.html file="cr2032_test_6.jpg" alt="Test Run 6"%}
-[Test run 6, PGSonic and JOOBEF](https://jemrf.github.io/RF-Documentation/images/cr2032_test_6.jpg)
+{% include image.html file="cr2032_test_6f.jpg" alt="Test Run 6"%}
+[Test run 6, PGSonic and JOOBEF](https://jemrf.github.io/RF-Documentation/images/cr2032_test_6f.jpg)
 ### In Work
 I have three other brands on Amazon to test: JunPower, PGSonic & Nightkonic. It is Janurary 13, 2022, I will update this in a few weeks with those test results as each completes, as well as a joint retest of the Duracell vs the NightKonic.
 
