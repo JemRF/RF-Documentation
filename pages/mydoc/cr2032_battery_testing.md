@@ -30,15 +30,15 @@ Testing for each set of batteries ran from 6 to almost 10 days.  The process pul
 
 ## Test Results
 The results of the batteries tested so far showed all did well, with one outlasting all the others. My method of ranking the batteries was to compare their cost against their performance.
-First, I needed to create a performance rating. To do that, I assigned a ranking for the number of days the battery lasted. I then used this chart to assign a ranking to each battery.
+First, I needed to create a performance rating. To do that, I assigned a ranking for the number of days the battery lasted. I then used this chart to assign a ranking to each battery. Then for comparison, using the batteries that lasted 6-7 days as average, I show the percentage better value for each day extra the battery lasted.
 
-|Performance|  Days  |
-|:----:|:------:|
-|    1   |  6-7   |
-|    2   |  7-8   |
-|    3   |  8-9   |
-|    4   |  9-10  |
-|    5   |  10-11  |
+|Performance|  Days  |Percent Better|
+|:----:|:------:|:------:|
+|    1   |  6-7   |Average|
+|    2   |  7-8   |14%|
+|    3   |  8-9   |25%|
+|    4   |  9-10  |33%|
+|    5   |  10-11  |40%|
 
  The chart below is the summary of the batteries tested so far.  It compares their cost (if bought 10 at a time) and how they performed.  The rating was based on how long they remained above the cut off, with the best being #1.  I weighted the cost of the battery with the performance to create the Cost(C)/ Performance(P) value, and ordered the chart by the C/P Order.
 
