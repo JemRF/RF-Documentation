@@ -30,9 +30,9 @@ Testing for each set of batteries ran from 6 to almost 10 days.  The process pul
 
 ## Test Results
 The results of the batteries tested so far showed all did well, with one outlasting all the others. My method of ranking the batteries was to compare their cost against their performance.
-First, I needed to create a performance rating. To do that, I assigned a ranking for the number of days the battery lasted. I then used this chart to assign a ranking to each battery. Then for comparison, using the batteries that lasted 6-7 days as average, I show the percentage better value for each day extra the battery lasted.
+First, I needed to create a performance rating. To do that, I assigned a ranking for the number of days the battery lasted. I then used this chart to assign a ranking to each battery. Then for comparison, using the batteries that lasted 6-7 days as average, I show a percentage improvement value for each extra day the battery lasted.
 
-|Performance|  Days  |Percent Better|
+|Performance(P)|  Days  |Percent Better|
 |:----:|:------:|:------:|
 |    1   |  6-7   |Average|
 |    2   |  7-8   |14%|
@@ -42,17 +42,17 @@ First, I needed to create a performance rating. To do that, I assigned a ranking
 
  The chart below is the summary of the batteries tested so far.  It compares their cost (if bought 10 at a time) and how they performed.  The rating was based on how long they remained above the cut off, with the best being #1.  I weighted the cost of the battery with the performance to create the Cost(C)/ Performance(P) value, and ordered the chart by the C/P Order.
 
-|Brand  |Code for Testing   |General Cost   |Performance    |Cost Per Performance|C/P Order|
+|Brand  |Code for Testing|General Cost (C) |Days Working|Cost Per Performance|C/P Order|
 |-------|-------------------|:---------------:|:---------------:|:--------------:|:-----------:|
-|NightKonic |NCR2032    |0.25   |3|.083 |1|
-|PGSonic	|PGCR2032	|0.45 |3 |.150|2|
-|Duracell   |DCR2032    |1.21   |5|.234  |3|
-|JOOBEF 	|GCR2032	|0.25 |1|.250|4|
-|Panasonic  |PCR2032    |0.5    |1|.500  |5|
-|Energizer  |ECR2032    |0.76   |1|.710  |6|
-|Amazon |ACR2032    |0.79   |1|.790  |7|
+|NightKonic |NCR2032    |$ 0.25   |8-9|.083 |1|
+|PGSonic	|PGCR2032	|$ 0.45 |8-9 |.150|2|
+|Duracell   |DCR2032    |$ 1.21   |10-11|.234  |3|
+|JOOBEF 	|GCR2032	|$ 0.25 |6-7|.250|4|
+|Panasonic  |PCR2032    |$ 0.5    |6-7|.500  |5|
+|Energizer  |ECR2032    |$ 0.76   |6-7|.710  |6|
+|Amazon |ACR2032    |0.79   |6-7|.790  |7|
 
-Because prices are under constant change, your price could change the Cost to Performance Order.  These prices were what I paid at the time I ordered them.
+Because prices are under constant change, your price could change the Cost to Performance Order.  These prices were what I paid at the time I ordered them or their cost at this publication.
 
 ## Conclusion
 For now, my sample base is too small to draw a big conclusion about which is better. It does imply that the price is not a guarantee of the quality of power produced. Price could validate a long shelf life and/or consistency of performance, but I do not want to spend the next 10 years testing batteries.
@@ -61,7 +61,7 @@ Testing to date does imply some may do a little better, it is still a price to p
 
 While the Duracell CR2032 appears a performance winner, the NightKonic performed almost as well. The real difference is toward the end of life, the NightKonic results between batteries varies, where the Duracell appears more consistent. From cost to performance, the extra long run time of the Duracell makes it a battery worth considering; but with NightKonic at one quarter the cost of the Duracell, the NightKonic appears to be a good choice.
 
-For my sensor needs, there was not the difference between batteries that I was expecting. For our bathroom scales, car fobs, a burst used to lock and unlock the car and remotes to change the TV channels, there is not much difference at all (well OK, channel surfers maybe).
+For my sensor needs, there was not the difference between batteries that I was expecting. For our bathroom scales, key fobs, a burst used to lock and unlock the car and remotes to change the TV channels, there is not much difference at all (well OK, channel surfers maybe).
 
 The last question of will the pulse testing change the power curve, the answer is No. The only difference is the drop off is slower than a steady state load.  That's not a real surprise.
 
