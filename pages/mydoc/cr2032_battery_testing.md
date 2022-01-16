@@ -70,8 +70,7 @@ In Summary, all the batteries tested to date, should last well over a year in my
 ## Disclaimer
 I have not received any funds, support, or direction of any kind from the different vendors. Testing was done for my own benefit at my cost to help my customers.
 
-I will repeat testing the batteries for consistancy of the products and
-My testing will continue with repeat testing the batteries for consistancy of the products and until I am satisfied that cheaper is a good answer, or I identify a really good battery at a good price..
+I have no plans to test any more vendor products, as this is getting expensive, but my testing will continue until I am satisfied with the consistancy of results. I also want to be satisfied that cheaper is a good answer, or I identify a really good battery at a good price.
 
 ***
 ## Full Test Report
