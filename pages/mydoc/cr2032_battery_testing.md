@@ -70,10 +70,11 @@ In Summary, all the batteries tested to date, should last well over a year in my
 ## Disclaimer
 I have not received any funds, support, or direction of any kind from the different vendors. Testing was done for my own benefit at my cost to help my customers.
 
-I have no plans to test any more vendor products, as this is getting expensive, but my testing will continue until I am satisfied with the consistancy of results. I also want to be satisfied that cheaper is a good answer, or I identify a really good battery at a good price.
+I have no plans to test any more vendor products, as this is getting expensive, but my testing will continue until I am satisfied with the consistancy of the results. I also want to be satisfied that cheaper is a good answer, or I identify a really good battery at a good price.
 
 ***
-## Full Test Report
+## <center>Full Test Report</center>
+***
 ### Testing Process
 As described above, the test conditions would create a pulse load, then a long rest and pulse again.
 To do that I built a [test rig](https://jemrf.github.io/RF-Documentation/images/BatteryTestSet.gif) to hold and test 4 CR2032 batteries. I used a 16 bit A/D converter to read the voltage and connected it all up to a Raspberry Pi. The software would pulse a load on each battery one at a time for a few minutes then read the voltage.
