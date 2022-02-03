@@ -167,13 +167,13 @@ Test 6 was a smooth test with no interruptions or strange events.  This test las
 [Test run 6, PGSonic and JOOBEF](https://jemrf.github.io/RF-Documentation/images/cr2032_test_6f.jpg)
 
 ### Test 7 Junpower PGSonic and Nightkonic
-Test 7 went without interuption and duplicated the performance of the PGSonic and Nightkonic batteries.  The supprise was the Junpower performed just as well, giving another inexpense battery option. With its cost between the two it pushed the PGSonic and others down one.
+Test 7 was a 9 day run and went without interuption. It duplicated the performance of the PGSonic and Nightkonic batteries.  The supprise was the Junpower performed just as well, giving another inexpense battery option. With its cost between the two it pushed the PGSonic and others down one.
 
 {% include image.html file="cr2032_test_7.jpg" alt="Test Run 7"%}
 [Test run 7, PGSonic and JOOBEF](https://jemrf.github.io/RF-Documentation/images/cr2032_test_7.jpg)
 
 ### Test 8 Junpower Nightkonic and Duracell
-Test 8 also ran with no interuptions, execpt the PGSonic in position 4 dropped out, so I removed it from analysis. I will do some redesign of the test set before running more tests just to be sure it is not causing problems and do more tests of the PGSonic and others.
+Test 8 was a 10 day run with no interuptions, execpt the PGSonic in position 4 dropped out, so I removed it from analysis. I will do some redesign of the test set before running more tests just to be sure it is not causing problems and do more tests of the PGSonic and others.
 
 {% include image.html file="cr2032_test_8.jpg" alt="Test Run 8"%}
 [Test run 8, PGSonic and JOOBEF](https://jemrf.github.io/RF-Documentation/images/cr2032_test_8.jpg)
