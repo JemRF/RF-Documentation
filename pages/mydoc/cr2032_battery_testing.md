@@ -1,7 +1,7 @@
 ---
 title: CR2032 Battery Testing
 keywords: 2032, cr2032, coin battery, testing coin battery
-last_updated: Jan 13, 2022
+last_updated: Feb 03, 2022
 tags:
 summary: "This page is a work in progress - stay tuned for updates"
 sidebar: mydoc_sidebar
@@ -45,12 +45,13 @@ First, I needed to create a performance rating. To do that, I assigned a ranking
 |Brand  |Code for Testing|General Cost (C) |Days Working|Cost Per Performance|C/P Order|
 |-------|-------------------|:---------------:|:---------------:|:--------------:|:-----------:|
 |NightKonic |NCR2032    |$ 0.25   |8-9|.083 |1|
-|PGSonic	|PGCR2032	|$ 0.45 |8-9 |.150|2|
-|Duracell   |DCR2032    |$ 1.21   |10-11|.234  |3|
-|JOOBEF 	|GCR2032	|$ 0.25 |6-7|.250|4|
-|Panasonic  |PCR2032    |$ 0.5    |6-7|.500  |5|
-|Energizer  |ECR2032    |$ 0.76   |6-7|.710  |6|
-|Amazon |ACR2032    |0.79   |6-7|.790  |7|
+|Junpower   |JCR2032    |$ 0.39 |8-9|.130 |2|
+|PGSonic	|PGCR2032	|$ 0.45 |8-9 |.150|3|
+|Duracell   |DCR2032    |$ 1.21   |10-11|.234  |4|
+|JOOBEF 	|GCR2032	|$ 0.25 |6-7|.250|5|
+|Panasonic  |PCR2032    |$ 0.5    |6-7|.500  |6|
+|Energizer  |ECR2032    |$ 0.76   |6-7|.710  |7|
+|Amazon |ACR2032    |0.79   |6-7|.790  |8|
 
 Because prices are under constant change, your price could change the Cost to Performance Order.  These prices were what I paid at the time I ordered them or their cost at this publication.
 
@@ -164,6 +165,19 @@ Test 6 was a smooth test with no interruptions or strange events.  This test las
 
 {% include image.html file="cr2032_test_6f.jpg" alt="Test Run 6"%}
 [Test run 6, PGSonic and JOOBEF](https://jemrf.github.io/RF-Documentation/images/cr2032_test_6f.jpg)
-### In Work
-I have one other brands on Amazon to test; JunPower. I will match it with PGSonic & Nightkonic. It is Janurary 13, 2022, I will update this in a few weeks with those test results as each completes, as well as a joint retest of the Duracell vs the NightKonic.
+
+### Test 7 Junpower PGSonic and Nightkonic
+Test 7 went without interuption and duplicated the performance of the PGSonic and Nightkonic batteries.  The supprise was the Junpower performed just as well, giving another inexpense battery option. With its cost between the two it pushed the PGSonic and others down one.
+
+{% include image.html file="cr2032_test_7.jpg" alt="Test Run 7"%}
+[Test run 7, PGSonic and JOOBEF](https://jemrf.github.io/RF-Documentation/images/cr2032_test_7.jpg)
+
+### Test 8 Junpower Nightkonic and Duracell
+Test 8 also ran with no interuptions, execpt the PGSonic in position 4 dropped out, so I removed it from analysis. I will do some redesign of the test set before running more tests just to be sure it is not causing problems and do more tests of the PGSonic and others.
+
+{% include image.html file="cr2032_test_8.jpg" alt="Test Run 8"%}
+[Test run 8, PGSonic and JOOBEF](https://jemrf.github.io/RF-Documentation/images/cr2032_test_8.jpg)
+
+It is Febuary 3, 2022, I will continue over the next few months to rerun comparison tests and update this report with those test results.
+If you have any questions email support@jemrf.com.
 
