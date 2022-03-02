@@ -40,7 +40,6 @@ picture of board and picture of board with flex module
 * Connections for Relay A and Relay B (GPIO I/O Pins to drive a Relay/LED)
 * Connections for the Serial Tx/Rx interfaces.
 * Connections for a 10K thermistor or 10K light sensor
-
 * The Power rail is connected to the jumper block for selecting 1.5. 3.3 pr 5 volt power.
 * The FLEX RF module will run for years on a single AA battery when in deep sleep mode. When the module is fully awake then it will last a few days on a AA battery. See section 14 of the manual for more details.
 
