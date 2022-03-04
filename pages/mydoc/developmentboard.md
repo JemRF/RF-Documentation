@@ -1,9 +1,9 @@
 ---
 title: Development Board
 keywords: Flex, General purpose, Development, prototyping
-last_updated: Mar 2, 2022
+last_updated: Mar 4, 2022
 tags:
-summary: "This page is the JemRF FLEX Development board"
+summary: "JemRF FLEX Development board"
 sidebar: mydoc_sidebar
 permalink: developmentboard.html
 folder: mydoc
@@ -21,10 +21,10 @@ For a wide range of prototyping options.
 * The case has vents to allow for environment monitoring (temperature humidity)
 * 20 pin header for FLEX RF Module (Flex RF Module sold separately)
 * 2 breadboard arrays of 6 rows with 5 connections each
-* Power and Ground strips, each with 6 connections.
-* Power Select for 1.5 volt, 3.3 volt or 5 volt power.
+* Power and Ground strips, each with 6 connections..
 * Can use power from USB interface for the 3.3 and 5 volt needs.
 * Can operate on a 1.5 volt AA battery and provide 1.5 and 3.3 or 5 volts.
+* Power Select jumper for 1.5 volts, 3.3 volts or 5 volts to power rail.
 
 {% include image.html file="devboardlayout.jpg" alt="Development Board Layout"%}
 

@@ -43,5 +43,7 @@ topnav_dropdowns:
           url: /wireless_light_sensor.html
         - title: Flex RF Module
           url: /flex.html
+        - title: Flex Development Module
+          url: /developmentboard.html
         - title: IoT Gateway
           url: /iot_gateway.html
