@@ -1,15 +1,15 @@
 ---
 title: PrivateEyePi Integration
 keywords: interface, integrate, integration, PrivateEyePi
-last_updated: Sep 28, 2020
-tags:  
+last_updated: Mar 4, 2022
+tags:
 summary: "This page explains how to integrate our RF Modules with PrivateEyePi"
 sidebar: mydoc_sidebar
 permalink: privateeyepi.html
 folder: mydoc
 ---
 
-[PrivateEyePi](projects.privateeyepi.com) is a cloud based alarm and monitoring solution for Raspberry Pi. 
+[PrivateEyePi](https://projects.privateeyepi.com) is a cloud based alarm and monitoring solution for Raspberry Pi.
 
 ## What you will need
 * Any model Raspberry Pi with Python 2 and PIP installed
@@ -35,7 +35,7 @@ Below are the minimal steps to install PrivateEyePi and run the PrivateEyePi int
     cd /home/pi
     mkdir pep
     cd pep
-      
+
     wget -N www.privateeyepi.com/downloads/install.sh
     ```
 
@@ -50,16 +50,15 @@ Below are the minimal steps to install PrivateEyePi and run the PrivateEyePi int
     ```
     cd /home/pi/pep
     sudo nano globals.py
-    
+
     Look for token="" and paste the token in between the braces.
-    
+
     Save using Ctrl-x followed by 'y'
-    
+
     ```
  4. Run rfsensor.py
 
     ```
-    python rfsensor.py    
+    python rfsensor.py
     ```
-  
-  
+
