@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: developmentboard.html
 folder: mydoc
 ---
-{% include image.html file="devboard1.jpg" alt="Development Board"%}
+{% include image.html file="devboard2.jpg" alt="Development Board"%}
 
 ## Product Descriptions
 The Development Board was designed to work with the [FLEX Module](flex.html) providing a 20 pin header for FLEX RF Module.
@@ -26,7 +26,7 @@ For a wide range of prototyping options.
 * Can use power from USB interface for the 3.3 and 5 volt needs.
 * Can operate on a 1.5 volt AA battery and provide 1.5 and 3.3 or 5 volts.
 
-{% include image.html file="devboard1layout.jpg" alt="Development Board Layout"%}
+{% include image.html file="devboardlayout.jpg" alt="Development Board Layout"%}
 
 ### Electrical
 * Power options are 1.5V, 3.3V and 5V through three different power converters:
