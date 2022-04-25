@@ -3,21 +3,23 @@ title: WiFi RF Wireless Sensor Relay
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Nov 18, 2021
 tags:
-summary: "This Draft Document describes the basics of WiFi RF Wireless Sensor Relay,or WiFi RF Relay"
+summary: "This Document describes the basics of WiFi RF Wireless Sensor Relay,or WiFi-RF Relay"
 sidebar: mydoc_sidebar
 permalink: wifirfrelay.html
 folder: mydoc
 ---
 
-The WiFi-RF Relay provides an alternative to using a Raspberry PI or Arduino computer to receive data from the Wireless RF Sensors, do the Celsius to Fahrenheit  conversion if wanted then send the readings to the PrivateEyePi server.
+The WiFi-RF Relay provides an alternative to using a Raspberry PI or Arduino computer to receive data from the Wireless RF Sensors, and do the Celsius to Fahrenheit conversion, before sending the readings to the PrivateEyePi server.
 
-The WiFi-RF Relay follows the same process as our WiFi IoT Sensors to connect to the local WiFi and then establishes a connection to the PEP server. Differences between the Raspberry Pi or Arduino functions, is the WiFi-RF Gateway is an Wireless RF receiver only, it can be used to not issue commands to the Wireless RF Sensor.
+The WiFi-RF Relay follows the same process as our WiFi IoT Sensors to connect to the local WiFi and then establishes a connection to the PEP server. <br />
+Unlike using a Raspberry Pi or Arduino provides extra functions, internal sensors, and it can be used to issue commands to the Wireless RF Sensor. <br />
+The WiFi-RF Relay is an Wireless RF receiver only,  it can not be used to send commands to RF Sensors.
 
-The WiFi-RF Relay will be in the same physical case as the current WiFi IoT Sensor.  Using a micro-USB connector for power.
+The WiFi-RF Relay will be in the same physical case as the current WiFi IoT Sensor.  Using a mini-USB connector for power.
 
 
 ## Setup Details
-The configuration page for the WiFi-RF Relay is very similar to the WiFi IoT Sensor. Added features include the option to send secure (https) or not and if Celsius to Farenheit conversion is wanted.
+The configuration page for the WiFi-RF Relay is very similar to the WiFi IoT Sensor. An added features include the option to establish a secure/encrypted (https) connection to the server or not.  It also supports the option for Celsius to Farenheit conversion.
 
 {% include image.html file="SetupScreen.jpg" alt="WiFi RF Relay Setup Page"%}
 
