@@ -17,6 +17,8 @@ The WiFi-RF Relay is an Wireless RF receiver only,  it can not be used to send c
 
 The WiFi-RF Relay will be in the same physical case as the current WiFi IoT Sensor.  Using a mini-USB connector for power.
 
+{% include image.html file="wifi-relay-case.jpg" alt="WiFi RF Relay Case"%}
+
 
 ## Setup Details
 The configuration page for the WiFi-RF Relay is very similar to the WiFi IoT Sensor. An added features include the option to establish a secure/encrypted (https) connection to the server or not.  It also supports the option for Celsius to Farenheit conversion.
