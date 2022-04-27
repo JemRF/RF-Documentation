@@ -25,7 +25,8 @@ The configuration page for the WiFi-RF Relay is very similar to the WiFi IoT Sen
 
 {% include image.html file="SetupScreen.jpg" alt="WiFi RF Relay Setup Page"%}
 
-To make setup easy, the WiFi RF Wireless Sensor Relay has its own internal Web Server.
+
+*To make setup easy, the WiFi RF Wireless Sensor Relay has its own internal Web Server.*
 
 ### Step 1 Connect to WiFi
 
