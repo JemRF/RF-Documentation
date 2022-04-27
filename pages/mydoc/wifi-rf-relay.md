@@ -26,7 +26,7 @@ The configuration page for the WiFi-RF Relay is very similar to the WiFi IoT Sen
 {% include image.html file="SetupScreen.jpg" alt="WiFi RF Relay Setup Page"%}
 
 
-*To make setup easy, the WiFi RF Wireless Sensor Relay has its own internal Web Server.*
+***To make setup easy, the WiFi RF Wireless Sensor Relay has its own internal Web Server.***
 
 ### Step 1 Connect to WiFi
 
@@ -37,7 +37,7 @@ Password: WiFiRelay
 ### Step 2 : Configure SSID and Password
 Now open up a browser  and navigate to http://192.168.4.1/. Next enter the SSID and Password of your WIFI router and click on save.
 
-Wait a few seconds for the WIFI temperature sensor to connect to the WIFI router. Click on the "Login Details" menu option to refresh the screen. Once connected you will see the IP address has given to the WIFI-RF Relay, as shown in the next image. In  the example below it shows 192.68.254.69, but yours will be different. Your WIFI-RF Relay is now connected to the internet.
+Wait a few seconds for the WIFI temperature sensor to connect to the WIFI router. Click on the "Login Details" menu option to refresh the screen. Once connected you will see the **WLAN:** IP address has given to the WIFI-RF Relay, as shown in the next image. In the example below it shows 192.68.254.69, but yours will be different. Your WIFI-RF Relay is now connected to the internet.
 
 ### Step 3 : Connect to PrivateEyePi
 The next step is to connect your sensor to PrivateEyePi so you can monitor the sensor or create alerts. If you have not registered an account with PrivateEyePi, go to http://www.privateeyepi.com and click on "Create User". This is a free online service.
