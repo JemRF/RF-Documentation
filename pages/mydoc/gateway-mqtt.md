@@ -16,7 +16,7 @@ The JemRF WiFi Wireless Gateway provides a built-in MQTT Client. The Gateway can
 The settings to publish the sensor readings to an MQTT broker are done on the MQTT Detail Tab as seen in Figure 1.
 
 
-<img src="images/mqtt-figure-1-start.png" width="425"/>
+<img src="images/mqtt-figure-1-start.jpg" width="425"/>
 **Figure 1  MQTT Details Setup.**
 
 ## Getting Started
@@ -32,7 +32,7 @@ Using the MQTT standard protocol the Gateway will publish data to the broker usi
 Using the Gateway shown Figure 1, that Gateway name is JRF03516124.
 Using the sensor show in Figure 2
 
-<img src="images/mqtt-figure-2-sample.png" width="425"/>
+<img src="images/mqtt-figure-2-sample.jpg" width="425"/>
 **Figure 2, Sample Temperature Gateway Display**
 
 Sensor 11  is being received by the Gateway. It is a Temperature sensor  (TMPC) and it has a value of 22.37 degrees C.
@@ -51,12 +51,12 @@ If you want to see all of the sensors, you could subscribe to: JRF03516124/# and
 I used Node-Red to create a simple Dashboard. The configuration was:
 
 
-<img src="images/mqtt-figure-3-config.png" width="425"/>
+<img src="images/mqtt-figure-3-config.jpg" width="425"/>
 **Figure 3 Node Red subscribing to Gateway and Sensor 11**
 
 With that configuration, it created the Dashboard shown below
 
-<img src="images/mqtt figure 4-dashboard.png" width="425"/>
+<img src="images/mqtt figure 4-dashboard.jpg" width="425"/>
 **Figure 4 Sample Node-RED Dashboard**
 
 Note: Because my Gateway is set to do Celsius to Fahrenheit conversion, my readings are in Fahrenheit. That the differences in values being shown vs the value received by the Gateway.
