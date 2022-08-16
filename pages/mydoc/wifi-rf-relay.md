@@ -58,4 +58,6 @@ It tracks messages for up to 64 Sensors.
 
 {% include image.html file="ActiveDevices.jpg" alt="WiFi RF Relay Sensor List"%}
 
+## MQTT Details
+[Details on the JemRF MQTT format with examples](https://gatewaymqtt.html)
 
