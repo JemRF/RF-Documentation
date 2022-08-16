@@ -1,18 +1,18 @@
 ---
-title: Wireless Gateway
+title: WiFi Wireless Gateway
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: June 3, 2022
 tags:
-summary: "This Document describes the basics of WiFi RF Wireless Sensor Relay,or Wireless Gateway"
+summary: "This Document describes the basics of WiFi RF Wireless Sensor Relay,or WiFi Wireless Gateway"
 sidebar: mydoc_sidebar
 permalink: wifirfrelay.html
 folder: mydoc
 ---
 
-The Wireless Gateway receives messages from the Wireless sensors and sends them to the PrivateEyePi or Elno server. This eliminates the need for a Raspberry PI computer to just to receive data from the Wireless RF Sensors.  <br />
+The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the PrivateEyePi or Elno server. This eliminates the need for a Raspberry PI computer to just to receive data from the Wireless RF Sensors.  <br />
 The Wireless Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming the computer first or having to send commands to RF Wireless Sensors.<br />
 
-The Wireless Gateway is in the same physical case as the current WiFi IoT Sensors.
+The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
  * Follows the same setup process as our WiFi IoT Sensors to connect to the local WiFi.
  * Provides the Celsius to Fahrenheit conversion.
  * Using a mini-USB connector for power.
@@ -22,7 +22,7 @@ The Wireless Gateway is in the same physical case as the current WiFi IoT Sensor
 
 
 ## Setup Details
-The configuration page for the Wireless Gateway is very similar to the WiFi IoT Sensor. An added features include the option to establish a secure/encrypted (https) connection to the server or not.  It also has the option for Celsius to Farenheit conversion.
+The configuration page for the WiFi Gateway is very similar to the WiFi IoT Sensor. An added features include the option to establish a secure/encrypted (https) connection to the server or not.  It also has the option for Celsius to Farenheit conversion.
 
 {% include image.html file="SetupScreen.jpg" alt="WiFi RF Relay Setup Page"%}
 
