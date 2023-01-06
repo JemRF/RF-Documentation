@@ -1,7 +1,7 @@
 ---
 title: WiFi Wireless Gateway
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
-last_updated: Aug 16, 2022
+last_updated: Jan 5, 2023
 tags:
 summary: "This Document describes the basics of WiFi RF Wireless Sensor Relay,or WiFi Wireless Gateway"
 sidebar: mydoc_sidebar
@@ -33,7 +33,7 @@ The configuration page for the WiFi Gateway is very similar to the WiFi IoT Sens
 
 The first step is to connect your smart device to the WIFI sensor. Power up the WIFI sensor and using your computer (or smart device) look for a WIFI connection that starts with **JRF** followed by some numbers. These numbers are the unique ID of your sensor. Connect to the sensor using the default password:
 
-Password: WiFiRelay
+Password: WiFirelay
 
 ### Step 2 : Configure SSID and Password
 Now open up a browser  and navigate to http://192.168.4.1/. Next enter the SSID and Password of your WIFI router and click on save.
