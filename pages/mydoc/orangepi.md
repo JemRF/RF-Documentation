@@ -5,9 +5,10 @@ last_updated: Jan 14, 2023
 tags:
 summary: "This page provides review of the Orange Pi hardware versions with JemRF IOT Gateway."
 sidebar: mydoc_sidebar
-permalink: ornagepi.html
+permalink: orangepi.html
 folder: mydoc
 ---
+
 Using an Orange Pi Zero 2 with JemRF products
 
 With the current high cost and lack of availability of Raspberry Pi 3, 4 and Zero I wonder if the Orange Pi would work with the JemRF IOT Gateway.
