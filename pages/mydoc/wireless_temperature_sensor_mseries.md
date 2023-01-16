@@ -36,13 +36,13 @@ Install battery by sliding the back off and removing and replacing the AA batter
 
 ### Messaging details
 * TMPC99.99 (temperature reading format)
-* TEMP (the TEMP command requests the sensor to transmit a temperature reading)
+* TEMPC (the TEMP command requests the sensor to transmit a temperature reading)
 
 ### Physical
-* 36mm x 36mm x 15mm case size (1.42" x 1.42" x .59")
+* 65mm x 70mm x 20mm case size (2.5" x 2.75" x .75")
 
 ## Default configuration
-* Type 4 ([Type](types.html) 1 sensor)
+* Type 4 ([Type](types.html) 4 sensor)
 * NOMSG1 (Sends 1 temperature reading every cycle)
 * INTVL005 (Sends a temperature reading every 5 minutes)
 * CYCLE (put the device into a [timed sleep cycle](sleep_modes.html))
