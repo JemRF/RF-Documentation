@@ -1,3 +1,13 @@
+---
+title: Using Orange Pi with JemRF Applications
+keywords: Orange Pi, software, IOT Gateway
+last_updated: Jan 14, 2023
+tags:
+summary: "This page provides review of the Orange Pi hardware versions with JemRF IOT Gateway."
+sidebar: mydoc_sidebar
+permalink: orangepi.html
+folder: mydoc
+---
 #
 # Using an Orange Pi Zero 2 with JemRF products
 
