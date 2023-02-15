@@ -2,7 +2,7 @@
 title: IoT Gateway for Raspberry Pi
 keywords: gateway, base station, IoT, iot gateway, raspberry pi, raspberry, pi, serial, rs232
 last_updated: Sep 28, 2020
-tags:  
+tags:
 summary: "This page explains how to install and operate the IoT Gateway"
 sidebar: mydoc_sidebar
 permalink: iot_gateway.html
@@ -10,18 +10,16 @@ folder: mydoc
 ---
 
 ## IoT Gateway Models
-We have had three models of the Gateway:
+There is one standard model of the IoT Gateway:
 
-1. 24 Pin (being phased out)
-1. 10 Pin 
-1. 40 Extended Pin 
+1. 10 Pin
 
 {% include note.html content="All IoT Gateway models can fit on any Raspberry Pi Model." %}
 
 The picture below show how the gateway fits on to the Raspberry Pi.
 
 <img src="images/RF_Base_Station.webp" width="425"/>
- 
+
 {% include warning.html content="Make sure you fit the gateway the right way around and and perfectly aligned with the pins of the Raspberry Pi as shown in the above pictures. You could damage the gateway if fitted incorrectly." %}
 
 ## Installation steps
@@ -32,9 +30,10 @@ The picture below show how the gateway fits on to the Raspberry Pi.
 
 3. In order to remove the gateway from the raspberry Pi power off the Raspberry Pi and then hold the Raspberry Pi firmly with one hand and gently wiggle the Gateway loose with your other hand. Wiggling it from side to side is easier than pulling it directly upwards.
 
-4. The gateway receiver uses the Raspberry Pi serial port in order to communicate. 
+4. The gateway receiver uses the Raspberry Pi serial port in order to communicate.
 
 {% include important.html content="Follow [this link](configure_serial_port.html) to configure the Raspberry Pi serial port"%}
+{% include note.html content="Follow [this link](orangepi.html) to use an Orange Pi Zero 2 }
 
 ## Testing the Gateway
 

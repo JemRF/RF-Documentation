@@ -1,14 +1,13 @@
 ---
 title: Using Orange Pi with JemRF Applications
 keywords: Orange Pi, software, IOT Gateway
-last_updated: Jan 14, 2023
+last_updated: Feb 15, 2023
 tags:
 summary: "This page provides review of the Orange Pi hardware versions with JemRF IOT Gateway."
 sidebar: mydoc_sidebar
 permalink: orangepi.html
 folder: mydoc
 ---
-#
 # Using an Orange Pi Zero 2 with JemRF products
 
 With the current high cost and lack of availability of Raspberry Pi 3, 4, and Zero, would the Orange Pi work with the JemRF IOT Gateway? So I went to OrangPI.org to look at the different Orange Pi models.
@@ -27,13 +26,13 @@ Reviewing the online specification for systems that would support the IOT Gatewa
 - Orange Pi R1 Plus LTS - No, no GPIO connector
 - Orange Pi One - Yes
 - Orange Pi Zero v1.2 - Yes
-- Orange Pi Zero 2 v1.5 - Yes
+- Orange Pi Zero 2 v1.5 - Yes, tested and verified to work.
 
 Three things I need to note:
 
-1. The Yes does not mean the same as RPi, just the critical hardware pins for the IOT Gateway match.
+1. The Yes does not mean the same as RPi, just the critical hardware pins for the IOT Gateway appear to match.
 2. When plugged into Orange Pi's GPIO interface, the IOT Gateway would extend to the outside and not over the top of the processor like the standard Raspberry Pi.
-3. The serial pins may match from a hardware view, but from a software view, not quite. Because the Orange Pi products have more serial interfaces than a Pi, the serial port numbers differ. For example, the serial port number for the Orange Pi Zero 2 is /dev/ttttS5.
+3. The serial pins may match from a hardware view, but from a software view, not quite. Because the Orange Pi products have more serial interfaces than a Pi, the serial port numbers differ. For example, the serial port number for the Orange Pi Zero 2 is /dev/ttyS5.
 
 The Orange Pi Zero 2 looked promising for my testing because it had the features I wanted; enough memory, a fast processor, and a reasonable price. After watching YouTube videos, it boots to a Desktop similar to the Rasberry Pi. The Orange Pi Zero also requires a console connection to get it started. Details on the Orange Pi Zero 2 are at: [http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-Zero-2.html](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-Zero-2.html).
 
