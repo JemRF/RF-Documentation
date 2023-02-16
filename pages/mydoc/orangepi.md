@@ -8,11 +8,12 @@ sidebar: mydoc_sidebar
 permalink: orangepi.html
 folder: mydoc
 ---
-# Using an Orange Pi Zero 2 with JemRF products
+
+# Testing an Orange Pi Zero 2 with JemRF products
 
 With the current high cost and lack of availability of Raspberry Pi 3, 4, and Zero, would the Orange Pi work with the JemRF IOT Gateway? So I went to OrangPI.org to look at the different Orange Pi models.
 
-My quest started with the orange Pi website. I found the address at [http://orangepi.org](http://orangepi.org/). Unfortunately, a .org does not support a secure (https) connection.
+My quest started with the orange Pi website. I found the address at [http://orangepi.org](http://orangepi.org/). Unfortunately, the orangepi.org does not support a secure (https) connection.
 
 I found an excellent selection of small RPi-like boards with lots of features. Most had more memory and a faster processor than the standard Raspberry Pi. Although when they first started, they tried to make the GPIO bus compatible with the Raspberry Pi, most of the models today are different. The GPIO connector had a very different pin-out from the RPi Standard. Some of these changes were because most of the Orange PI models have additional options like additional serial ports.
 

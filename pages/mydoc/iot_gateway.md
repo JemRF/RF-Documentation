@@ -10,9 +10,7 @@ folder: mydoc
 ---
 
 ## IoT Gateway Models
-There is one standard model of the IoT Gateway:
-
-1. 10 Pin
+The IoT Gateway is a 10 Pin device that conects to the top 10 pins of the GPIO Bus for both the Orange Pi Zero 2 and Raspberry Pis'.
 
 {% include note.html content="All IoT Gateway models can fit on any Raspberry Pi Model." %}
 
