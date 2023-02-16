@@ -32,8 +32,6 @@ The picture below show how the gateway fits on to the Raspberry Pi.
 
 {% include important.html content="Follow [this link](configure_serial_port.html) to configure the Raspberry Pi serial port"%}
 
-{% include note.html content="Follow [this link](orangepi.html) to use an Orange Pi Zero 2 }
-
 ## Testing the Gateway
 
 {% include note.html content="If you have not installed the utilities, refer the [Utilities](utilities.html)" %}
