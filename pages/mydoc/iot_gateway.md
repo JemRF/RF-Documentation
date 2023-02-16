@@ -33,6 +33,7 @@ The picture below show how the gateway fits on to the Raspberry Pi.
 4. The gateway receiver uses the Raspberry Pi serial port in order to communicate.
 
 {% include important.html content="Follow [this link](configure_serial_port.html) to configure the Raspberry Pi serial port"%}
+
 {% include note.html content="Follow [this link](orangepi.html) to use an Orange Pi Zero 2 }
 
 ## Testing the Gateway
