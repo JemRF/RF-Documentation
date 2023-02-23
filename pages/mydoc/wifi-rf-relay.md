@@ -18,7 +18,7 @@ The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
  * Using a mini-USB connector for power.
 
 
-{% include image.html file="wifi-relay-case.jpg" alt="WiFi RF Relay Case"%}
+{% include image.html file="wirelessgateway.png" alt="WiFi RF Relay Case"%}
 
 
 ## Setup Details
