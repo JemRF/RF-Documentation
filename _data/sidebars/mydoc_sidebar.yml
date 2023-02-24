@@ -196,3 +196,7 @@ entries:
       url: /esp32-gateway.html
       output: web, pdf
 
+  - title: Return to JemRF.com
+    url: /esp32-gateway.html
+    output: web, pdf
+
