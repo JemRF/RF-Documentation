@@ -196,6 +196,3 @@ entries:
       url: /esp32-gateway.html
       output: web, pdf
 
-  - title: Return To JemRF.com
-      url: https://jemrf.com
-      output: web, pdf
