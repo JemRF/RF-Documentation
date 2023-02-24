@@ -196,7 +196,15 @@ entries:
       url: /esp32-gateway.html
       output: web, pdf
 
-  - title: Return to JemRF.com
-    url: /esp32-gateway.html
+  - title: JemRF Resources
     output: web, pdf
+    folderitems:
+
+    - title: Sales at JemRF.com
+      url: https://jemrf.com
+      output: web, pdf
+
+    - title: JemRF Projects
+      url: https://projects.privateeyepi.com
+      output: web, pdf
 
