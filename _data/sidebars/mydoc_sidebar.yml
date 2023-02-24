@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: 
-  version: 
+  product:
+  version:
   folders:
 
   - title:
@@ -31,7 +31,7 @@ entries:
     - title: Getting Started
       url: /getting_started.html
       output: web, pdf
- 
+
     - title: RF Device Specs
       url: /rf_device_specs.html
       output: web, pdf
@@ -95,11 +95,11 @@ entries:
     - title: Sleep Modes
       url: /sleep_modes.html
       output: web, pdf
-      
+
     - title: Device ID
       url: /device_id.html
       output: web, pdf
-      
+
     - title: Personal Area Network (PAN)
       url: /panid.html
       output: web, pdf
@@ -127,11 +127,11 @@ entries:
     - title: Hardware & Firmware
       url: /hardware_and_firmware.html
       output: web, pdf
- 
+
     - title: Multi-function Sensors
       url: /multi function sensors.html
       output: web, pdf
- 
+
   - title: Integration
     output: web, pdf
     folderitems:
@@ -196,3 +196,6 @@ entries:
       url: /esp32-gateway.html
       output: web, pdf
 
+  - title: Return To JemRF.com
+      url: https://jemrf.com
+      output: web, pdf

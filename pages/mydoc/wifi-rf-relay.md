@@ -22,7 +22,7 @@ The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
 
 
 ## Setup Details
-The configuration page for the WiFi Gateway is very similar to the WiFi IoT Sensor. An added features include the option to establish a secure/encrypted (https) connection to the server or not.  It also has the option for Celsius to Farenheit conversion.
+The configuration page for the WiFi Gateway is very similar to the WiFi IoT Sensor. An added features include the option to establish a secure/encrypted (https) connection to the server or not.  It also has the option for Celsius to Fahrenheit conversion.
 
 {% include image.html file="SetupScreen.jpg" alt="WiFi RF Relay Setup Page"%}
 
@@ -41,7 +41,7 @@ Now open up a browser  and navigate to http://192.168.4.1/. Next enter the SSID 
 Wait a few seconds for the WIFI temperature sensor to connect to the WIFI router. Click on the "Login Details" menu option to refresh the screen. Once connected you will see the **WLAN:** IP address has given to the Wireless Gateway, as shown in the next image. In the example below it shows 192.68.254.69, yours will be different. What's important is your gateway is now connected to the internet.
 
 ### Step 3 : Connect to PrivateEyePi
-The next step is to connect your sensor to PrivateEyePi so you can monitor the sensor or create alerts. If you have not registered an account with PrivateEyePi, go to http://www.privateeyepi.com and click on "Create User". You can also use https://Elno.io to create and account and token. Both are have free online services.
+The next step is to connect your sensor to PrivateEyePi so you can monitor the sensor or create alerts. If you have not registered an account with PrivateEyePi, go to https://www.privateeyepi.com and click on "Create User". You can also use https://Elno.io to create and account and token. Both are have free online services.
 
 {% include image.html file="get_token_s.jpg" alt="Get PrivateEyePi Token"%}
 Now enter your PrivateEyePi token. You can obtain your token from the User menu on www.privateeyepi.com website.
@@ -49,7 +49,7 @@ Now enter your PrivateEyePi token. You can obtain your token from the User menu 
 Copy and paste the token into the token field as shown in the below diagram.
 Click "Save" and again wait for a few seconds for the WIFI sensor to connect, clicking on the "Login Details" menu option to refresh the screen. Once connected you will see **"PEP: Connected"** as shown by the red circle in the image above.
 
-Once Connected, the Wireless Gatewy is now forwarding Wireless Sensor data to the PrivateEyePi server.
+Once Connected, the Wireless Gateway is now forwarding Wireless Sensor data to the PrivateEyePi server.
 
 ## Sensors List
 The Sensor List page shows the sensors the gateway has forwarded messages to the PEP server. It also shows the last message from each sensor received by the gateway with how many messages have been forwarded for that sensor and a grand total of all the messages forwarded to the server.
