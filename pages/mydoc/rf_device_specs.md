@@ -2,7 +2,7 @@
 title: RF Device Specification
 keywords: specs, specification, tech specs, tech, technical, data-sheet, datasheet, data sheet
 last_updated: Sep 28, 2020
-tags: 
+tags:
 summary: "This page shows the electrical and radio characteristics of our RF devices as well as some of the key features "
 sidebar: mydoc_sidebar
 permalink: rf_device_specs.html
@@ -12,6 +12,7 @@ folder: mydoc
 ## Tech Specs
 
 * All devices are based on the high-performance RF transceiver based on the market-leading CC1100 SOC
+* * [Technical Details on the CC1100 SOC](pdf/CC1110_Datasheet.pdf)
 * Wide operating voltage range of 2-3.6V makes the devices suited for battery power
 * Current consumption: RX: 16.2 mA , TX: 15.2 mA. Deep Sleep : 0.005Ma (0.5 µA)
 * Up to 1KM line of sight. Short range (30M) penetration of walls and floors.
