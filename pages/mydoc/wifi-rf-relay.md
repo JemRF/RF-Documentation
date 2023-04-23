@@ -35,6 +35,8 @@ The first step is to connect your smart device to the WIFI sensor. Power up the 
 
 Password: WiFirelay
 
+{% include note.html content="Mount the Gateway in a vertical position with the USB connector down. There is a mounting hold on the back for this. Do not mount against a metal wall as that will block the WiFi and RF signals."%}
+
 ### Step 2 : Configure SSID and Password
 Now open up a browser  and navigate to http://192.168.4.1/. Next enter the SSID and Password of your WIFI router and click on save.
 
