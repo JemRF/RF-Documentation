@@ -50,8 +50,7 @@ folder: mydoc
 | `TEMPB` | Transmits a temperature in Celsius and humidity readings from DHT22 | `TMPB99.99---` <br/> `HUM99.99----`  <br/> `(NOMSG times)` |
 | `TEMPC` | Transmits a temperature reading in Celsius from the DS18B 20 sensor | `TMPC99.99---` <br/> `(NOMSG times)` |
 | `TYPE[num]` <br/>  `E.g. TYPE2` |  1=Thermistor Temperature Sensor <br/> 2=Gateway  (enables serial comms TX and RX) <br/> 3=DHT22 Humidity Sensor <br/> 4=DS18B20 Temperature Sensor <br/> 5=AnalogA <br/> 6=AnalogB <br/> 7=Relay <br/> 8=SHT21 Humidity and Temperature Sensor <br/> 9=BME280 Pressure, Humidity and Temperature Sensor <br/> 10=HTU21 Humidity and Temperature Sensor | `a--TYPE99---` |
-| `VERSION` | Returns the Firmware Version  | `VERx.xx` <br/>
-| `VDC`<br/> `(Version 7.6 and up)` | Transmits a voltage (0-30) reading from the sensor | `VDC99.99` <br/> `(NOMSG times)` |
+| `VERSION` | Returns the Firmware Version  | `VERx.xx` <br/>|
 
 \* ‘9’ represents a number, e.g. 9.99 is a single digit number with two decimals, or 99 is a two digit number without decimals.
 
