@@ -1,7 +1,7 @@
 ---
 title: Wireless Switch Sensor
 keywords: wireless switch, switch, sensor, door, window
-last_updated: Feb 20, 2022
+last_updated: May 12, 2023
 tags:
 summary: "This page explains the JEMRF Wireless Switch Sensor"
 sidebar: mydoc_sidebar
@@ -16,10 +16,6 @@ folder: mydoc
 The Wireless Switch Sensor can sense the opening or closing of a tactile switch. Usually used for door window sensing for alarm system, but is also the foundation for other sensors like water sensor and motion sensor.
 
 ## Installation
-* Thread the tactile switch wires through the case enclosure opening and solder the two sires to the through holes labeled BTN.
-
-{% include image.html file="IMG_2187.jpg" alt="Wireless Switch Sensor"%}
-
 * Install battery and close enclosure as described [here](sensor_installation.html).
 
 * Thread the antennae through the the case enclosure and push the sensor into place within the enclose

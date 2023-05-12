@@ -1,7 +1,7 @@
 ---
-title: The Internet Of Things (IOT)
+title: The Internet Of Things (IOT) WIFI Sensor
 keywords: getting started introduction
-last_updated: Mar 27, 2022
+last_updated: May 11, 2023
 tags:
 summary: "The Internet Of Things (IOT) is phenomenon sweeping the world at this moment where everyday things (cars, homes, household appliances, plants) are being connected to the IOT where we can monitor, control and alert in ways not possible before."
 sidebar: mydoc_sidebar
@@ -25,6 +25,7 @@ It connects to your WIFI access point so you can  send temperature readings to P
 - Built in error log allows you to review and resolve issues. The error log is stored in the device’s memory and can be viewed through the sensor web app
 - Fully programmable using the Arduino or LUA development environments
 - DS18B20 temperature sensor is used to detect the temperature Measures temperatures from -55°C to +125°C. Fahrenheit equivalent is -67°F to +257°F, ±0.5°C accuracy from -10°C to +85°C
+* * Note: The operating temperature for the WiFi Temperature sensor is -30F to +125.6F, -34C to 52C
 - Although the sensor is highly accurate (±0.5°C accuracy) you can calibrate the temperature reading using a configuration in the WIFI sensor app
 - The device supports dual WIFI mode allowing it to be WIFI access point and a WIFI client at the same time. A WIFI access point advertises itself through an SSID and can be connected to via any device or computer that has WIFI.
 - Control up to 8 relay switches either from the device's dashboard, vial URL or via PrivateEyePi rules
@@ -46,12 +47,12 @@ Upgrade WIFI Firmware Guide
 
 ## Tech Specs:
 
-Demensions 74mm x 55mm x 28mm
+Dimensions 74mm x 55mm x 28mm
 Powered either by USB Mini cable (4.5V DC to 7V DC input) or battery connection (2.5V to 3.5V) via the 2 pin battery connection plug
 -55°C to +125°C. Fahrenheit equivalent is -67°F to +257°F, ±0.5°C accuracy from -10°C to +85°C
 Can be programmed using Arduino or LUA development environments
-Upgraded using a 3.3V FTDI cable (recomended while the product is in BETA)
-8 GPIO ports avalaiable through the 16 pin header
+Upgraded using a 3.3V FTDI cable (recommended while the product is in BETA)
+8 GPIO ports available through the 16 pin header
 Supports SPI serial interface
 ## Board Layout:
 
