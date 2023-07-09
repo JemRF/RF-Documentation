@@ -65,6 +65,8 @@ Now enter your PrivateEyePi token. You can obtain your token from the User menu 
  To create an account you select the Register option on top right. Once registered you will receive a validation email with link. Click on the link and your account will be activated and ready for you to login.
  When you login under your name will be a drop down, select Account and then click on the Edit Token button. If you have a PrivateEyePi token already you can paste it in the token field and click the Accept Token to validate it is unique and Save. Now the same token works for both servers.
  If you do not have a PrivateEyePi Token, click Generate Gateway Id and it will create a token for you. Click the Accept Token to validate it is unique and Save.
+{% include image.html file="JemRf-account-token.jpg" alt="WiFi RF Relay Setup Page"%}
+
  The Gateway Server setting is: **"pep.jemrf.com"**
  Copy and paste the token into the token field as shown in the below diagram
 
