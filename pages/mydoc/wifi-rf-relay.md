@@ -47,7 +47,8 @@ The next step is to connect your sensor to one of our servers so you can monitor
 **"www.PrivateEyePi.com"** is our original server and it provides custom event triggering and well as basic monitoring.
 **"monitor.jemrf.com"** is our newer server focused on monitoring with custom tolerance settings to trigger notifications to help alert when there is a problem.  You might want to visit each to see which meets your needs.
 
-#### www.PrivateEyePi.com
+#### <span style="color:blue">www.PrivateEyePi.com</span>
+
 If you have not registered an account with PrivateEyePi, go to https://www.privateeyepi.com and click on "Create User".
 
 {% include image.html file="get_token_s.jpg" alt="Get PrivateEyePi Token"%}
@@ -56,9 +57,10 @@ Now enter your PrivateEyePi token. You can obtain your token from the User menu 
 
  The Gateway Server setting is: **"www.PrivateEyePi.com"**
  Copy and paste the token into the token field as shown in the below diagram
+{% include image.html file="SetupScreen.jpg" alt="WiFi RF Relay Setup Page"%}
 
 
-#### Monitor.JemRF.com
+#### <span style="color:blue">Monitor.JemRF.com</span>
  You can also use https://monitor.jemrf.com to create and account and token.
  To create an account you select the Register option on top right. Once registered you will receive a validation email with link. Click on the link and your account will be activated and ready for you to login.
  When you login under your name will be a drop down, select Account and then click on the Edit Token button. If you have a PrivateEyePi token already you can paste it in the token field and click the Accept Token to validate it is unique and Save. Now the same token works for both servers.
@@ -66,7 +68,7 @@ Now enter your PrivateEyePi token. You can obtain your token from the User menu 
  The Gateway Server setting is: **"pep.jemrf.com"**
  Copy and paste the token into the token field as shown in the below diagram
 
-{% include image.html file="SetupScreen.jpg" alt="WiFi RF Relay Setup Page"%}
+{% include image.html file="wifigw_pep.jemrf.png" alt="WiFi RF Relay Setup Page"%}
 Click "Save" and after a few seconds for the WIFI sensor to connect, clicking on the "Login Details" menu option to refresh the screen. Once connected you will see **"PEP: Connected"** as shown by the red circle in the image above. Once Connected, the Wireless Gateway is now forwarding Wireless Sensor data to the selected server.
 
 ## Sensors List
