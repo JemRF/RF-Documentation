@@ -14,6 +14,7 @@ The IoT Gateway is a 10 Pin device that connects to the top 10 pins of the GPIO 
 
 {% include note.html content="All IoT Gateway models can fit on any Raspberry Pi Model." %}
 {% include note.html content="Follow [this link](orangepi.html) to use an Orange Pi Zero 2."%}
+{% include note.html content="Follow [this link](usbiot.html) to install on Windows PC"%}
 
 
 The picture below show how the gateway fits on to the Raspberry Pi.
