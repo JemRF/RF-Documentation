@@ -17,7 +17,7 @@ When new firmware is available, an update option will appear at the bottom of th
 
 The <b>"Update Gateway"</b> selection will appear when it checks with the download server and finds a software update. When you are ready to update the Gateway, select <b>YES</b> and Save.
 When the update starts, the screen will clear and a green status bar will appear.
-{% include image.html file="wifisetup2.jpg" alt="WiFi RF Relay Case"%}
+{% include image.html file="wifiupdatebar.png" alt="WiFi RF Relay Case"%}
 
 Once update is complete:
 - It should reconnect to the Internet then restore the AP update page.
