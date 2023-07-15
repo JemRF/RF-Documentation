@@ -22,7 +22,7 @@ The settings to publish the sensor readings to an MQTT broker are done on the MQ
 ## Getting Started
 Enter the MQTT Broker, in my case my local server, the MQTT Port, for me is the standard MQTT Port. Next is the optional Username and Password.
 
-The Gateway comes perset to Port 1883 and has jemrf for the default username and mqtt4jemrf as the default password.
+The Gateway comes preset to Port 1883 and has the JemRF Broker configured. The default username and mqtt4jemrf as the default password.  If you want an private account contact sales @ jemrf.com.
 
 Once Enabled, the Gateway will try and connect, if the connection is successful the screen will refresh and show Connected.  If there is a problem connecting, the gateway display will stay frozen for up to one minute while the Gateway tries to connect.  If the Gateway can not connect in the allotted time, the screen will display it has failed, the Enabled will be set to Not Enabled  and a Red Failed message will appear.
 
