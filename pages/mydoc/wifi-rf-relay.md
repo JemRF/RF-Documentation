@@ -9,23 +9,26 @@ permalink: wifirfrelay.html
 folder: mydoc
 ---
 
-The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the PrivateEyePi or JemRF Monitoring server. This eliminates the need for a Raspberry PI computer to just to receive data from the Wireless RF Sensors.  <br />
-The Wireless Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming the computer first or having to send commands to RF Wireless Sensors.<br />
+The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the PrivateEyePi or JemRF Monitoring server. This eliminates the need for a Raspberry PI computer and all that extra overhead. The Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming a computer first.<br />
 
 The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
  * Follows the same setup process as our WiFi IoT Sensors to connect to the local WiFi.
- * Provides the Celsius to Fahrenheit conversion.
- * Using a mini-USB connector for power.
-
+ * It provides the Celsius to Fahrenheit conversion.
+ * Using a USB-mini connector for power.
+ * It provides a Sensor List overview page to show all the sensors it is tracking and their last value.
 
 {% include image.html file="wirelessgateway.png" alt="WiFi RF Relay Case"%}
 
+### Tech Specs:
+* Dimensions 74mm x 55mm x 28mm
+* Powered either by USB Mini cable and USB power supply, or battery connection (2.5V to 3.5V) via the 2 pin battery connection plug
+* Upgrades are done over the air using the Update button or can be done manually done using a 3.3V FTDI cable
+
 
 ## Setup Details
-The configuration page for the WiFi Gateway is very similar to the WiFi IoT Sensor. An added features include the option to establish a secure/encrypted (https) connection to the server or not.  It also has the option for Celsius to Fahrenheit conversion.
+The configuration page for the WiFi Gateway is very similar to the WiFi IoT Sensor.  It also has the option for Celsius to Fahrenheit conversion.
 
 {% include image.html file="SetupScreen.jpg" alt="WiFi RF Relay Setup Page"%}
-
 
 ***To make setup easy, the WiFi RF Wireless Sensor Relay has its own internal Web Server.***
 
@@ -81,6 +84,12 @@ It tracks messages for up to 64 Sensors.
 {% include image.html file="ActiveDevices.jpg" alt="WiFi RF Relay Sensor List"%}
 
 ## MQTT Details
+#### MQTT Features:
+Easy to configure web interface.<br />
+Connects to MQTT Broker with or without a username or password.<br />
+Tested with Mosquito Docker brokers and Emqx public broker.<br />
+JemRF provides an MQTT Broker.
+
 [Details on the JemRF MQTT format with examples](gatewaymqtt.html)
 
 ## Firmware Updates
