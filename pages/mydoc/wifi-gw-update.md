@@ -1,7 +1,7 @@
 ---
 title: Updating the WiFi Gateway
 keywords: WiFi Wireless Gateway, Over the Air,
-last_updated: July 13, 2023
+last_updated: July 14, 2023
 tags:
 summary: "Instruction to upgrade WiFi Gateway"
 sidebar: mydoc_sidebar
@@ -9,7 +9,7 @@ permalink: wifi-gw-update.html
 folder: mydoc
 ---
 ### Online Firmware Download and Update
-<span style="color:red">The WiFi Wireless Gateway Version 2 can be updated directly over the web!</span><br />
+The WiFi Wireless Gateway Version 2 can be updated directly to the Gateway using the Internet. It is not updated automatically.
 When new firmware is available, an update option will appear at the bottom of the Setup Details screen shown below.
 
 {% include image.html file="wifiupdate2.png" alt="WiFi RF Relay Case"%}
@@ -60,12 +60,23 @@ Release Notes:
 - Support MQTT Broker user defined publish and Client Id
 - Sensor List show GMT time when refreshing
 
+[Download Release 2.3.0 ](https://projects.privateeyepi.com/downloads/wifigw8266-2-3-0.bin )
+
+
 #### Version 2.2.0 (07/27/2022)
 - Load for Version 2 hardware
 - Supports web firmware download and Update from Setup Page
 - Supports MQTT Agent to send to MQTT Broker
 
+
+[Download Release 2.2.0 ](https://projects.privateeyepi.com/downloads/wifirelay-2-2-0.bin )
 #### Version 1.1.5 (03/22/2022)
 - Operational Baseline Load
 
-### FirmWare and Programmmer Downloads
+[Download Release 1.1.5 ](https://projects.privateeyepi.com/downloads/wifirelay-1-1-5.bin )
+
+### Firmware and Programmer Downloads
+
+[Download bulk Erase Image ](https://projects.privateeyepi.com/downloads/erase_flash.bin )
+
+[Download ESP 8266 Flash Programmer ](https://projects.privateeyepi.com/downloads/esp8266_flasher.zip )

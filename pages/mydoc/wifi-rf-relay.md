@@ -9,7 +9,7 @@ permalink: wifirfrelay.html
 folder: mydoc
 ---
 
-The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the PrivateEyePi or Elno server. This eliminates the need for a Raspberry PI computer to just to receive data from the Wireless RF Sensors.  <br />
+The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the PrivateEyePi or JemRF Monitoring server. This eliminates the need for a Raspberry PI computer to just to receive data from the Wireless RF Sensors.  <br />
 The Wireless Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming the computer first or having to send commands to RF Wireless Sensors.<br />
 
 The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
@@ -82,4 +82,8 @@ It tracks messages for up to 64 Sensors.
 
 ## MQTT Details
 [Details on the JemRF MQTT format with examples](gatewaymqtt.html)
+
+## Firmware Updates
+The Gateway is normally updated over the Internet.
+[Click Illustrated instructions](wifi-gw-update.html)
 
