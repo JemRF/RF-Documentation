@@ -24,15 +24,17 @@ Once update is complete:
 - Some wireless networks have issues using the internal 192.168.4.1 address. If your Gateway Shows updates even after doing an update, try using the local WLAN IP address to do the update.
 
 ### Manual updates using Windows
+If you have an issue with Over-The-Air updates, or you want to load an older version, you can update the Gateway Manually. The firmware versions are listed at the bottom.
 
-##### 1. Connect FT232RL FTDI USB 3.3V/5.5V module to the WIFI sensor (set jumper to 3.3V) and the USB to your Windows PC.
+##### 1. Connecting the Gateway to a computer
+The FT232RL FTDI USB 3.3V/5.5V module is one option to connect the WIFI Gateway to the computer. You need to set jumper to 3.3V or you could damage the Gateway. You can plug the
 
 {% include image.html file="IMG_5083 (320x240).jpg" alt="WiFi RF Relay Case"%}
-{% include image.html file="IMG_5081 (212x320).jpg" alt="WiFi RF Relay Case"%}
-For the Wireless Gateway Hardware the 3.3V FTDI can plug directly into the header on the PCB, and does require wires.
+For the Wireless Gateway Hardware the 3.3V FTDI can plug directly into the header on the PCB.
 
 
-##### 2. On the Sensor, set dip switch 3 and 4 (marked FLASH) to ON
+##### 2. Set Gateway to Program Mode
+On the Gateway, set dip switch 3 and 4 (marked FLASH) to ON
 
 {% include image.html file="IMG_5086 (320x282)8750.jpg" alt="WiFi RF Relay Case"%}
 ##### 3. Check the device manager to determine the com port assigned to the FTDI
@@ -57,9 +59,13 @@ Release Notes:
 #### Version 2.3.0 (12/27/2022)
 - Support MQTT Broker user defined publish and Client Id
 - Sensor List show GMT time when refreshing
+
 #### Version 2.2.0 (07/27/2022)
 - Load for Version 2 hardware
 - Supports web firmware download and Update from Setup Page
 - Supports MQTT Agent to send to MQTT Broker
+
 #### Version 1.1.5 (03/22/2022)
 - Operational Baseline Load
+
+### FirmWare and Programmmer Downloads
