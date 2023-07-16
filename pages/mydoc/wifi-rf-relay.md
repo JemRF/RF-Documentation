@@ -46,11 +46,11 @@ Password: WiFirelay
 
 ### Step 2 : Configure SSID and Password
 Now open up a browser  and navigate to http://192.168.4.1/.
-{% include image.html file="SetupScreen.jpg" alt="WiFi GW Setup Page"%}
+{% include image.html file="wifigwsetup.jpg" alt="WiFi GW Setup Page"%}
 Next enter the SSID and Password of your WIFI router and click on save.
 
 
-{% include image.html file="wifigwssidselect.png" alt="WiFi GW SSID Select Page"%}
+{% include image.html file="wifigwsetup-ssid.jpg" alt="WiFi GW SSID Select Page"%}
 
 Wait a few seconds for the WIFI temperature sensor to connect to the WIFI router. Click on the "Login Details" menu option to refresh the screen. Once connected you will see the **WLAN:** IP address has given to the Wireless Gateway, as shown in the next image. In the example below it shows 192.68.254.69, yours will be different. What's important is your gateway is now connected to the internet.
 
@@ -69,7 +69,7 @@ Now enter your PrivateEyePi token. You can obtain your token from the User menu 
 
  The Gateway Server setting is: **"www.PrivateEyePi.com"**
  Copy and paste the token into the token field as shown in the below diagram
-{% include image.html file="SetupScreen.jpg" alt="WiFi RF Relay Setup Page"%}
+{% include image.html file="wifigwsetup-pep.jpg" alt="WiFi RF Relay Setup Page"%}
 
 
 #### <span style="color:blue">Monitor.JemRF.com</span>
