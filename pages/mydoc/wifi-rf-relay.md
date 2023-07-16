@@ -29,7 +29,7 @@ The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
 The configuration page for the WiFi Gateway is very similar to the WiFi IoT Sensor.  It also has the option for Celsius to Fahrenheit conversion.
 You can configure the Wireless Gateway using any device that supports WIFI and an internet browser. In this example we will use a desktop computer.
 
-{% include image.html file="Slide1da59.jpg" alt="WiFi RF Relay Setup Page"%}
+{% include image.html file="Slide1da59.jpg" alt="WiFi GW Start"%}
 
 
 ***To make setup easy, the WiFi RF Wireless Sensor Relay has its own internal Web Server.***
@@ -37,7 +37,7 @@ You can configure the Wireless Gateway using any device that supports WIFI and a
 ### Step 1 Connect to WiFi
 
 The first step is to connect your smart device to the WIFI sensor. Power up the WIFI sensor and using your computer (or smart device) look for a WIFI connection that starts with **JRF** followed by some numbers. These numbers are the unique ID of your sensor. Connect to the sensor using the default password:
-{% include image.html file="Slide2gwsetup.jpg" alt="WiFi GW Setup Page"%}
+{% include image.html file="Slide2gwsetup.jpg" alt="WiFi GW Connect"%}
 
 
 Password: WiFirelay
@@ -69,7 +69,7 @@ Now enter your PrivateEyePi token. You can obtain your token from the User menu 
 
  The Gateway Server setting is: **"www.PrivateEyePi.com"**
  Copy and paste the token into the token field as shown in the below diagram
-{% include image.html file="wifigwsetup-pep.jpg" alt="WiFi RF Relay Setup Page"%}
+{% include image.html file="wifigwsetup-pep.jpg" alt="WiFi GW to PEP Server"%}
 
 
 #### <span style="color:blue">Monitor.JemRF.com</span>
@@ -77,12 +77,12 @@ Now enter your PrivateEyePi token. You can obtain your token from the User menu 
  To create an account you select the Register option on top right. Once registered you will receive a validation email with link. Click on the link and your account will be activated and ready for you to login.
  When you login under your name will be a drop down, select Account and then click on the Edit Token button. If you have a PrivateEyePi token already you can paste it in the token field and click the Accept Token to validate it is unique and Save. Now the same token works for both servers.
  If you do not have a PrivateEyePi Token, click Generate Gateway Id and it will create a token for you. Click the Accept Token to validate it is unique and Save.
-{% include image.html file="JemRf-account-token.jpg" alt="WiFi RF Relay Setup Page"%}
+{% include image.html file="JemRf-account-token.jpg" alt="WiFi GW Get token"%}
 
  The Gateway Server setting is: **"pep.jemrf.com"**
  Copy and paste the token into the token field as shown in the below diagram
 
-{% include image.html file="wifigw_pep.jemrf.png" alt="WiFi RF Relay Setup Page"%}
+{% include image.html file="wifigw_pep.jemrf.png" alt="WiFi GW Jemrf Server"%}
 Click "Save" and after a few seconds for the WIFI sensor to connect, clicking on the "Login Details" menu option to refresh the screen. Once connected you will see **"PEP: Connected"** as shown by the red circle in the image above. Once Connected, the Wireless Gateway is now forwarding Wireless Sensor data to the selected server.
 
 ## Sensors List
@@ -90,14 +90,14 @@ The Sensor List page shows the sensors the gateway has forwarded messages to the
 
 It tracks messages for up to 64 Sensors.
 
-{% include image.html file="ActiveDevices.jpg" alt="WiFi RF Relay Sensor List"%}
+{% include image.html file="ActiveDevices.jpg" alt="WiFi GW Sensor List"%}
 
 ## MQTT Details
 #### MQTT Features:
 Easy to configure web interface.<br />
 Connects to MQTT Broker with or without a username or password.<br />
 Tested with Mosquito Docker brokers and Emqx public broker.<br />
-JemRF provides an MQTT Broker.
+JemRF provides an MQTT Broker for customers.
 
 [Details on the JemRF MQTT format with examples](gatewaymqtt.html)
 
