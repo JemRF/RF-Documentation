@@ -27,21 +27,30 @@ The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
 
 ## Setup Details
 The configuration page for the WiFi Gateway is very similar to the WiFi IoT Sensor.  It also has the option for Celsius to Fahrenheit conversion.
+You can configure the Wireless Gateway using any device that supports WIFI and an internet browser. In this example we will use a desktop computer.
 
-{% include image.html file="SetupScreen.jpg" alt="WiFi RF Relay Setup Page"%}
+{% include image.html file="Slide1da59.jpg" alt="WiFi RF Relay Setup Page"%}
+
 
 ***To make setup easy, the WiFi RF Wireless Sensor Relay has its own internal Web Server.***
 
 ### Step 1 Connect to WiFi
 
 The first step is to connect your smart device to the WIFI sensor. Power up the WIFI sensor and using your computer (or smart device) look for a WIFI connection that starts with **JRF** followed by some numbers. These numbers are the unique ID of your sensor. Connect to the sensor using the default password:
+{% include image.html file="Slide2gwsetup.jpg" alt="WiFi GW Setup Page"%}
+
 
 Password: WiFirelay
 
 {% include note.html content="Mount the Gateway in a vertical position with the USB connector down. There is a mounting hold on the back for this. Do not mount against a metal wall as that will block the WiFi and RF signals."%}
 
 ### Step 2 : Configure SSID and Password
-Now open up a browser  and navigate to http://192.168.4.1/. Next enter the SSID and Password of your WIFI router and click on save.
+Now open up a browser  and navigate to http://192.168.4.1/.
+{% include image.html file="SetupScreen.jpg" alt="WiFi GW Setup Page"%}
+Next enter the SSID and Password of your WIFI router and click on save.
+
+
+{% include image.html file="wifigwssidselect.jpg" alt="WiFi GW SSID Select Page"%}
 
 Wait a few seconds for the WIFI temperature sensor to connect to the WIFI router. Click on the "Login Details" menu option to refresh the screen. Once connected you will see the **WLAN:** IP address has given to the Wireless Gateway, as shown in the next image. In the example below it shows 192.68.254.69, yours will be different. What's important is your gateway is now connected to the internet.
 
