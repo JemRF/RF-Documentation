@@ -12,7 +12,7 @@ folder: mydoc
 The WiFi Wireless Gateway Version 2 can be updated directly to the Gateway using the Internet. It is not updated automatically.
 When new firmware is available, an update option will appear at the bottom of the Setup Details screen shown below.
 
-{% include image.html file="wifigwsetup-online-update.jpg" alt="WiFi Gateway Update Flag" width=400px}
+{% include image.html file="wifigwsetup-online-update.jpg" alt="WiFi Gateway Update Flag" width=400px%}
 
 
 The <b>"Update Gateway"</b> selection will appear when it checks with the download server and finds a software update. When you are ready to update the Gateway, select <b>YES</b> and Save.
