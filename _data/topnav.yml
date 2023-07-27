@@ -51,5 +51,6 @@ topnav_dropdowns:
           url: /iot_gateway.html
 
     - title: Projects
+      folderitems:
         - title: Projects with RF Devices
           external_url: https://projects.jemrf.com
