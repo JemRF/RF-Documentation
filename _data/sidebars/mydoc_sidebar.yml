@@ -200,11 +200,14 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Sales at JemRF.com
-      url: https://jemrf.com
+    - title: Python Code changes for Monitor.JemRF.com
+      url: /monitoring.html
       output: web, pdf
 
     - title: JemRF Projects
-      url: https://projects.privateeyepi.com
+      url: [Projects](https://projects.jemrf.com)
       output: web, pdf
 
+    - title: JemRF Projects url
+      external_url: https://projects.jemrf.com
+      output: web, pdf
