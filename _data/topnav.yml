@@ -1,8 +1,12 @@
 ## Topnav single links
 ## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
 topnav:
+
 - title: Topnav
   items:
+    - title: Sales
+      external_url: https://jemrf.com
+
     - title: Blog
       url: /news.html
 
@@ -47,3 +51,6 @@ topnav_dropdowns:
           url: /developmentboard.html
         - title: IoT Gateway
           url: /iot_gateway.html
+
+    - title: Projects
+      external_url: https://projects.jemrf.com
