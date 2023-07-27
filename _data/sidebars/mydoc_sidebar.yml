@@ -204,10 +204,6 @@ entries:
       url: /monitoring.html
       output: web, pdf
 
-    - title: JemRF Projects
-      url: [Projects](https://projects.jemrf.com)
-      output: web, pdf
-
     - title: JemRF Projects url
       external_url: https://projects.jemrf.com
       output: web, pdf
