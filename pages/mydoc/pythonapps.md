@@ -11,8 +11,9 @@ folder: mydoc
 
 The Python Applications provided by JemRF are available for download from the JemRF Github repository.
 
+{% include note.html content="There are common programs in each repository: bme280.py, rflib.py, rfsensor.py, rfsettings.py are the same across all repositories."%}
 
-# RF-Apps
+## RF-Apps
 JemRF Apps for RF devices
 
 These applications are simple projects to get started using the JemRF Wireless RF devices.
@@ -22,8 +23,8 @@ Download to Pi:
 
     git clone https://github.com/JemRF/RF-Apps.git
 
-Current Version or Date stamp if marked.
-#### Program             Version
+
+#### Program and current Version or Date stamp if marked.
 * alarm.py            15
 * alarmfunctionsr.py  16
 * bme280.py
@@ -46,7 +47,7 @@ Current Version or Date stamp if marked.
 * verdanab.ttf
 * webcam.py           4
 
-# rf_tools
+## rf_tools
 JemRF Applications to test and operate the Wireless RF devices.
 
 More details on RF Documents  https://documents.jemrf.com/
@@ -55,7 +56,7 @@ Download to Pi:
 
     git clone https://github.com/JemRF/rf_tools.git
 
-Programs and Current Version/Date if tagged
+#### Programs and Current Version/Date if tagged
 
 Programs Version
 bme280.py
@@ -70,14 +71,14 @@ rfsettings.py
 serial_mon.py
 
 
-# Data Logger
+## Data Logger
 Data-logging instructions can be found at http://projects.privateeyepi.com/home/create-a-database-logger.php
 
 Download to Pi:
 
     git clone https://github.com/JemRF/Data-logging.git
 
-Programs and Current Version/Date if tagged
+#### Programs and Current Version/Date if tagged
 bme280.py
 dblogger.php
 index.php
@@ -93,7 +94,7 @@ The python3 folder contains the Python 3 version of two application: rf2serial.p
 
 {% include note.html content="The programs: bme280.py, rflib.py, rfsensor.py, rfsettings.py are the same in all repositories."%}
 
-# Python MQTT
+## Python MQTT
 This application is now included in the RF-apps collection.
 
 MQTT interface for JemRF sensors : https://www.jemrf.com/collections/all
