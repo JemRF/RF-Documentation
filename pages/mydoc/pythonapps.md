@@ -17,14 +17,14 @@ The Python Applications provided by JemRF are available for download from the Je
 JemRF Apps for RF devices
 
 These applications are simple projects to get started using the JemRF Wireless RF devices.
-More details on Project Site  https://projects.jemrf.com
+More details on Project Site  [https://projects.jemrf.com](https://projects.jemrf.com)
 
-Download to Pi:
+### Download to Pi:
 
     git clone https://github.com/JemRF/RF-Apps.git
 
 
-#### Program and current Version or Date stamp if marked.
+### Program and current Version or Date stamp if marked.
 * alarm.py            15
 * alarmfunctionsr.py  16
 * bme280.py
@@ -50,13 +50,13 @@ Download to Pi:
 ## rf_tools
 JemRF Applications to test and operate the Wireless RF devices.
 
-More details on RF Documents  https://documents.jemrf.com/
+More details on RF Documents  [https://documents.jemrf.com/](https://documents.jemrf.com/)
 
-Download to Pi:
+### Download to Pi:
 
     git clone https://github.com/JemRF/rf_tools.git
 
-#### Programs and Current Version/Date if tagged
+### Programs and Current Version/Date if tagged
 
 Programs Version
 bme280.py
@@ -72,13 +72,13 @@ serial_mon.py
 
 
 ## Data Logger
-Data-logging instructions can be found at http://projects.privateeyepi.com/home/create-a-database-logger.php
+Data-logging instructions can be found at [http://projects.privateeyepi.com/home/create-a-database-logger.php](http://projects.privateeyepi.com/home/create-a-database-logger.php)
 
-Download to Pi:
+### Download to Pi:
 
     git clone https://github.com/JemRF/Data-logging.git
 
-#### Programs and Current Version/Date if tagged
+### Programs and Current Version/Date if tagged
 bme280.py
 dblogger.php
 index.php
@@ -97,7 +97,11 @@ The python3 folder contains the Python 3 version of two application: rf2serial.p
 ## Python MQTT
 This application is now included in the RF-apps collection.
 
-MQTT interface for JemRF sensors : https://www.jemrf.com/collections/all
+### Download to Pi:
+
+    git clone https://github.com/JemRF/MQTT.git
+
+MQTT interface for JemRF sensors : [https://www.jemrf.com/collections/all](https://www.jemrf.com/collections/all)
 
 This application publishes data from RF messages using JSON (example payload below) to a topic of [device_prefix]_[device id]
 
