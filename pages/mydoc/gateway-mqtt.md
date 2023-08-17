@@ -9,9 +9,9 @@ permalink: gatewaymqtt.html
 folder: mydoc
 ---
 
-# JemRF WiFi Wireless Gateway MQTT
+# JemRF WiFi Wireless Gateway and WiFi Sensor MQTT
 
-The JemRF WiFi Wireless Gateway provides a built-in MQTT Client. The Gateway can both send to the PrivateEyePi Server for it to store and display readings and it can also  connect to a MQTT Broker and publish the sensor readings.  It can do both at the same time, or just send to the Server or the Broker. You can now use tools like Node-Red to build your own monitoring displays
+The JemRF WiFi Wireless Gateway and WiFi Sensor provide a built-in MQTT Client. The Gateway and WiFi Sensor can both send to the PrivateEyePi Server for it to store and display readings and it can also  connect to a MQTT Broker and publish the sensor readings.  It can do both at the same time, or just send to the Server or the Broker. You can now use tools like Node-Red to build your own monitoring displays
 
 The settings to publish the sensor readings to an MQTT broker are done on the MQTT Detail Tab as seen in Figure 1.
 
@@ -61,3 +61,39 @@ With that configuration, it created the Dashboard shown below
 
 Note: Because my Gateway is set to do Celsius to Fahrenheit conversion, my readings are in Fahrenheit. That the differences in values being shown vs the value received by the Gateway.
 
+## Other MQTT Formats
+### Cayenne
+This format is designed to work with the Cayenne.MyDevices.com test site.
+Because the Gateway receives different data sources its format is different from the WiFi Sensor.
+The Gateway default publish topic is: [Gateway Id]/
+With Payloads for:
+Temperature:
+[sensor Id] = tenp,c=27.10
+Humidity:
+3[SensorId] = rel_hum,p=54.4
+Pressure:
+5[SensorId] = PA,pa=95
+Battery:
+2[SensorId] = BAT,v=2.75
+
+The MQTT format for the WiFi Sensor with default topic:: [Sensor Id]/
+
+Temperature:
+500 = tenp,c=27.10
+Humidity:
+510 = rel_hum,p=54.4
+Pressure:
+
+### JSON
+It was to be generic and compatible with Home Assistant servers.
+{% include note.html content="This format is currently only supported by the WiFi Sensor."%}
+
+The default topic is: [Sensor Id]/
+With Payload for temperature Only
+
+[probe id] = [{"temperature":"78.4"},{"unit_of_measurement":"F"}]
+
+.. For WiFi Sensors with mutiple probes, the above format is repeated for each probe.
+
+With Payload for Temperature & Humidity sensor:
+[probe id] = [[{"temperature":"80.42","unit_of_measurement":"F"}],[{"humidity":"53.10","unit_of_measurement":"%"}]]
