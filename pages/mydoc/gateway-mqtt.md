@@ -64,7 +64,7 @@ Note: Because my Gateway is set to do Celsius to Fahrenheit conversion, my readi
 ## Other MQTT Formats
 ### Cayenne
 This format is designed to work with the Cayenne.MyDevices.com test site.
-Because the Gateway receives different data sources its format is different from the WiFi Sensor.
+The JSON format and the JemRF format are the same for both the Gateway and Sensor. The Cayenne data is a slightly different format is different from the WiFi Sensor.
 
 The Gateway default publish topic is: [Gateway Id]/
 
@@ -99,7 +99,6 @@ Humidity:
 
 ### JSON
 It was to be generic and compatible with Home Assistant servers.
-{% include note.html content="This format is currently only supported by the WiFi Sensor."%}
 
 The default topic is: [Sensor Id]/
 
@@ -112,3 +111,5 @@ With Payload for temperature Only
 With Payload for Temperature & Humidity sensor:
 
 [probe id] = [[{"temperature":"80.42","unit_of_measurement":"F"}],[{"humidity":"53.10","unit_of_measurement":"%"}]]
+
+{% include note.html content="For the WiFi unit with the Temperatue and Humidity Sensor, the Probe Id is the PEP number."%}
