@@ -61,7 +61,31 @@ With that configuration, it created the Dashboard shown below
 
 Note: Because my Gateway is set to do Celsius to Fahrenheit conversion, my readings are in Fahrenheit. That the differences in values being shown vs the value received by the Gateway.
 
-## Other MQTT Formats
+## MQTT Formats
+### JemRF
+This is our original format designed to support the RF sensors with the WiFi Wireless Gateway.  It is now used by the WiFi Sensor as well.
+
+The Gateway or the WiFi Sensor default topic is: [Gateway Id]/
+
+With Payloads:
+
+[sensor Id][Sensor Type] = value<br>
+On the Gateway Sensor List page, the [sensor Id][Sensor Type] is the MQTT Key.
+
+Examples:
+
+Sensor 21 a Digital temperature sensor with value 23.3 C would send
+
+21TMPC023.3
+
+The MQTT Payload would be: 21TMPC = 23.3
+
+With battery reading MQTT Payload of: 21BATT = 2.30
+
+For Sensor 45 a Humidity Sensor with value 98.
+
+The MQTT Payload would be: 45HUM = 98
+
 ### Cayenne
 This format is designed to work with the Cayenne.MyDevices.com test site.
 The JSON format and the JemRF format are the same for both the Gateway and Sensor. The Cayenne data is a slightly different format is different from the WiFi Sensor.
