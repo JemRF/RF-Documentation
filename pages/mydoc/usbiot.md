@@ -12,8 +12,11 @@ folder: mydoc
 # Introduction of USB IOT Gateway
 
 With the JemRF USB IOT Gateway you can run your data collection on a Windows Laptop or Linux computer.
-The USB IOT Gateway can run the same Python 3 code on windows that run on the Raspberry Pi and the Orange Pi.
+The USB IOT Gateway can run the same Python 3 code on windows that run on the Raspberry Pi and the Orange Pi.<br>
 The only adjustments are selecting the serial port from Linux /dev/serialx format to Windows Comx format.
+
+The default address for the USB IOT Gateway is 02, so it can run along side the
+RPI or Orange PI gateway which is at the default address of 01.
 
 # Using a Pi computer
 Running the JemRF Applications is the same as configuring a new Raspberry or Orange Pi.  Those instructions are at:

@@ -14,7 +14,7 @@ The IoT Gateway is a 10 Pin device that connects to the top 10 pins of the GPIO 
 
 {% include note.html content="All IoT Gateway models can fit on any Raspberry Pi Model." %}
 {% include note.html content="Follow [this link](orangepi.html) to use an Orange Pi Zero 2."%}
-{% include note.html content="Follow [this link](usbiot.html) to install on Windows PC"%}
+{% include note.html content="Follow [this link](usbiot.html) to install the USB IOT Gateway on Windows PC"%}
 
 
 The picture below show how the gateway fits on to the Raspberry Pi.
@@ -73,7 +73,27 @@ Thu Feb 27 15:02:51 2020 95 STARTED--
 Thu Feb 27 15:02:51 2020 95 STARTED--
 Thu Feb 27 15:02:51 2020 95 STARTED--
 ```
+With Release 7.6 and higher there is now the option to report the RSSI (Receive Signal Strength Indicator). This provides inside into how good the signal is from the sensor to the gateway. 
+```js
+With Version 7.6 all IOT gateways will come with RSSI enabled.
+To Disable RSSI:
+- python rf_config.py 01 RSSIOFF
+To Enable RSSI:
+- python rf_config.py 01 RSSION
+```
+RSSI Enabled messages will follow the first message received from a sensor:
+```js
+python serial_mon.py
 
+Now startup the sensor...
+
+Thu Feb 27 15:02:51 2020 95 STARTED--
+Thu Feb 27 15:02:51 2020 95 RSSI-60.0
+Thu Feb 27 15:02:51 2020 95 STARTED--
+Thu Feb 27 15:02:51 2020 95 STARTED--
+Thu Feb 27 15:02:51 2020 95 STARTED--
+Thu Feb 27 15:02:51 2020 95 STARTED--
+```
 {% include note.html content="If you have a wireless switch do not open/close the switch during the first 5 seconds as this will cause the device to start sending messages and cancel the startup sequence and prevent the device from entering sleep mode."%}
 
 {% include note.html content="Ideally put the sensors more than 5 feet away from the receiver when testing otherwise you may see message corruption or incomplete messages. These devices are tuned to transmit at a high DB in order to penetrate walls and for long distance line of sight so we have found when a sensor is very close to the receiver (e.g. 1-2 feet) then we see incomplete messages."%}

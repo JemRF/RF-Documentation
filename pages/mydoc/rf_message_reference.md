@@ -30,6 +30,7 @@ folder: mydoc
 | `HELLO` | Replies HELLO | `a99HELLO----` |
 |  `HTU21 (Version 7 and up)` | Transmits a temperature (Celsius) and humidity (%) from the HTU21 external sensor. | `a99HUM99.99-` <br/> `a99TMPA99.99` |
 | `INTVL[3 nums]` <br/> `E.g. INTVL005` |  A 3 digit numeric value that sets the timer interval to 1-30 minutes. See Timer section  for more details. Default is 0. | `a99INTVL999-` |
+| `INFO` <br/>  `(Version 7.5 and up)`  |  Request report on internal settings for TYPE xx, NOMSG yy, and INTVL zzz. | `a99INFxxyzzz` |
 | `M[8 chars]` <br/> `(Version 5 and up)` | This command can be used to send custom messages to the MAX7219 display. 8 digits to be displayed on the display. <br/> Characters supported: <br/> A,B,C,D,E,F,G,H,I,J,L,N,O,P,R,S,T,U,Z <br/>  a,b,c,d,e,f,g,h,i,j,l,n,o,p,r,s,t,u,v,w,x,y,z <br/> 0,1,2,3,4,5,6,7,8,9 <br/> UNDERSCORE, <br/> SQUARE BRACKETS, <br/> SPACE <br/>  Decimals are coded by subtracting 13 from the ASCII number. For example “5.” = “(” or “25.75c” = “2(75c”. | `a99MMESSAGE-` |
 | `MX[4 chars]` <br/> `(Version 5 and up)` |  Provides configuration for the wireless display MAZ7219. The four character configuration is as follows: 1 : “T” = display incoming temperature and humidity readings 2&3 : the ID of the sensor transmitting the temperature and humidity readings 4 : the suffix (e.g. “c” or “F”). Can be any character (means display temperature readings from sensor ID 99 in Fahrenheit) | `a99MXT99F---` |
 | `NOMSG[num]` <br/> `E.g. NOMSG3` | A numeric value between 1 and 9 that specifies how many messages to be sent after each trigger or request. |  `a99NOMSG9---` |
@@ -42,6 +43,8 @@ folder: mydoc
 | `RELAYBOFF` |  Switches Relay B off | `a99RELAYBOFF` |
 | `RBSON` <br/> `(Version 7.2 and up)` |  Report Button Status - ON. Use this command to always send the button status (refer Button Sensor section) every INTVL minutes when in CYCLE sleep mode regardless of the TYPE. This is useful for when you are using a RF module for multiple purposes (e.g. temperature sensor and button sensor) and you want a temperature reading as well as button status every INTVL | `a99RBSON----` |
 | `RBSOFF` <br/>  `(Version 7.2 and up)` |  Report Button Status - OFF. Use this command to switch off RBS (see RBSON). | `a99RBSOFF---` |
+| `RSSION` <br/> `(Version 7.6 and up)` |  Report RSSI Status - ON. This is Only a TYPE2, IOT Gateway receiver option. Use this command to have the IOT Gateway to send the RF Signal Strength Indicator (RSSI) level when a sensor message is received by the IOT Gateway. Because it is only an IOT function, it supports all software version of the sensors.  | `a99RSSION---` |
+| `RSSIOFF` <br/>  `(Version 7.6 and up)` |  Report RSSI Status - OFF. Use this command to switch off RSSI message from the IOT Gateway. (see RSSION). | `a99RSSIOFF--` |
 | `REBOOT` | Restarts the device | `a99REBOOT---` |
 | `RESET` | Resets the device settings back to factory default. This command can only be sent over the serial port. This command does not require a message start indicator, or device ID (refer Message Format section). | `OK-------` |
 | `SHT21` <br/> `(Version 6 and up)` |  Transmits a temperature (Celsius) and humidity (%) from the SHT21 external sensor. | `a99HUM99.99-` <br/> `a99TMPA99.99` |
