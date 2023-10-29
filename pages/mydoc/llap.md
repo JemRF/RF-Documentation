@@ -83,11 +83,11 @@ Any message that conforms to the message format rules defined in this document i
 
 There are several sets of messages:
 
-  Generic messages: all LLAP devices should be able to handle these. They are listed in [Appendix 1](https://web.archive.org/web/20160314090836/http:/openmicros.org/index.php/articles/85-llap-lightweight-local-automation-protocol/297-llap-reference#Generic%20LLAP%20Messages)
+  * Generic messages: all LLAP devices should be able to handle these. They are listed in [Appendix 1](https://web.archive.org/web/20160314090836/http:/openmicros.org/index.php/articles/85-llap-lightweight-local-automation-protocol/297-llap-reference#Generic%20LLAP%20Messages)
 
-  Ciseco defined  personalities : these are specific message sets that only certain LLAP devices can handle. There are pre-defined personalities for light and temperature sensors, relay control, button and Hall Effect sensors, as well as generic analogue to digital conversion and general purpose digital I/O tasks. Today we have these personalities in firmware for the XRF. We are looking to extend this to the SRF also. See [Appendix 2](https://web.archive.org/web/20160314090836/http:/openmicros.org/index.php/articles/85-llap-lightweight-local-automation-protocol/297-llap-reference#XRF%20Personalities) for details of the XRF personalities.
+  * Ciseco defined  personalities : these are specific message sets that only certain LLAP devices can handle. There are pre-defined personalities for light and temperature sensors, relay control, button and Hall Effect sensors, as well as generic analogue to digital conversion and general purpose digital I/O tasks. Today we have these personalities in firmware for the XRF. We are looking to extend this to the SRF also. See [Appendix 2](https://web.archive.org/web/20160314090836/http:/openmicros.org/index.php/articles/85-llap-lightweight-local-automation-protocol/297-llap-reference#XRF%20Personalities) for details of the XRF personalities.
 
-  User defined  personalities : you can define your own set of messages and use these with your controllers and devices. If you want to use Ciseco radio technology, you will probably choose the XinoRF or the Raspberry Pi as your controller and the RFμ328 as the base for your sensor or actuator. You will also be able to use our LLAP libraries to make sending and receiving LLAP messages a breeze.
+  * User defined  personalities : you can define your own set of messages and use these with your controllers and devices. If you want to use Ciseco radio technology, you will probably choose the XinoRF or the Raspberry Pi as your controller and the RFμ328 as the base for your sensor or actuator. You will also be able to use our LLAP libraries to make sending and receiving LLAP messages a breeze.
 
 * * *
 
@@ -100,13 +100,13 @@ Note: The only proviso when working with Ciseco radios is that you type fast eno
 
 Ciseco have freely available software that uses the LLAP message format for communications:
 
-  Firmware for the XRF that implements a number of sensors and actuators. We refer to this firmware as  personalities . Since all XRFs ship with serial pass-through firmware, customers will need to load an XRF that is to be configured as a specific sensor or actuator with the appropriate firmware using XCM. See the section on personalities for details.
+  * Firmware for the XRF that implements a number of sensors and actuators. We refer to this firmware as  personalities . Since all XRFs ship with serial pass-through firmware, customers will need to load an XRF that is to be configured as a specific sensor or actuator with the appropriate firmware using XCM. See the section on personalities for details.
 
-  Example software for our Arduino based SRF units (XinoRF and RFμ328) to emulate XRF personalities for sensors and actuators.
+  * Example software for our Arduino based SRF units (XinoRF and RFμ328) to emulate XRF personalities for sensors and actuators.
 
-  An Arduino LLAP library makes it very easy for customers to write their own sensor or actuator software and to define their own messages as appropriate.
+  * An Arduino LLAP library makes it very easy for customers to write their own sensor or actuator software and to define their own messages as appropriate.
 
-  A Python LLAP library is under construction too and is the best base for development of LLAP software on the Raspberry Pi for instance.
+  * A Python LLAP library is under construction too and is the best base for development of LLAP software on the Raspberry Pi for instance.
 
 * * *
 
@@ -120,15 +120,15 @@ When you send a message, you should not expect any acknowledgement from the comm
 
 Each message is exactly 12 characters long and in three distinct sections:
 
-  One start byte
+  * One start byte
 
-  Two bytes for the device identifier
+  * Two bytes for the device identifier
 
-  Nine data bytes, padded by dashes if necessary.
+  * Nine data bytes, padded by dashes if necessary.
 
-<SB> <ID> <ID> <D> <D> <D> <D> <D> <D> <D> <D> <D>
+\<SB> \<ID> \<ID> \<D> \<D> \<D> \<D> \<D> \<D> \<D> \<D> \<D>
 
-See [Appendix 3](https://web.archive.org/web/20160314090836/http:/openmicros.org/index.php/articles/85-llap-lightweight-local-automation-protocol/297-llap-reference#Permissible%20LLAP%20message%20characters) for details of the permissable characters in each field.
+See [Appendix 3](https://web.archive.org/web/20160314090836/http:/openmicros.org/index.php/articles/85-llap-lightweight-local-automation-protocol/297-llap-reference#Permissible LLAP message characters) for details of the permissable characters in each field.
 
 **Address range**
 
@@ -150,15 +150,15 @@ When a controller hears this, it should reply with
 
 If no response is heard then a further 5 attempts (retries) are made, again in the same format.
 
-**a--STARTED **
+**a--STARTED**
 
-**a--STARTED **
+**a--STARTED**
 
-**a--STARTED **
+**a--STARTED**
 
-**a--STARTED **
+**a--STARTED**
 
-**a--STARTED **
+**a--STARTED**
 
 The device now assumes normal operation on the ID of
 
@@ -234,9 +234,9 @@ A device with a LLAP personality is capable of generating and responding to the 
 
 There are two types of personality:
 
-  Ciseco defined personalities are available as firmware that a user can load onto an XRF to make that XRF into a temperature sensor, an actuator for relays, etc.
+  * Ciseco defined personalities are available as firmware that a user can load onto an XRF to make that XRF into a temperature sensor, an actuator for relays, etc.
 
-  User defined personalities are defined by third parties to create their own specific sensors and actuators.
+  * User defined personalities are defined by third parties to create their own specific sensors and actuators.
 
 **Ciseco defined personalities**
 
@@ -517,9 +517,9 @@ Allowing anyone to create their favourite sensor personality and allowing these 
 
 We needed a solution which allows you to program the personality yourself without compromising the reliability of the radio. Our solution is to add a separate end-user programmable processor to our radio unit in serial pass-through mode. This combination is now available in two form factors:
 
-  RFμ-328 combines an Arduino 328 with our SRF on the same Xbee form factor that is used by the XRF
+  * RFμ-328 combines an Arduino 328 with our SRF on the same Xbee form factor that is used by the XRF
 
-  XinoRF places our SRF on an Arduino Uno compatible board
+  * XinoRF places our SRF on an Arduino Uno compatible board
 
 RFμ-328 is ideal for low power deployment scenarios, whereas XinoRF is more suitable for development. Both units are software compatible, so software developed on one can be run without change on the other.
 
@@ -534,7 +534,7 @@ The Arduino LLAP library ([http://openmicros.org/index.php/articles/85-llap-ligh
 At some point many users want to develop some application or gateway to talk to our XRF Personalities.
 
 
-Before writing any code we recommend that you try out you LLAP commands first using your favourite serial terminal program. This way you see what messages you need to send an what messages you might receive in reply.
+Before writing any code we recommend that you try out you LLAP commands first using your favorite serial terminal program. This way you see what messages you need to send an what messages you might receive in reply.
 
 * * *
 
@@ -2494,6 +2494,7 @@ These are the characters available for use in each byte.
 </table>
 
 </div>
+
 
 **Entering LLAP commands via a terminal window**
 
