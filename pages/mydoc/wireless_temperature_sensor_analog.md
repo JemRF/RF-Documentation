@@ -1,20 +1,18 @@
 ---
 title: Wireless Temperature Sensor
 keywords: wireless temperature, temperature, sensor, 10k, thermistor
-last_updated: Nov 22, 2023
+last_updated: Jan 8, 2022
 tags:
-summary: "This page details the JemRF Wireless Digital Temperature Sensor"
+summary: "This page explains the JEMRF Wireless Temperature Sensor"
 sidebar: mydoc_sidebar
-permalink: wireless_temperature_sensor.html
+permalink: wireless_temperature_sensor_analog.html
 folder: mydoc
 ---
 
-<img src="images/wireless temperature sensor 1.jpg" width="425"/> <img src="images/wireless temperature sensor digital.jpg" width="425"/>
+<img src="images/wireless temperature sensor 1.jpg" width="425"/> <img src="images/wireless temperature sensor 2.jpg" width="425"/>
 
 ## Product Description
-The Wireless Temperature Sensor is now all digital, replacing the original [Wireless Temperature Sensor](wireless_temperature_sensor_analog.md)
-
-Wireless temperature sensor now uses a Dallas 18B20 1-wire digital sensor with accuracy of ±.5°C accuracy. The sensor still operates at a very low power and can last up to a year on a single CR2032 coin cell battery when configured to send readings every 10 minutes.
+Wireless temperature sensor with accuracy of ~1°C accuracy. Very low power and can last up to a year on a single CR2032 coin cell battery when configured to send readings every 10 minutes.
 
 ## Installation
 Install battery and close enclosure as described [here](sensor_installation.html).
@@ -23,9 +21,9 @@ Install battery and close enclosure as described [here](sensor_installation.html
 * See the [testing section](sensor_testing.html) of this documentation
 
 ## Product Specifications
-* ±.5°C accuracy
-* DS18B20 1-wire digital sensor
-* [Sensor Specification](ds18b20.html)
+* ~1°C accuracy
+* 10K (NTCLE100E3103JB0) thermistor sensor
+* [Sensor Specification](NTCLE100E3103JB0.html)
 
 ### Electrical
 * 2.2-3.3V
@@ -38,14 +36,14 @@ Install battery and close enclosure as described [here](sensor_installation.html
 * [Device specifications](rf_device_specs.html)
 
 ### Messaging details
-* TMPC99.99 (temperature reading format)
-* TEMPC (the TEMP command requests the sensor to transmit a temperature reading)
+* TMPA99.99 (temperature reading format)
+* TEMP (the TEMP command requests the sensor to transmit a temperature reading)
 
 ### Physical
 * 36mm x 36mm x 15mm case size (1.42" x 1.42" x .59")
 
 ## Default configuration
-* Type 4 ([Type](types.html) 4 sensor)
+* Type 1 ([Type](types.html) 1 sensor)
 * NOMSG1 (Sends 1 temperature reading every cycle)
 * INTVL005 (Sends a temperature reading every 5 minutes)
 * CYCLE (put the device into a [timed sleep cycle](sleep_modes.html))
