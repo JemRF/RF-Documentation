@@ -12,7 +12,7 @@ folder: mydoc
 <img src="images/wireless temperature sensor 1.jpg" width="425"/> <img src="images/wireless temperature sensor digital.jpg" width="425"/>
 
 ## Product Description
-The Wireless Temperature Sensor is now all digital, replacing the original [Wireless Temperature Sensor](wireless_temperature_sensor_analog.md)
+The Wireless Temperature Sensor is now all digital, replacing the original [Wireless Temperature Sensor](wireless_temperature_sensor_analog.html)
 
 Wireless temperature sensor now uses a Dallas 18B20 1-wire digital sensor with accuracy of ±.5°C accuracy. The sensor still operates at a very low power and can last up to a year on a single CR2032 coin cell battery when configured to send readings every 10 minutes.
 
