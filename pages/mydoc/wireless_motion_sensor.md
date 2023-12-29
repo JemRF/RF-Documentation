@@ -24,7 +24,7 @@ The RF module of the motion sensor acts the same as a wireless switch [wireless 
 
 Connect the motion sensor to the transmitter as shown in the below diagram. The wireless transmitter (top left) will send a signal when the two contacts (see image below with Button Contacts label) are closed (i.e. bridged). The three legged transistor in the middle of the breadboard (Not Included) in the diagram acts as a switch. It will close the circuit between the outer two legs of the npn2222a transistor when a signal (3V current) is sent to the middle leg. The motion sensor sends 3V current to the middle leg when motion is detected. Both devices (transmitter and motion sensor) have two separate supply voltages (3.3V for the wireless switch, which uses a 3.3V coin cell battery and 4.5V-20V for the motion sensor, e.g. 4xAA or a 9V battery). Don't use 3x1.5V batteries for the motion sensor as it is too close to it's 4.5V minimum boundary, rather use 4x1.5V.
 
-{% include image.html file="Wireless Motion Diagram.png" alt="Wireless Motion Sensor Diagram"%}
+{% include image.html file="wireless motion sensor wiring diagram.jpg" alt="Wireless Motion Sensor Diagram"%}
 {% include image.html file="motion sensor button contacts.png" alt="Wireless Motion Sensor"%}
 
 
