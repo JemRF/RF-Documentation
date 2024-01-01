@@ -19,7 +19,7 @@ The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
 
 {% include image.html file="wirelessgateway.png" alt="WiFi RF Relay Case"%}
 
-### Tech Specs:
+## Tech Specs:
 * Dimensions 74mm x 55mm x 28mm
 * Powered either by USB Mini cable and USB power supply, or battery connection (2.5V to 3.5V) via the 2 pin battery connection plug
 * Upgrades are done over the air using the Update button or can be done manually done using a 3.3V FTDI cable

@@ -1,5 +1,5 @@
 ---
-title: WiFi Gateway MQTT Explained
+title: WiFi Devices MQTT Explained
 keywords: Gateway, mqtt
 last_updated: Aug 14, 2022
 tags:
@@ -9,9 +9,9 @@ permalink: gatewaymqtt.html
 folder: mydoc
 ---
 
-# JemRF WiFi Wireless Gateway and WiFi Sensor MQTT
+# JemRF WiFi Wireless Gateway and WiFi Sensor MQTT Options
 
-The JemRF WiFi Wireless Gateway and WiFi Sensor provide a built-in MQTT Client. The Gateway and WiFi Sensor can both send to the PrivateEyePi Server for it to store and display readings and it can also  connect to a MQTT Broker and publish the sensor readings.  It can do both at the same time, or just send to the Server or the Broker. You can now use tools like Node-Red to build your own monitoring displays
+The JemRF WiFi Wireless Gateway and WiFi Sensor have a built-in MQTT Client. The Gateway and WiFi Sensor can both send to the Monitoring Server for it to store and display readings on the use Dashboard. They can also  connect to a MQTT Broker and publish the sensor readings.  It can do both at the same time, or just send to the Server or the Broker. You can now use tools like Node-Red to build your own monitoring displays
 
 The settings to publish the sensor readings to an MQTT broker are done on the MQTT Detail Tab as seen in Figure 1.
 
