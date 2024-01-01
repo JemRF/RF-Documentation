@@ -17,7 +17,7 @@ The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
  * Using a USB-mini connector for power.
  * It provides a Sensor List overview page to show all the sensors it is tracking and their last value.
 
-{% include image.html file="wirelessgateway.png" alt="WiFi Gateway Case"%}
+{% include image.html file="wirelessgateway.png" alt="WiFi Gateway Case" width="300"%}
 
 ## Tech Specs
 * Dimensions 74mm x 55mm x 28mm
@@ -51,7 +51,7 @@ From here you configure your WiFi Settings.
 Next enter the SSID and Password of your WiFi router and click on save.
 
 Wait a few moments for the WiFi Gateway to connect to the WiFi router. Click on the "Setup Details" menu option to refresh the screen. Once connected you will see the **WLAN:** IP address has given to the Wireless Gateway, as shown in the next image. In the example below it shows 192.168., yours will be different. What's important is your gateway is now connected to the Internet.
-{% include image.html file="wifigwsetuponline.jpg" alt="WiFi Gateway Online"%}
+{% include image.html file="wifigwsetuponline.png" alt="WiFi Gateway Online"%}
 
 ### Step 3 : Connect to Monitoring Server
 The next step is to connect your gateway to one of our services so you can monitor the devices and create alerts.  Both of our online services have a free tier.
@@ -60,8 +60,9 @@ The next step is to connect your gateway to one of our services so you can monit
 
 #### <span style="color:blue">www.PrivateEyePi.com</span>
 
-If you have not registered an account with PrivateEyePi, go to https://www.privateeyepi.com and click on "Create User".
+To register an account with PrivateEyePi, go to https://www.privateeyepi.com and click on "Create User".
 
+#### PrivateEyePi Token
 {% include image.html file="get_token_s.jpg" alt="Get PrivateEyePi Token"%}
 Now enter your PrivateEyePi token. You can obtain your token from the User menu on www.privateeyepi.com website.
 .
