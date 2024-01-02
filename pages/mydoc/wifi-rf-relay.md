@@ -17,7 +17,7 @@ The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
  * Using a USB-mini connector for power.
  * It provides a Sensor List overview page to show all the sensors it is tracking and their last value.
 
-{% include image.html file="wirelessgateway.png" alt="WiFi Gateway Case" width="300"%}
+{% include image.html file="wirelessgateway.png" alt="WiFi Gateway Case" width="200px"%}
 
 ## Tech Specs
 * Dimensions 74mm x 55mm x 28mm
@@ -60,7 +60,7 @@ The next step is to connect your gateway to one of our services so you can monit
 
 #### <span style="color:blue">www.PrivateEyePi.com</span>
 
-To register an account with PrivateEyePi, go to https://www.privateeyepi.com and click on "Create User".
+Instruction to create an account on PrivateEyePi are at: [Create account](pepregister.html).
 
 #### PrivateEyePi Token
 {% include image.html file="get_token_s.jpg" alt="Get PrivateEyePi Token"%}
