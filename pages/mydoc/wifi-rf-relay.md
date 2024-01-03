@@ -9,7 +9,7 @@ permalink: wifirfrelay.html
 folder: mydoc
 ---
 ## Introduction
-The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the PrivateEyePi or JemRF Monitoring server. This eliminates the need for a Raspberry PI computer and all that extra overhead. The Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming a computer first.<br />
+The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the PrivateEyePi or JemRF Monitoring service. This eliminates the need for a Raspberry PI computer and all that extra overhead. The Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming a computer first.<br />
 
 The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
  * Follows the same setup process as our WiFi IoT Sensors to connect to the local WiFi.
@@ -59,52 +59,50 @@ The next step is to connect your gateway to one of our services so you can monit
 **"monitor.jemrf.com"** is our newer service, focused on monitoring with custom tolerance settings to trigger notifications to help alert when there is a problem.  You are welcome to visit each to see which meets your needs and can sign up for both (only one will work at a time). Both use a token to link your device to your account. You can use the PEP Token on the Monitor service if you want to switch between the two.
 
 #### <span style="color:blue">www.PrivateEyePi.com</span>
+Sign-up instruction to create an account on PrivateEyePi are at: [Create account and get Token](pepregister.html).
 
-Instruction to create an account on PrivateEyePi are at: [Create account](pepregister.html).
-
-#### PrivateEyePi Token
-{% include image.html file="get_token_s.jpg" alt="Get PrivateEyePi Token"%}
-Now enter your PrivateEyePi token. You can obtain your token from the User menu on www.privateeyepi.com website.
-.
-
- The Gateway Server setting is: **"www.PrivateEyePi.com"**
- Copy and paste the token into the token field as shown in the below diagram
+On the WiFi Gateway Setup Details page, the Server setting is: **"www.PrivateEyePi.com"**
+Copy and paste the PEP token into the Token field as shown in the below diagram
 {% include image.html file="wifigwsetup-pep.jpg" alt="WiFi GW to PEP Server"%}
-
+Clicking "Save" will connect the WiFi Gateway to the server.  After a few moments, click on the "Setup Details" tab to refresh the screen, you will see **"PEP: Connected"** as shown in the image above. Once Connected, the Wireless Gateway is now forwarding Wireless Sensor data to the configured server.
 
 #### <span style="color:blue">Monitor.JemRF.com</span>
  You can also use https://monitor.jemrf.com to create and account and token.
- To create an account you select the Register option on top right. Once registered you will receive a validation email with link. Click on the link and your account will be activated and ready for you to login.
- When you login under your name will be a drop down, select Account and then click on the Edit Token button. If you have a PrivateEyePi token already you can paste it in the token field and click the Accept Token to validate it is unique and Save. Now the same token works for both servers.
- If you do not have a PrivateEyePi Token, click Generate Gateway Id and it will create a token for you. Click the Accept Token to validate it is unique and Save.
+ To create an account you select the Register option on top right. Once registered you will receive a validation email with a link. Click on the link and your account will be activated and ready for you to login.
+
+ After you login, click on your name in the upper right hand corner a drop down menu will appear. Select Account and then click on the Edit Token button.
+ * If you have a PrivateEyePi token already you can paste it in the token field and click the Accept Token to validate it is unique and Save. Now the same token works for both servers.
+ * If you do not have a PrivateEyePi Token, click Generate Gateway Id and it will create a token for you.
+
+ Click the Accept Token to validate it is unique and Save.
 {% include image.html file="JemRf-account-token.jpg" alt="WiFi GW Get token"%}
 
- The Gateway Server setting is: **"pep.jemrf.com"**
- Copy and paste the token into the token field as shown in the below diagram
+On the WiFi Gateway Setup Details page, the Server setting is: **"pep.jemrf.com"**
+ Copy and paste the Token into the token field as shown in the below diagram:
 
 {% include image.html file="wifigw_pep.jemrf.png" alt="WiFi GW JemRF Server"%}
-Click "Save" and after a few seconds for the WiFi Gateway to connect, clicking on the "Login Details" menu option to refresh the screen. Once connected you will see **"PEP: Connected"** as shown by the red circle in the image above. Once Connected, the Wireless Gateway is now forwarding Wireless Sensor data to the selected server.
+Clicking "Save" will connect the WiFi Gateway to the server.  After a few moments, click on the "Setup Details" tab to refresh the screen, you will see **"PEP: Connected"** as shown in the image above. Once Connected, the Wireless Gateway is now forwarding Wireless Sensor data to the configured server.
 
 ## Sensors List
-The Sensor List page shows the sensors the gateway has forwarded messages to the PEP server. It also shows the last message from each sensor received by the gateway with how many messages have been forwarded for that sensor and a grand total of all the messages forwarded to the server.
+The Sensor List page shows the sensors that are connected to the gateway. These are the sensors the gateway is forwarding to the monitoring service. It also shows the last message from each sensor received by the gateway with how many messages have been forwarded for that sensor and a grand total of all the messages forwarded to the server.
 
-It tracks messages for up to 64 Sensors.
+The WiFi Gateway tracks messages for up to 64 Sensors.
 
 {% include image.html file="ActiveDevices.jpg" alt="WiFi GW Sensor List"%}
 
 ## MQTT Details
-#### MQTT Features:
-Easy to configure web interface.<br />
-Connects to MQTT Broker with or without a username or password.<br />
-Tested with Mosquito Docker brokers and Emqx public broker.<br />
-JemRF provides an MQTT Broker for customers.
+### MQTT Features:
+* Easy to configure web interface.
+* Connects to MQTT Broker with or without a username or password.
+* Tested with Mosquito Docker brokers and Emqx public broker.
+* JemRF provides an MQTT Broker for customers.
 
 [Details on the JemRF MQTT format with examples](gatewaymqtt.html)
 
 ## Firmware Updates
 The Gateway is normally updated over the Internet.
-[Click Illustrated instructions](wifi-gw-update.html)
+[Click here for Illustrated instructions](wifi-gw-update.html)
 
 ## Mounting Instructions
-{% include note.html content="Mount the Gateway in a vertical position with the USB connector down. There is a mounting hold on the back for this. Do not mount against a metal wall as that will block the WiFi and RF signals."%}
+Mount the Gateway in a vertical position with the USB connector down. There is a mounting hold on the back for this. Do not mount against a metal wall as that can block the WiFi and RF signals.
 
