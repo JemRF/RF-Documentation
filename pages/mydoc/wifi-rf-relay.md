@@ -91,17 +91,16 @@ The WiFi Gateway tracks messages for up to 64 Sensors.
 {% include image.html file="ActiveDevices.jpg" alt="WiFi GW Sensor List"%}
 
 ## MQTT Details
-### MQTT Features:
 * Easy to configure web interface.
 * Connects to MQTT Broker with or without a username or password.
 * Tested with Mosquito Docker brokers and Emqx public broker.
 * JemRF provides an MQTT Broker for customers.
 
-[Details on the JemRF MQTT format with examples](gatewaymqtt.html)
+[Click here for details on the JemRF MQTT format with examples](gatewaymqtt.html)
 
 ## Firmware Updates
 The Gateway is normally updated over the Internet.
-[Click here for Illustrated instructions](wifi-gw-update.html)
+[Click here for Illustrated manual updating instructions](wifi-gw-update.html)
 
 ## Mounting Instructions
 Mount the Gateway in a vertical position with the USB connector down. There is a mounting hold on the back for this. Do not mount against a metal wall as that can block the WiFi and RF signals.
