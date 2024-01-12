@@ -5,7 +5,7 @@ last_updated: Jan 11, 2024
 tags:
 summary: "This Document describes the basics of the WiFi Wireless Gateway"
 sidebar: wifi_sidebar
-permalink: wifirfgwsetup.html
+permalink: wifi-rf-gw-setup.html
 folder: mydoc
 ---
 ## Introduction
@@ -53,7 +53,7 @@ If you want to use our monitoring services and you do not have a JemRF Monitorin
 On the WiFi Gateway Setup Details page, the **Server** setting is  **pep.jemrf.com**.
 
 #### Token
-Using your account on monitor.jemrf.com, after you login, click on your name in the upper right hand corner a drop down menu will appear. Select Account and then click on the Edit Token button.
+Using your account on [monitor.jemrf.com](https:/monitor.jemrf.com), after you login, click on your name in the upper right hand corner a drop down menu will appear. Select Account and then click on the Edit Token button.
  * If you have a PrivateEyePi token already you can paste it in the token field and click the Accept Token to validate it is unique and Save. Now the same token works for both servers.
  * If you do not have a PrivateEyePi Token, click Generate Gateway Id and it will create a token for you.
 

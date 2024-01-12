@@ -10,20 +10,10 @@ folder: mydoc
 ---
 
 ## How to Create a Monitoring Account at Monitor.JemRF.com
-Monitor.JemRf.com is an interactive monitoring service provided by JemRF. It has a free tier level support for monitoring. This procedure shows how to become a monitoring user and get you Token. The token is used to link data from your sensors to your account.
-
- You can also use [monitor.jemrf.com](https://monitor.jemrf.com) to create and account and token.
- To create an account you select the Register option on top right. Once registered you will receive a validation email with a link (usually within 2 minutes). Click on the link and your account will be activated and ready for you to login.
-
- After you login, click on your name in the upper right hand corner a drop down menu will appear. Select Account and then click on the Edit Token button.
- * If you have a PrivateEyePi token already you can paste it in the token field and click the Accept Token to validate it is unique and Save. Now the same token works for both servers.
- * If you do not have a PrivateEyePi Token, click Generate Gateway Id and it will create a token for you.
-
- Click the Accept Token to validate it is unique and Save.
-{% include image.html file="JemRf-account-token.jpg" alt="WiFi GW Get token"%}
+[Monitor.JemRf.com](https://monitor.jemrf.com) is an interactive monitoring service provided by JemRF. It has a free tier level support for monitoring. This procedure shows how to become a monitoring user and get you Token. The token is used to link data from your sensors to your account.
 
 ## Initial Login Page
-When you go to [https://monitor.jemrf.com](https://monitor.jemrf.com/) the start page is the sign-in screen.
+Start by going to [https://monitor.jemrf.com](https://monitor.jemrf.com/). You will get the initial Welcome page. On the right side is the sign-in option.
 {% include image.html file="jemrf login1.jpg" alt="JemRF Welcome Page"%}
 
 ## Create a new Account
@@ -33,8 +23,10 @@ If you do not have an account click on the "Register" button and that will bring
 After you click on Register, you will get a message that a validation link has been sent to your email. May take one or two minutes to get the email. Click on then valdidate link and your account will be created and ready to login.
 
 ## Login to JemRF
-After you click on the validation link, your account will be ready for you to login. Go back to the [Welcome Page](https://monitor.jemrf.com/) and click on Login.
+Once validated, your account will be ready for you to login. Go back to the [Welcome Page](https://monitor.jemrf.com/) and click on Login.
 {% include image.html file="jemrf-login.jpg" alt="JemRF Login Page"%}
+
+If you have any problems, email: sales @ jemRF.com for help.
 
 ## Getting your Token
 Once your account is ready and you have logged in, follow these steps to get you **Token**.
@@ -50,7 +42,10 @@ Select the Edit Account(s) option and the edit account page will appear.
 
 ### Step 3
 Click on the edit icon to the right of the Token Field to get the Create Token form.
-{% include image.html file="jemrf-account-token.jpg" alt="Get Token Page"%}
+{% include image.html file="JemRf-account-token.jpg" alt="Get Token Page"%}
 If you have an old PEP token you want to use, you can past it in the Token Field, if not click on **Generate Token** and a token will be filled in. Click on Accept Token, that validates it is unique, then click on Save to save the token to your account. The Account page will reappear, (page shown in Step 2).
 Your token will now be shown where the blue line is.  You can now copy the token to use on your device setup page.
+
+## Monitoring
+When you get your device configured. It will start sending to the monitoring service. An icon representing your sensor will automatically appear on the **Dashboard**. Using the **Sensor** tab, you can select each sensor and edit the control ranges and give the sensors a name or location code if you want.
 
