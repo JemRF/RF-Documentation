@@ -2,7 +2,7 @@
 
 entries:
 - title: sidebar
-  product:
+  product: WiFi Devices
   version:
   folders:
 
@@ -23,10 +23,18 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Projects Introduction
+      url: /projects_intro.html
+      output: web, pdf
+
     - title: RF Introduction
       url: /index.html
       output: web, pdf
       type: homepage
+
+    - title: Wifi Introduction
+      url: /wifi_intro.html
+      output: web, pdf
 
     - title: Getting Started
       url: /getting_started.html

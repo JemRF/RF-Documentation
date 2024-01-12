@@ -4,7 +4,7 @@ keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Jan 1, 2024
 tags:
 summary: "This Document describes the basics of the WiFi Wireless Gateway"
-sidebar: mydoc_sidebar
+sidebar: wifi_sidebar
 permalink: wifirfrelay.html
 folder: mydoc
 ---
@@ -67,7 +67,7 @@ Copy and paste the PEP token into the Token field as shown in the below diagram
 Clicking "Save" will connect the WiFi Gateway to the server.  After a few moments, click on the "Setup Details" tab to refresh the screen, you will see **"PEP: Connected"** as shown in the image above. Once Connected, the Wireless Gateway is now forwarding Wireless Sensor data to the configured server.
 
 #### <span style="color:blue">Monitor.JemRF.com</span>
- You can also use https://monitor.jemrf.com to create and account and token.
+ You can also use [monitor.jemrf.com](https://monitor.jemrf.com) to create and account and token.
  To create an account you select the Register option on top right. Once registered you will receive a validation email with a link. Click on the link and your account will be activated and ready for you to login.
 
  After you login, click on your name in the upper right hand corner a drop down menu will appear. Select Account and then click on the Edit Token button.
