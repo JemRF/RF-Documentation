@@ -1,7 +1,7 @@
 ---
 title: MQTT Integration
 keywords: interface, integrate, integration, mqtt
-last_updated: Sep 28, 2020
+last_updated: Jan 11, 2024
 tags:
 summary: "This page explains how to integrate our RF Modules with MQTT"
 sidebar: mydoc_sidebar

@@ -8,7 +8,7 @@ summary: JemRF radio modules are easy to use wireless data transmission modules 
 
 # Introduction to JemRF Projects
 ## Using JemRF WiFi Sensor
-### Light Relay
+### Remote Control Switch (IOT Relay)
 ### MQTT
 ## Using JemRF RF Sensor line
 ### Home Alarm System
