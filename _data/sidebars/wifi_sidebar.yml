@@ -28,7 +28,7 @@ entries:
       output: web, pdf
 
     - title: Projects Introduction
-      url: /projects_intro.html
+      external_url: https://projects.privateeyepi.com
       output: web, pdf
 
     - title: RF Introduction

@@ -10,7 +10,7 @@ folder: mydoc
 ---
 
 ## WIFI Sensor Advance Options
-Once you have completed the [setup of WIFI Temperature Sensor](/wofo-iot-setup.html) you may be interested in some of the advanced features of the device.
+Once you have completed the [setup of WIFI Temperature Sensor](/wifi-iot-setup.html) you may be interested in some of the advanced features of the device.
 
 On the "Sensor Config" menu there are a number of options which we will describe further here.
 
@@ -19,10 +19,12 @@ On the "Sensor Config" menu there are a number of options which we will describe
 
 
 ### Send To Server
-You used this option in the setup tutorial to tell the sensor to send the reading from the on board DS18B20 temperature sensor to the server.  Click the check box to send, and un-click it to stop sending.
+You used this option to tell the sensor to send the reading from the on board DS18B20 temperature or DHT22 temperature and humidity sensor to be sent to the server.  Click the check box to send, and un-click it to stop sending.
 
 ### Temperature Send Interval
-This is the interval between temperature reading transmissions. For example if set to 300 then the sensor will send a reading every 5 minutes. Take note that if you are using the free PrivateEyePi service then setting it to below 300 may result in you exceeding the maximum daily message allowance.
+This is the interval between temperature reading transmissions. For example if set to 300 then the sensor will send a reading every 5 minutes. Take note that if you are using the free PrivateEyePi service then setting it to below 300 may result in you exceeding the maximum daily message allowance. JemRF Monitoring will support 60 second updates.
+
+{% include note.html content="With default value of 0, no messages will be sent to the servers. "%}
 
 ### Min Temp Delta Before Transmit
 
@@ -41,10 +43,11 @@ The on board WIFI chip will generate heat if powered on for long periods of time
 
 This option will shut down the WIFI sensor in between transmissions and automatically awaken the device for transmission every X seconds (defined by Temperature Send Interval) . This radically reduces the power intake of the device.
 
-Take Note : The sensor will no longer be accessible through WIFI while it is in sleep mode. The device can be taken out of sleep mode by connecting GPIO 12 with 3V (as shown in the picture below).
+** Take Note ** : The sensor will no longer be accessible through WIFI while it is in sleep mode. The device can be taken out of sleep mode by connecting GPIO 12 with 3V (as shown in the picture below).
 
 This option must be used in conjunction with the "Sleep" dip switch on the board, as shown in the picture below.
 
+{% include image.html file="IMG_5073 (640x479)6105.jpg" alt="WiFi Sensor Sleep Switch"%}
 
 If you are powering the device using a battery power source then this option is recommended.
 
