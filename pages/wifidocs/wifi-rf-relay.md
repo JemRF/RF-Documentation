@@ -24,6 +24,18 @@ The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
 * Powered either by USB Mini cable and USB power supply, or battery connection (2.5V to 3.5V) via the 2 pin battery connection plug
 * Upgrades are done over the air using the Update button or can be done manually done using a 3.3V FTDI cable
 
+## Features
+* Easy to configure web interface. No programming or soldering skills required. You do not need the internet to configure the device. Connect to it directly from any WIFI device (e.g. PC, phone tablet…)
+* Supports both Celsius or Fahrenheit temperature conversion
+Powered either by USB Mini cable (4.5V DC to 7V DC input) or battery connection (2.5V to 3.5V) via the 2 pin battery connection plug
+* The device supports dual WIFI mode allowing it to be WIFI access point and a WIFI client at the same time. A WIFI access point advertises itself through an SSID and can be connected to via any device or computer that has WIFI.
+* The Sensor List tab will show sensor that the WiFi Relay and heard and forwarded to the server. See Example below:
+{% include image.html file="sensorlist.png" alt="WiFi Gateway Sensor List" %}
+
+## Required, but not included:
+
+* Mini USB cable and power supply (older cell phones used mini USB, so you may already have one in the bottom of a drawer).
+* Any USB power supply will work, 5 volts, 1 Amp or greater.
 
 ## Setup Details
 The configuration page for the WiFi Gateway is very similar to the WiFi IoT Sensor.

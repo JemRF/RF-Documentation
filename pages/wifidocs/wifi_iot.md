@@ -1,7 +1,7 @@
 ---
 title: The Internet Of Things (IOT) WIFI Sensor
 keywords: getting started introduction
-last_updated: Jan 1, 2024
+last_updated: Jan 12, 2024
 tags:
 summary: "The Internet Of Things (IOT) is where everyday things (cars, homes, household appliances, plants) are being connected to the Internet where we can monitor, control and alert in ways not possible before."
 sidebar: wifi_sidebar
@@ -36,15 +36,15 @@ It connects to your WIFI access point so you can  send temperature readings to [
 Mini USB cable and power supply (older cell phones used mini USB, so you may already have one in the bottom of a drawer). -5V to 7V power supply. Any USB power supply will work.
 We have USB to USB-B cables at our store, (JemRF Store)[https://www.jemrf.com]. Battery pack (optional)
 
-## Installation:
+## Installation and Projects
 
-Getting Started installation guide
+[Getting Started installation guide](/wifi-iot-setup.html)
 Temperature and Humidity Configuration Guide
 Remote Control Switch Configuration Guide
 Door/Window Switch
-Advanced setup options described here
-This guide shows you how to interface to the sensor
-Upgrade WIFI Firmware Guide
+[Advanced setup options described here](/wifi-iot-advance.html)
+[Offline interfacing with the sensor](/wifi-iot-offline.html)
+[Upgrade WIFI Firmware Guide](/wifi-iot-update.html)
 
 ## Tech Specs:
 
@@ -57,4 +57,4 @@ Upgrade WIFI Firmware Guide
 * Supports SPI serial interface
 ## Board Layout:
 
-[WiFi Sensor Motherboard with options](wifi-sensor-PCB Board.png)
+[WiFi Sensor Motherboard with options](WiFi PCB Board.png)

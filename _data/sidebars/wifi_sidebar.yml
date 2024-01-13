@@ -36,108 +36,40 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: Getting Started
-      url: /getting_started.html
-      output: web, pdf
-
-    - title: RF Device Specs
-      url: /rf_device_specs.html
-      output: web, pdf
-
-  - title: RF Communications
+  - title: WiFi Sensor
     output: web, pdf
     folderitems:
 
-    - title: Basics
-      url: /rf_basics.html
+    - title: Introduction
+      url: /wifi_iot.html
       output: web, pdf
 
-    - title: Modes of Operation
-      url: /rf_modes.html
+    - title: Getting Online
+      url: /wifi-iot-setup.html
       output: web, pdf
 
-    - title: Message Format
-      url: /rf_message_format.html
+    - title: Updates
+      url: /wifi-iot-updates.html
       output: web, pdf
 
-    - title: Message Reference
-      url: /rf_message_reference.html
+    - title: Advance Setup Options
+      url: /wifi-iot-advance.html
       output: web, pdf
 
-  - title: Installation
+  - title: WiFi Gateway
     output: web, pdf
     folderitems:
 
-    - title: Utilities
-      url: /utilities.html
+    - title: Introduction
+      url: /wifi-rf-relay.html
       output: web, pdf
 
-    - title: IoT Gateway for Raspberry Pi
-      url: /iot_gateway.html
+    - title: Setup
+      url: /wifi-rf-gw-setup.html
       output: web, pdf
 
-    - title: Sensor Installation
-      url: /sensor_installation.html
-      output: web, pdf
-
-    - title: Testing
-      url: /sensor_testing.html
-      output: web, pdf
-
-  - title: Configuration
-    output: web, pdf
-    folderitems:
-
-    - title: Configuration Overview
-      url: /configuration_overview.html
-      output: web, pdf
-
-    - title: HELLO
-      url: /hello.html
-      output: web, pdf
-
-    - title: Types
-      url: /types.html
-      output: web, pdf
-
-    - title: Sleep Modes
-      url: /sleep_modes.html
-      output: web, pdf
-
-    - title: Device ID
-      url: /device_id.html
-      output: web, pdf
-
-    - title: Personal Area Network (PAN)
-      url: /panid.html
-      output: web, pdf
-
-    - title: Frequency
-      url: /frequency.html
-      output: web, pdf
-
-    - title: Channels
-      url: /channel.html
-      output: web, pdf
-
-    - title: Encryption
-      url: /encryption.html
-      output: web, pdf
-
-    - title: GPIO
-      url: /gpio.html
-      output: web, pdf
-
-    - title: Resetting your device
-      url: /reset.html
-      output: web, pdf
-
-    - title: Hardware & Firmware
-      url: /hardware_and_firmware.html
-      output: web, pdf
-
-    - title: Multi-function Sensors
-      url: /multi function sensors.html
+    - title: Updating
+      url: /wifi-gw-update.html
       output: web, pdf
 
   - title: Integration
