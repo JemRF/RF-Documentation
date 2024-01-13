@@ -10,7 +10,7 @@ folder: mydoc
 ---
 
 ## Interfacing with the WIFI Sensor
-You don't need to use the PrivateEyePi server for collecting sensor readings or controlling the GPIO ports. You may want to send the readings to another server or save it on your own device (like a Raspberry Pi). You can also easily switch the GPIO ports.
+You don't need to use the monitoring service for collecting sensor readings or controlling the GPIO ports. You may want to send the readings to another server or save it on your own device (like a Raspberry Pi). You can also easily switch the GPIO ports.
 
 ### Here is how you do it:
 
@@ -20,7 +20,7 @@ You don't need to use the PrivateEyePi server for collecting sensor readings or 
 Get temperature readings.
 You can get the temperature from the /temp page on the sensor. For example if the ip-address of your sensor is 192.168.0.25, then type the following into a browser: http://192.268.0.25/temp.
 
-The /temp page will return the following:
+The http://your-ip-address/temp page will return the following:
 
 
 #### Firmware version less than 1.9.3:

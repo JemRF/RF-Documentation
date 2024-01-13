@@ -1,6 +1,6 @@
 ---
-title: "WiFi Sensor Introduction"
-keywords: getting started introduction
+title: "JemRF WiFi Devices"
+keywords: getting started introduction, Wifi jemrf, Gateway, wifi Sensor
 sidebar: wifi_sidebar
 permalink: wifi_intro.html
 summary: JemRF WiFi Devices.
@@ -25,7 +25,11 @@ For the experimenter there are 8 GPIO pins that can be used as switch contacts o
 ##### Remote Control Relay
 This kit provides a 5v relay that can be turned on and off by one of the GPIO pins.
 
+[Details on the WiFI Sensor](wifi_iot.html).
+
 ### WiFi Gateway
 The WiFi Gateway provides a bridge to capture messages from our RF Sensors and forward them to the monitoring Server.
+It forwards messages to the monitoring server and can forward data messages to an MQTT broker for external custom monitoring.
+
 [Details on the Gateway](wifi-rf-relay.html).
 

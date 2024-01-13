@@ -4,7 +4,7 @@ keywords: Gateway, mqtt
 last_updated: Aug 14, 2022
 tags:
 summary: "This page is to show how to setup MQTT on the WiFi Gateway and Node-RED"
-sidebar: mydoc_sidebar
+sidebar: wifi_sidebar
 permalink: gatewaymqtt.html
 folder: mydoc
 ---

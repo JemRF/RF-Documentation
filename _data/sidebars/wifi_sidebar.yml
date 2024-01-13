@@ -52,11 +52,11 @@ entries:
       url: /wifi-iot-updates.html
       output: web, pdf
 
-    - title: Advance Setup Options
+    - title: Advanced Options
       url: /wifi-iot-advance.html
       output: web, pdf
 
-    - title: Advance Setup Options
+    - title: Offline Options
       url: /wifi-iot-offline.html
       output: web, pdf
 

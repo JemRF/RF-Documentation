@@ -19,22 +19,31 @@ Go to Step 9 for Details.
 
 1. Connect FT232RL FTDI USB 3.3V/5.5V module to the WIFI sensor (set jumper to 3.3V) and the USB to your Windows PC.
 
-Make sure you have crossed over TX and RX as shown by the red circle in the diagram
-    for boards prior to WIFI Hardware Release 4.0
-For WIFI Hardware Release 4.0 boards and newer
-    the 3.3V FTDI can plug directly into the header on the PCB, the TX and RX do are Not crossed.
+
+{% include image.html file="IMG_5083 (320x240).jpg" alt="FTDI "%}
+{% include note.html content="For WIFI Hardware Release 4.0 boards and newer
+    the 3.3V FTDI can plug directly into the header on the PCB with out jumpers. The TX and RX are fixed."%}
+
+{% include image.html file="IMG_5081 (212x320).jpg" alt="FTDI End of jumpers"%}
+{% include note.html content="Sensors using a PCB prior to WIFI Hardware Release 4.0, Make sure you have crossed over TX and RX as shown by the red circle in the diagram. "%}
+
 
 2. On the Sensor, set dip switch 3 and 4 (marked FLASH) to ON
 
+{% include image.html file="IMG_5086 (320x282)8750.jpg" alt="Sw for Flash Update"%}
 3. Check the device manager to determine the com port assigned to the FTDI
 
+{% include image.html file="ftdi control panel (640x463)f823.jpg" alt="Device Manager Serial Port Select"%}
 4. Download, unzip and run the ESP Flasher (file attached below)
 
 5. Set the COM port, select the bin file (files attached below)
 
+{% include image.html file="ESP Download1d59.png" alt="Flash Downloader"%}
 6. Reset the device by setting dip switch 1 ON then OFF, then click Download.
 -- Note: Messages will start tracking the install which will take about a minute.
 
+{% include image.html file="IMG_5087 (320x277)84b8.jpg" alt="Sw for Flash and Reset"%}
+{% include image.html file="IMG_5086 (320x282)8750.jpg" alt="Sw for Flash Update"%}
 7. The device will automatically restart after the new firmware is uploaded. Set dip switches 3 and 4 back to the OFF position.
 
 8. Its generally a good idea to reset the device using the Reset on the Login Details screen. Sometimes when we add new code we use different parts of the device memory so you may see erratic data displayed on the config screens. Resetting the device will reset the memory on the device to work with the new version. If the config screens are not visible you can also reset the device using the URL : http://192.168.4.1/reset
