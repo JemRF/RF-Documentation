@@ -38,13 +38,13 @@ We have USB to USB-B cables at our store, (JemRF Store)[https://www.jemrf.com]. 
 
 ## Installation and Projects
 
-[Getting Started installation guide](/wifi-iot-setup.html)
-Temperature and Humidity Configuration Guide
-Remote Control Switch Configuration Guide
-Door/Window Switch
-[Advanced setup options described here](/wifi-iot-advance.html)
-[Offline interfacing with the sensor](/wifi-iot-offline.html)
-[Upgrade WIFI Firmware Guide](/wifi-iot-update.html)
+* [Getting Started installation guide](/wifi-iot-setup.html)
+* [Temperature and Humidity Configuration Guide](https://projects.privateeyepi.com/WIFI-Sensor/wifi-temperature-and-humidity-sensor-configuration.php)
+* [Remote Control Switch Configuration Guide](https://projects.privateeyepi.com/WIFI-Sensor/iot-wifi-relay.php)
+* [Door/Window Switch](https://projects.privateeyepi.com/WIFI-Sensor/wifi-switch.php)
+* [Advanced setup options described here](/wifi-iot-advance.html)
+* [Offline interfacing with the sensor](/wifi-iot-offline.html)
+* [Upgrade WIFI Firmware Guide](/wifi-iot-update.html)
 
 ## Tech Specs:
 
@@ -52,9 +52,10 @@ Door/Window Switch
 * Powered either by USB Mini cable (4.5V DC to 7V DC input) or battery connection (2.5V to 3.5V) via the 2 pin battery connection plug
 * Temperature range: -55°C to +125°C. Fahrenheit equivalent is -67°F to +257°F, ±0.5°C accuracy from -10°C to +85°C
 * Can be programmed using Arduino or LUA development environments
-* Upgraded using a 3.3V FTDI cable (recommended while the product is in BETA)
+* Upgraded using a 3.3V FTDI cable
 * 8 GPIO ports available through the 16 pin header
 * Supports SPI serial interface
+
 ## Board Layout:
 
 {% include image.html file="wifi-sensor-PCB Board.png" alt="WiFi Sensor Motherboard with options"%}
