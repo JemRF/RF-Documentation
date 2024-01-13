@@ -9,52 +9,59 @@ permalink: wifi-iot-setup.html
 folder: mydoc
 ---
 
-## Internet Of Things (IOT) WIFI Sensor
-This versatile device allows you to connect sensors quickly and inexpensively to the internet. It comes with software that enables you to sense temperature and humidity as well as control relay so you can switch things on/off at the touch of a button from your device or computer.
+##  Setup Details
+To reach the configuration page for the WiFi IoT Sensor, you can use any device that supports WiFi and an internet browser. In this example we will use a desktop computer.
 
-It connects to your WIFI access point so you can  send temperature readings to [PrivateEyePi](https://PrivateEyePi.com), [monitor.jemrf.com](https://monitor.jemrf.com), or another monitoring application. As well as MQTT Support for forward readings to an MQTT broker. It is fully assembled and requires no soldering. Connect it to power and it will advertise itself as a wireless access point. Configure it through a web browser using its easy to use config application. Once configured it will connect to your WIFI network which will give it access to the internet and the PrivateEyePi server.
+{% include image.html file="Slide1da59.jpg" alt="WiFi GW Start"%}
 
-## Features:
 
-- Easy to configure web interface. No programming or soldering skills required. You do not need the internet to configure the device. Connect to it directly from any WIFI device (e.g. PC, phone tablet…)
-- Cyclic temperature transmission mode with configurable send interval
-- Supports both Celsius or Fahrenheit temperature readings
-- Control up to 8 relays
-- Sleep mode allows it to be run from battery power
-- Configurable temperature delta threshold allows the device to monitor the temperature and only transmit when the current reading exceeds the previous reading by a configurable amount. This feature is very useful for saving battery power
-- Built in error log allows you to review and resolve issues. The error log is stored in the device’s memory and can be viewed through the sensor web app
-- Fully programmable using the Arduino or LUA development environments
-- DS18B20 temperature sensor is used to detect the temperature Measures temperatures from -55°C to +125°C. Fahrenheit equivalent is -67°F to +257°F, ±0.5°C accuracy from -10°C to +85°C
-* * Note: The operating temperature for the WiFi Temperature sensor is -30F to +125.6F, -34C to 52C
-- Although the sensor is highly accurate (±0.5°C accuracy) you can calibrate the temperature reading using a configuration in the WIFI sensor app
-- The device supports dual WIFI mode allowing it to be WIFI access point and a WIFI client at the same time. A WIFI access point advertises itself through an SSID and can be connected to via any device or computer that has WIFI.
-- Control up to 8 relay switches either from the device's dashboard, vial URL or via PrivateEyePi rules
-- MQTT Setup page for connection to MQTT Broker to relay temperature and humidity readings. The WiFi Sensor support 3 MQTT Format, more detail at [WiFi Gateway MQTT Explained](https://documents.jemrf.com/gatewaymqtt.html)
+***To make setup easy, the WiFi Sensor has its own Access Point.***
 
-## Required, but not included:
+### Step 1 Connect to WiFi
 
-Mini USB cable and power supply (older cell phones used mini USB, so you may already have one in the bottom of a drawer). -5V to 7V power supply. Any USB power supply will work.
-We have USB to USB-B cables at our store, (JemRF Store)[https://www.jemrf.com]. Battery pack (optional)
+The first step is to connect your smart device to the WiFi Sensor. Power up the WiFi Sensor and using your computer (or smart device) look for a WiFi Name that starts with **PEP** followed by some numbers. These numbers are the unique ID of your device. Connect to the device using the default password:
 
-## Installation:
+Password: PrivateEyePi
+{% include image.html file="gwsetup-ssid.jpg" alt="WiFi GW Connect"%}
 
-Getting Started installation guide
-Temperature and Humidity Configuration Guide
-Remote Control Switch Configuration Guide
-Door/Window Switch
-Advanced setup options described here
-This guide shows you how to interface to the sensor
-Upgrade WIFI Firmware Guide
 
-## Tech Specs:
+### Step 2 : Configure SSID and Password
+Now open up a browser  and navigate to [http://192.168.4.1/](http://192.168.4.1).
+{% include image.html file="wifigwsetup.jpg" alt="WiFi GW Setup Page"%}
+From here you configure your WiFi Settings.
 
-* Dimensions 74mm x 55mm x 28mm
-* Powered either by USB Mini cable (4.5V DC to 7V DC input) or battery connection (2.5V to 3.5V) via the 2 pin battery connection plug
-* Temperature range: -55°C to +125°C. Fahrenheit equivalent is -67°F to +257°F, ±0.5°C accuracy from -10°C to +85°C
-* Can be programmed using Arduino or LUA development environments
-* Upgraded using a 3.3V FTDI cable (recommended while the product is in BETA)
-* 8 GPIO ports available through the 16 pin header
-* Supports SPI serial interface
-## Board Layout:
+{% include image.html file="wifigwsetup-ssid.jpg" alt="WiFi GW SSID Select Page"%}
+Next enter the Network Name/SSID and Password of your WiFi router and click on save.
 
-[WiFi Sensor Motherboard with options](wifi-sensor-PCB Board.png)
+Wait a few moments for the WiFi Sensor to connect to the WiFi router. Click on the "Setup Details" menu option to refresh the screen. Once connected you will see the **WLAN:** IP address has given to the Wireless Sensor, as shown in the next image. In the example below it shows 192.168.254.46, yours will be different. What's important is your gateway is now connected to the Internet.
+{% include image.html file="wifisetuponline.png" alt="WiFi Sensor Online"%}
+
+### Step 3 : Connect to Monitoring Server
+You can now switch you laptop or phone from the device WiFi to your home WiFi Network.
+If you want to use our monitoring services,[**"monitor.jemrf.com"**](https://monitor.jemrf.com) is our newer service, focused on monitoring with custom tolerance settings to trigger notifications to help alert when there is a problem. The next step is to connect your gateway our services so you can monitor the devices and get alerts.  Both of our online services have a free tier. You are welcome to visit each to see which meets your needs and can sign up for both (only one will work at a time). Both use a token to link your device to your account.
+
+#### <span style="color:blue">Monitor.JemRF.com</span>
+If you want to use our monitoring services and you do not have a JemRF Monitoring Service account, the sign-up instruction to create an account on JemRF Monitoring are at: [Create account and create a Token](jemrfregister.html).
+
+* For the legacy service, the sign-up instruction  on PrivateEyePi are at: [Create account and get Token](pepregister.html). If you already have a PEP Token, you can use it on the newer JemRF Monitor service.
+
+### Step 4 : Final Sensor Settings
+With your Sensor now online (has a WLAN number), you can stay on your home WiFi Network and point you browser to the WLAN address of the gateway. In the example picture above the 192.168.254.8 would be the WLAN address for my Sensor, your address will change. Go to http://WLAN (example http://192.168.254.8).
+#### Server
+Now on the WiFi Sensor Setup Details page, the **Server** setting is  **pep.jemrf.com**.
+{% include image.html file="jemrf-server.jpg" alt="WiFi GW Server"%}
+
+#### Token
+Using your account on [monitor.jemrf.com](https:/monitor.jemrf.com), after you login, click on your name in the upper right hand corner a drop down menu will appear. Select Account and then click on the Edit Token button.
+ * If you have a PrivateEyePi token already you can paste it in the token field and click the Accept Token to validate it is unique and Save. Now the same token works for both servers.
+ * If you do not have a PrivateEyePi Token, click Generate Sensor Id and it will create a token for you.
+
+ Click the Accept Token to validate it is unique and Save.
+{% include image.html file="JemRf-account-token.jpg" alt="WiFi GW Get token"%}
+
+Return to the Sensor WiFi and go back to [192.168.4.1](http://192.168.4.1) and copy and paste the **Token** into the **Token**  field as shown in the below diagram:
+
+{% include image.html file="wifi_pep_jemrf.png" alt="WiFi GW JemRF Server"%}
+Clicking "Save" will connect the WiFi Sensor to the server.  After a few moments, click on the "Setup Details" tab to refresh the screen, you will see **"PEP: Connected"** as shown in the image above.
+
+Once Connected, the Wireless Sensor will start forwarding Wireless Sensor data to the monitoring server.

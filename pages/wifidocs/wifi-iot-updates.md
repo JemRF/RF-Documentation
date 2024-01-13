@@ -22,10 +22,10 @@ Go to Step 9 for Details.
 
 {% include image.html file="IMG_5083 (320x240).jpg" alt="FTDI "%}
 {% include note.html content="For WIFI Hardware Release 4.0 boards and newer
-    the 3.3V FTDI can plug directly into the header on the PCB with out jumpers. The TX and RX are fixed."%}
+    the 3.3V FTDI can plug directly into the header on the PCB with out jumpers. The TX and RX are cross over was fixed."%}
 
 {% include image.html file="IMG_5081 (212x320).jpg" alt="FTDI End of jumpers"%}
-{% include note.html content="Sensors using a PCB prior to WIFI Hardware Release 4.0, Make sure you have crossed over TX and RX as shown by the red circle in the diagram. "%}
+{% include note.html content="Sensors using PCB before WIFI Hardware Release 4.0, Make sure you have crossed over TX and RX as shown by the red circle in the diagram. "%}
 
 
 2. On the Sensor, set dip switch 3 and 4 (marked FLASH) to ON
