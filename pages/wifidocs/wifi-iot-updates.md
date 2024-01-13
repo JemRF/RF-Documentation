@@ -1,6 +1,6 @@
 ---
-title: The Internet Of Things (IOT) WIFI Sensor
-keywords: getting started introduction
+title: The WIFI Sensor Updates
+keywords: getting started introduction, WiFI Sensor
 last_updated: Jan 12, 2024
 tags:
 summary: "The Internet Of Things (IOT) is where everyday things (cars, homes, household appliances, plants) are being connected to the Internet where we can monitor, control and alert in ways not possible before."
@@ -44,25 +44,22 @@ Release 3.3.09 once installed, Eliminates the need for Future Manual Downloads
 A Reset after install is required.
 
 ## Release Notes
-Version 3.4 (01/11/2024)
+### Version 3.4 (01/11/2024)  (Current Release)
   - Provide DNS for Static IP settings
   - Fix issue with slow DS18B20 sensors
   - Add ReStart to Sensor Configuration page for Static IP settings
   - Fix Screen formats to be consistent on iPhone
-  - Download [WiFi 3.4 Jan 11, 2024](https://projects.privateeyepi.com/WIFI-Sensor/downloads/WIFIv4_3309.bin)
 
-Version 3.3.6 (08/17/2023)
+### Version 3.3.6 (08/17/2023)
   - Provide MQTT Support
-  - Download [WiFi 3.4 Jan 11, 2024](https://projects.privateeyepi.com/WIFI-Sensor/downloads/WIFIv4_3309.bin)
 
-Version 3.3.2 (07/31/2023)
+### Version 3.3.2 (07/31/2023)
   - Fix bug in URL to select folder for custom server URL
   - Change Temperature Sensor, DS18B20 digital sensor Id from 6 digits to full 11 digits.
   - -- NOTE: This does not affect the Temperature and Humidity Sensor Id.
   - Corrected Sensor Config page to use full area for sensor information.
-  - Download [WiFi 3.4 Jan 11, 2024](https://projects.privateeyepi.com/WIFI-Sensor/downloads/WIFIv4_3309.bin)
 
-Version 3.3.09 (06/24/2023)
+### Version 3.3.09 (06/24/2023)
   - Update Server field with pep.jemrf.com as option
   - Add - Check-in every 5 minutes, independent of sensor send rate, to show online.
   - Add - Over The Air UPdates, all future updates will be from update Server directly to Sensor.

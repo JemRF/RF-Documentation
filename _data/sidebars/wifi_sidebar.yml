@@ -56,6 +56,10 @@ entries:
       url: /wifi-iot-advance.html
       output: web, pdf
 
+    - title: Advance Setup Options
+      url: /wifi-iot-offline.html
+      output: web, pdf
+
   - title: WiFi Gateway
     output: web, pdf
     folderitems:
@@ -72,9 +76,18 @@ entries:
       url: /wifi-gw-update.html
       output: web, pdf
 
+    - title: MQTT
+      url: /gatewaymqtt.html
+      output: web, pdf
+
+
   - title: Integration
     output: web, pdf
     folderitems:
+
+    - title: JemRF Monitoring
+      external_url: https://monitor.jemrf.com
+      output: web, pdf
 
     - title: PrivateEyePi
       url: /privateeyepi.html
@@ -135,6 +148,10 @@ entries:
   - title: JemRF Resources
     output: web, pdf
     folderitems:
+
+    - title: Create Account on JemRF Monitoring
+      url: /jemrfregister.html
+      output: web, pdf
 
     - title: Python Code changes for Monitor.JemRF.com
       url: /monitoring.html

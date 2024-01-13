@@ -136,6 +136,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: JemRF Monitoring
+      external_url: https://monitor.jemrf.com
+      output: web, pdf
+
     - title: PrivateEyePi
       url: /privateeyepi.html
       output: web, pdf

@@ -1,5 +1,5 @@
 ---
-title: The Internet Of Things (IOT) WIFI Sensor
+title: The WIFI Sensor Offline Usage
 keywords: getting started introduction
 last_updated: Jan 12, 2024
 tags:

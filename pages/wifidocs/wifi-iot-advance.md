@@ -1,7 +1,7 @@
 ---
-title: The Internet Of Things (IOT) WIFI Sensor
+title: The WIFI Sensor Advance Options
 keywords: getting started introduction
-last_updated: Jan 1, 2024
+last_updated: Jan 12, 2024
 tags:
 summary: "The Internet Of Things (IOT) is where everyday things (cars, homes, household appliances, plants) are being connected to the Internet where we can monitor, control and alert in ways not possible before."
 sidebar: wifi_sidebar
@@ -9,7 +9,7 @@ permalink: wifi-iot-advance.html
 folder: mydoc
 ---
 
-## Internet Of Things (IOT) WIFI Sensor
+## WIFI Sensor Advance Options
 Once you have completed the [setup of WIFI Temperature Sensor](/wofo-iot-setup.html) you may be interested in some of the advanced features of the device.
 
 On the "Sensor Config" menu there are a number of options which we will describe further here.

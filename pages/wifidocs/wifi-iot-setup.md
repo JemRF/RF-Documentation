@@ -1,6 +1,6 @@
 ---
-title: The Internet Of Things (IOT) WIFI Sensor
-keywords: getting started introduction
+title: The WIFI Sensor Setup
+keywords: getting started introduction, WiFI Sensor
 last_updated: Jan 12, 2024
 tags:
 summary: "The Internet Of Things (IOT) is where everyday things (cars, homes, household appliances, plants) are being connected to the Internet where we can monitor, control and alert in ways not possible before."

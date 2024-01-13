@@ -52,7 +52,7 @@ topnav_dropdowns:
         - title: WiFi Gateway
           url: /wifi-rf-relay.html
         - title: Wifi Sensor
-          url: /wifi-iot.html
+          url: /wifi_iot.html
 
     - title: Projects
       folderitems:
