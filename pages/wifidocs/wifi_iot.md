@@ -57,4 +57,4 @@ Door/Window Switch
 * Supports SPI serial interface
 ## Board Layout:
 
-{% include image.html file="WiFi PCB Board.png" alt="WiFi Sensor Motherboard with options"%}
+{% include image.html file="wifi-sensor-PCB Board.png" alt="WiFi Sensor Motherboard with options"%}

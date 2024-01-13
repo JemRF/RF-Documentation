@@ -33,7 +33,7 @@ Once your account is ready and you have logged in, follow these steps to get you
 
 ### Step 1
 Once logged in, next to your name is a drop down arrow, click on the arrow and a menu will appear:
-{% include image.html file="jemrf-account-select" alt="Select Account Page"%}
+{% include image.html file="jemrf-account-select.jpg" alt="Select Account Page"%}
 At top select Edit Profile
 
 ### Step 2
