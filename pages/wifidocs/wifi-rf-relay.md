@@ -1,9 +1,8 @@
 ---
 title: WiFi Wireless Gateway
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
-last_updated: Jan 11, 2024
-tags:
-summary: "This Document describes the basics of the WiFi Wireless Gateway"
+last_updated: Jan 30, 2024
+tags: gateway, RF Gateway, WiFi Gateway
 sidebar: wifi_sidebar
 permalink: wifi-rf-relay.html
 folder: mydoc

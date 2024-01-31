@@ -19,9 +19,13 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Overview
-    output: web, pdf
+  - title: Documents
+    output: web
     folderitems:
+    - title: RF Introduction
+      url: /index.html
+      output: web, pdf
+      type: homepage
 
     - title: Wifi Introduction
       url: /wifi_intro.html
@@ -31,10 +35,13 @@ entries:
       external_url: https://projects.privateeyepi.com
       output: web, pdf
 
-    - title: RF Introduction
-      url: /index.html
+  - title: Overview
+    output: web, pdf
+    folderitems:
+
+    - title: Wifi Introduction
+      url: /wifi_intro.html
       output: web, pdf
-      type: homepage
 
   - title: WiFi Sensor
     output: web, pdf
@@ -79,7 +86,6 @@ entries:
     - title: MQTT
       url: /gatewaymqtt.html
       output: web, pdf
-
 
   - title: Integration
     output: web, pdf
