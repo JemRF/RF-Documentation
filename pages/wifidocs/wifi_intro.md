@@ -1,6 +1,7 @@
 ---
 title: "JemRF WiFi Devices"
 keywords: getting started introduction, Wifi Jemrf, Gateway, wifi Sensor
+last_updated: Jan 30, 2024
 sidebar: wifi_sidebar
 permalink: wifi_intro.html
 summary: JemRF WiFi Devices.

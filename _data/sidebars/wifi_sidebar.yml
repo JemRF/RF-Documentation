@@ -23,7 +23,7 @@ entries:
     output: web
     folderitems:
     - title: RF Introduction
-      url: /index.html
+      url: /rfintroduction.html
       output: web, pdf
       type: homepage
 
@@ -32,7 +32,7 @@ entries:
       output: web, pdf
 
     - title: Projects Introduction
-      external_url: https://projects.privateeyepi.com
+      external_url: https://projects.jemrf.com/
       output: web, pdf
 
   - title: Overview
