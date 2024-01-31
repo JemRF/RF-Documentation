@@ -3,7 +3,6 @@ title: The WIFI Sensor Offline Usage
 keywords: getting started introduction
 last_updated: Jan 12, 2024
 tags:
-summary: "The Internet Of Things (IOT) is where everyday things (cars, homes, household appliances, plants) are being connected to the Internet where we can monitor, control and alert in ways not possible before."
 sidebar: wifi_sidebar
 permalink: wifi-iot-offline.html
 folder: mydoc

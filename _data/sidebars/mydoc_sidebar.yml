@@ -200,6 +200,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Create Account on JemRF Monitoring
+      url: /jemrfregister.html
+      output: web, pdf
+
     - title: Python Code changes for Monitor.JemRF.com
       url: /monitoring.html
       output: web, pdf

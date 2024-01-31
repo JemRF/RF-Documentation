@@ -1,7 +1,6 @@
 ---
 title: "JemRF WiFi Devices"
-keywords: getting started introduction, Wifi jemrf, Gateway, wifi Sensor
-sidebar: wifi_sidebar
+keywords: getting started introduction, Wifi Jemrf, Gateway, wifi Sensor
 permalink: wifi_intro.html
 summary: JemRF WiFi Devices.
 ---
@@ -13,7 +12,7 @@ The WiFI Sensor uses the local WiFi to connect to the Internet and the remote Mo
 
 There are several configuration for the WiFi Sensor, plus DIY options.
 #### Temperature Sensor
-The Sensor comes with different digital temperature sensors of highly accurate and consistant readings using the Dallas DS18B20 sensor.
+The Sensor comes with different digital temperature sensors of highly accurate and consistent readings using the Dallas DS18B20 sensor.
 ##### Internal Sensor
 This configuration has the DS18B20 inside the case for monitoring temperatures around the unit.
 ##### External Sensor

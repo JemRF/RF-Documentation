@@ -3,7 +3,6 @@ title: Updating the WiFi Gateway
 keywords: WiFi Wireless Gateway, Over the Air,
 last_updated: July 14, 2023
 tags:
-summary: "Instruction to upgrade WiFi Gateway"
 sidebar: wifi_sidebar
 permalink: wifi-gw-update.html
 folder: mydoc

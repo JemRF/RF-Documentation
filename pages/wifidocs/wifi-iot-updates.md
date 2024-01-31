@@ -3,7 +3,7 @@ title: The WIFI Sensor Updates
 keywords: getting started introduction, WiFI Sensor
 last_updated: Jan 12, 2024
 tags:
-summary: "The Internet Of Things (IOT) is where everyday things (cars, homes, household appliances, plants) are being connected to the Internet where we can monitor, control and alert in ways not possible before."
+
 sidebar: wifi_sidebar
 permalink: wifi-iot-updates.html
 folder: mydoc
@@ -78,7 +78,7 @@ A Reset after install is required.
 Version 3.2.8 (05/20/2023)
   - Update Fix C to F limit check. If the sensor is reporting Fahrenheit, the max temperature is 125F and not 230F. The result is the sensor fails to report any temperature over 125F. The Sensor using Celsius reports correctly up to 125C.
   - Update for subfolder support in URL
-  - Add The WiFi SSID dropdown display local WiFI with signal strenght. You can select an SSID from the list or type in a private SSID.
+  - Add The WiFi SSID dropdown display local WiFI with signal strength. You can select an SSID from the list or type in a private SSID.
   - Download [WiFi 3.2.8 May 20, 2022](https://projects.privateeyepi.com/WIFI-Sensor/downloads/WIFIv4_328.bin)
 
 Version 3.2.0 (03/8/2022)

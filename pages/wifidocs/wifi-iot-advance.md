@@ -3,7 +3,6 @@ title: The WIFI Sensor Advance Options
 keywords: getting started introduction
 last_updated: Jan 12, 2024
 tags:
-summary: "The Internet Of Things (IOT) is where everyday things (cars, homes, household appliances, plants) are being connected to the Internet where we can monitor, control and alert in ways not possible before."
 sidebar: wifi_sidebar
 permalink: wifi-iot-advance.html
 folder: mydoc
@@ -112,9 +111,9 @@ The 16 pin header on the right hand side of the board provides access to the Gen
 |R  |Pin that can use used to control a relay (external high voltage circuit switch)|
 |S| External switch (reed switch, button switch, motion sensor, water sensor)|
 |*| DHT22 uses pins 12 and 4 (provides power to the DHT22 sensor)|
-|** | DS18B20 uses pins 13 and 4 (provides power to the DS18B20 sensor). You can                                   connect multiple DS18B20 sensors to pin 13 (see figure 2 here for more details)|
+|** | DS18B20 uses pins 13 and 4 (provides power to the DS18B20 sensor). You can connect multiple DS18B20 sensors to pin 13 (see figure 2 here for more details)|
 |***  |Pin 16 requires an external pull up circuit to operate as a switch|
-|****| When GPIO is connected to GND the Blue light on the WIFI chip will turn on. This is                                normal behavior.|
+|****| When GPIO is connected to GND the Blue light on the WIFI chip will turn on. This is normal behavior.|
 
 ### Adding analog sensors to the device
 From version 1.9.9. we added the ability to add analog sensors to the device. The Analog sensor GPIO pin is labelled ADC, but the label is a little difficult to read. It is the third GPIO pin from the bottom of the board (ie 5V, GND, ADC,12..).

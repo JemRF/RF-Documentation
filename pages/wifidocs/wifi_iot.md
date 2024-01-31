@@ -1,15 +1,15 @@
 ---
-title: The Internet Of Things (IOT) WIFI Sensor
+title: The Internet Of Things (IoT) WIFI Sensor
 keywords: getting started introduction
 last_updated: Jan 12, 2024
 tags:
-summary: "The Internet Of Things (IOT) is where everyday things (cars, homes, household appliances, plants) are being connected to the Internet where we can monitor, control and alert in ways not possible before."
+summary: "The Internet Of Things (IoT) is where everyday things (cars, homes, household appliances, plants) are being connected to the Internet where we can monitor, control and alert in ways not possible before. This document describes our WiFi Sensor and its place in the IoT Universe."
 sidebar: wifi_sidebar
 permalink: wifi_iot.html
 folder: mydoc
 ---
 
-## Internet Of Things (IOT) WIFI Sensor
+## Internet Of Things (IoT) WIFI Sensor
 This versatile device allows you to connect sensors quickly and inexpensively to the internet. It comes with software that enables you to sense temperature and humidity as well as control relay so you can switch things on/off at the touch of a button from your device or computer.
 
 It connects to your WIFI access point so you can  send temperature readings to [PrivateEyePi](https://PrivateEyePi.com), [monitor.jemrf.com](https://monitor.jemrf.com), or another monitoring application. As well as MQTT Support for forward readings to an MQTT broker. It is fully assembled and requires no soldering. Connect it to power and it will advertise itself as a wireless access point. Configure it through a web browser using its easy to use config application. Once configured it will connect to your WIFI network which will give it access to the internet and the PrivateEyePi server.
