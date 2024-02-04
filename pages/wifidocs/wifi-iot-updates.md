@@ -11,21 +11,31 @@ folder: mydoc
 
 ## WIFI Sensor - Firmware Upload
 
-Over The Air (OTA) downloads are enabled in 3.3.09 release!
-This release Eliminates the need for Future Manual Downloads
+<span style="color:red;">Over The Air (OTA) downloads are enabled in 3.3.09 release!</span>
+
+This release eliminates the need for Future Manual Downloads
 Go to Step 9 for Details.
+When new firmware is available, an update option will appear at the bottom of the Setup Details screen shown below.
+{% include image.html file="wifigwsetup-online-update.jpg" alt="WiFi Sensor Update Available "%}
+
+The "Update Gateway" selection will appear when it checks with the download server and finds a software update. When you are ready to update the Gateway, select YES and Save.
+When the update starts, the screen will clear and a green status bar will appear:
+{% include image.html file="wifiupdatebar.png" alt="WiFi Sensor Updating"%}
+
+Once update is complete:
+- It should reconnect to the Internet then restore the AP update page.
+- Some wireless networks have issues using the internal 192.168.4.1 address. If your Gateway Shows updates even after doing an update, try using the local WLAN IP address to do the update.
 
 ### Manual Update using Windows Application
 
 1. Connect FT232RL FTDI USB 3.3V/5.5V module to the WIFI sensor (set jumper to 3.3V) and the USB to your Windows PC.
-
 
 {% include image.html file="IMG_5083 (320x240).jpg" alt="FTDI "%}
 {% include note.html content="For WIFI Hardware Release 4.0 boards and newer
     the 3.3V FTDI can plug directly into the header on the PCB with out jumpers. The TX and RX are cross over was fixed."%}
 
 {% include image.html file="IMG_5081 (212x320).jpg" alt="FTDI End of jumpers"%}
-{% include note.html content="Sensors using PCB before WIFI Hardware Release 4.0, Make sure you have crossed over TX and RX as shown by the red circle in the diagram. "%}
+{% include note.html content="Sensors using PCB before WIFI Hardware Release 4.0 (Aug 2021), Make sure you have crossed over TX and RX as shown by the red circle in the diagram. "%}
 
 
 2. On the Sensor, set dip switch 3 and 4 (marked FLASH) to ON
@@ -53,6 +63,11 @@ Release 3.3.09 once installed, Eliminates the need for Future Manual Downloads
 A Reset after install is required.
 
 ## Release Notes
+### Version 3.4.4 (01/25/2024)  (Current Release)
+  - Provide Fixed Relay A and B using GPIO 0 for A and GPIO 5 for B
+  - Added sending GPIO switch changes to Monitoring and out MQTT
+  * Fixed Allow external control, if Not Checked No external commands are Allowed
+
 ### Version 3.4 (01/11/2024)  (Current Release)
   - Provide DNS for Static IP settings
   - Fix issue with slow DS18B20 sensors
