@@ -1,5 +1,5 @@
 ---
-title: WiFi Wireless Gateway
+title: WiFi Sensor with Remote Relay
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Fev 04, 2024
 tags:
@@ -16,11 +16,11 @@ Connecting a relay switch to the WIFI controller.
 
 {% include image.html file="wifi-remote-relay.jpg" alt="WiFi Remote Control Relay Kit"%}
 
-** WARNING : Mains electricity can kill if you are careless or lacking in knowledge of how to connect high voltage.
+WARNING : Mains electricity can kill if you are careless or lacking in knowledge of how to connect high voltage.
 
-{% include image.html file="WIFI Relay Wiring Diagram.png" alt="WiFi Relay Diagram"%}
 The WIFI Relay is capable of switching up to 8 relays. Each relay is connected to the WIFI controller via three wires as shown in figure 1.
 
+{% include image.html file="WIFI Relay Wiring Diagram.png" alt="WiFi Relay Diagram"%}
 Figure 1 - Wiring diagram to connect a relay switch to the WIFI controller
 
 In figure 1 the GPIO is connected to any one of the following GPIO ports: 0,2,4,5,12,13,14,16. Take note that if you are adding a relay to a WIFI controller that has a temperature sensor installed then you should not use the following GPIO ports: 4, 12(DHT22), and 13(DS18B20) as it will interfere with the temperature sensing and the relay may switch intermittently as the device tries to collect temperature readings.

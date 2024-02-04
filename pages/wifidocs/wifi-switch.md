@@ -1,5 +1,5 @@
 ---
-title: WiFi Wireless Gateway
+title: WiFi Sensor as Switch
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Feb 04, 2024
 tags:
@@ -36,7 +36,7 @@ Figure 4 - Configure an email rule
 Now you are ready for the real thing. Wire up your alarm system switches as shown in Figure 5:
 
 
-{% include image.html file="wifi-switch-alarm.jpg" alt="WiFi Switch Alarm%}
+{% include image.html file="wifi-switch-alarm.jpg" alt="WiFi Switch Alarm"%}
 Figure 5 - A WIFI Alarm System
 
 
