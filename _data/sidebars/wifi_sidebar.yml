@@ -155,6 +155,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Frequently Asked Questions
+      url: /faq.html
+      output: web, pdf
+
     - title: Create Account on JemRF Monitoring
       url: /jemrfregister.html
       output: web, pdf
