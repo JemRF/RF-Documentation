@@ -10,10 +10,8 @@ folder: mydoc
 ---
 
 ## Internet Of Things (IoT) WiFI Sensor
-{% include image.html file="wifisensorcase.jpg" alt="WiFi Sensor Case"%}
-{% include image.html file="wifisensorboard.jpg" alt="WiFi Sensor Motherboard"%}
 
-![WiFi Sensor Case](wifisensorcase.jpg "WiFi Case") ![WiFi Sensor Motherboard](wifisensorboard.jpg "WiFi PCB")
+![WiFi Sensor Case](images/wifisensorcase.jpg "WiFi Case") ![WiFi Sensor Motherboard](images/wifisensorboard.jpg "WiFi PCB")
 
 The WiFi Sensor is a versatile device allows you to connect sensors quickly and inexpensively to the internet. It comes with software that enables you to sense temperature and humidity as well as control relay so you can switch things on/off at the touch of a button from your device or computer.
 
