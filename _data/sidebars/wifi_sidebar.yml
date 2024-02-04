@@ -31,7 +31,11 @@ entries:
       url: /wifi_intro.html
       output: web, pdf
 
-    - title: Projects Introduction
+    - title: Projects Introduction (Older Site)
+      external_url: https://projects.privateeyepi.com/
+      output: web, pdf
+
+    - title: Projects Introduction (2024 New Site)
       external_url: https://projects.jemrf.com/
       output: web, pdf
 
@@ -51,20 +55,28 @@ entries:
       url: /wifi_iot.html
       output: web, pdf
 
-    - title: Getting Online
+    - title: WiFi Sensor Getting Started
       url: /wifi-iot-setup.html
       output: web, pdf
 
-    - title: Updates
+    - title: WiFi Sensor Firmware Upgrade
       url: /wifi-iot-updates.html
       output: web, pdf
 
-    - title: Advanced Options
+    - title: WiFi Sensor Advanced Options
       url: /wifi-iot-advance.html
       output: web, pdf
 
-    - title: Offline Options
+    - title: Interfacing with the Sensor Offline
       url: /wifi-iot-offline.html
+      output: web, pdf
+
+    - title: Remote Control Relay(Switch)
+      url: /wifi-remote-relay-switch.html
+      output: web, pdf
+
+    - title: WiFi Switch
+      url: /wifi-switch.html
       output: web, pdf
 
   - title: WiFi Gateway

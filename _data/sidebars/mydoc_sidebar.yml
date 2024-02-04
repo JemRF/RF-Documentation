@@ -31,7 +31,11 @@ entries:
       url: /wifi_intro.html
       output: web, pdf
 
-    - title: Projects Introduction
+    - title: Projects Introduction (Older Site)
+      external_url: https://projects.privateeyepi.com/
+      output: web, pdf
+
+    - title: Projects Introduction (2024 New Site)
       external_url: https://projects.jemrf.com/
       output: web, pdf
 
