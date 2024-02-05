@@ -5,7 +5,7 @@ last_updated: Fev 04, 2024
 tags:
 sidebar: wifi_sidebar
 permalink: wifi-remote-relay-switch.html
-folder: mydoc
+folder: wifidoc
 ---
 ## Introduction
 Configuration guide for JemRF device: - [WIFI Remote Control Switch](https://www.jemrf.com/collections/wifi-enabled-devices/products/wifi-controlled-relay-switch-internet-of-things-iot)

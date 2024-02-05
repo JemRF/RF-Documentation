@@ -5,7 +5,7 @@ last_updated: Feb 04, 2024
 tags:
 sidebar: wifi_sidebar
 permalink: wifi-switch.html
-folder: mydoc
+folder: wifidoc
 ---
 ## Introduction
 This configuration guide explains how you can modify your WIFI Sensors  to sense the opening and closing of a tactile switch like a door/window switch used on alarm systems. We will explain how to wire the switch to your WIFI device, interface it with your PrivateEyePi alarm/monitoring system or interface it with your own system.
