@@ -5,7 +5,7 @@ last_updated: Jan 12, 2024
 tags:
 sidebar: wifi_sidebar
 permalink: wifi-iot-advance.html
-folder: mydoc
+folder: wifidoc
 ---
 
 ## WIFI Sensor Advance Options

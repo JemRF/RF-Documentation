@@ -42,9 +42,9 @@ We have USB to USB-B cables at our store, (JemRF Store)[https://www.jemrf.com]. 
 ## Installation and Projects
 
 * [Getting Started installation guide](/wifi-iot-setup.html)
-* [Temperature and Humidity Configuration Guide](https://projects.privateeyepi.com/WIFI-Sensor/wifi-temperature-and-humidity-sensor-configuration.php)
-* [Remote Control Switch Configuration Guide](https://projects.privateeyepi.com/WIFI-Sensor/iot-wifi-relay.php)
-* [Door/Window Switch](https://projects.privateeyepi.com/WIFI-Sensor/wifi-switch.php)
+* [Temperature and Humidity Configuration Guide](/wifi-iot-advance.html)
+* [Remote Control Switch Configuration Guide](/wifi-remote-relay-switch.html)
+* [Door/Window Switch](/wifi-switch.html)
 * [Advanced setup options described here](/wifi-iot-advance.html)
 * [Offline interfacing with the sensor](/wifi-iot-offline.html)
 * [Upgrade WiFI Firmware Guide](/wifi-iot-update.html)
