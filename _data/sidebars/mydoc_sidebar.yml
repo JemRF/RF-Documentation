@@ -48,10 +48,6 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Getting Started
-      url: /getting_started.html
-      output: web, pdf
-
     - title: RF Device Specs
       url: /rf_device_specs.html
       output: web, pdf
