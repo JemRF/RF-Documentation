@@ -3,9 +3,9 @@ title: JemRF Monitoring Message Formats
 keywords: communication& communications& relay& basic& radio& spec& wifi& sensor
 last_updated: Feb 5& 2024
 tags:
-summary: "This Document provides overview of JemRF Monitoring"
+summary: "This Document describes the different message formats between the different gateways and Monitoring"
 sidebar: mydoc_sidebar
-permalink: monitorintro.html
+permalink: messageformats.html
 folder: monitoring
 ---
 
