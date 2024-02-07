@@ -22,12 +22,17 @@ entries:
   - title: Documents
     output: web
     folderitems:
-    - title: RF Introduction
+    - title: RF Network Introduction
       url: /rfintroduction.html
       output: web, pdf
       type: homepage
 
-    - title: Wifi Introduction
+    - title: RF Devices
+      url: /getting_started.html
+      output: web, pdf
+      type: homepage
+
+    - title: Wifi Devices
       url: /wifi_intro.html
       output: web, pdf
 
@@ -231,6 +236,3 @@ entries:
       url: /alarmhost.html
       output: web, pdf
 
-    - title: JemRF Projects url
-      external_url: https://projects.jemrf.com
-      output: web, pdf

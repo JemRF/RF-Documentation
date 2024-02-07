@@ -1,10 +1,8 @@
 ---
-title: Getting Started
+title: RF Devices, Getting Started
 keywords: getting starter, basics, basic, what, begin, beginner
 last_updated: Sep 28, 2020
-tags:
-summary: "This page describes the various radio devices we have and how to get started quickly"
-sidebar: mydoc_sidebar
+tags:sidebar: home_sidebar
 permalink: getting_started.html
 folder: mydoc
 ---
