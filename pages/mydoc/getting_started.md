@@ -2,7 +2,8 @@
 title: RF Devices, Getting Started
 keywords: getting starter, basics, basic, what, begin, beginner
 last_updated: Feb 7, 2024
-tags:sidebar: mydoc_sidebar
+tags:
+sidebar: mydoc_sidebar
 permalink: getting_started.html
 folder: mydoc
 ---
