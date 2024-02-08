@@ -53,5 +53,5 @@ entries:
       output: web, pdf
 
     - title: JemRF Message to Server Formats
-      url: /alarmhost.html
+      url: /messageformats.html
       output: web, pdf
