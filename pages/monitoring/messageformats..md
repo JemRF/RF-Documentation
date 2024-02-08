@@ -9,19 +9,22 @@ permalink: messageformats.html
 folder: monitoring
 ---
 
-## Message Protocol Overview
-The JemRF message protocol used to send messages from the Raspberry Pi Server software or the WiFi based WiFi Sensor and WiFi Gateway to the monitoring server is a simple client to server message format using HTTP GET.
+## Gateway Message Protocol Overview
+The JemRF Gateway message protocol used to send messages from the Raspberry Pi Server software, or the WiFi based WiFi Sensor and WiFi Gateway to the monitoring server is a simple client to server message format using HTTP GET.
+The host sending messages to the monitoring server is referred to as a Gateway.
+
 The message protocol format is:
-* http(s)://[server]/alarmhostr.php?token=[user token]&function=[Function Number]&opcode0=[value0]&opcode1=[value1]&opcode3=[value1]&opcode4=[value1]
+* http(s)://[**server**]/**alarmhostr.php**?token=[**user token**]&function=[Function Number]&opcode0=[**value0**]&opcode1=[**value1**]&opcode3=[**value1**]&opcode4=[**value1**]
 
 Depending on the function and the number of opcode parameters will change.
 
-The server is your server hostname or IP Address.
-The token is used to associate the data with a Monitoring Account
+- The server is your **server** hostname or IP Address.
+- The **token** is used to associate the data with a Monitoring Account.
+- The receiving application is fixed to "alarmhostr.php".
 
 ## Functions
-The functions determine the message types such as sensor value for temperature or sensor state for a door opening or closing.
-There are functions that provide diagnostic information about the remote devices.
+The Function Number is used to identify the message types
+There are functions used to identify what type data is being sent, such as sensor value for temperature, Humidity or sensor State for a door opening or closing. There are also functions that provide diagnostic information about the remote devices.
 
 ### Function 27
 When a new data sender (aka Gateway) starts up it authenticates to the monitoring server.
@@ -49,7 +52,10 @@ This is the normal data measurement message from WiFi Sensors.
 * token=62af64008be7e830503ce894bf787d39&function=30&opcode0=82.18&opcode1=1&opcode2=5421211168&opcode3=0&opcode4=192.168.254.32
 
 In the above example the temperature reading for device "5421211168" is 82.18, opcode1 = 1 means the reading is in Fahrenheit. For readings in Celsius, opcode1 would be 0.
-If this device did both temperature and humidity, opcode3 would be the humidity reading. In this example a value of 0 is no humidity reading.
+
+* token=ec1e01e6d2f5586bc582e9e9c97751d6&function=30&opcode0=76.82&opcode1=1&opcode2=01451557&opcode3=34.30&opcode4=192.168.254.76
+
+The second example shows both temperature and humidity, opcode3 is the humidity reading of 34.30%. In this example a value of 0 is no humidity reading.
 
 #### Function 37
 These messages are discrete readings for temperature and humidity readings from device 50.
@@ -58,7 +64,6 @@ These messages are discrete readings for temperature and humidity readings from 
 To identify a humidity reading from device 50 the Id is changed to 350. Now the receiving monitoring system knows it is a humidity reading.
 
 * token=62af64008be7e830503ce894bf787d39&function=37&opcode0=350&opcode1=25.40&opcode2=2&opcode3=192.168.254.61
-
 
 #### Function 38
 Function 38 is for on/off devices or device States.
@@ -88,7 +93,12 @@ Example of Function 39:
 This shows the receive signal strength from device 44 is -86db.
 
 #### Function 70
+Function 70 is a special diagnostic function for the WiFi Gateway. It reports the version of the RF Receiver and if the RF Receiver was reset.
 
+Example of Function 70:
+* token=62af64008be7e830503ce894bf787d39&function=70&opcode0=1&opcode1=7.61&opcode2=0&opcode3=192.168.254.61
+
+In this example the RF Receiver was reset once on startup and the RF Receiver Firmware version is 7.61.
 
 
 
