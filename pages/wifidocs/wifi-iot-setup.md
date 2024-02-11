@@ -7,6 +7,10 @@ sidebar: wifi_sidebar
 permalink: wifi-iot-setup.html
 folder: mydoc
 ---
+## Creating Monitoring Account First
+If you are planning on using our newer monitoring services [**"monitor.jemrf.com"**](https://monitor.jemrf.com). It is recommended you create your Monitoring Account first if you don't have one, because in Step of the WiFi Setup Details you will need to know your monitoring account token. If you do not have a JemRF Monitoring Service account, the sign-up instruction to create an account are at: [Create account and create a Token](jemrfregister.html).
+
+* For the legacy service, the sign-up instruction  on PrivateEyePi are at: [Create account and get Token](pepregister.html). If you already have a PEP Token, you can use it on the newer JemRF Monitor service.
 
 ##  Setup Details
 To reach the configuration page for the WiFi IoT Sensor, you can use any device that supports WiFi and an internet browser. In this example we will use a desktop computer.

@@ -8,8 +8,12 @@ permalink: wifi-rf-gw-setup.html
 folder: mydoc
 ---
 ## Introduction
-The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the JemRF Monitoring service. This eliminates the need for a Raspberry PI computer and all that extra overhead. You can also connect to the our legacy service PrivateEyePi. The Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming a computer first. If you want to your one of our free monitoring services, and do not have an account with us, Step 3 will tell you how to get that setup. As part of the Setup you will need the monitoring token.
-If you are going to use with your applications, then you can skip Step 3.
+The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the JemRF Monitoring service. This eliminates the need for a Raspberry PI computer and all that extra overhead. You can also connect to the our legacy service PrivateEyePi. The Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming a computer first.
+
+## Creating Monitoring Account First
+If you are planning on using our newer monitoring services [**"monitor.jemrf.com"**](https://monitor.jemrf.com). It is recommended you create your Monitoring Account first if you don't have one, because in Step of the Gateway Setup Details you will need to know your monitoring account token. If you do not have a JemRF Monitoring Service account, the sign-up instruction to create an account are at: [Create account and create a Token](jemrfregister.html).
+
+* For the legacy service, the sign-up instruction  on PrivateEyePi are at: [Create account and get Token](pepregister.html). If you already have a PEP Token, you can use it on the newer JemRF Monitor service.
 
 ## Setup Details
 The configuration page for the WiFi Gateway is very similar to the WiFi IoT Sensor.

@@ -4,9 +4,9 @@ keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Jan 1, 2024
 tags:
 summary: "This Document describes how to create a PriviateEyePi Account"
-sidebar: mydoc_sidebar
+sidebar: home_sidebar
 permalink: pepregister.html
-folder: mydoc
+folder: monitoring
 ---
 
 ## How to Create a Private Eye Pi Account
