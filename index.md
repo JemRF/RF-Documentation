@@ -29,12 +29,20 @@ There are several configuration for the WiFi Sensor, plus DIY options.
 
 [Click Here for more Information](wifi_intro.html)
 
-### [JemRF Projects Overview](https://projects.privateeyepi.com)
+### [JemRF Projects Overview](https://projects.jemrf.com)
 Our project site will help with getting our RF products online and reporting to a monitoring server.
 There we provide help learning hardware interfacing sensors with a Raspberry Pi and interacting with
 our projects sever at PrivateEyePi.com.
 
-[Click Here for more Information](https://projects.privateeyepi.com)
+[Click Here for more Information](https://projects.jemrf.com)
 
+### [JemRF Monitoring Overview](monitorintro.html)
+JemRF Monitoring provides a professional monitoring site scaled to support organizations or businesses of all sizes. With services available and adaptable for operating from multiple locations.
+Offering free accounts with every purchase to get started.
 
+[Click Here for more Information](monitorintro.html)
 
+### [PrivateEyePi Introduction](pepintroduction.html)
+We also offer general purpose monitoring services fully extensible for the home user and software developer. Uniquely secure on our own PrivateEyePi server.
+
+[Click Here for more Information](pepintroduction.html)

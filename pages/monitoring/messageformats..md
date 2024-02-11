@@ -4,7 +4,7 @@ keywords: communication& communications& relay& basic& radio& spec& wifi& sensor
 last_updated: Feb 5, 2024
 tags:
 summary: "This Document describes the message protocol between the sending gateways and Monitoring Service"
-sidebar: mydoc_sidebar
+sidebar: home_sidebar
 permalink: messageformats.html
 folder: monitoring
 ---

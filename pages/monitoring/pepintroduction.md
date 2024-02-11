@@ -4,7 +4,7 @@ keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Feb 5, 2024
 tags:
 summary: "This Document is introduction to PriviateEyePi Monitoring"
-sidebar: mydoc_sidebar
+sidebar: home_sidebar
 permalink: pepintroduction.html
 folder: monitoring
 ---
