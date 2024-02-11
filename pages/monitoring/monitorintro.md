@@ -4,7 +4,7 @@ keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Feb 11, 2024
 tags:
 summary: "This Document provides overview of JemRF Monitoring"
-sidebar: mydoc_sidebar
+sidebar: home_sidebar
 permalink: monitorintro.html
 folder: monitoring
 ---

@@ -44,6 +44,15 @@ entries:
       external_url: https://projects.jemrf.com/
       output: web, pdf
 
+    - title: Introduction to JemRF Monitoring
+      url: /monitorintro.html
+      output: web, pdf
+
+    - title: Introduction to PrivateEyePi
+      url: /pepintroduction.html
+      output: web, pdf
+
+
   - title: WiFi Sensor
     output: web, pdf
     folderitems:
