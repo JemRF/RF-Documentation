@@ -13,6 +13,7 @@ folder: monitoring
 JemRF offers a general purpose monitoring services fully extensible for the home user and software developer. The PrivateEyePi server provides simple sensor monitoring as well as interacts with your local Raspberry Pi applications for near real time alerts and control actions.
 
 Our goal is to stimulate interest in home and DIY electronics that could lead to great projects or new career opportunities. We want to help those interested in learning electronics with working examples from how to make a temperature sensor, to how to build a home alarm system.
+{% include note.html content="The PrivateEyePi Server while highly reliable, it does not provide the critical realtime support a home or business Alarm System requires. The alarm system functions are to support hobbies to learn and test their creations."}
 The PrivateEyePi server is to support the different DIY learning tools provided by our [JemRF Projects Website](https:///projects.jemrf.com). There are no charges for monitoring or testing the alarm system or any of the projects.
 
 The Features of the PrivateEyePi Server are shown here:
