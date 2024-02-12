@@ -27,11 +27,17 @@ The Features of the PrivateEyePi Server are shown here:
 ## Using PrivateEyePi (PEP) Server
 If you do not have an account and want one, [Click Here To create and account](pepregistration.html).
 
+### Dashboard
 Once logged the PrivateEyePi (PEP) Dashboard is the center of all activity.
 From the dashboard you can monitor the status of sensors and view temperature and humidity readings in real time from The Internet.
-
-### Dashboard
+The dashboard is in 5 sections:
+1. The top is the graphic for the sensor being monitored
+2. Are Graphs of the sensor values over list 24 hours
+3. Are where on/off devices such as Switches are show as buttons Red Off and Green ON.
+4. Is teh list of Alarm Zones you defined. Here you can enable or disable a Zone.
+5. This is the Event section with Log Events on the left and Alarm Events on the right. The events are limited to Events in the last 6 months.
 {% include image.html file="pep-dashboard.png" alt="PEP Alarms and Logs"%}
+
 
 On the left side is the menu icon. Clicking on the Menu Icon presents this list of options:
 {% include image.html file="pepdashboardmenu.png" alt="PEP Alarms and Logs"%}
@@ -42,12 +48,18 @@ The Analytics tab show the received data by date and by sensor:
 {% include image.html file="pepanalytics.png" alt="PEP Alarms and Logs"%}
 
 ### Settings
+The settings page allows for user customization of their dashboard. Such as graphics, sensor status and limits on charts.
 {% include image.html file="pepsettings.png" alt="PEP Alarms and Logs"%}
 
 ### Sensor List
+This provides a list of all sensors in your account.
 {% include image.html file="pepesensors.png" alt="PEP Alarms and Logs"%}
+As seen in the Sensor Edit Screen, you can change the description, location, type, how many decimals to be displayed, the Suffix (example: F, C, %) and the Zone it is in.
+
+{% include image.html file="pepsensoredit.png" alt="PEP Alarms and Logs"%}
 
 ### Alarm Zones
+You can create zones for sensors or alarms. A zone can be enabled and disabled by rules.
 {% include image.html file="pepalarmzones.png" alt="PEP Alarms and Logs"%}
 
 ### Rules (Automation)
