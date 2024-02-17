@@ -15,7 +15,7 @@ folder: mydoc
 Wireless temperature sensor M Series come use the industry standard digital sensor, the Dallas DS18B20 with accuracy of ~.5°C. Housed in a AA battery case with an On/Off switch the very low power sensor can last up to a year on a set of good AA batteries when configured to send readings every 5 minutes.
 
 ## Installation
-Install battery by sliding the back off and removing and replacing the AA batteries, recommend alcaline batteries.
+Install battery by sliding the back off and removing and replacing the AA batteries, recommend alkaline batteries.
 
 ## Sensor testing
 * See the [testing section](sensor_testing.html) of this documentation

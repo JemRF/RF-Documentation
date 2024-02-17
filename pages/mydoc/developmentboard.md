@@ -35,8 +35,8 @@ For a wide range of prototyping options.
   - 1.5V to 5V (sold separately) converts 1.5V to 5V for any sensors that require 5V. This converter will only supply the prototyping area, so you will also need the 1.5V to 3.3V converter to power the FLEX RF Module
 
 ### Functional
-* Socket for Dallas DS18B20 one-wire digital thermonitor Sensor
-* Socket for DHT22 one-wire thermonitor and humidity Sensor
+* Socket for Dallas DS18B20 one-wire digital thermometer Sensor
+* Socket for DHT22 one-wire thermomotor and humidity Sensor
 * Connections for Analog A and Analog B (Like a light sensor)
 * Connections for three GPIO I/O Pins
 * Connections for Relay A and Relay B (GPIO I/O Pins to drive a Relay/LED)
