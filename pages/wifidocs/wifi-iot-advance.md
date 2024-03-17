@@ -42,7 +42,7 @@ The on board WIFI chip will generate heat if powered on for long periods of time
 
 This option will shut down the WIFI sensor in between transmissions and automatically awaken the device for transmission every X seconds (defined by Temperature Send Interval) . This radically reduces the power intake of the device.
 
-** Take Note ** : The sensor will no longer be accessible through WIFI while it is in sleep mode. The device can be taken out of sleep mode by connecting GPIO 12 with 3V (as shown in the picture below).
+** Take Note ** : The sensor will no longer be accessible through WIFI while it is in sleep mode. The device can be taken out of sleep mode by connecting GPIO 14 with 3V (as shown in the picture below).  Jumper pin labeled 3V to pin labeled 14 together and power up the device.
 
 This option must be used in conjunction with the "Sleep" dip switch on the board, as shown in the picture below.
 
