@@ -63,12 +63,16 @@ Release 3.3.09 once installed, Eliminates the need for Future Manual Downloads
 A Reset after install is required.
 
 ## Release Notes
-### Version 3.4.5 (TBD)  (Next Release)
+### Version 3.4.5 (5/17/2024)  (Current Release)
+  - Fix JSON MQTT format
+  - Added sending diagnostic information to server to for tech support
+
+### Version 3.4.5 (3/9/2024)
   - Provide Fixed Relay A and B using GPIO 0 for A and GPIO 5 for B
   - Added sending GPIO switch changes to Monitoring and out MQTT
   * Fixed Allow external control, if Not Checked No external commands are Allowed
 
-### Version 3.4 (01/11/2024)  (Current Release)
+### Version 3.4 (01/11/2024)
   - Provide DNS for Static IP settings
   - Fix issue with slow DS18B20 sensors
   - Add ReStart to Sensor Configuration page for Static IP settings
