@@ -63,7 +63,7 @@ Release 3.3.09 once installed, Eliminates the need for Future Manual Downloads
 A Reset after install is required.
 
 ## Release Notes
-### Version 3.4.5 (5/17/2024)  (Current Release)
+### Version 3.4.6 (5/17/2024)  (Current Release)
   - Fix JSON MQTT format
   - Added sending diagnostic information to server to for tech support
 
