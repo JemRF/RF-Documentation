@@ -11,7 +11,7 @@ folder: mydoc
 The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the PrivateEyePi or JemRF Monitoring service. This eliminates the need for a Raspberry PI computer and all that extra overhead. The Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming a computer first.<br />
 
 The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
- * Follows the same setup process as our WiFi IoT Sensors to connect to the local WiFi.
+ * Follows the same setup process as our WiFi IoT Sensors to connect to the local 2.4G WiFi Only.
  * It has option to send Celsius to Fahrenheit readings.
  * Using a USB-mini connector for power.
  * It provides a Sensor List overview page to show all the sensors it is tracking and their last value.
@@ -29,7 +29,7 @@ The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
 Powered either by USB Mini cable (4.5V DC to 7V DC input) or battery connection (2.5V to 3.5V) via the 2 pin battery connection plug
 * The device supports dual WIFI mode allowing it to be WIFI access point and a WIFI client at the same time. A WIFI access point advertises itself through an SSID and can be connected to via any device or computer that has WIFI.
 * The Sensor List tab will show sensor that the WiFi Relay and heard and forwarded to the server. See Example below:
-{% include image.html file="sensorlist.png" alt="WiFi Gateway Sensor List" %}
+{% include image.html file="ActiveDevices.png" alt="WiFi Gateway Sensor List" %}
 
 ## Required, but not included:
 

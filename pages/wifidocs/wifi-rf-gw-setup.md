@@ -39,7 +39,7 @@ Now open up a browser  and navigate to [http://192.168.4.1/](http://192.168.4.1)
 From here you configure your WiFi Settings.
 
 {% include image.html file="wifigwsetup-ssid.jpg" alt="WiFi GW SSID Select Page"%}
-Next enter the Network Name/SSID and Password of your WiFi router and click on save.
+Next enter the 2.4G WiFi Network Name/SSID and Password of your WiFi router and click on save.
 
 Wait a few moments for the WiFi Gateway to connect to the WiFi router. Click on the "Setup Details" menu option to refresh the screen. Once connected you will see the **WLAN:** IP address has given to the Wireless Gateway, as shown in the next image. In the example below it shows 192.168.254.46, yours will be different. What's important is your gateway is now connected to the Internet.
 {% include image.html file="wifigwsetuponline.png" alt="WiFi Gateway Online"%}
@@ -57,7 +57,7 @@ If you want to use our monitoring services and you do not have a JemRF Monitorin
 With your Gateway now online (has a WLAN number), you can stay on your home WiFi Network and point you browser to the WLAN address of the gateway. In the example picture above the 192.168.254.46 would be the WLAN address for my Gateway, your address will change. Go to http://WLAN (example http://192.168.254.46).
 #### Server
 Now on the WiFi Gateway Setup Details page, the **Server** setting is  **pep.jemrf.com**.
-{% include image.html file="jemrf-server.jpg" alt="WiFi GW Server"%}
+{% include image.html file="Jemrf-server.jpg" alt="WiFi GW Server"%}
 
 #### Token
 Using your account on [monitor.jemrf.com](https:/monitor.jemrf.com), after you login, click on your name in the upper right hand corner a drop down menu will appear. Select Account and then click on the Edit Token button.

@@ -34,7 +34,7 @@ Now open up a browser  and navigate to [http://192.168.4.1/](http://192.168.4.1)
 From here you configure your WiFi Settings.
 
 {% include image.html file="wifi-setup-ssid.jpg" alt="WiFi SSID Select Page"%}
-Next enter the Network Name/SSID and Password of your WiFi router and click on save.
+Next enter the Network Name/SSID and Password of your WiFi (2.4G WiFi Only) and click on save.
 
 Wait a few moments for the WiFi Sensor to connect to the WiFi router. Click on the "Setup Details" menu option to refresh the screen. Once connected you will see the **WLAN:** IP address has given to the Wireless Sensor, as shown in the next image. In the example below it shows 192.168.254.8, yours will be different. What's important is your gateway is now connected to the Internet.
 {% include image.html file="wifisetuponline.png" alt="WiFi Sensor Online"%}

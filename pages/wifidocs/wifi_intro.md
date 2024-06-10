@@ -10,7 +10,7 @@ summary: JemRF WiFi Devices.
 ## Introduction to WiFi Devices
 
 ### [WiFi Sensor](wifi_iot.html)
-The WiFI Sensor uses the local WiFi to connect to the Internet and the remote Monitoring Services.  It an also be queried locally using the internal Sensor configuration page or the /temp command.
+The WiFI Sensor uses the local 2.4G WiFi to connect to the Internet and the remote Monitoring Services.  It an also be queried locally using the internal Sensor configuration page or the /temp command.
 
 There are several configuration for the WiFi Sensor, plus DIY options.
 #### Temperature Sensor
@@ -29,7 +29,7 @@ This kit provides a 5v relay that can be turned on and off by one of the GPIO pi
 [Details on the WiFI Sensor](wifi_iot.html).
 
 ### [WiFi Gateway](wifi-rf-relay.html)
-The WiFi Gateway provides a bridge between the private Wireless RF environment and the Internet using the local WiFi.
+The WiFi Gateway provides a bridge between the private Wireless RF environment and the Internet using the local 2.4G WiFi.
 The Gateway will capture the messages from our RF Sensors and send them to the monitoring Server.
 In addition to sending the messages to the monitoring server, it can forward messages to an MQTT broker for to allow custom monitoring at multiple locations at the same time.
 

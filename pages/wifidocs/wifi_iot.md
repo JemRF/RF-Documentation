@@ -20,6 +20,7 @@ It connects to your WiFI access point so you can  send temperature readings to [
 ## Features:
 
 - Easy to configure web interface. No programming or soldering skills required. You do not need the internet to configure the device. Connect to it directly from any WiFI device (e.g. PC, phone tablet…)
+- Uses your local 2.4G WiFi to access the Internet
 - Cyclic temperature transmission mode with configurable send interval
 - Supports both Celsius or Fahrenheit temperature readings
 - Control up to 8 relays
@@ -55,7 +56,7 @@ We have USB to USB-B cables at our store, (JemRF Store)[https://www.jemrf.com]. 
 * Powered either by USB Mini cable (4.5V DC to 7V DC input) or battery connection (2.5V to 3.5V) via the 2 pin battery connection plug
 * Temperature range: -55°C to +125°C. Fahrenheit equivalent is -67°F to +257°F, ±0.5°C accuracy from -10°C to +85°C
 * Can be programmed using Arduino or LUA development environments
-* Upgraded using a 3.3V FTDI cable
+* Upgraded online or using a 3.3V FTDI cable
 * 8 GPIO ports available through the 16 pin header
 * Supports SPI serial interface
 
