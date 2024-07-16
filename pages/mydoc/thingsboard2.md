@@ -27,7 +27,7 @@ In step 4, you will need the number following the PEP or JRF in the upper right 
 b) In the MQTT tab, you must enter all the necessary data to connect to the ThingsBoard MQTT broker and press the Save button.
 <img src="images/jemrf_tb_3.png" width="425"/>
 
- ## Step 4 Setup ThingsBoard Device Profile panel:
+## Step 4 Setup ThingsBoard Device Profile panel
 a) Under "Device Profile" you create a transport type of MQTT. Additionally, in the "Telemetry topic filter" field, you must add the identification number that the JemRF device concatenates to the end of the topic when sending data.  <img src="images/jemrf_tb_2.png" width="425"/>
 
 b) A new "device" must be created that has the new profile created set to it. On the other hand, the device token must be copied using the "Copy Access Token" button to use it in the device configuration in step 2) b).
