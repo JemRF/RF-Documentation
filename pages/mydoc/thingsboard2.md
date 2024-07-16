@@ -1,15 +1,15 @@
 ---
 title: Thingsboard Integration
-keywords: interface, integrate, integration, thingsboard
+keywords: interface, integrate, integration, thingsboard, MQTT
 last_updated: July 15, 2024
 tags:
-summary: "This page explains how to integrate our WiFi MQTT with Thingsboard."
-sidebar: mydoc_sidebar
+summary: "This page explains how to integrate our WiFi devices using MQTT with Thingsboard."
+sidebar: wifi_sidebar
 permalink: thingsboard2.html
 folder: mydoc
 ---
 # Description
-Connecting to the Community Edition of ThngsBoard using WiFi Sensor and WiFi RF Gateway MQTT feature and JSON data format.
+How to connect to the Community Edition of ThingsBoard using the MQTT feature and JSON data format of our WiFi Sensor or WiFi RF Gateway .
 
 ## Step 1 Power up the WiFi Device and connect to is WiFi
 First power up the WiFi Sensor or WiFi Gateway. It will create a WiFi network called PEP<number> for the WiFi Sensor and JRF<number> for the WiFi Gateway. Connect to the listed network and enter the device password. , when it shows connect open web browse and access the device configuration website http://192.168.4.1/.
