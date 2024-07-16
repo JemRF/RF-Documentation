@@ -9,22 +9,22 @@ permalink: thingsboard2.html
 folder: mydoc
 ---
 # Description
-Connecting to the Community Edition of ThngsBoard using MQTT
+Connecting to the Community Edition of ThngsBoard using WiFi Sensor and WiFi RF Gateway MQTT feature and JSON data format.
 
 ## Step 1 Power up the WiFi Device and connect to is WiFi
 First power up the WiFi Sensor or WiFi Gateway. It will create a WiFi network called PEP<number> for the WiFi Sensor and JRF<number> for the WiFi Gateway. Connect to the listed network and enter the device password. , when it shows connect open web browse and access the device configuration website http://192.168.4.1/.
 
 ## Step 2 Connect the WiFI Device to the Internet
-In this portal, you enter the local WiFi network credentials located in the Login Details tab to connect to the Internet and then press Save.
+In this portal, you enter the local WiFi network credentials in the Login Details tab to connect to the Internet and then press Save.
 
 
 In step 4, you will need the number following the PEP or JRF in the upper right corner.
 
 ## Step 3 Configure the Wi-Fi sensor or Gateway
- a) On the JemRF device configuration website, after having connected the device to the local network, go to the "Sensor Config" tab and check the "Send To Server" box. Optionally you can change the sending interval time in the "Temperature send interval" field. Normal Send to Server is 300 seconds, it can be as often as 60 seconds and as long as you want.  Finally, to save the data, press the Save button.
+ a) On the JemRF device configuration website, after connecting the device to the local network, go to the "Sensor Config" tab and check the "Send To Server" box. Optionally you can change the sending interval time in the "Temperature send interval" field. Normal Send to Server is 300 seconds, it can be as often as 60 seconds and as long as you want.  Finally, to save the data, press the Save button.
 
 
-b) In the MQTT tab, you must enter all the necessary data to connect to the ThingsBoard MQTT broker and press the Save button, (see the third image).
+b) In the MQTT tab, you must enter all the necessary data to connect to the ThingsBoard MQTT broker and press the Save button.
 <img src="images/jemrf_tb_3.png" width="425"/>
 
  ## Step 4 Setup ThingsBoard Device Profile panel:

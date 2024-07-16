@@ -145,8 +145,12 @@ entries:
       url: /hass.html
       output: web, pdf
 
-    - title: Thingsboard
+    - title: Thingsboard via RPi
       url: /thingsboard.html
+      output: web, pdf
+
+    - title: Thingsboard via MQTT
+      url: /thingsboard2.html
       output: web, pdf
 
   - title: Development Libraries
