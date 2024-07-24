@@ -88,7 +88,7 @@ For Sensor 45 a Humidity Sensor with value 98.
 The MQTT Payload would be: 45HUM = 98
 
 #### WiFi Payloads
-[PEP ID]
+[JemRF ID]
 - If Temperature Sensor Only
 
 - - [Sensor Id]
@@ -154,4 +154,4 @@ With Payload for temperature Only (Gateway or Sensor) with readings set to Fahre
 
 [probe id] = [[{"temperature":"80.42","unit_of_measurement":"F"}],[{"humidity":"53.10","unit_of_measurement":"%"}]]
 
-{% include note.html content="For the WiFi unit with the Temperate and Humidity Sensor, the Probe Id is the PEP number."%}
+{% include note.html content="For the WiFi unit with the Temperate and Humidity Sensor, the Probe Id is the Device Id."%}
