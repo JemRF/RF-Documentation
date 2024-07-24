@@ -16,14 +16,14 @@ If no Network Time Server is selected, there is the option to enter time manuall
 There is the option for reporting using local time by selecting the local time zone.
 
 <img src="images/sgw-network.png" width="425"/>
-**Figure 1  The Setup Details screen.**
+**Figure 1  The Nework Details screen.**
 
 
 The screenshot below shows a change to the configuration that has been entered. The yellow fields indicate that the change has not yet been processed.
 
 
 <img src="images/sgw-network1.png" width="425"/>
-**Figure 2  The Setup Details screen.**
+**Figure 2  Network changes.**
 
 
 When changes are Saved the is a prompt in the upper left of the page showing about how long it will take for the change to be implemented.

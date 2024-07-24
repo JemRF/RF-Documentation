@@ -14,7 +14,7 @@ The JemRF Smart Gateway is designed for increased data security by capturing and
 It can operate without an Internet connection communicating with a private network server. It provides full management and monitoring capabilities to provide full control over its features and present the internal health of both the operating firmware and hardware.
 
 ## Features
-The Smart Gateway has expanded MQTT support with the addition of the SpartPlug B MQTT message protocol. It can detect and report operational issues to an MQTT Broker and provide an external open/close contact reflecting the gateway's health.
+The Smart Gateway has expanded MQTT support with the addition of the SparkPlug B MQTT message protocol. It can detect and report operational issues to an MQTT Broker and provide an external open/close contact reflecting the gateway's health.
 
 Data logging and storage of samples eliminate data loss if the network connection to the server is lost. When the connection is restored, the data captured while the network or server is down can be backfilled.
 
