@@ -13,19 +13,23 @@ The Sensor List page shows the last messages received from each sensor for which
 <img src="images/sgw-sensorlist.png" width="425"/>
 **Figure 1  The Sensor List screen.**
 
-
-The screenshot below shows a change to the configuration that has been entered. The yellow fields indicate that the change has not yet been processed.
-
+The option at the bottom of the Sensor List page are to support export of the sensor information captured on a specific date. The Export Start Date is the export all the received messages for that date starting an midnight local time based on the timezone in the Network Settings.  The Show command will show that last 30 messages received in the Export format. The screen shot shows the bottom of the 30 messages and the option to Export that days report. The is also an option to set the delimiter used in the CSV output file. The default is a comma(,).
 
 <img src="images/sgw-sensorlist-bottom.png" width="425"/>
-**Figure 2  Bottom Sensor List options.**
+**Figure 2  Bottom Sensor Show option.**
 
+The daily sensor list can be a scheduled export. The Export Settings button will bring up the page shown below.
 <img src="images/sgw-export.png" width="425"/>
-**Figure 2  Export Daily Sensor log.**
+**Figure 3  Export Prior Daily Report.**
 
+The options are Enable Export at selected time and the date and time of the last Export. The color Green indicates the last export was successful.
+The center section is for credentials needed to connect to a remote server to export the logs to.
+The bottom section allows for selection of the Transfer Method. There are two export methods, the first uses a Secure File Transfer protocol (SFTP). This is useful it the remote server is not located locally. Figure 4 show the additional fields for the SFTP export option. The second method show in Figure 3 is using a Windows file server, with the additional fields needed to connect to a Windows Server.
 
 <img src="images/sgw-export-sftp.png" width="425"/>
-**Figure 2  Export using SFTP protocol.**
+**Figure 4  Export using SFTP protocol.**
+Figure 4 also shows an example in yellow that changes have been entered and not yet saved.
+
 
 
 

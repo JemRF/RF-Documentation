@@ -40,7 +40,7 @@ The MQTT Agent in the Smart Gateway has four data format options.
 {% include note.html content="
 Once connected and working, to change format the MQTT agent must first be disabled. Then select the new format and Enable."%}
 
-#### JemRF Format
+### JemRF Format
 [JemRF ID]
 - If Temperature Sensor Only
 
