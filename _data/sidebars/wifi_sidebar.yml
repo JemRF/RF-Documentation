@@ -121,6 +121,10 @@ entries:
       url: /sgw-network.html
       output: web, pdf
 
+    - title: Sensor List
+      url: /sgw-sensorlist.html
+      output: web, pdf
+
     - title: MQTT
       url: /sgw-mqtt.html
       output: web, pdf
