@@ -105,6 +105,26 @@ entries:
       url: /gatewaymqtt.html
       output: web, pdf
 
+  - title: Smart Gateway
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: /sgw-intro.html
+      output: web, pdf
+
+    - title: Setup
+      url: /sgw-setup.html
+      output: web, pdf
+
+    - title: Network
+      url: /sgw-network.html
+      output: web, pdf
+
+    - title: MQTT
+      url: /sgw-mqtt.html
+      output: web, pdf
+
   - title: Integration
     output: web, pdf
     folderitems:

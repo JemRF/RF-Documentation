@@ -34,9 +34,13 @@ Each form guides the user when making changes, by turning yellow the field that 
 
 ## Controlling the Smart Gateway
 The system control and health user interface uses an internal Web server. Once connected to the Gateway, there are four primary detail settings tabs.
+
 The initial tab is [Setup Details](/sgw-setup.html) for basic settings.
+
 The [Network Details](/sgw-network.html)  for network features and services.
+
 The [Sensor List](/sgw-sensorlist.html)  tab shows the last message from each sensor is displayed.
+
 The [MQTT Settings](/sgw-mqtt.html)  tab is for entering the address of the MQTT Broker and needed credentials.
 
 
