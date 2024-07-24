@@ -43,4 +43,15 @@ The [Sensor List](/sgw-sensorlist.html)  tab shows the last message from each se
 
 The [MQTT Settings](/sgw-mqtt.html)  tab is for entering the address of the MQTT Broker and needed credentials.
 
+## External Connections
+The image below shows the Smart Gateway Interface Panel.
+There is the option for USB-C Power and the physical Ethernet Interface.
+If purchased the Ethernet interface can provide power when connected to a POE switch.
+
+If purchased there is a the dry contact interface to alert and external facility control systems the Gateway is On, Off or in Failed State.
+- The Blue Online is connected to the Common if the Gateway is working correctly.
+- The Orange Off/Failure is connected to Common if the Gateway is powered Off or there is an internal Alarm.
+
+<img src="images/sgw-interface.png" width="425"/>
+
 

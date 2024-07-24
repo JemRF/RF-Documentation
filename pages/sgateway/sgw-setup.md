@@ -21,7 +21,7 @@ There is an option for automatic updates.
 System Health details: Green indicates the system is working. The Details button shows more details on the System Health.
 
 
-<img src="images/sgw-setup.png width="425"/>
+<img src="images/sgw-setup.png" width="425"/>
 **Figure 1  The Setup Details screen.**
 
 If the option is No, a second screen appears to pull updates or upload updates to the Gateway manually.
