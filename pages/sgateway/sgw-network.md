@@ -7,7 +7,7 @@ permalink: sgw-network.html
 summary: JemRF Smart Gateway Network Tab.
 ---
 # Network Details
-The Network Details page is used to set a static IP address if needed, Identify a custom Network Time Server (NTP Server), and disable the Smart Gateway AP to reduce unwanted Wi-Fi networks and increase access security.
+The Network Details page is used to set a static IP address if needed, identify a custom Network Time Server (NTP Server), and disable the Smart Gateway AP to reduce unwanted Wi-Fi networks and increase access security.
 
 If the Gateway has an internal battery-backed clock, the Battery Clock section shows whether it is Active or Not.
 
@@ -30,6 +30,7 @@ When changes are Saved the is a prompt in the upper left of the page showing abo
 Figure 3 show the status time to complete of a network IP change.
 
 <img src="images/sgw-network-change.png" width="425"/>
+
 **Figure 3  Network IP change in Progress.**
 
 

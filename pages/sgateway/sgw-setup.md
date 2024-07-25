@@ -45,7 +45,7 @@ The HTTP/MQTT Sender application connects to the JemRF monitoring service or oth
 
 The Health Check application generates the status used to determine the health of the Gateway. It monitors the message processing, temperatures, and applications to ensure that everything is working correctly.
 
-The Status Light application monitors the Gateway's health and updates the LEDs with their current status. It also controls the external Relay state, which reflects the Gateway's health.
+The Status Light application monitors the Gateway's health and updates the LEDs with their status. It also controls the external Relay state, which reflects the Gateway's health.
 
 ### Section 2
 Section 2, the Sensor Status section, presents alerts for any sensors that are having issues.  This is used to detect an issue with a sensor with low battery power. It has only enough power to make an initial connection but not enough to send measurements. The result is the sensor keeps sending Starting messages that can block measurements from working sensors.
@@ -57,8 +57,15 @@ Sensors can generate temporary alerts and then return to normal. A Reset button 
 **Figure 4  System Health tab showing Sensor 93 is having issues.**
 
 ### Section 3
-The third section of the Health page shows the internal temperatures of the Processors. The RF Receiver status shows the current count of messages processed. This is the same total count shown at the bottom of the Sensor List page.  It also shows a restart date for the RF processor if an error is detected and the RF receiver has to be reset.
+The third section of the Health page shows the internal temperatures of the Processors. The system will generate a faut warning when the temperatures emceed 162 F and shutdown at 170 F. The RF Receiver status shows the current count of messages processed. This is the same total count shown at the bottom of the Sensor List page.  It also shows a restart date for the RF processor if an error is detected, and the RF receiver has to be reset. If this date differs from the Sensor Receiver date time it could indicate an internal error was corrected.
 
 ### Section 4
 The last section enables sending system health messages to the MQTT Broker A zero (0) disables the function. Values are in minutes.  The full set of system health messages is sent on the initial connection. After that, only the health messages indicating a change in status are sent.
+
+Changes in status include:
+- Internal applications failing or restarting.
+- Temperatures above warning limit
+- No data being processed for 5 minutes
+- Connection to the HTTP or MQTT server is lost
+
 

@@ -12,7 +12,7 @@ The options allow for custom Client Id used by some public brokers and the optio
 
 The default is a blank page and not connected to any broker. The Reset Form will fill out the MQTT settings with the connection information to use the free JemRF Broker.
 Once the form is filled out, the Enable activated the connection. The status of the connection will show below the Enable option and at the top of each page.
-There can be a little delay between the Enable and the Status update showing connected. The actual connection is not made until there is data to send. So depending on how many sensors you have and how ofter they are transmitting will vary the connection delay.
+There can be a slight delay between the Enable and the Status update showing connected. The actual connection is not made until there is data to send. So, depending on how many sensors you have and how often they are transmitting, the connection delay will vary.
 
 The image below shows the MQTT Details page with a successful connection to the JemRF MQTT Broker.
 
@@ -106,4 +106,4 @@ Example Payloads:
 
 ### SparkplugBv3.0
 This format follows the specifications detailed at [Sparlplug.org](https://sparkplug.eclipse.org/)
-The JemRF adaptation are the in the default Custom subscribe: spBv1.0/JemRFDevices
+The JemRF adaptation is the in the default Custom subscribe: spBv1.0/JemRFDevices

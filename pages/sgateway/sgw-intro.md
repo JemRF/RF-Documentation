@@ -9,9 +9,9 @@ summary: JemRF Smart Gateway.
 
 ## Introduction to the JemRF Smart Gateway
 
-The JemRF Smart Gateway is designed for increased data security by capturing and storing sensor data. It adds a time stamp and logs all measurements, keeping them until they are successfully reported to the monitoring server.
+The JemRF Smart Gateway is designed to increase data security by capturing and storing sensor data. It adds a time stamp and logs all measurements, keeping them until they are successfully reported to the monitoring server.
 
-It can operate without an Internet connection communicating with a private network server. It provides full management and monitoring capabilities to provide full control over its features and present the internal health of both the operating firmware and hardware.
+It can operate without an Internet connection and can communicate with a private network server. It provides full management and monitoring capabilities to provide full control over its features and present the internal health of the operating firmware and hardware.
 
 ## Features
 The Smart Gateway has expanded MQTT support with the addition of the SparkPlug B MQTT message protocol. It can detect and report operational issues to an MQTT Broker and provide an external open/close contact reflecting the gateway's health.
@@ -22,7 +22,7 @@ The hardware features provide Power over Ethernet or from a USB-C power source.
 
 The unit has three LEDs to indicate the State of the Server, the status of the connection to the Server, and the status of the MQTT Broker.
 
-Additional features include an internal battery clock that allows all the Gateways to know what time it is on power up or if it can not reach a Network time server. There is also an option to enter local time manually.
+Additional features include an internal battery clock that allows all the Gateways to know what time it is on power up or if it cannot reach a Network time server. There is also an option to enter local time manually.
 
 The Smart Gateway can run standalone without connecting to a remote server or MQTT Broker. At the bottom of the Sensor List is an option to download today's readings or schedule sending end-of-day readings to an SFTP or Windows share.
 
