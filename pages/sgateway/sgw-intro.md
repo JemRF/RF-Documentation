@@ -1,6 +1,6 @@
 ---
 title: "JemRF Smart Gateway"
-keywords: getting started introduction, Wifi Jemrf, Gateway, rf Sensor
+keywords: getting started introduction, Smart Gateway Jemrf, Gateway, rf Sensor
 last_updated: July 23, 2024
 sidebar: wifi_sidebar
 permalink: sgw-intro.html

@@ -35,6 +35,7 @@ There is also an upload updates option for Gateway without an Internet connectio
 ## The Gateway System Health Page
 <img src="images/sgw-health.png" width="425"/>
 **Figure 3  System Health tab.**
+
 Gateway System Health so the health of the internal function that makes the Gateway operational. There are four sections on the System Health page to cover all parts of the Gateway operations.  The screenshot below shows a healthy Gateway.
 
 ### Section 1
@@ -54,7 +55,8 @@ Sensors can generate temporary alerts and then return to normal. A Reset button 
 
 
 <img src="images/sgw-health-issue.png" width="425"/>
-**Figure 4  System Health tab showing Sensor 93 is having issues.**
+
+<p style="text-align: center;">**Figure 4  System Health tab showing Sensor 93 is having issues.**</p>
 
 ### Section 3
 The third section of the Health page shows the internal temperatures of the Processors. The system will generate a faut warning when the temperatures emceed 162 F and shutdown at 170 F. The RF Receiver status shows the current count of messages processed. This is the same total count shown at the bottom of the Sensor List page.  It also shows a restart date for the RF processor if an error is detected, and the RF receiver has to be reset. If this date differs from the Sensor Receiver date time it could indicate an internal error was corrected.
