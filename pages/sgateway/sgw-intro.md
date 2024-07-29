@@ -60,4 +60,5 @@ An optional feature is a dry contact interface to alert external facility contro
 
 <img src="images/sgw-interface.png" width="425"/>
 
+The levers lift and lock open to allow wire to be inserted into the connector then closed to lock down on the wire. Wire sizes supported range from as small as 28 gauge up to 12 gauge. Connection is designed for low voltage and low current AC or DC monitoring systems.
 
