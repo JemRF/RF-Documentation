@@ -44,10 +44,10 @@ During the initial setup, the Smart Gateway creates a local WiFi hotspot. The sy
 
 Once connected to the Gateway, there are four primary detail settings tabs.
 
-The [Setup Details](/sgw-setup.html)  tab is for basic settings.
-The [Network Details](/sgw-network.html)  tab is for network features and services.
-The [Sensor List](/sgw-sensorlist.html) tab displays the most recent message from each sensor.
-The [MQTT Settings](/sgw-mqtt.html) tab is for entering the address of the MQTT Broker and necessary credentials.
+- The [Setup Details](/sgw-setup.html)  tab is for basic settings.
+- The [Network Details](/sgw-network.html)  tab is for network features and services.
+- The [Sensor List](/sgw-sensorlist.html) tab displays the most recent message from each sensor.
+- The [MQTT Settings](/sgw-mqtt.html) tab is for entering the address of the MQTT Broker and necessary credentials.
 
 Each tab guides the user when making modifications. The forms indicate changes by turning the edited field and the Save button yellow, signaling that the changes have not been saved.
 
