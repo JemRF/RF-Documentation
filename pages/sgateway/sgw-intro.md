@@ -9,16 +9,21 @@ summary: JemRF Smart Gateway.
 
 ## Introduction to the JemRF Smart Gateway
 
-The JemRF Smart Gateway is designed to enhance data security by capturing and storing sensor data. It adds a timestamp and logs all measurements. It stores the measurements until they have been successfully reported to the monitoring server. It can operate without an internet connection and communicate with a private network server. The Smart Gateway provides total management and monitoring capabilities, offering complete control over its features and displaying the operating firmware's and hardware's internal health.
+The JemRF Smart Gateway stands as a cutting-edge solution for safeguarding and managing sensor data. Designed with advanced data security features, it captures and timestamps every sensor measurement, ensuring comprehensive logging of all data points. This robust device securely stores measurements until they are successfully transmitted to the monitoring server, guaranteeing data integrity and reliability.
+
+Engineered for versatility, the Smart Gateway can function autonomously without an internet connection, seamlessly communicating with a private network server. It offers full-spectrum management and monitoring capabilities, granting users complete control over its extensive features. Additionally, it provides real-time insights into the internal health of both the operating firmware and hardware, ensuring optimal performance and reliability.
+
+This innovative gateway embodies the pinnacle of data management technology, delivering unparalleled control and security for all your sensor data needs.
 
 ## Features
+The Smart Gateway has two primary protocols to send data measurements to the the monitoring service. It uses secure HTTPS connections to the JemRF Monitoring Service as the main protocol. It also provides connection to an MQTT Broker for more versal data exchange with other data processing tools.
 The Smart Gateway now supports the SparkPlug B MQTT message protocol, expanding its MQTT capabilities. It can detect and report operational issues to an MQTT Broker and provide an external open/close contact to reflect the Gateway's health.
 
 Internal data logging and storing eliminate potential data loss in case of network connection failure. When the network connection is restored, any data captured while the network was down is backfilled to the cloud service or Server.
 
 The hardware features provide Power over Ethernet (POE) or from a USB-C power source.
 
-The unit has three status LEDs:
+The unit has three status lights for:
 
 - The State of the Server
 - The status of the connection to the Server
@@ -26,7 +31,7 @@ The unit has three status LEDs:
 
 Additional features include an internal battery-powered clock that ensures all the Gateways know the current time upon power up or when they cannot reach a network time server. You also have the option to manually input the local time if necessary.
 
-The Smart Gateway can run standalone without connecting to a remote server or with an MQTT Broker. At the bottom of the Sensor List, there is an option to download today's readings or schedule sending end-of-day readings to an SFTP or Windows share.
+The Smart Gateway can run standalone without connecting to a remote server or with an MQTT Broker. At the bottom of the Sensor List, there is an option to download today's readings or schedule sending end-of-day readings to an Secure File Transfer (SFTP) or Windows file share.
 
 The Smart Gateway provides an internal local WiFi Hotspot on first use and setting up the Gateway.
 
