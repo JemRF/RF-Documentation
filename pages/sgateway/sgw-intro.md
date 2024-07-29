@@ -33,14 +33,14 @@ Additional features include an internal battery-powered clock that ensures all t
 
 The Smart Gateway can run standalone without connecting to a remote server or with an MQTT Broker. At the bottom of the Sensor List, there is an option to download today's readings or schedule sending end-of-day readings to an Secure File Transfer (SFTP) or Windows file share.
 
-The Smart Gateway provides an internal local WiFi Hotspot on first use and setting up the Gateway.
+The Smart Gateway provides an internal local WiFi hotpot on first use and setting up the Gateway.
 
 Each form guides the user when making changes, by turning yellow the field that has new information as well as the Save button for those changes will turn Yellow. This provides feedback and change is requested but has not been completed.
 
 <img src="images/sgw-frontview.png" width="425"/>
 
 ## Controlling the Smart Gateway
-During the initial setup, the Smart Gateway creates a local WiFi hotspot. The system control and health User Interface (UI) form uses an internal Web server, which is accessed using its IP address.
+During the initial setup, the Smart Gateway creates a local WiFi hotpot. The system control and health User Interface (UI) form uses an internal Web server, which is accessed using its IP address.
 
 Once connected to the Gateway, there are four primary detail settings tabs.
 
