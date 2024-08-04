@@ -31,8 +31,11 @@ b) In the MQTT tab, you must enter all the necessary data to connect to the Thin
 a) Under "Device Profile" you create a transport type of MQTT. Additionally, in the "Telemetry topic filter" field, you must add the identification number that the JemRF device concatenates to the end of the topic when sending data.  <img src="images/jemrf_tb_2.png" width="425"/>
 
 b) A new "device" must be created that has the new profile created set to it. On the other hand, the device token must be copied using the "Copy Access Token" button to use it in the device configuration in step 2) b).
+c) Under Profile: Device Profiles create an MQTT Profile. Enter Name under Details. Next under Transport configuration shown in screenshot below, select Transport Type MQTT show at first Red Arrow.
 <img src="images/jemrf_tb_1.png" width="425"/>
 
+In the MQTT device topic filters, replace the ThingsBoard generated number after v1/devices/m/telemetry/(this will be a long key) with the WiFi Device Id as pointed to with the Second Red Arrow. If you are using a Temperature and Humidity Sensor use the device Id. The WiFi Device it is the name in the upper right "Name:". As an example: PEP12621392 only use the numbers after PEP or 12621392 as the Device Id.  If you are using a WiFi Sensor with one or more Temperature Sensors, copy the second part of Sensor ID show on the Sensor Config page like "DS18B20-8194224248" the device Id is "8194224248".
+
 ## Step 5 Setup ThingsBoard Device Telemetry
- Finally, in the "Last telemetry" tab of the device in ThingsBoard, you can see the messages sent under the temperature, humidity, and unit_of_measurement fields.
+ Finally, if all is working, in the "Last telemetry" tab of the device in ThingsBoard, you will see the messages sent under the temperature, humidity, and unit_of_measurement fields.
 <img src="images/jemrf_tb_4.png" width="425"/>
