@@ -93,8 +93,8 @@ The 16 pin header on the right hand side of the board provides access to the Gen
 
 |GPIO|Version 1.9.6 or less|Version 1.9.9 or higher|
 |--- |--- |--- |
-|0|R|R, S|  (1)
-|2|R|R, S   (2)
+|0|R|R, S|
+|2|R|R, S   (1)
 |4|P|P| **
 |5|R|Chime, Alarm, S, R|
 |12|DHT22*, R|DHT22*, R, S|
@@ -111,12 +111,11 @@ The 16 pin header on the right hand side of the board provides access to the Gen
 |R  |Pin that can use used to control a relay (external high voltage circuit switch)|
 |S| External switch (reed switch, button switch, motion sensor, water sensor)|
 
-|1| GPIO 0 has 10K pull up resistor|
-|2| When GPIO is connected to GND the Blue light on the WIFI chip will turn on. This is normal behavior.|
+|1| When GPIO is connected to GND the Blue light on the WIFI chip will turn on. This is normal behavior.|
 
 |*| DHT22 uses pins 12 and 4 (provides power to the DHT22 sensor)|
 |** | DS18B20 uses pins 13 and 4 (provides power to the DS18B20 sensor). You can connect multiple DS18B20 sensors to pin 13 (see figure 2 here for more details)|
-|***  |Pin 16 requires an external pull up circuit to operate as a switch|
+|*** | Pin 16 requires an external pull up circuit to operate as a switch|
 
 ### Recommended Relay and Switch
 If any sensor is also present the recommended to only use GPIO 0, 2,4,5 and 16 for switches and Relays.  GPIO 14 can be used if needed, but with caution because if Sleep mode is enabled, GPIO 14 is needed to take the sensor out of Sleep Mode and enable the AP.
