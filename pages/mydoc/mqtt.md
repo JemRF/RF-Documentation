@@ -12,5 +12,5 @@ folder: mydoc
 JemRF supports MQTT using a Raspberry Pi and our RF Sensors.
 The MQTT interface software can be found here -> [https://github.com/JemRF/MQTT](https://github.com/JemRF/MQTT)
 
-JemRF also support MQTT using our WiFi line of products, more information at [Gateway MQTT](gateway-mqtt.html).
+JemRF also support MQTT using our WiFi line of products, more information at [Gateway MQTT](gatewaymqtt.html).
 The WiFi Gateway and WiFi Sensor products support a more robust MQTT implementation that also works with Home Assistant.
