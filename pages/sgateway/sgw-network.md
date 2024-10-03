@@ -36,3 +36,6 @@ Figure 3 show the status time to complete of a network IP change.
 
 {% include note.html content="Only one change can be made at a time. A change must complete before making an additional change."%}
 
+
+[Continue to Sensor List](sgw-sensorlist.html)
+

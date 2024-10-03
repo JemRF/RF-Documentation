@@ -12,13 +12,17 @@ The Setup Details is the home screen and is used to configure the Gateway for co
 
 To get the Gateway online and connected to the local network, there are three options. Option 1 is to configure the connection to the local WiFi. The second option is using the hardwired Ethernet interface. The third option is a Cell Modem plugged into the USB-A port on the back of the Gateway.
 
-The <b>Server</b> is the web service that measurements are sent to, which are normally the JemRF Monitoring Services.
+The **Server** is the web service that measurements are sent to, which are normally the JemRF Monitoring Services.
 
-Measurements are taken in centigrade, but there is the option to send temperature readings in Fahrenheit instead.
+If connecting to JemRF Monitoring Services, the **Token** is your unique identifier to map the sensor data to your account.
 
-The RF Receiver Channel # is to support multiple gateways and have sensors only report to the gateway that is on the same channel. Using different channels, {there are 10 channels available) can reduce data collisions if there are lots of sensors in a common area.
+{% include note.html content="If you are using MQTT only then you can leave these fields blank."%}
 
-Firmware updates can be automatic, semi-automatic and manual. If the Automatic Update is then the Manual Update option appears. The Update button will bring up Figure 2.
+Measurements are taken in centigrade, but there is the option to send temperature readings in **Fahrenheit** instead.
+
+The **RF Receiver Channel #** is to #support# multiple gateways and have sensors only report to the gateway that is on the same channel. Using different channels, {there are 10 channels available) can reduce data collisions if there are lots of sensors in a common area.
+
+Firmware updates can be automatic, semi-automatic and manual. If the **Automatic Update** is then the Manual Update option appears. The Update button will bring up Figure 2.
 
 System Health details: Green indicates the system is working. The Details button shows more details on the System Health shown in Figure 3.
 
@@ -61,7 +65,7 @@ Sensors can generate temporary alerts and then return to normal. A Reset button 
 <p style="text-align: center;">**Figure 4  System Health tab showing Sensor 93 is having issues.**</p>
 
 ### Section 3
-The third section of the Health page shows the internal temperatures of the Processors. The system will generate a faut warning when the temperatures emceed 162 F and shutdown at 170 F. The RF Receiver status shows the current count of messages processed. This is the same total count shown at the bottom of the Sensor List page.  It also shows a restart date for the RF processor if an error is detected, and the RF receiver has to be reset. If this date differs from the Sensor Receiver date time it could indicate an internal error was corrected.
+The third section of the Health page shows the internal temperatures of the Processors. The system will generate a fault warning when the temperatures emceed 162 F and shutdown at 170 F. The RF Receiver status shows the current count of messages processed. This is the same total count shown at the bottom of the Sensor List page.  It also shows a restart date for the RF processor if an error is detected, and the RF receiver has to be reset. If this date differs from the Sensor Receiver date time it could indicate an internal error was corrected.
 
 ### Section 4
 The last section enables sending system health messages to the MQTT Broker A zero (0) disables the function. Values are in minutes.  The full set of system health messages is sent on the initial connection. After that, only the health messages indicating a change in status are sent.
