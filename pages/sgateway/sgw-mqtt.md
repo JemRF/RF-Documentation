@@ -7,19 +7,22 @@ permalink: sgw-mqtt.html
 summary: JemRF Smart Gateway MQTT Tab.
 ---
 # MQTT Details
-The MQTT Details page is used to identify the MQTT Broker you want data sent to, the access account information and other details.
-The options allow for custom Client Id used by some public brokers and the optional custom subscribe field.
+The MQTT Details page is used to identify the optional MQTT Broker you want data sent to, the access account information and other details.
+The options allow for custom Client Id used by some public brokers and the optional custom subscribe field. The Smart Gateway can send data to both the monitoring server and MQTT broker or just to one, that is a user option.
 
 The default is a blank page and not connected to any broker. The Reset Form will fill out the MQTT settings with the connection information to use the free JemRF Broker.
 Once the form is filled out, the Enable activated the connection. The status of the connection will show below the Enable option and at the top of each page.
-There can be a slight delay between the Enable and the Status update showing connected. The actual connection is not made until there is data to send. So, depending on how many sensors you have and how often they are transmitting, the connection delay will vary.
+There can be a slight delay between the Enable and the Status update showing connected. The actual connection is not made until there is new data to send. So, depending on how many sensors you have and how often they are transmitting, the connection delay will vary.
 
 The image below shows the MQTT Details page with a successful connection to the JemRF MQTT Broker.
 
 <img src="images/sgw-mqtt.png" width="425"/>
 **Figure 1  The MQTT Details screen.**
 
-If the connection fails an Error code is displayed and some description:
+{% include note.html content="When a change is made, it will turn yellow as shown in the Network example. The change will take effect when you press **Save** and the yellow background will be cleared."%}
+
+
+## If the connection fails an Error code is displayed and some description:
 
 ### Error Codes
 - 1 - Success            - Authenticated and connected to the broker.
@@ -28,6 +31,8 @@ If the connection fails an Error code is displayed and some description:
 - 4 - Connection refused - server unavailable
 - 5 - Connection refused - bad username or password
 - 6 - Connection refused - not authorized
+
+{% include note.html content="The Error Code will remain showing the status of the last connection even when the MQTT is disabled.."%}
 
 ##  MQTT Formats
 The MQTT Agent in the Smart Gateway has four data format options.
@@ -105,5 +110,38 @@ Example Payloads:
 [probe id] = [{"light":"78.4"},{"unit_of_measurement":"Lux"}]
 
 ### SparkplugBv3.0
-This format follows the specifications detailed at [Sparlplug.org](https://sparkplug.eclipse.org/)
+This format follows the specifications detailed at [Sparkplug.eclipse.org](https://sparkplug.eclipse.org/). Messages are encrypted during transmission from the sender to the receiving application. Data seen and processed by the broker is encrypted.
+
 The JemRF adaptation is the in the default Custom subscribe: spBv1.0/JemRFDevices
+
+Sparkplug messages in JSON format shown below. The first timestamp is message send time, and the second timestamp is the sensor sampled time.
+
+#### Format Template
+{
+    "timestamp": 1486144502122,
+    "metrics": [{
+        "name": "My Metric",
+        "alias": 1,
+        "timestamp": 1479123452194,
+        "dataType": "String",
+        "value": "Test"
+    }],
+    "seq": n
+}
+
+#### JemRF Example for temperature sensor 87
+
+For this example for temperature sensor with the Id of 87, the topic would be **//spBv1.0/JemRFDevices/DDATA/JRFB827EBC0F6D0/87**
+
+The data value example would be:
+
+{
+    "timestamp": 1486144502122,
+    "metrics": [{
+        "name": "Temperature",
+        "timestamp": 1479123452194,
+        "dataType": "Float",
+        "value": "25.4"
+    }],
+    "seq": 2
+}
