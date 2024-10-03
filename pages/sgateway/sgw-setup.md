@@ -8,9 +8,11 @@ summary: JemRF Smart Gateway Setup Tab.
 ---
 
 # Setup Details
+The Smart Gateway has an internal WiFi network used to configure and manage the gateway. On the bottom of the Smart Gateway unit is a label with the SSID. The SSID starts with JEM and is followed by an string of upper case  letters and numbers. The default password is **WiFirelay**.  Once connected open a web browser and go to http://192.168.4.1 and the Setup Details page will appear. Once the Gateway in on the local network, it can be accessed directly using its local network address.
+
 The Setup Details is the home screen and is used to configure the Gateway for connection to the local network, the URL for the monitoring Server, to change reported temperature readings, select the RF receiver channel and  monitor the health of the Gateway.
 
-To get the Gateway online and connected to the local network, there are three options. Option 1 is to configure the connection to the local WiFi. The second option is using the hardwired Ethernet interface. The third option is a Cell Modem plugged into the USB-A port on the back of the Gateway.
+To get the Gateway online and connected to the local network, there are three options. Option 1 is to configure **a future** connection to the local WiFi. The second option is using the hardwired Ethernet interface. The third option is a Cell Modem plugged into the USB-A port on the back of the Gateway.
 
 The **Server** is the web service that measurements are sent to, which are normally the JemRF Monitoring Services.
 
@@ -20,11 +22,11 @@ If connecting to JemRF Monitoring Services, the **Token** is your unique identif
 
 Measurements are taken in centigrade, but there is the option to send temperature readings in **Fahrenheit** instead.
 
-The **RF Receiver Channel #** is to #support# multiple gateways and have sensors only report to the gateway that is on the same channel. Using different channels, {there are 10 channels available) can reduce data collisions if there are lots of sensors in a common area.
+The **RF Receiver Channel #** is to support multiple gateways and have sensors only report to the gateway that is on the same channel. Using different channels, (there are 10 channels available) can reduce data collisions if there are lots of sensors in a common area.
 
 Firmware updates can be automatic, semi-automatic and manual. If the **Automatic Update** is then the Manual Update option appears. The Update button will bring up Figure 2.
 
-System Health details: Green indicates the system is working. The Details button shows more details on the System Health shown in Figure 3.
+System Health details: Green indicates the system is working. The Details button shows more details on the System Health shown in Figure 3 and detailed in the **Gateway System Health Page**.
 
 
 <img src="images/sgw-setup.png" width="425"/>
@@ -38,7 +40,7 @@ If the option is No, a second screen appears to pull updates or upload updates t
 The current release is in the status bar at the bottom of the page. Updates on the latest releases are in the Update Information section. The Gateway must have an Internet connection to show the updated information.
 There is also an upload updates option for Gateway without an Internet connection.
 
-## The Gateway System Health Page
+## Gateway System Health Page
 <img src="images/sgw-health.png" width="425"/>
 **Figure 3  System Health tab.**
 
@@ -65,10 +67,12 @@ Sensors can generate temporary alerts and then return to normal. A Reset button 
 <p style="text-align: center;">**Figure 4  System Health tab showing Sensor 93 is having issues.**</p>
 
 ### Section 3
-The third section of the Health page shows the internal temperatures of the Processors. The system will generate a fault warning when the temperatures emceed 162 F and shutdown at 170 F. The RF Receiver status shows the current count of messages processed. This is the same total count shown at the bottom of the Sensor List page.  It also shows a restart date for the RF processor if an error is detected, and the RF receiver has to be reset. If this date differs from the Sensor Receiver date time it could indicate an internal error was corrected.
+The third section of the Health page shows the internal temperatures of the Processors (**Process Temp**). The system will generate a fault warning when the temperatures emceed 162 F and shutdown at 170 F.
+
+The **RF Receiver Status** shows the current count of messages processed. This is the same total count shown at the bottom of the Sensor List page.  It also shows a restart date for the RF processor if an error is detected, and the RF receiver has to be reset. If this date differs from the Sensor Receiver date time it could indicate an internal error was corrected.
 
 ### Section 4
-The last section enables sending system health messages to the MQTT Broker A zero (0) disables the function. Values are in minutes.  The full set of system health messages is sent on the initial connection. After that, only the health messages indicating a change in status are sent.
+The last section (**Send MQTT Status**) enables sending system health messages to the MQTT Broker for remote monitoring. A zero (0) disables the function. Thw value is in minutes.  The full set of system health messages is sent on the initial connection. After that, only the health messages indicating a change in status are sent.
 
 Changes in status include:
 - Internal applications failing or restarting.
@@ -76,4 +80,4 @@ Changes in status include:
 - No data being processed for 5 minutes
 - Connection to the HTTP or MQTT server is lost
 
-[Contine to Network Setup ](sgw-network.html)
+[Continue to Network Setup ](sgw-network.html)
