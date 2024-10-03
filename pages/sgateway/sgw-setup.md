@@ -8,17 +8,19 @@ summary: JemRF Smart Gateway Setup Tab.
 ---
 
 # Setup Details
-The Setup Details is the home screen and is used to configure the operation features of the Gateway.
+The Setup Details is the home screen and is used to configure the Gateway for connection to the local network, the URL for the monitoring Server, to change reported temperature readings, select the RF receiver channel and  monitor the health of the Gateway.
 
-To connect to the local network, there are two options. Option 1 is to configure the connection to the local WiFi. The second option is using the hardwired Ethernet interface.
+To get the Gateway online and connected to the local network, there are three options. Option 1 is to configure the connection to the local WiFi. The second option is using the hardwired Ethernet interface. The third option is a Cell Modem plugged into the USB-A port on the back of the Gateway.
 
-The remote server uses web services to send measurements, which are normally the JemRF Monitoring Services.
+The <b>Server</b> is the web service that measurements are sent to, which are normally the JemRF Monitoring Services.
 
-Measurements are taken in centigrade. There is the option to send temperature readings in Fahrenheit instead.
+Measurements are taken in centigrade, but there is the option to send temperature readings in Fahrenheit instead.
 
-There is an option for automatic updates.
+The RF Receiver Channel # is to support multiple gateways and have sensors only report to the gateway that is on the same channel. Using different channels, {there are 10 channels available) can reduce data collisions if there are lots of sensors in a common area.
 
-System Health details: Green indicates the system is working. The Details button shows more details on the System Health.
+Firmware updates can be automatic, semi-automatic and manual. If the Automatic Update is then the Manual Update option appears. The Update button will bring up Figure 2.
+
+System Health details: Green indicates the system is working. The Details button shows more details on the System Health shown in Figure 3.
 
 
 <img src="images/sgw-setup.png" width="425"/>
@@ -70,4 +72,4 @@ Changes in status include:
 - No data being processed for 5 minutes
 - Connection to the HTTP or MQTT server is lost
 
-
+[Contine to Network Setup ](sgw-network.html)
