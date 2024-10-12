@@ -42,6 +42,11 @@ Figure 3 show the status time to complete of a network IP change.
 
 {% include note.html content="Only one change can be made at a time. A change must complete (**No Message in upper left of screen**) before making an additional change."%}
 
+Figure 4 show the Network Details using local network router to provide the network details.  When using local dynamic network settings, the **DNS** field will show the DNS server(s) the Gateway is now using.  It also show **Disable AP Mode** is enabled turning off the Gateways internal WiFi AP.
+
+
+
+<img src="images/sgw-dhcp-no-ap.png" width="425"/>
 
 [Continue to Sensor List](sgw-sensorlist.html)
 

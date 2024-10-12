@@ -24,6 +24,8 @@ Measurements are taken in centigrade, but there is the option to send temperatur
 
 The **RF Receiver Channel #** is to support multiple gateways and have sensors only report to the gateway that is on the same channel. Using different channels, (there are 10 channels available) can reduce data collisions if there are lots of sensors in a common area.
 
+The **Allow Tech Support** is to enable remote tech support from JemRF Support. Internet connection is required. This option enables or disables the private VPN. It requires the Gateway to have Internet access and allows JemRF Support access to work technical issues on the Gateway.
+
 Firmware updates can be automatic, semi-automatic and manual. If the **Automatic Update** is then the Manual Update option appears. The Update button will bring up Figure 2.
 
 System Health details: Green indicates the system is working. The Details button shows more details on the System Health shown in Figure 3 and detailed in the **Gateway System Health Page**.
