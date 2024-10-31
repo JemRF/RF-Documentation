@@ -74,11 +74,11 @@ The third section of the Health page shows the internal temperatures of the Proc
 The **RF Receiver Status** shows the current count of messages processed. This is the same total count shown at the bottom of the Sensor List page.  It also shows a restart date for the RF processor if an error is detected, and the RF receiver has to be reset. If this date differs from the Sensor Receiver date time it could indicate an internal error was corrected.
 
 ### Section 4
-The last section (**Send MQTT Status**) enables sending system health messages to the MQTT Broker for remote monitoring. A zero (0) disables the function. Thw value is in minutes.  The full set of system health messages is sent on the initial connection. After that, only the health messages indicating a change in status are sent.
+The last section (**Send MQTT Status**) enables sending system health messages to the MQTT Broker for remote monitoring. A zero (0) disables the function. The value is in minutes.  The full set of system health messages is sent on the initial connection. After that, only the health messages indicating a change in status are sent.
 
 Changes in status include:
 - Internal applications failing or restarting.
-- Temperatures above warning limit
+- Internal CPU Temperatures above warning limit
 - No data being processed for 5 minutes
 - Connection to the HTTP or MQTT server is lost
 

@@ -34,6 +34,10 @@ The image below shows the MQTT Details page with a successful connection to the 
 
 {% include note.html content="The Error Code will remain showing the status of the last connection even when the MQTT is disabled.."%}
 
+
+{% include note.html content="
+For changes to be made it is best to Disable MQTT before making changes."%}
+
 ##  MQTT Formats
 The MQTT Agent in the Smart Gateway has four data format options.
 - 1 - JemRF             - Send data using the device Id as part of the subscription and the raw data sent from the sensor.
@@ -145,3 +149,20 @@ The data value example would be:
     }],
     "seq": 2
 }
+
+## Custom Device Id
+A special feature of the Smart Gateway allows for changing the Device Id.
+By changing the device Id allows replacing an existing Gateway and being able to set the Device Id. The result is the MQTT subscribe reference remains the same event with a different hardware device.
+To change the Device Id, you must first Enable the option as shown in Figure 2.
+
+{% include note.html content="
+For changes to be made it is best to Disable MQTT before making changes."%}
+
+
+<img src="images/sgw-mqtt-customid.png" width="425"/>
+**Figure 2  The MQTT Enable change Device Id screen.**
+
+Once Enabled you can change the Device Id.
+
+<img src="images/sgw-mqtt=setid.png" width="425"/>
+**Figure 3 The MQTT Option to change Device Id screen.**
