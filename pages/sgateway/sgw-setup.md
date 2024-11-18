@@ -58,6 +58,8 @@ The Health Check application generates the status used to determine the health o
 
 The Status Light application monitors the Gateway's health and updates the LEDs with their status. It also controls the external Relay state, which reflects the Gateway's health.
 
+If any application fails, the **Green** window will turn **Red**.
+
 ### Section 2
 Section 2, the Sensor Status section, presents alerts for any sensors that are having issues.  This is used to detect an issue with a sensor with low battery power. It has only enough power to make an initial connection but not enough to send measurements. The result is the sensor keeps sending Starting messages that can block measurements from working sensors.
 The screenshot below shows sensor 93 is having problems.
@@ -69,13 +71,13 @@ Sensors can generate temporary alerts and then return to normal. A Reset button 
 <p style="text-align: center;">**Figure 4  System Health tab showing Sensor 93 is having issues.**</p>
 
 ### Section 3
-The third section of the Health page shows the internal temperatures of the Processors (**Process Temp**). The system will generate a fault warning when the temperatures emceed 162 F and shutdown at 170 F.
+The third section of the Health page shows the internal temperatures of the Processors (**Process Temp**). The system will generate a fault warning and the display will turn **Yellow** when the temperatures emceed 160&deg;F and **Red** when the temperature reaches 170&deg;F. System will shutdown at 175&deg;.
 
 The **RF Receiver Status** shows the current count of messages processed. This is the same total count shown at the bottom of the Sensor List page.  It also shows a restart date for the RF processor if an error is detected, and the RF receiver has to be reset. If this date differs from the Sensor Receiver date time it could indicate an internal error was corrected.
 
 ### Receive Data Status
 
-When no data has been received by the Gateway in over 20 minutes and all other features are working.
+When no data has been received by the Gateway in over 20 minutes and all other features are working the RF Receive Status will turn from **Green** to **Orange**.
 The image blow show the status the Health Status page with the Warning Color on the Rx Status Page.
 
 <img src="images/sgw-no-receive.png" width="425"/>
