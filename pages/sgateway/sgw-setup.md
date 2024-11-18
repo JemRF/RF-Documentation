@@ -73,6 +73,14 @@ The third section of the Health page shows the internal temperatures of the Proc
 
 The **RF Receiver Status** shows the current count of messages processed. This is the same total count shown at the bottom of the Sensor List page.  It also shows a restart date for the RF processor if an error is detected, and the RF receiver has to be reset. If this date differs from the Sensor Receiver date time it could indicate an internal error was corrected.
 
+### Receive Data Status
+
+When no data has been received by the Gateway in over 20 minutes and all other features are working.
+The image blow show the status the Health Status page with the Warning Color on the Rx Status Page.
+
+<img src="images/sgw-no-receive.png" width="425"/>
+
+
 ### Section 4
 The last section (**Send MQTT Status**) enables sending system health messages to the MQTT Broker for remote monitoring. A zero (0) disables the function. The value is in minutes.  The full set of system health messages is sent on the initial connection. After that, only the health messages indicating a change in status are sent.
 
