@@ -89,7 +89,7 @@ The last section (**Send MQTT Status**) enables sending system health messages t
 Changes in status include:
 - Internal applications failing or restarting.
 - Internal CPU Temperatures above warning limit
-- No data being processed for 5 minutes
+- No data being processed for 6 minutes
 - Connection to the HTTP or MQTT server is lost
 
 [Continue to Network Setup ](sgw-network.html)
