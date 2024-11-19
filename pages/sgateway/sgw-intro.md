@@ -73,7 +73,7 @@ An optional feature is a dry contact interface to alert external facility contro
 - The Blue Online is connected to the Common if the Gateway is working correctly.
 - The Orange Off/Failure is connected to Common if the Gateway is powered Off or there is an internal Alarm.
 
-<img src="images/sgw-interface.png" width="425"/>
+<img src="images/sgw-interface.jpg" width="425"/>
 
 The levers lift and lock open to allow wire to be inserted into the connector then closed to lock down on the wire. Wire sizes supported range from as small as 28 gauge up to 12 gauge. Connection is designed for low voltage and low current AC or DC monitoring systems.
 
