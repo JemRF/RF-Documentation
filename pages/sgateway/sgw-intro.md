@@ -51,6 +51,21 @@ Once connected to the Gateway, there are four primary detail settings tabs.
 
 Each tab guides the user when making modifications. The forms indicate changes by turning the edited field and the Save button yellow, signaling that the changes have not been saved.
 
+## Status Lights
+On the front panel are three display lights to indicate operational status of the gateway.
+
+The **Gateway Ready** light indicates all applications are operational and it is online and ready to process data. If the **Gateway Ready** is off indicates there is an internal error. Internal errors will cause the **External Connection** status will change from Online to Off/Failure.
+
+The **Gateway Ready** will go out for these operation issues:
+- There has been no new data received in over 6 minutes.
+- MQTT Enabled but connection the MQTT Broker has failed for more than 2 minutes.
+- If the reporting Server is assigned but not working
+- Internal temperature is above 160&deg;F
+
+The **Server Online** light indicates the connection to the monitoring server is connected and operational. If off, that indicates the server is not set or not connected.
+
+The **MQTT Online** light indicates the connection to the MQTT Broker is operational and working. If off, then either MQTT is not Enabled or the connection to the MQTT Broker has been lost.
+
 ## External Connections
 The image below shows the Smart Gateway Interface Panel. It offers an option for USB-C Power and an Ethernet Interface, which can provide power when connected to a POE switch.
 
@@ -61,4 +76,11 @@ An optional feature is a dry contact interface to alert external facility contro
 <img src="images/sgw-interface.png" width="425"/>
 
 The levers lift and lock open to allow wire to be inserted into the connector then closed to lock down on the wire. Wire sizes supported range from as small as 28 gauge up to 12 gauge. Connection is designed for low voltage and low current AC or DC monitoring systems.
+
+The external contacts are connected between Common and Online if all is working correctly. On a failure condition, the contacts open between Common and Online and close between Common and Off/Failure.
+
+Failure conditions are:
+- Internal application failure detected.
+- Internal temperature is above 160&deg;F
+- The network connection is lost
 

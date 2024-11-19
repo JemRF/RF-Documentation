@@ -71,7 +71,7 @@ Sensors can generate temporary alerts and then return to normal. A Reset button 
 <p style="text-align: center;">**Figure 4  System Health tab showing Sensor 93 is having issues.**</p>
 
 ### Section 3
-The third section of the Health page shows the internal temperatures of the Processors (**Process Temp**). The system will generate a fault warning and the display will turn **Yellow** when the temperatures emceed 160&deg;F and **Red** when the temperature reaches 170&deg;F. System will shutdown at 175&deg;.
+The third section of the Health page shows the internal temperatures of the Processors (**Process Temp**). The system will generate a fault warning and the display will turn **Yellow** when the temperatures emceed 160&deg;F and **Red** when the temperature reaches 170&deg;F. System will shutdown at 175&deg;F.
 
 The **RF Receiver Status** shows the current count of messages processed. This is the same total count shown at the bottom of the Sensor List page.  It also shows a restart date for the RF processor if an error is detected, and the RF receiver has to be reset. If this date differs from the Sensor Receiver date time it could indicate an internal error was corrected.
 
