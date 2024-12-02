@@ -47,6 +47,8 @@ topnav_dropdowns:
           url: /flex.html
         - title: Flex Development Module
           url: /developmentboard.html
+        - title: Wireless Power Detect Sensor
+          url: /wireless_power_sensor.html
         - title: IoT Gateway
           url: /iot_gateway.html
         - title: WiFi Gateway
