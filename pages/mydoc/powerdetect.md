@@ -21,7 +21,6 @@ Installation is easy, just plug it into the power circuit you want to monitor.
 
 {% include image.html file="IMG_4955.jpg" alt="Wireless Power Detect Sensor"%}
 
-
 ## Testing
 The sensor Id is at the bottom of the label. Using the JemRF python application rf_serial.py or the sensor list on a WiFi Gateway, you will see the sensor appear in the list.
 
@@ -30,24 +29,21 @@ The sensor Id is at the bottom of the label. Using the JemRF python application 
 
 ### Electrical
 * Standard US AC outlet for 120 VAC.
+* 2 pin AC US prongs
 
 ### Functional
 * Standard JemRF wireless sensors, refer [RF Communications section](rf_basics.html) for all the details
-* [Highly configurable](configuration_overview.html)
-* Opening or closing the switch will cause the device to come out of sleep mode, transmit a reading and then go back to sleep
-* For Flex modules use Pin 6 and Pin 10 to connect to the external switch
+* Power status is provided with On and Off State messages when the device to come out of sleep mode, transmit a reading and then go back to sleep
 
 ### Messaging details
-* BUTTONON- (sent when power is lost)
-* BUTTONOFF (sent when power is restored)
-* STATEON- (the switch state is sent every INYVL minutes indicating power is lost)
+* BUTTONON- (sent when power is Lost)
+* BUTTONOFF (sent when power is Restored)
+* STATEON- (the switch state is sent every INYVL minutes indicating power is Off)
 * STATEOFF (the switch state is sent every INTVL minutes indicating power is On)
-* BUTTON (the BUTTON command requests the the current power state from the sensor)
 
 
 ### Physical
 * 3 inch x 2 inch x 2 inch
-* 2 pin AC prongs
 
 ## Default configuration
 * Type 1 ([Type](types.html) 1 sensor)
