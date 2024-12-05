@@ -28,8 +28,9 @@ Once update is complete:
 
 ### Manual Update using Windows Application
 
-1. Connect FT232RL FTDI USB 3.3V/5.5V module to the WIFI sensor (set jumper to 3.3V) and the USB to your Windows PC.
+1.  Connect FT232RL FTDI USB 3.3V/5.5V module to the WIFI sensor (set jumper to 3.3V) and the USB to your Windows PC.
 
+{% include image.html file="IMG_5083 (320x240).jpg" alt="FTDI "%}
 {% include image.html file="IMG_5083 (320x240).jpg" alt="FTDI "%}
 {% include note.html content="For WIFI Hardware Release 4.0 boards and newer
     the 3.3V FTDI can plug directly into the header on the PCB with out jumpers. The TX and RX are cross over was fixed."%}
