@@ -75,6 +75,6 @@ Release Notes:
 
 ### Firmware and Programmer Downloads
 
-[Download bulk Erase Image ](https://projects.privateeyepi.com/downloads/erase_flash.bin )
+[Download bulk Erase Image ](firmware\erase_flashc6c4.bin)
 
-[Download ESP 8266 Flash Programmer ](https://projects.privateeyepi.com/downloads/esp8266_flasher.zip )
+[Download ESP 8266 Flash Programmer ](firmware\esp8266_flashere381.zip )

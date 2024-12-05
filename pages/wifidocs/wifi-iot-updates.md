@@ -66,7 +66,8 @@ A Reset after install is required.
 ### Version 3.4.8 (9/03/2024)  (Current Release)
   - Add Hide passwords with option to show
   - Fix sending GPIO changes out MQTT when not connected to Monitoring Server
-[WiFi 3.4.8 ](firmware\wifi-sensor\WIFIv4_300.3.4.8.bin)
+
+[Download Release WiFi 3.4.8 ](firmware\wifi-sensor\WIFIv4_300.3.4.8.bin)
 
 ### Version 3.4.6 (5/17/2024)  (Current Release)
   - Fix JSON MQTT format
@@ -206,6 +207,6 @@ where PinNumber is the GPIO number (e.g. 14)
 
 ### Firmware and Programmer Downloads
 
-[Download bulk Erase Image ](https://projects.privateeyepi.com/downloads/erase_flash.bin )
+[Download bulk Erase Image ](firmware\erase_flashc6c4.bin)
 
-[Download ESP 8266 Flash Programmer ](https://projects.privateeyepi.com/downloads/esp8266_flasher.zip )
+[Download ESP 8266 Flash Programmer ](firmware\esp8266_flashere381.zip )
