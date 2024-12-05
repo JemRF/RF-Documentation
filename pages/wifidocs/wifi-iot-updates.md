@@ -34,8 +34,7 @@ Once update is complete:
 {% include note.html content="For WIFI Hardware Release 4.0 boards and newer
     the 3.3V FTDI can plug directly into the header on the PCB with out jumpers. The TX and RX are cross over was fixed."%}
 
-{% include image.html file="IMG_5081 (212x320).jpg" alt="FTDI End of jumpers"%} with Jumpers for older boards
-{% include image.html file="wifi-Programmer.jpg alt="Plugged In, no jumpers"%} No jumpers for V4.0 boards and up.
+{% include image.html file="IMG_5081 (212x320).jpg" alt="FTDI End of jumpers"%}
 {% include note.html content="Sensors using PCB before WIFI Hardware Release 4.0 (Aug 2021), Make sure you have crossed over TX and RX as shown by the red circle in the diagram. "%}
 
 
