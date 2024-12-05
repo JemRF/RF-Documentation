@@ -37,23 +37,26 @@ Once update is complete:
 {% include image.html file="IMG_5081 (212x320).jpg" alt="FTDI End of jumpers"%}
 {% include note.html content="Sensors using PCB before WIFI Hardware Release 4.0 (Aug 2021), Make sure you have crossed over TX and RX as shown by the red circle in the diagram. "%}
 
-
 2. On the Sensor, set dip switch 3 and 4 (marked FLASH) to ON
 
 {% include image.html file="IMG_5086 (320x282)8750.jpg" alt="Sw for Flash Update"%}
+
 3. Check the device manager to determine the com port assigned to the FTDI
 
 {% include image.html file="ftdi control panel (640x463)f823.jpg" alt="Device Manager Serial Port Select"%}
+
 4. Download, unzip and run the ESP Flasher (file attached below)
 
 5. Set the COM port, select the bin file (files attached below)
 
 {% include image.html file="ESP Download1d59.png" alt="Flash Downloader"%}
+
 6. Reset the device by setting dip switch 1 ON then OFF, then click Download.
 -- Note: Messages will start tracking the install which will take about a minute.
 
 {% include image.html file="IMG_5087 (320x277)84b8.jpg" alt="Sw for Flash and Reset"%}
 {% include image.html file="IMG_5086 (320x282)8750.jpg" alt="Sw for Flash Update"%}
+
 7. The device will automatically restart after the new firmware is uploaded. Set dip switches 3 and 4 back to the OFF position.
 
 8. Its generally a good idea to reset the device using the Reset on the Login Details screen. Sometimes when we add new code we use different parts of the device memory so you may see erratic data displayed on the config screens. Resetting the device will reset the memory on the device to work with the new version. If the config screens are not visible you can also reset the device using the URL : http://192.168.4.1/reset
