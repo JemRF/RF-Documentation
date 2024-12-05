@@ -66,6 +66,7 @@ A Reset after install is required.
 ### Version 3.4.8 (9/03/2024)  (Current Release)
   - Add Hide passwords with option to show
   - Fix sending GPIO changes out MQTT when not connected to Monitoring Server
+[WiFi 3.4.8 ](firmware\wifi-sensor\WIFIv4_300.3.4.8.bin)
 
 ### Version 3.4.6 (5/17/2024)  (Current Release)
   - Fix JSON MQTT format
@@ -96,17 +97,14 @@ A Reset after install is required.
   - Add - Check-in every 5 minutes, independent of sensor send rate, to show online.
   - Add - Over The Air UPdates, all future updates will be from update Server directly to Sensor.
   - Current OTA release is 3.3.1 which is the official current release. (3.3.1 is same as 3.3.09 with new Version to show Download works.)
-  - Download [WiFi 3.3.09 June 24, 2023](https://projects.privateeyepi.com/WIFI-Sensor/downloads/WIFIv4_3309.bin)
 
 Version 3.2.8 (05/20/2023)
   - Update Fix C to F limit check. If the sensor is reporting Fahrenheit, the max temperature is 125F and not 230F. The result is the sensor fails to report any temperature over 125F. The Sensor using Celsius reports correctly up to 125C.
   - Update for subfolder support in URL
   - Add The WiFi SSID dropdown display local WiFI with signal strength. You can select an SSID from the list or type in a private SSID.
-  - Download [WiFi 3.2.8 May 20, 2022](https://projects.privateeyepi.com/WIFI-Sensor/downloads/WIFIv4_328.bin)
 
 Version 3.2.0 (03/8/2022)
   - Update for slower sensor causing reads errors
-  - Download [WiFi 3.2.0 March 8, 2022](https://projects.privateeyepi.com/WIFI-Sensor/downloads/WIFIv4_320.bin)
 
 Version 3.1.1 (01/19/2022)
   - Detect bad sensor reads and retry before sending
@@ -205,4 +203,9 @@ where PinNumber is the GPIO number (e.g. 14)
 1.0
  - Beta Release
 
-[WiFi 3.4 Jan 11, 2024](https://projects.privateeyepi.com/WIFI-Sensor/downloads/WIFIv4_3309.bin)
+
+### Firmware and Programmer Downloads
+
+[Download bulk Erase Image ](https://projects.privateeyepi.com/downloads/erase_flash.bin )
+
+[Download ESP 8266 Flash Programmer ](https://projects.privateeyepi.com/downloads/esp8266_flasher.zip )

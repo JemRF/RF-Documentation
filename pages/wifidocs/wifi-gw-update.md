@@ -55,24 +55,23 @@ On the Gateway, set dip switch 3 and 4 (marked FLASH) to ON
 
 
 Release Notes:
-#### Version 2.3.0 (12/27/2022)
+#### Version 2.4.9 (06/20/2024)
 - Support MQTT Broker user defined publish and Client Id
 - Sensor List show GMT time when refreshing
 
-[Download Release 2.3.0 ](https://projects.privateeyepi.com/downloads/wifigw8266-2-3-0.bin )
+[Download Release 2.4.9 ](firmware\wifi-gw\wifigw8266.2.4.9.bin )
 
+#### Version 2.3.0 (12/27/2022)
+- Support MQTT Broker user defined publish and Client Id
+- Sensor List show GMT time when refreshing
 
 #### Version 2.2.0 (07/27/2022)
 - Load for Version 2 hardware
 - Supports web firmware download and Update from Setup Page
 - Supports MQTT Agent to send to MQTT Broker
 
-
-[Download Release 2.2.0 ](https://projects.privateeyepi.com/downloads/wifirelay-2-2-0.bin )
 #### Version 1.1.5 (03/22/2022)
 - Operational Baseline Load
-
-[Download Release 1.1.5 ](https://projects.privateeyepi.com/downloads/wifirelay-1-1-5.bin )
 
 ### Firmware and Programmer Downloads
 

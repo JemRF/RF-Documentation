@@ -1,9 +1,9 @@
 ---
 title: Wireless Power Detect Sensor
-keywords: wireless switch, switch, sensor, door, window
+keywords: wireless power detector AC sensor
 last_updated: Dec 2, 2024
 tags:
-summary: "This page explains the JEMRF Wireless Power Detect Sensor"
+summary: "This page explains the JemRF Wireless Power Detect Sensor"
 sidebar: mydoc_sidebar
 permalink: wireless_power_sensor.html
 folder: mydoc
