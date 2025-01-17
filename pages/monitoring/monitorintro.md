@@ -10,23 +10,35 @@ folder: monitoring
 ---
 
 ## Introduction to JemRF Monitoring System
-**JemRF Monitoring (Monitoring)** provides a professional monitoring site scaled to support organizations or businesses of all sizes. It is comprised of three components: The Sensor that takes the measurment, The Gateway that reports the measurment to the monitoring system, and The Cloud Monitoring and reporting part. The Sensor is designed to measure and monitor the temperature of a desired location (i.e. door, refrigerator, freezer, or water pipes). The Sensor reports the measurements a Gateway. The Gateway logs the information, appends a date, and location code, then sends the information to the Monitoring Cloud. The cloud is the user interface where the information is monitored. The user can set alerts for out of tolerance samples, or simply plot the last days of measurements.
+**JemRF Monitoring (Monitoring)** delivers a professional, scalable monitoring solution designed to meet the needs of businesses and organizations of all sizes. The system is built on three essential components:
 
-This document is on the JemRF Monitoring Cloud it will help with getting started, entering your business information, managing who can access your information and much more.
+**The Sensor:** Is the device that measures and monitors environmental conditions, such as the temperature in specific areas like doors, refrigerators, freezers, or water pipes.
 
-The web Monitoring provide free accounts with every purchase to get started. With services available and adaptable for operating from multiple locations.
+**The Gateway:** The sensor transmits collected data to a **Gateway**, which logs the information, appends a timestamp and location code, and forwards it to the monitoring system.
 
+**The Cloud Monitoring System:** The user interface, the cloud platform provides real-time monitoring, allowing users to set alerts for out-of-tolerance conditions and visualize historical data with intuitive plotting tools.
+
+### Features of JemRF Monitoring:
+**Monitoring:** The viewing of detailed measurements for each sensor.
+Visual Indicators: Graphic icons display door, window, and switch states (open or closed).
+**Cross-Device Compatibility:** Access your monitoring dashboard seamlessly from desktops, tablets, and most smartphones.
+
+### Getting Started
+#### Create an Account
 If you have not created an account, for the instructions [Click here to Create an Account](jemrfregister.html).
+The cloud Monitoring provide a free accounts with every purchase to get started. With services available and adaptable for operating from multiple locations. Part of registration is entering your business information, managing who can access your information and much more.
+
 
 After you have created an account and logged in, Monitoring starts by resenting the user with their Dashboard. The Monitoring site works on desktops, tablets and most phones. It shows a graphic scale for each of your temperature sensors. It also provide graphic icons to show doors, windows and switches in open and closed states.
 
 {% include image.html file="monitor-dashboard.png" alt="PEP Login Page"%}
 
+### The Sensors
 The Sensor tab is used to set the alarm alerts values for upper and lower limits.
 
 {% include image.html file="monitor-sensorlist.png" alt="PEP Login Page"%}
 
-The Sensor tab details
+**The Sensor tab details**
 1. Shows if the sensor alarms have been muted
 2. Shows an Icon when you move the mouse pointer over that spot, to Plot the Sensor.
 3. Shows an Icon for the Signal Strength of that sensor by the receiver.
@@ -34,33 +46,33 @@ The Sensor tab details
 
 {% include image.html file="monitor-sensorlist-details.png" alt="PEP Login Page"%}
 
-Access the Sensor Edit
+**Access the Sensor Edit**
 {% include image.html file="monitor-sensor-menu.png" alt="PEP Login Page"%}
 
-Selecting the Sensor Information tab will show
+**Selecting the Sensor Information tab will show**
 
 {% include image.html file="monitor-sensor-information.png" alt="PEP Login Page"%}
 
-Selecting sensor History will show the actual readings for the last few hours
+**Selecting sensor History will show the actual readings for the last few hours**
 {% include image.html file="monitor-sensor-history.png" alt="PEP Login Page"%}
 
-The Edit button shows an edit window to change the sensor parameters.
+**The Edit button shows an edit window to change the sensor parameters.**
 {% include image.html file="monitor-sensor-edit.png" alt="PEP Login Page"%}
 
-## Gateway
+### Gateway
 
 Selecting the Gateway Tab at the top will present a list of know Gateways for that account.
 
 {% include image.html file="monitor-gateway.png" alt="PEP Login Page"%}
 
-The menu button will list the option for the gateway.
+**The menu button will list the option for the gateway.**
 1. Show Gateway Information
 2. Edit the Gateway Settings
 3. Remove the Gateway from the account list
 
 {% include image.html file="monitor-gateway-menu.png" alt="PEP Login Page"%}
 
-The Gateway Information shows:
+**The Gateway Information shows:**
 1. Status Active/InActive
 2. When was the last time the Gateway did a Check-in
 3. The Alert Timeout is how many minutes is a Gateway or Sensor reports in before it is flagged as Off-line
@@ -70,7 +82,7 @@ The Gateway Information shows:
 
 {% include image.html file="monitor-gateway-information.png" alt="PEP Login Page"%}
 
-The Edit option will allow you to move the Gateway to another account (if you manage more that one).
+The **Edit option** will allow you to move the Gateway to another account (if you manage more that one).
 1. You can Assign or Edit the Location information for that Gateway
 2. The Alert Timeout is used to trigger an Offline event for the Gateway or Sensors being processed by that Gateway.
 The default Alert Timeout is 5 minutes. The value should be twice the normal checking time for a sensor plus one minute.
@@ -81,7 +93,7 @@ updated to be missed and not trigger an Offline alert until the second message i
 
 {% include image.html file="monitor-gateway-edit.png" alt="PEP Login Page"%}
 
-## Communications
+### Communications
 Selecting the Communication tab will present the current list of people contacted on and events in their account(s),
 
 {% include image.html file="monitor-communications.png" alt="PEP Login Page"%}
@@ -98,3 +110,6 @@ You select the contact, when you want the summary and if you want the summary fo
 
 4. System Alerts is the contact assigned to get Server broadcast messages, such as system down-time event, or update event.
 If no one is assigned, no one gets notified for that account.
+
+## Tips on Monitoring
+When setting monitoring, most installation will require some tuning before going live with monitoring. For example most coolers have unique custom temperature swings. So setting the upper and lower alert values may also include time above or below the limits before sending alerts.
