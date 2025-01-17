@@ -49,3 +49,6 @@ Your token will now be shown where the blue line is.  You can now copy the token
 ## Monitoring
 When you get your device configured. It will start sending to the monitoring service. An icon representing your sensor will automatically appear on the **Dashboard**. Using the **Sensor** tab, you can select each sensor and edit the control ranges and give the sensors a name or location code if you want.
 
+## User Guide
+[Go to the JemRF Monitoring Guide.]{https://documents.jemrf.com/monitorintro.html}
+

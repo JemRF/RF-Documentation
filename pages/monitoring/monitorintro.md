@@ -10,12 +10,15 @@ folder: monitoring
 ---
 
 ## Introduction to JemRF Monitoring System
-JemRF Monitoring provides a professional monitoring site scaled to support organizations or businesses of all sizes.
-It provide free accounts with every purchase to get started. With services available and adaptable for operating from multiple locations.
+**JemRF Monitoring (Monitoring)** provides a professional monitoring site scaled to support organizations or businesses of all sizes. It is comprised of three components: The Sensor that takes the measurment, The Gateway that reports the measurment to the monitoring system, and The Cloud Monitoring and reporting part. The Sensor is designed to measure and monitor the temperature of a desired location (i.e. door, refrigerator, freezer, or water pipes). The Sensor reports the measurements a Gateway. The Gateway logs the information, appends a date, and location code, then sends the information to the Monitoring Cloud. The cloud is the user interface where the information is monitored. The user can set alerts for out of tolerance samples, or simply plot the last days of measurements.
 
-If you have not created an account, for the instructions [here](jemrfregister.html).
+This document is on the JemRF Monitoring Cloud it will help with getting started, entering your business information, managing who can access your information and much more.
 
-After you have created an account and logged in, Monitoring starts with the user Dashboard that is phone friendly. It shows a graphic scale for each of your temperature sensors. It also provide graphic icons to show doors, windows and switches in open and closed states.
+The web Monitoring provide free accounts with every purchase to get started. With services available and adaptable for operating from multiple locations.
+
+If you have not created an account, for the instructions [Click here to Create an Account](jemrfregister.html).
+
+After you have created an account and logged in, Monitoring starts by resenting the user with their Dashboard. The Monitoring site works on desktops, tablets and most phones. It shows a graphic scale for each of your temperature sensors. It also provide graphic icons to show doors, windows and switches in open and closed states.
 
 {% include image.html file="monitor-dashboard.png" alt="PEP Login Page"%}
 
