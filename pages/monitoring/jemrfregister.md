@@ -29,7 +29,7 @@ Once validated, your account will be ready for you to login. Go back to the [Wel
 If you have any problems, email: sales @ jemRF.com for help.
 
 ## Getting your Token
-Once your account is ready and you have logged in, follow these steps to get you **Token**. The token is stored in your devices. When the device sends data to the monitoring server, it includes the Token. With the Token the monitoring server know the the data received is for your account.
+Once your account is ready and you have logged in, follow these steps to get you **Token**. Copy and save the token for it is used as part of the setup of your devices. As part of the communications with the monitoring server, when the device sends data to the monitoring server, it includes the Token. With the Token the monitoring server know the the data it just received is for your account.
 
 ### Step 1
 Once logged in, next to your name is a drop down arrow, click on the arrow and a menu will appear:
