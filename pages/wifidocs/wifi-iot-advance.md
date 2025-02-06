@@ -20,6 +20,10 @@ On the "Sensor Config" menu there are a number of options which we will describe
 ### Send To Server
 You used this option to tell the sensor to send the reading from the on board DS18B20 temperature or DHT22 temperature and humidity sensor to be sent to the server.  Click the check box to send, and un-click it to stop sending.
 
+Messages to the server send the Sensor ID (for the DS18B20) sensors with their associated temperature.  Message to the server for the DHT22 sensor will send the temperature and humidity will use the WiFi Device ID (the numbers afer PEP Name).
+
+If the DS18B20 or DHT22 sensor fails then controller will report a temperature 999  to the server.
+
 ### Temperature Send Interval
 This is the interval between temperature reading transmissions. For example if set to 300 then the sensor will send a reading every 5 minutes. Take note that if you are using the free PrivateEyePi service then setting it to below 300 may result in you exceeding the maximum daily message allowance. JemRF Monitoring will support 60 second updates.
 
