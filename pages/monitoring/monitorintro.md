@@ -27,6 +27,7 @@ Visual Indicators: Graphic icons display door, window, and switch states (open o
 #### Create an Account
 If you have not created an account, for the instructions [Click here to Create an Account](jemrfregister.html).\
 The cloud Monitoring provide a free accounts with every purchase to get started. With services available and adaptable for operating from multiple locations. Part of registration is entering your business information, managing who can access your information and much more.
+
 If you have not created an account but are part of existing JemRF customer, the easy option is to have an existing user login to the JemRF Customer Portal and Invite you to join their account.[Click here for details on Inviting a user](jemrfinvite.html)
 
 #### Dashboard
