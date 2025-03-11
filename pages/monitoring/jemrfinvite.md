@@ -1,5 +1,5 @@
 ---
-title: JemRF Monitor Inventation
+title: JemRF Monitor Invitation
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Mar 12, 2025
 tags:
@@ -14,9 +14,8 @@ folder: monitoring
 
 ### The first step is to login to JemRF Customer Portal
 Only existing JemRF customers can login to the JemRF Customer Portal and invite a new user.
-#### To Invite a new user to join your JemRF Monitoring account
-1. Go to [JemRF Customer Portal](https://monitor.jemrf.com) and login as normal.
-2. On the top right, to the right of your name is a drop down arrow, click on the arrow and a menu will appear:
+Go to [JemRF Customer Portal](https://monitor.jemrf.com) and login as normal.\
+On the top right, to the right of your name is a drop down arrow, click on the arrow and a menu will appear:
 {% include image.html file="jemrf-account-select.jpg" alt="Select Account Page"%}
 #### Editing your account User List
 Select the **Edit Account** option and the Account page will appear.
