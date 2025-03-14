@@ -28,9 +28,6 @@ The **Allow Tech Support** is to enable remote tech support from JemRF Support. 
 
 Firmware updates can be automatic, semi-automatic and manual. If the **Automatic Update** is then the Manual Update option appears. The Update button will bring up Figure 2.
 
-System Health details: Green indicates the system is working. The Details button shows more details on the System Health shown in Figure 3 and detailed in the **Gateway System Health Page**.
-
-
 <img src="images/sgw-setup.png" width="425"/>
 **Figure 1  The Setup Details screen.**
 
@@ -43,6 +40,8 @@ The current release is in the status bar at the bottom of the page. Updates on t
 There is also an upload updates option for Gateway without an Internet connection.
 
 ## Gateway System Health Page
+System Health details: Green indicates the system is working. The Details button shows more details on the System Health shown in Figure 3 and detailed in the **Gateway System Health Page**.
+
 <img src="images/sgw-health.png" width="425"/>
 **Figure 3  System Health tab.**
 

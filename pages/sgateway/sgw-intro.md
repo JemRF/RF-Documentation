@@ -54,17 +54,17 @@ Each tab guides the user when making modifications. The forms indicate changes b
 ## Status Lights
 On the front panel are three display lights to indicate operational status of the gateway.
 
-The **Gateway Ready** light indicates all applications are operational and it is online and ready to process data. If the **Gateway Ready** is off indicates there is an internal error. Internal errors will cause the **External Connection** status will change from Online to Off/Failure.
+The **Gateway Ready** light, when **Green** indicates all applications are operational and it is online and ready to process data. If the **Gateway Ready** is off indicates there is an internal error. Internal errors will cause the **External Connection** status will change from Online to Off/Failure. The light will go **RED** to indicate a serious problem.
 
-The **Gateway Ready** will go out for these operation issues:
+The **Gateway Ready** will go **RED** for these operation issues:
 - There has been no new data received in over 6 minutes.
 - MQTT Enabled but connection the MQTT Broker has failed for more than 2 minutes.
 - If the reporting Server is assigned but not working
 - Internal temperature is above 160&deg;F
 
-The **Server Online** light indicates the connection to the monitoring server is connected and operational. If off, that indicates the server is not set or not connected.
+The **Server Online** light when **Green** indicates the connection to the monitoring server is connected and operational. If **RED**, that indicates a lost of connection to the monitoring server. If off, that indicates the monitoring server is not set.
 
-The **MQTT Online** light indicates the connection to the MQTT Broker is operational and working. If off, then either MQTT is not Enabled or the connection to the MQTT Broker has been lost.
+The **MQTT Online** light when **Green** indicates the connection to the MQTT Broker is operational and working. If off, then the MQTT process has not been Enabled. A **RED** light indicates the connection to the MQTT Broker has been lost.
 
 ## External Connections
 The image below shows the Smart Gateway Interface Panel. It offers an option for USB-C Power and an Ethernet Interface, which can provide power when connected to a POE switch.
