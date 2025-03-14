@@ -32,7 +32,7 @@ The image below shows the MQTT Details page with a successful connection to the 
 - 5 - Connection refused - bad username or password
 - 6 - Connection refused - not authorized
 
-{% include note.html content="The Error Code will remain showing the status of the last connection even when the MQTT is disabled.."%}
+{% include note.html content="The Error Code will remain showing the status of the last connection even when the MQTT is disabled."%}
 
 
 {% include note.html content="
@@ -51,7 +51,7 @@ Once connected and working, to change format the MQTT agent must first be disabl
 
 ### JemRF Format
 [JemRF ID]
-- If Temperature Sensor Only
+- If a Temperature Sensor Only
 
 - - [Sensor Id]
 - - - TMPA = 56.07
@@ -118,7 +118,7 @@ This format follows the specifications detailed at [Sparkplug.eclipse.org](https
 
 The JemRF adaptation is the in the default Custom subscribe: spBv1.0/JemRFDevices
 
-Sparkplug messages in JSON format shown below. The first timestamp is message send time, and the second timestamp is the sensor sampled time.
+Sparkplug messages in JSON format are shown below. The first timestamp is message send time, and the second timestamp is the sensor sampled time.
 
 #### Format Template
 {

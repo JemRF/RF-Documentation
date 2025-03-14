@@ -8,7 +8,7 @@ summary: JemRF Smart Gateway Setup Tab.
 ---
 
 # Setup Details
-The Smart Gateway has an internal WiFi network used to configure and manage the gateway. On the bottom of the Smart Gateway unit is a label with the SSID. The SSID starts with JEM and is followed by an string of upper case  letters and numbers. The default password is **WiFirelay**.  Once connected open a web browser and go to http://192.168.4.1 and the Setup Details page will appear. Once the Gateway in on the local network, it can be accessed directly using its local network address.
+The Smart Gateway has an internal WiFi network used to configure and manage the gateway. On the bottom of the Smart Gateway unit is a label with the SSID. The SSID starts with JEM and is followed by an string of upper case letters and numbers. The default password is **WiFirelay**.  Once connected open a web browser and go to http://192.168.4.1 and the Setup Details page will appear. Once the Gateway in on the local network, it can be accessed directly using its local network address.
 
 The Setup Details is the home screen and is used to configure the Gateway for connection to the local network, the URL for the monitoring Server, to change reported temperature readings, select the RF receiver channel and  monitor the health of the Gateway.
 
@@ -18,7 +18,7 @@ The **Server** is the web service that measurements are sent to, which are norma
 
 If connecting to JemRF Monitoring Services, the **Token** is your unique identifier to map the sensor data to your account.
 
-{% include note.html content="If you are using MQTT only then you can leave these fields blank."%}
+{% include note.html content="If you are Only using MQTT, and not a monitoring server, it is recommended you leave these fields blank. That will increase performance and reduce internal error logs reporting failure to connect to the server." %}
 
 Measurements are taken in centigrade, but there is the option to send temperature readings in **Fahrenheit** instead.
 
@@ -48,10 +48,10 @@ System Health details: Green indicates the system is working. The Details button
 Gateway System Health so the health of the internal function that makes the Gateway operational. There are four sections on the System Health page to cover all parts of the Gateway operations.  The screenshot below shows a healthy Gateway.
 
 ### Section 1
-Five internal control applications perform different functions. The HTTP server connection updates the JemRF Monitoring or other remote data collectors service with the Gateway's health and status.
+Five internal control applications perform different functions. The HTTP server connection updates JemRF Monitoring or other remote data collectors service with the Gateway's health and status.
 The Sensor Receiver listens for and logs the messages received from the sensors. The receive log contains the date/time the message was received.
 
-The HTTP/MQTT Sender application connects to the JemRF monitoring service or other external server using web services to send measurements. It also handles sending measurements to an MQTT Broker. The Sender also monitors to see if the system health status should be sent. If configured, it also sends the MQTT Health Status messages to the MQTT Broker using the MQTT connection.
+The HTTP/MQTT Sender application connects to the JemRF monitoring service or other external server using web services to send measurements. It also handles sending measurements to an MQTT Broker. The Sender also monitors to see if the system's health status should be sent. If configured, it also sends the MQTT Health Status messages to the MQTT Broker using the MQTT connection.
 
 The Health Check application generates the status used to determine the health of the Gateway. It monitors the message processing, temperatures, and applications to ensure that everything is working correctly.
 
@@ -67,7 +67,7 @@ Sensors can generate temporary alerts and then return to normal. A Reset button 
 
 <img src="images/sgw-health-issue.png" width="425"/>
 
-<p style="text-align: center;">**Figure 4  System Health tab showing Sensor 93 is having issues.**</p>
+<p style="text-align: center;">**Figure 4  System Health tab showing that Sensor 93 is having issues.**</p>
 
 ### Section 3
 The third section of the Health page shows the internal temperatures of the Processors (**Process Temp**). The system will generate a fault warning and the display will turn **Yellow** when the temperatures emceed 160&deg;F and **Red** when the temperature reaches 170&deg;F. System will shutdown at 175&deg;F.
@@ -77,7 +77,7 @@ The **RF Receiver Status** shows the current count of messages processed. This i
 ### Receive Data Status
 
 When no data has been received by the Gateway in over 20 minutes and all other features are working the RF Receive Status will turn from **Green** to **Orange**.
-The image blow show the status the Health Status page with the Warning Color on the Rx Status Page.
+The image below show the status the Health Status page with the Warning Color on the Rx Status Page.
 
 <img src="images/sgw-no-receive.png" width="425"/>
 

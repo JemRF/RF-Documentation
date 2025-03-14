@@ -17,7 +17,7 @@ The normal operation is to get network settings from the standard local router u
 
 After the Gateway is online and working if the WiFi AP is no longer needed, there is an option; **Disable AP Mode** to turn off the Smart Gateway AP to reduce unwanted Wi-Fi networks and increase access security.
 
-For setting the internal clock, there is an option for a custom **Network Time Server** (NTP Server).  If left blank it will attempt to use an internally defined NTP server.
+For setting the internal clock, there is an option for a custom **Network Time Server** (NTP Server).  If left blank, it will attempt to use an internally defined NTP server.
 
 If the Gateway has an internal battery-backed clock installed, the **Battery Clock** section shows whether it is Active or Not.
 
@@ -33,16 +33,16 @@ The screenshot below shows a change to the configuration that has been entered. 
 
 When changes are Saved, some changes are quick and some require internal changes. For the more complex changes, there is a prompt in the upper left of the page showing about how long it will take for the change to be implemented.
 
-Figure 3 show the status time to complete of a network IP change.
+Figure 3 shows the status time to complete of a network IP change.
 
 <img src="images/sgw-network-change.png" width="425"/>
 
 **Figure 3  Network IP change in Progress.**
 
 
-{% include note.html content="Only one change can be made at a time. A change must complete (**No Message in upper left of screen**) before making an additional change."%}
+{% include note.html content="Only one change can be made at a time. A change must be complete (**No Message in upper left of screen**) before making an additional change."%}
 
-Figure 4 show the Network Details using local network router to provide the network details.  When using local dynamic network settings, the **DNS** field will show the DNS server(s) the Gateway is now using.  It also show **Disable AP Mode** is enabled turning off the Gateways internal WiFi AP.
+Figure 4 show the Network Details using local network router to provide the network details.  When using local dynamic network settings, the **DNS** field will show the DNS server(s) the Gateway is now using.  It also shows **Disable AP Mode** is enabled turning off the Gateways internal WiFi AP.
 
 
 

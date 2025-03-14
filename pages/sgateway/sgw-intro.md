@@ -16,7 +16,7 @@ Engineered for versatility, the Smart Gateway can function autonomously without 
 This innovative gateway embodies the pinnacle of data management technology, delivering unparalleled control and security for all your sensor data needs.
 
 ## Features
-The Smart Gateway has two primary protocols to send data measurements to the the monitoring service. It uses secure HTTPS connections to the JemRF Monitoring Service as the main protocol. It also provides connection to an MQTT Broker for more versal data exchange with other data processing tools.
+The Smart Gateway has two primary protocols to send data measurements to the monitoring service. It uses secure HTTPS connections to the JemRF Monitoring Service as the main protocol. It also provides connections to an MQTT Broker for more versal data exchange with other data processing tools.
 The Smart Gateway now supports the SparkPlug B MQTT message protocol, expanding its MQTT capabilities. It can detect and report operational issues to an MQTT Broker and provide an external open/close contact to reflect the Gateway's health.
 
 Internal data logging and storing eliminate potential data loss in case of network connection failure. When the network connection is restored, any data captured while the network was down is backfilled to the cloud service or Server.
@@ -31,11 +31,11 @@ The unit has three status lights for:
 
 Additional features include an internal battery-powered clock that ensures all the Gateways know the current time upon power up or when they cannot reach a network time server. You also have the option to manually input the local time if necessary.
 
-The Smart Gateway can run standalone without connecting to a remote server or with an MQTT Broker. At the bottom of the Sensor List, there is an option to download today's readings or schedule sending end-of-day readings to an Secure File Transfer (SFTP) or Windows file share.
+The Smart Gateway can run standalone without connecting to a remote server or with an MQTT Broker. At the bottom of the Sensor List, there is an option to download today's readings or schedule sending end-of-day readings to a Secure File Transfer (SFTP) or Windows file share.
 
 The Smart Gateway provides an internal local WiFi hotpot on first use and setting up the Gateway.
 
-Each form guides the user when making changes, by turning yellow the field that has new information as well as the Save button for those changes will turn Yellow. This provides feedback and change is requested but has not been completed.
+Each form guides the user when making changes, by turning yellow the field that has new information as well as the Save button for those changes will turn Yellow. This provides feedback and a change is requested but has not been completed.
 
 <img src="images/sgw-frontview.png" width="425"/>
 
@@ -58,11 +58,11 @@ The **Gateway Ready** light, when **Green** indicates all applications are opera
 
 The **Gateway Ready** will go **RED** for these operation issues:
 - There has been no new data received in over 6 minutes.
-- MQTT Enabled but connection the MQTT Broker has failed for more than 2 minutes.
+- MQTT Enabled but the MQTT Broker connection has failed for more than 2 minutes.
 - If the reporting Server is assigned but not working
 - Internal temperature is above 160&deg;F
 
-The **Server Online** light when **Green** indicates the connection to the monitoring server is connected and operational. If **RED**, that indicates a lost of connection to the monitoring server. If off, that indicates the monitoring server is not set.
+The **Server Online** light when **Green** indicates the connection to the monitoring server is connected and operational. If **RED**, that indicates a loss of connection to the monitoring server. If off, that indicates the monitoring server is not set.
 
 The **MQTT Online** light when **Green** indicates the connection to the MQTT Broker is operational and working. If off, then the MQTT process has not been Enabled. A **RED** light indicates the connection to the MQTT Broker has been lost.
 
