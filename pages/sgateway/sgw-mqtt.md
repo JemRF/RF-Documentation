@@ -151,14 +151,15 @@ The data value example would be:
 }
 
 ## Custom Device Id
-A special feature of the Smart Gateway allows for changing the Device Id.<br />
-By changing the device Id, it allows replacing an existing Gateway and being able to set the new Gateway to the same Device Id.
-<br />The result is the MQTT subscribe reference remains the same for data archiving even with a different physical hardware device.<br />
-To change the Device Id, you must first disable MQTT to clear address cashing, then Enable the change option as shown in Figure 2.
+A special feature of the Smart Gateway allows for changing the Device Id and impersonate another Gateway.\
+The Device Id is the **Name** shown in the upper right of each web page. It is used as part of the MQTT subscribe reference for the Gateway to know which gateway sent the data. The default value is presented in the **MQTT Custom DeiceId** field.\
+Changing the **MATT Custom DeviceId** value, allows replacing an existing Gateway without the receiving system having to be changed.\
+The result is the MQTT subscribe reference remains the same for data archiving even with a different physical hardware device.\
 
 {% include note.html content="
 For making andy changes to the MQTT settings, it is best to Disable MQTT before making changes."%}
 
+The  **MQTT Custom DeviceId** field is disabled to prevent accidental changes. To enable the field, click the **Allow Custom Device Id** drop-down menu and select **Enable**, as shown in Figure 2.
 
 <img src="images/sgw-mqtt-customId.png" width="425"/>
 
@@ -168,4 +169,4 @@ Once Enabled you can change the Device Id.
 
 <img src="images/sgw-mqtt-setid.png" width="425"/>
 
-**Figure 3 Option to change MQTT Device Id screen.**
+**Figure 3 Screen shot ,show the MQTT Custom DeviceId is enabled to changed.**
