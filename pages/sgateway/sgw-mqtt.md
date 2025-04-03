@@ -116,7 +116,7 @@ Example Payloads:
 ### SparkplugBv3.0
 This format follows the specifications detailed at [Sparkplug.eclipse.org](https://sparkplug.eclipse.org/). Messages are encrypted during transmission from the sender to the receiving application. Data seen and processed by the broker is encrypted.
 
-The JemRF adaptation is the in the default Custom subscribe: spBv1.0/JemRFDevices
+The JemRF adaptation is the in the default Custom subscribe: spBv1.0/JemRFDevices\
 **NOTE:** The Subscribe field is <u>required</u> and must be set to start: **spBv1.0** if that is missing it will default to **spBv1.0/JemRFDevices.**
 
 Sparkplug messages in JSON format are shown below. The first timestamp is message send time, and the second timestamp is the sensor sampled time.
