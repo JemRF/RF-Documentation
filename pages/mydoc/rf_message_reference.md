@@ -53,6 +53,13 @@ folder: mydoc
 | `TEMPC` | Transmits a temperature reading in Celsius from the DS18B 20 sensor | `TMPC99.99---` <br/> `(NOMSG times)` |
 | `TYPE[num]` <br/>  `E.g. TYPE2` |  1=Thermistor Temperature Sensor <br/> 2=Gateway  (enables serial comms TX and RX) <br/> 3=DHT22 Humidity Sensor <br/> 4=DS18B20 Temperature Sensor <br/> 5=AnalogA <br/> 6=AnalogB <br/> 7=Relay <br/> 8=SHT21 Humidity and Temperature Sensor <br/> 9=BME280 Pressure, Humidity and Temperature Sensor <br/> 10=HTU21 Humidity and Temperature Sensor | `a--TYPE99---` |
 | `VERSION` | Returns the Firmware Version  | `VERx.xx` <br/>|
+| | | |
+| :`*******`: | :`*************** REPLIES ****************`: | :`****`: |
+|:Reply: |:This is a list of messages the Sensor sends at the start of a cycle or on an event.:|:Format: |
+| `STARTED` | This is sent 5 time on sensor power up, after Started it is in receive mode for 7 seconds to all a command like WAKE to be issued.| `a99STARTED` |
+| `AWAKE` | When a sensor wakes up from sleeping, it sends the AWAKE message then sends its sensor information. | `a99AWAKE---` |
+| `SLEEPING` | After a sensor has sent its readings, before returning to sleeep is sends the Sleeping message.| `a99SLEEPING` |
+| `STATEON` or <br /> `STATEOFF`| When a sensor is sleeping and there is an event, Button pressed, Door Opened, Water Detected, ... it sends the current contact state.| `a99STATEON` or <br />  `a99STATEOFF` |
 
 \* ‘9’ represents a number, e.g. 9.99 is a single digit number with two decimals, or 99 is a two digit number without decimals.
 
