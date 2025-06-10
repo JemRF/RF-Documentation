@@ -13,7 +13,7 @@ The RF4 message formats extend the original 2 character IDs to 4 characters. \
 In the document below shows the device Id as 9999. The device Id can be any character 0-9, A-Z, or a-z. As example b09aBHELLO is for device 09aB.
 
 Using the rf_config.py application to send commands, to send a Version request to sensor 09aB would be python rf_config.py 09aB VERSION. \
-The return would be b09ABVER9.xx.
+The return would be b09ABVER9.xx.\
 
 
 | Message | Action | Return Message |
@@ -55,7 +55,9 @@ The return would be b09ABVER9.xx.
 | `TYPE[num]` <br/>  `E.g. TYPE2` |  1=DS18B20 Temperature Sensor <br/> 2=Gateway  (enables serial comms TX and RX) <br/> 3=Pressure <br/> 4=DS18B20 Temperature Sensor <br/> 5=AnalogA <br/> 6=AnalogB <br/> 7=Relay <br/> 8=Voltate <br/> 9=AC Detect <br/> 10=HTU21 Humidity and Temperature Sensor | `b9999TYPE99-` |
 | `VERSION` | Returns the Firmware Version  | `b9999VERx.xx` <br/>|
 | `VOLTAGE` | Returns reading from Volatage Sensor  | `b9999VT99.99` |
-| | |
+| | | |
+| ******* | *********************** | **** |
+| | | |
 | `REPLIES` | This is a list of messages the Sensor sends at the start of a cycle or on an event.| Format |
 | `AWAKE` | When a sensor wakes up from sleeping, it sends the AWAKE message then sends its sensor information. | `b9999AWAKE---` |
 | `SLEEPIN` | After a sensor has sent its readings, before returning to sleeep is sends the Sleeping message.|`b9999SLEEPIN` |
