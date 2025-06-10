@@ -9,9 +9,12 @@ permalink: rf4_message_reference.html
 folder: mydoc
 ---
 
-The RF4 message formats extend the original 2 character IDs to 4 characters. In the document below shows the device Id as 9999. The device Id can be any character 0-9, A-Z, or a-z. As example b09aBHELLO is for device 09aB.
+The RF4 message formats extend the original 2 character IDs to 4 characters. \
+In the document below shows the device Id as 9999. The device Id can be any character 0-9, A-Z, or a-z. As example b09aBHELLO is for device 09aB.
 
-Using the rf_config.py application to send commands, to send a Version request to sensor 09aB would be python rf_config.py 09aB VERSION. The return would be b09ABVER9.xx.
+Using the rf_config.py application to send commands, to send a Version request to sensor 09aB would be python rf_config.py 09aB VERSION. \
+The return would be b09ABVER9.xx.
+
 
 | Message | Action | Return Message |
 |-------|--------|---------|
