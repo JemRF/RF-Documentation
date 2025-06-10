@@ -12,7 +12,6 @@ The RF4 message formats extend the original 2 character IDs to 4 characters. In 
 
 Using the rf_config.py application to send commands, to send a Version request to sensor 09aB would be python rf_config.py 09aB VERSION. The return would be b09ABVER9.xx.
 
-
 | Message | Action | Return Message |
 |-------|--------|---------|
 | `+++` | Use this command to determine if a device is up and running. This command can only be sent over the serial interface. If you want to test the presence of a remote device use the HELLO command. This command does not require message start indicator, or device ID (refer Message Format section). The return message is OK followed by the current channel the IOT gateway is listening on, and the firmware version. | `OKcv.vv`|
