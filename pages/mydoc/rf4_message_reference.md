@@ -15,6 +15,7 @@ In the document below shows the device Id as 9999. The device Id can be any char
 Using the rf_config.py application to send commands, to send a Version request to sensor 09aB would be python rf_config.py 09aB VERSION. \
 The return would be b09ABVER9.xx.\
 
+### RF4 Message Formats and Responces
 
 | Message | Action | Return Message |
 |-------|--------|---------|
@@ -47,10 +48,10 @@ The return would be b09ABVER9.xx.\
 | `RBSON`|  Report Button Status - ON. Use this command to always send the button status (refer Button Sensor section) every INTVL minutes when in CYCLE sleep mode regardless of the TYPE. This is useful for when you are using a RF module for multiple purposes (e.g. temperature sensor and button sensor) and you want a temperature reading as well as button status every INTVL | `b9999RBSON--` |
 | `RBSOFF`|  Report Button Status - OFF. Use this command to switch off RBS (see RBSON). | `b9999RBSOFF-` |
 | `RSSION`|  Report RSSI Status - ON. This is Only a IOT Gateway receiver option. Use this command to have the IOT Gateway to send the RF Signal Strength Indicator (RSSI) level when a sensor message is received by the IOT Gateway. Like bars on Cell phone, the more positive the better. A sensor will RSSI of -70 is like 1 bar on cell phone.  | `b9999RSSION---` |
-| `RSSIOFF |  Report RSSI Status - OFF. Use this command to switch off RSSI message from the IOT Gateway. (see RSSION). | `b9999RSSIOFF--` |
+| `RSSIOFF` |  Report RSSI Status - OFF. Use this command to switch off RSSI message from the IOT Gateway. (see RSSION). | `b9999RSSIOFF--` |
 | `REBOOT` | Restarts the device | `b9999REBOOT-` |
 | `RESET` | Resets the device settings back to factory default. This command can only be sent over the serial port. This command does not require a message start indicator, or device ID (refer Message Format section). | `OK-----` |
-| `SLEEP` | Puts the device into Sleep Mode. See Sleep Mode section for more details. This command only applies to devices in sensor mode.|`b9999SLEEPIN` |
+| `SLEEP` | Puts the device into Sleep Mode. See Sleep Mode section for more details. This command only applies to devices in sensor mode.| `b9999SLEEPIN` |
 | `TEMP` | Returns a temperature reading in Celsius from the 10k thermistor | `b9999TM99.99` <br/> `(NOMSG times)` |
 | `TYPE[num]` <br/>  `E.g. TYPE2` |  1=DS18B20 Temperature Sensor <br/> 2=Gateway  (enables serial comms TX and RX) <br/> 3=Pressure <br/> 4=DS18B20 Temperature Sensor <br/> 5=AnalogA <br/> 6=AnalogB <br/> 7=Relay <br/> 8=Voltate <br/> 9=AC Detect <br/> 10=HTU21 Humidity and Temperature Sensor | `b9999TYPE99-` |
 | `VERSION` | Returns the Firmware Version  | `b9999VERx.xx` <br/>|
@@ -60,8 +61,8 @@ The return would be b09ABVER9.xx.\
 | | | |
 | `REPLIES` | This is a list of messages the Sensor sends at the start of a cycle or on an event.| Format |
 | `AWAKE` | When a sensor wakes up from sleeping, it sends the AWAKE message then sends its sensor information. | `b9999AWAKE---` |
-| `SLEEPIN` | After a sensor has sent its readings, before returning to sleeep is sends the Sleeping message.|`b9999SLEEPIN` |
-| `STATON` | When a sensor is sleeping and there is an event, Button pressed, Door Opened, Water Detected, AC Detected, ... it sends the current contact state.|`b9999STATON` or <br />  `b9999STATOFF` |
+| `SLEEPIN` | After a sensor has sent its readings, before returning to sleeep is sends the Sleeping message.| `b9999SLEEPIN` |
+| `STATON` | When a sensor is sleeping and there is an event, Button pressed, Door Opened, Water Detected, AC Detected, ... it sends the current contact state.| `b9999STATON` or <br />  `b9999STATOFF` |
 
 \* ‘9’ represents a number, e.g. 9.99 is a single digit number with two decimals, or 99 is a two digit number without decimals.
 
