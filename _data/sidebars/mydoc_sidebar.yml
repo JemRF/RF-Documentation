@@ -81,6 +81,14 @@ entries:
       url: /rf_message_reference.html
       output: web, pdf
 
+    - title: RF4 Message Format
+      url: /rf4_message_format.html
+      output: web, pdf
+
+    - title: RF4 Message Reference
+      url: /rf4_message_reference.html
+      output: web, pdf
+
   - title: Installation
     output: web, pdf
     folderitems:
