@@ -10,7 +10,7 @@ folder: mydoc
 ---
 
 ## RF4 Format Overview
-RF4 is an addaption of the LLAP protocol use by JemRF but extended to support 4 alphanumeric character ID (0-9, a-b, or A-B) in any combination.
+RF4 is an addaption of the LLAP protocol use by JemRF but extended to support 4 alphanumeric character ID (0-9, a-b, or A-B) in any combination.\
 Each message is still made up of 12 characters made up of three sections:
 
 ```
@@ -31,7 +31,7 @@ examples:
 - 0abc
 - My99
 
-{% include note.html content="To support backward compatibility with the older RF2 (2 character ID) a lower case "a" can not be the first character of the Id.
+{% include note.html content="To support backward compatibility with the older RF2 (2 character ID) a lower case 'a' can not be the first character of the Id.
 An example: a123  **Not Allowed**" %}
 
 ## Lightweight Logical Application Protocol (LLAP)
