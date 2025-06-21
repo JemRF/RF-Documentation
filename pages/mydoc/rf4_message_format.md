@@ -31,7 +31,7 @@ examples:
 - 0abc
 - My99
 
-{% include note.html content="To support backward compatibility with the older RF2 (2 character ID) a lower case "a" can not be the first character of the Id.\
+{% include note.html content="To support backward compatibility with the older RF2 (2 character ID) a lower case "a" can not be the first character of the Id.
 An example: a123  **Not Allowed**" %}
 
 ## Lightweight Logical Application Protocol (LLAP)
