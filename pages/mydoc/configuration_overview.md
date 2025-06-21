@@ -1,7 +1,7 @@
 ---
 title: Configuration Overview
 keywords: configuration, configure, change, alter, update, setting
-last_updated: Sep 28, 2020
+last_updated: Jun 21, 2025
 tags:  
 summary: "This page introduces sensor configuration."
 sidebar: mydoc_sidebar
