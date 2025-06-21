@@ -1,5 +1,5 @@
 ---
-title: Message Format
+title: RF2 Message Format
 keywords: message format, llap, protocol, message protocol, api, json, interface
 last_updated: Sep 28, 2020
 tags:
@@ -10,7 +10,7 @@ folder: mydoc
 ---
 
 ## Format Overview
-Each message is made up of 12 characters made up of three sections:
+The RF2 message is made up of 12 characters made up of three sections:
 
 ```
 [a] - Message start indicator that is used to detect the start of a message

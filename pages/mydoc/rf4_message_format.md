@@ -1,29 +1,38 @@
 ---
 title: RF4 Message Format
 keywords: message format, llap, protocol, message protocol, api, json, interface
-last_updated: Sep 28, 2020
+last_updated: May 28, 2025
 tags:
-summary: "This page explains the RF4 (4 character IDs) message format used by the JemRF devices"
+summary: "This page explains the RF4 message format used by the JemRF devices"
 sidebar: mydoc_sidebar
 permalink: rf4_message_format.html
 folder: mydoc
 ---
 
-## Format Overview
+## RF4 Format Overview
 RF4 is an addaption of the LLAP protocol use by JemRF but extended to support 4 alphanumeric character ID (0-9, a-b, or A-B) in any combination.
-Each message is made up of 12 characters made up of three sections:
+Each message is still made up of 12 characters made up of three sections:
 
 ```
-[b] - Message start indicator that is used to detect the start of a message
+[b] - RF4 Message start indicator that is used to detect the start of a message
 
 [id] - 4 character device ID identifying the device the message is intended for
 
 [message] - 7 characters message content
 ```
 
-An example of a message is: `b0045HELLO----`
+An example of a message is: `b0045HELLO--`
 
 Where the device ID is 0045 and the message content is `HELLO--`
+
+The RF4 device ID must be 4 characters and can be any combination of upper, lower case letters and numbers 0-9.
+examples:
+- Ab9c
+- 0abc
+- My99
+
+{% include note.html content="To support backward compatibility with the older RF2 (2 character ID) a lower case "a" can not be the first character of the Id.\
+An example: a123  **Not Allowed**" %}
 
 ## Lightweight Logical Application Protocol (LLAP)
 
@@ -40,7 +49,6 @@ When you send a message, you should not expect any acknowledgment from the commu
 ## Rationale for using LLAP
 
 The heart of this protocol is it's simplicity. The messages are easily human readable and the compact nature makes them desirable for radio communications. LLAP is also perfectly suitable for IoT applications where sensors and actuators need to rapidly and securely communicate small amounts of information using a very low amount of power. The simplicity of LLAP also benefits a non technical end-user wanting to implement fast, secure and long range radio messaging to their applications.
-The extention of 4 character ID was needed to support larger installation. It extends the ID range from just over 2,000 unique IDs to over 16M IDs.
 
 ## LLAP Protocol Details
 
