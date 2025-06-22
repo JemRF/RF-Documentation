@@ -35,7 +35,7 @@ The return would be b09ABVER9.xx.\
 | `b9999ERR------` | Returned when a command is unrecognized or the message is not correctly formatted as specified in the Message Reference. | `NA` |
 | `HELLO` | Replies HELLO | `b9999HELLO--` |
 |  `HTU21 ` | Returns a temperature (Celsius) and humidity (%) from the HTU21 external sensor. | `b9999HM99.99` <br/> `b9999TM99.99` |
-| `INVL[3 nums]` <br/> `E.g. INVL005` |  A 3 digit numeric value that sets the timer interval to 1-30 minutes. See Timer section  for more details. Default is 0. | `b9999INVL999` |
+| `INVL[3 nums]` <br/> `E.g. INVL005` |  A 3 digit numeric value that sets the timer interval to 1-30 minutes. See Timer section  for more details. Default is 1.<br />Values for Less than One Minute Option:<br />101  ~~ 5 seconds<br />102  ~~ 10 Seconds<br />103 ~~ 15 Seconds<br />104 ~~ 20 Seconds<br />105 ~~ 25 Seconds<br />106 ~~ 30 Seconds<br /> | `b9999INVL099` |
 | `INFO`  |  Request report on internal settings for TYPE xx, NOMSG yy, and INTVL zzz. | `b9999Ixxyzzz` |
 | `NOMSG[num]` <br/> `E.g. NOMSG3` | A numeric value between 1 and 9 that specifies how many messages to be sent after each trigger or request. |  `b9999NOMSG9` |
 | `PRESS` | Returns reading from Pressure Sensor  | `b9999PR999.9` |
