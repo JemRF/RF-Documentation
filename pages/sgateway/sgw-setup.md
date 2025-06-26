@@ -33,11 +33,22 @@ Firmware updates can be automatic, semi-automatic and manual. If the **Automatic
 
 If the option is No, a second screen appears to pull updates or upload updates to the Gateway manually.
 
+## Gateway Updates
+There are two methods for updating the Smart Gateway. With Internet Access it can download and install the update, or if offline a laptop can be use to download from the Internet and do the update.
+
+### Online Update
+If the Smart Gateway has Internet access, pressing the **Run Auto-Update Process** will tell it to contact the Software Download site, pull the latest release and install it. 
+
 <img src="images/sgw-updates.png" width="425"/>
 **Figure 2  Manual OS Update options.**
 
+### Update Information
 The current release is in the status bar at the bottom of the page. Updates on the latest releases are in the Update Information section. The Gateway must have an Internet connection to show the updated information.
-There is also an upload updates option for Gateway without an Internet connection.
+[Access Update Information History](https://downloads.jemrf.com/smartgateway/gwupdates.txt)
+
+### Manual Offline Update
+If the Smart Gateway does not have Intenet Access, then using a computer with Intenet access the current software can be downloaded at [Latest Smart Gateway Release ](https://downloads.jemrf.com/smartgateway/jemrf-gw-current.deb)\
+Once downloaded connect to the Smart Gateway using the Smart Gateway AP or the private network it is on and then press the **Choose File** the will open a window on the local computer to select the current release to be uploaded.
 
 ## Gateway System Health Page
 System Health details: Green indicates the system is working. The Details button shows more details on the System Health shown in Figure 3 and detailed in the **Gateway System Health Page**.
