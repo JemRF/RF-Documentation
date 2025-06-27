@@ -1,7 +1,7 @@
 ---
 title: "JemRF Smart Gateway"
 keywords: getting started introduction, Smart Gateway Jemrf, Gateway, rf Sensor
-last_updated: July 23, 2024
+last_updated: July 26, 2025
 sidebar: wifi_sidebar
 permalink: sgw-network.html
 summary: JemRF Smart Gateway Network Tab.
@@ -9,7 +9,7 @@ summary: JemRF Smart Gateway Network Tab.
 # Network Details
 The Smart Gateway provides a wide range of network configurations. The Network Details page is used to set all the network and internal time functions. The Network Details page is shown in Figure 1.
 
-<img src="images/sgw-network.png" width="425"/>
+<img src="images/sgw-network.jpg" width="425"/>
 **Figure 1  The Network Details screen.**
 
 If the **Static IP Address, Gateway, Subnet Mask** fields are provided to set a static IP Address for when needed. If they are blank the gateway will automatically use DHCP to get its network information.
