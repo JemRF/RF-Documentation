@@ -3,7 +3,7 @@ title: "JemRF Smart Gateway"
 keywords: getting started maintenance, Smart Gateway Jemrf, Gateway, rf Sensor
 last_updated: July 26, 2025
 sidebar: wifi_sidebar
-permalink: sgw-transceiver.html
+permalink: sgw-maintenance.html
 summary: JemRF Smart Gateway Hardware Maintenace.
 ---
 # Hardware Upgrade Modules
@@ -15,7 +15,7 @@ The Smart Gateway hardware is made up of the following internal modules.
 - The Dry Contact Relay module that provides an open or closed contact on Gateway Internal Failures.
 - The LED status panel is the front panel of the SGW with the LightsL 1. Showing the SGW is up and working; 2. A Serve light showing it is connected to the HTTPS server and sending data; 3 The MQTT light indicating it is connected and sending data to the MQTT Broker.
 
-{% include note.html content="Before performing any hardware maintenace follow the **Shutdown** and **Power Off Procedures**."%}
+{% include warning.html content="Before performing any hardware maintenace follow the **Shutdown** and **Power Off Procedures**."%}
 ## Smart Gateway Internal
 Turn upside down and remove the four screews.
 <img src="images/sgw-under.jpg" width="425"/>
@@ -45,20 +45,23 @@ The RF Transceive plugs into the Core Processor edge connector and provides the 
 
 The Transceiver is plugged into the left end of the interface bus. For reference, the other end of the interface bus has the connections for the LED Status Panel. 
 <img src="images/sgw-transc-rpi.jpg" width="425"/>
-==== Picture of Transceive module with cables for Real-Time Clock module.
+Note the arrow is to show the module is connected on the interface bus correctly.
+
 This image shows the Transceiver Module with the cables to connect to the Real-Time Clock module if installed.
+<img src="images/sgw-transc-rtc.jpg" width="425"/>
 To remove the Transceiver just pull it up and off the interface bus.  Then slide the connector appart that connects it to the RTC module. 
 <img src="images/sgw-rtc-alignment.jpg" width="425"/>
-==== Picture of connector plugged together and then pic seperated.
+
 Next connect the replacement transceiver to the RTC if used and then plug it onto the interface bus.
-Image x, shows some common mistakes. You should NOT see pins as pointed to or the connector should not be forward as pointed to.
+The following three images shows some common mistakes. You should NOT see pins as pointed to or the connector should not be forward as pointed to.
 <img src="images/sgw-trans-bad-poe.jpg" width="425"/>
 <img src="images/sgw-trans-bad-rpi-1.jpg" width="425"/>
 <img src="images/sgw-trans-bad-rpi-2.jpg" width="425"/>
-Warning if it is not plugged in correctly, it can damage the Transceiver module.
+{% include warning.html content="Warning if it is not plugged in correctly, it can damage the Transceiver module."%}
+
 
 The antenna should go up and to the far corner as show below
-<img src="images/sgw-inside.jpg" width="425"/> 
+<img src="images/sgw-inside-close.jpg" width="425"/> 
 
 ### Power Up verification
 Once you have verified it is plugged in correctly, you can put the top cover back on and power it up.
