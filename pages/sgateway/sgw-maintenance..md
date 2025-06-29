@@ -49,7 +49,7 @@ Possible indications that the Core Processor is failing:
 1. The system does not work, and the front panel lights do not come on.
 2. The Control Panels do not come up.
 3. If the Control Panels are displayed, but no changes can be made, that indicates a Core Processor issue.
-4. Looking inside image C1, arrow 1 points to the red and green lights on the Core Processor are both on or both off.
+4. Looking inside image C1, arrow 2 points to the red and green lights on the Core Processor are both on or both off.
     - Upon power up, the proper activity of the Core Processor is indicated by the red and green lights. The red light will come on, followed by the green light flashing on and off.
  
 <img src="images/sgw-inside-lights.jpg" width="425"/> C1
@@ -76,7 +76,8 @@ This image T2 shows the Transceiver Module with the cables for connecting to the
 
 <img src="images/sgw-transc-rtc.jpg" width="425"/> T2
 
-To remove the Transceiver, just pull it up and off the interface bus.  Then slide the connector apart that connects it to the RTC module. 
+To remove the Transceiver, just pull it up and off the interface bus.  Then slide the connector apart that connects it to the RTC module.
+ 
 <img src="images/sgw-rtc-alignment.jpg" width="425"/> T3
 
 The arrow is used to denote the plug key for reconnecting it.
@@ -109,7 +110,7 @@ If the RTC is installed and not working is indicated by:
 ## Install/Replace the Dry Contact Relay Module
 Currently, this replacement requires the Smart Gateway to be returned to the manufacturer for processing.
 If the dry contact option is installed and not working:
-1. Looking inside the relay module there should be lights on as shown in image C1, arrow 2. Red is power and Green is indicates the relay is On indicating the Gateway is working correctly.
+1. Looking inside the relay module there should be lights on as shown in image C1, arrow 1. Red is power and Green is indicates the relay is On indicating the Gateway is working correctly.
 
 
 
