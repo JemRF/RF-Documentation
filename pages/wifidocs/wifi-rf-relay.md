@@ -1,20 +1,21 @@
 ---
 title: WiFi Wireless Gateway
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
-last_updated: Jan 30, 2024
+last_updated: Jul 2, 2025
 tags: gateway, RF Gateway, WiFi Gateway
 sidebar: wifi_sidebar
 permalink: wifi-rf-relay.html
 folder: mydoc
 ---
 ## Introduction
-The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the PrivateEyePi or JemRF Monitoring service. This eliminates the need for a Raspberry PI computer and all that extra overhead. The Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming a computer first.<br />
+The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the JemRF Monitoring service. This eliminates the need for a Raspberry PI computer and all that extra overhead. The Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming a computer first.<br />
 
 The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
  * Follows the same setup process as our WiFi IoT Sensors to connect to the local 2.4G WiFi Only.
  * It has option to send Celsius to Fahrenheit readings.
  * Using a USB-mini connector for power.
  * It provides a Sensor List overview page to show all the sensors it is tracking and their last value.
+ * Supports RF4 Sensors (4-character device IDs)
 
 {% include image.html file="wirelessgateway.png" alt="WiFi Gateway Case" width="200px"%}
 

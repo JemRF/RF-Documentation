@@ -83,4 +83,8 @@ The WiFi Gateway tracks messages for up to 64 Sensors.
 
 {% include image.html file="ActiveDevices.jpg" alt="WiFi GW Sensor List"%}
 
+There is also an option to set Sensors to a common send Interval at the bottom of the list. The value of 0 disables this feature.\
+This allows for setting the update interval of a Sensor when the sensor starts up. The Gateway detects the Sensor Started and sends it the Interval command. \
+Use case: You have several sensor sending updates at 1 minute, 3 minutes and 5 minutes. You would like them all to be sending at a 5 minute invterval. You would enter 5 in the *Set Sensor Updated Interval* and press **Change**. Then when you power cycle your sensors they will be changed to update every 5 minutes. The interval can be 1 to 30 minutes.
+
 
