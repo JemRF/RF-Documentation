@@ -1,8 +1,8 @@
 ---
 title: WiFi Wireless Gateway
-keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
+keywords: communication, communications, relay, basic, radio, spec, wifi, sensor, gateway, RF Gateway, WiFi Gateway
 last_updated: Jul 2, 2025
-tags: gateway, RF Gateway, WiFi Gateway
+tags:
 sidebar: wifi_sidebar
 permalink: wifi-rf-relay.html
 folder: mydoc
@@ -15,7 +15,7 @@ The WiFi Gateway is in the same physical case as the current WiFi IoT Sensors.
  * It has option to send Celsius to Fahrenheit readings.
  * Using a USB-mini connector for power.
  * It provides a Sensor List overview page to show all the sensors it is tracking and their last value.
- * Supports RF4 Sensors (4-character device IDs)
+ * Starting with Version 2.6.0 it supports RF4 Sensors, sensors with 4-character device IDs as well as the 2-character IDs.
 
 {% include image.html file="wirelessgateway.png" alt="WiFi Gateway Case" width="200px"%}
 
@@ -51,9 +51,11 @@ Click here for the [Details Setup Guide](wifi-rf-gw-setup.html)
 [Click here for details on the JemRF MQTT format with examples](gatewaymqtt.html)
 
 ## Firmware Updates
-The Gateway is normally updated over the Internet.
-[Click here for Illustrated manual updating instructions](wifi-gw-update.html)
+The current Gateway Version is displayed at the bottom of each page. The firmware of the RF Transceiver is also show with the channel the Gateway is on. The default channel is zero (0).
+
+The Gateway is normally updated over the Internet. When a new update is available a message will appear on the Setup Details Page.
+
+[Click here for Illustrated guide on updating the Gateway](wifi-gw-update.html)
 
 ## Mounting Instructions
 Mount the Gateway in a vertical position with the USB connector down. There is a mounting hold on the back for this. Do not mount against a metal wall as that can block the WiFi and RF signals.
-
