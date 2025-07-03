@@ -55,6 +55,17 @@ On the Gateway, set dip switch 3 and 4 (marked FLASH) to ON
 
 
 Release Notes:
+#### Version 2.6.0 (07/03/2025)
+- Support for RF4 (4-character Device ID) Sensors.
+- Add MQTT status to all screens.
+- Add option to send a message to Sensors to change their Update Interval
+
+[Download Release 2.6.0 ](firmware\wifi-gw\wifigw8266-2-6-0.bin )
+
+#### Version 2.5.1 (05/29/2025)
+- Update to fix compatibility issue with HomeAssistant and MQTT JSON.
+- Add RF Transceiver firmware version and channel to the page footer
+
 #### Version 2.4.9 (06/20/2024)
 - Support MQTT Broker user defined publish and Client Id
 - Sensor List show GMT time when refreshing
