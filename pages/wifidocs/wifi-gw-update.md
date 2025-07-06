@@ -55,6 +55,12 @@ On the Gateway, set dip switch 3 and 4 (marked FLASH) to ON
 
 
 Release Notes:
+#### Version 2.6.2 (07/05/2025)
+- Option to change the RF Channel for large networks
+- Info field for note on location of the Gateway
+- Added Sorting of the Sensor List
+[Download Release 2.6.2 ](firmware\wifi-gw\wifigw8266-2-6-2.bin )
+
 #### Version 2.6.0 (07/03/2025)
 - Support for RF4 (4-character Device ID) Sensors.
 - Add MQTT status to all screens.
