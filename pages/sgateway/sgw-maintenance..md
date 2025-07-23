@@ -103,7 +103,23 @@ To verify that it is working, check the Sensor List tab to see that your sensors
 Shutdown and check the installation of the transceiver module.
 
 ## Install/Replace the Battery Backup Clock Module (RTC)
-Currently, this replacement requires the Smart Gateway to be returned to the manufacturer for processing.
+Replacement of the RTC module is a two four step processes.\
+Steps 1 and 2 are power down the Smart Gateway and open the case.\
+Step 3. To remove the RTC module, after power down open the case and remove the mounting screw (A) pointed to in image R1.
+
+<img src="images/sgw-rtc-R1.jpg" width="425"/> R1
+
+Step 4, disconnect to cable (C) shown with the arrow C in image R1 to the Transceiver.
+
+To install a new or replacement RTC, reverse the process. 
+Step 1. Install the RTC module 
+Step 2. Connect the cable to the Transceiver.
+Step 3. Close up the case
+Step 4. Power up.
+
+If the RTC modules is installed and working correctly, on the Network Details page, image R2, the Battery Clock will show Active.
+<img src="images/sgw-rtc-Active.jpg" width="425"/> R2
+
 If the RTC is installed and not working is indicated by:
 1. On the Network Tab, the Battery Clock shows **Inactive**
 

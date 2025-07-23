@@ -129,6 +129,10 @@ entries:
       url: /sgw-mqtt.html
       output: web, pdf
 
+    - title: Maintenance
+      url: /sgw-maintenance.html
+      output: web, pdf
+
   - title: Integration
     output: web, pdf
     folderitems:
