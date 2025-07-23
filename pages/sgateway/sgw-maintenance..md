@@ -111,13 +111,14 @@ Step 3. To remove the RTC module, after power down open the case and remove the 
 
 Step 4, disconnect to cable (C) shown with the arrow C in image R1 to the Transceiver.
 
-To install a new or replacement RTC, reverse the process. 
-Step 1. Install the RTC module 
-Step 2. Connect the cable to the Transceiver.
-Step 3. Close up the case
-Step 4. Power up.
+To install a new or replacement RTC, reverse the process. \
+Step 1. Install the RTC module \
+Step 2. Connect the cable to the Transceiver.\
+Step 3. Close up the case.\
+Step 4. Power up.\
 
 If the RTC modules is installed and working correctly, on the Network Details page, image R2, the Battery Clock will show Active.
+
 <img src="images/sgw-rtc-Active.jpg" width="425"/> R2
 
 If the RTC is installed and not working is indicated by:

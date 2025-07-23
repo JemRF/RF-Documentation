@@ -34,8 +34,9 @@ The screenshot below shows a change to the configuration that has been entered. 
 When changes are Saved, some changes are quick and some require internal changes. For the more complex changes, there is a prompt in the upper left of the page showing about how long it will take for the change to be implemented.
 
 Figure 3 shows the status time to complete of a network IP change.\
+(**Updating NMCLI Network Settings. Change to new IP in 23 seconds, please wait.**)
 
-<img src="images/sgw-network-change.png" width="425"/>\
+<img src="images/sgw-network-change.png" width="425"/>
 
 **Figure 3  Network IP change in Progress.**
 
