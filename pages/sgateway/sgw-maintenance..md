@@ -115,7 +115,7 @@ To install a new or replacement RTC, reverse the process. \
 Step 1. Install the RTC module \
 Step 2. Connect the cable to the Transceiver.\
 Step 3. Close up the case.\
-Step 4. Power up.\
+Step 4. Power up.
 
 If the RTC modules is installed and working correctly, on the Network Details page, image R2, the Battery Clock will show Active.
 
@@ -127,7 +127,7 @@ If the RTC is installed and not working is indicated by:
 ## Install/Replace the Dry Contact Relay Module
 Currently, this replacement requires the Smart Gateway to be returned to the manufacturer for processing.
 If the dry contact option is installed and not working:
-1. Looking inside the relay module there should be lights on as shown in image C1, arrow 1. Red is power and Green is indicates the relay is On indicating the Gateway is working correctly.
+1. Looking inside the relay module there should be lights on as shown above in image C1, arrow 1. Red is power and Green is indicates the relay is On indicating the Gateway is working correctly.
 
 
 
