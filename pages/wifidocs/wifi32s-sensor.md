@@ -44,7 +44,7 @@ We have USB-C cables at our store, (JemRF Store)[https://www.jemrf.com].
 * [Onboard Sensor Configuration Guide](/wifi32s-config.html)
 * [Remote Control Switch Configuration Guide](/wifi32s-remote-relay-switch.html)
 * [Door/Window Switch](/wifi32s-switch.html)
-* [Pressure Sensor Option](/wifi32s-presssure.html)
+* [Pressure Sensor Option](/wifi32s-pressure.html)
 * [Offline interfacing with the sensor](/wifi32s-offline.html)
 * [Upgrade WiFI Firmware Guide](/wifi32s-update.html)
 * [Flow Meter Option Guide](/wifi32s-flowmeter.html)
