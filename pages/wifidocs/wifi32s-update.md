@@ -5,7 +5,7 @@ last_updated: Sept 20, 2025
 tags:
 
 sidebar: wifi_sidebar
-permalink: wifi32s-iot-updates.html
+permalink: wifi32s-update.html
 folder: mydoc
 ---
 

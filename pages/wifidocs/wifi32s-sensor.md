@@ -5,7 +5,7 @@ last_updated: Sept 20, 2025
 tags:
 summary: "The Internet Of Things (IoT) is where everyday things (cars, homes, household appliances, plants) are being connected to the Internet where we can monitor, control and alert in ways not possible before. This document describes our WiFi Sensor and its place in the IoT Universe."
 sidebar: wifi_sidebar
-permalink: wifi32ssensor.html
+permalink: wifi32s-sensor.html
 folder: wifidocs
 ---
 
