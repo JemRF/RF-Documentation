@@ -4,7 +4,7 @@ keywords: getting started introduction
 last_updated: Sept 20, 2025
 tags:
 sidebar: wifi_sidebar
-permalink: wifi-iot-offline.html
+permalink: wifi32s-offline.html
 folder: mydoc
 ---
 

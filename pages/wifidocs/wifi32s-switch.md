@@ -1,7 +1,7 @@
 ---
-title: WiFi Sensor as Switch
+title: JemRF ESP32 WiFi Sensor as Switch
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
-last_updated: Feb 04, 2024
+last_updated: Sept 20, 2025
 tags:
 sidebar: wifi_sidebar
 permalink: wifi32s-switch.html
