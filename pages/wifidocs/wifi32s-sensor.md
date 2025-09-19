@@ -49,6 +49,7 @@ We have USB-C cables at our store, (JemRF Store)[https://www.jemrf.com].
 * [Upgrade WiFI Firmware Guide](/wifi32s-update.html)
 * [Flow Meter Option Guide](/wifi32s-flowmeter.html)
 * [White Label Options](/wifi32s-whitelabel.html)
+* [White Label Options](/wifi32s-mqtt.html)
 
 ## Tech Specs:
 
@@ -58,4 +59,3 @@ We have USB-C cables at our store, (JemRF Store)[https://www.jemrf.com].
 
 ## Board Layout:
 
-{% include image.html file="wifi-sensor-PCB Board.png" alt="WiFi Sensor Motherboard with options"%}

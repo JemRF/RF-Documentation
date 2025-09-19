@@ -51,8 +51,8 @@ If you want to use our monitoring services and you do not have a JemRF Monitorin
 ### Step 4 : Final Sensor Settings
 With your Sensor now online (has a WLAN number), you can stay on your home WiFi Network and point you browser to the WLAN address of the gateway. In the example picture above the 192.168.254.8 would be the WLAN address for my Sensor, your address will change. Go to http://WLAN (example http://192.168.254.8).
 #### Server
-Now on the WiFi Sensor Setup Details page, the **Server** setting is  **pep.jemrf.com**.
-{% include image.html file="Jemrf-server.jpg" alt="WiFi Server"%}
+Now on the WiFi Sensor Setup Details page, the **Server** setting is  **monitor.jemrf.com**.
+{% include image.html file="jemrf32sensorsetupnorm.png" alt="WiFi JemRF Server"%}
 
 #### Token
 Using your account on [monitor.jemrf.com](https:/monitor.jemrf.com), after you login, click on your name in the upper right hand corner a drop down menu will appear. Select Account and then click on the Edit Token button.
@@ -64,7 +64,23 @@ Using your account on [monitor.jemrf.com](https:/monitor.jemrf.com), after you l
 
 Return to the Sensor WiFi and go back to [192.168.4.1](http://192.168.4.1) and copy and paste the **Token** into the **Token**  field as shown in the below diagram:
 
-{% include image.html file="wifi_pep_jemrf.png" alt="WiFi JemRF Server"%}
+{% include image.html file="jemrf32sensorsetup.jpg" alt="WiFi Server"%}
 Clicking "Save" will connect the WiFi Sensor to the server.  After a few moments, click on the "Setup Details" tab to refresh the screen, you will see **"Server: Connected"** as shown in the image above.
 
 Once Connected, the Wireless Sensor will start forwarding Wireless Sensor data to the monitoring server.
+
+## Manual Network Settings
+THe normal process for the JemRF ESP32 Sensor is the automated network request to the local router or name server using DHCP.\
+If needed when checked the options to manually set the network values is presented.
+
+### Static IP Address
+
+Enter the IP Address you wish to allocate to the sensor. This is useful if you are polling the device from another computer and do not want the IP Address to ever change.
+
+### Gateway, Subnet & DNS
+
+These settings are mandatory if you want to set a static IP address. If you do not know the subnet mask and gateway of your router you can easily get it as follows:
+
+Windows - Open a command prompt windows and type ipconfig, then page up and look for Subnet Mask and Gateway
+
+Linux - Open a terminal session and type  netstat -nr. This will give you the Gateway. Now type ifconfig, and look for the Mask.
