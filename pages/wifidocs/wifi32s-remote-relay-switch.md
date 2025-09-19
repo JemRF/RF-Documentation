@@ -8,6 +8,9 @@ permalink: wifi32s-remote-relay-switch.html
 folder: wifidoc
 ---
 ## Introduction
+
+{% include image.html file="jemrf32srelayctrl.jpg" alt="WiFi Relay Controls"%}
+
 Configuration guide for JemRF device: - [WIFI Remote Control Switch](https://www.jemrf.com/collections/wifi-enabled-devices/products/wifi-controlled-relay-switch-internet-of-things-iot)
 
 Connecting a relay switch to the WIFI controller.

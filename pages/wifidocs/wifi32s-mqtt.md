@@ -64,11 +64,7 @@ With Payload for temperature Only (Gateway or Sensor) with readings set to Fahre
 [probe id] = [{"temperature":"78.4"},{"unit_of_measurement":"F"}]
 
 .. For WiFi Sensors with multiple probes, the above format is repeated for each probe.
-#### The Gateway messages with other sensors
 
-[probe id] = [{"humidity":"78.4"},{"unit_of_measurement":"%"}]
-
-[probe id] = [{"light":"78.4"},{"unit_of_measurement":"Lux"}]
 
 #### Sensor With Payload for Temperature & Humidity sensor:
 

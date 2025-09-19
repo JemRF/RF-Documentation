@@ -41,18 +41,6 @@ The on board WIFI chip will generate heat if powered on for long periods of time
 
 The default temperature reading is in Celsius. Click this option to change the temperature readings to Fahrenheit.
 
-### Static IP Address
-
-Enter the IP Address you wish to allocate to the sensor. This is useful if you are polling the device from another computer and do not want the IP Address to ever change.
-
-### Gateway, Subnet & DNS
-
-These settings are mandatory if you want to set a static IP address. If you do not know the subnet mask and gateway of your router you can easily get it as follows:
-
-Windows - Open a command prompt windows and type ipconfig, then page up and look for Subnet Mask and Gateway
-
-Linux - Open a terminal session and type  netstat -nr. This will give you the Gateway. Now type ifconfig, and look for the Mask.
-
 ### ReStart
 The ReStart button performs a power restart, needed to set on clear the
 
