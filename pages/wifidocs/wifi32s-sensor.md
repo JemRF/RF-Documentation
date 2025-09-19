@@ -47,7 +47,8 @@ We have USB-C cables at our store, (JemRF Store)[https://www.jemrf.com].
 * [Pressure Sensor Option](/wifi32s-pressure.html)
 * [Offline interfacing with the sensor](/wifi32s-offline.html)
 * [Upgrade WiFI Firmware Guide](/wifi32s-update.html)
-* [Flow Meter Option Guide](/wifi32s-flowmeter.html) 
+* [Flow Meter Option Guide](/wifi32s-flowmeter.html)
+* [MQTT Settings](/wifi32s-mqtt.html)
 * [White Label Options](/wifi32s-whitelabel.html)
 
 ## Tech Specs:
