@@ -8,15 +8,15 @@ permalink: wifi32s-offline.html
 folder: mydoc
 ---
 
-## Interfacing JemRF ESP32 WiFi Sensor
-If you want to monitor the JemRF ESP32 WiFi Sensor with your own applications, offline from the Internet there are two options.
+## Interfacing JemRF S32 WiFi Sensor
+If you want to monitor the JemRF S32 WiFi Sensor with your own applications, offline from the Internet there are two options.
 
 ### Here is how you do it:
 
 Be sure to connect your sensor to your WIFI network.If you don't know how to do that look [here](/wifi-iot-setup.html) first.
 
 ### Get sensor readings.
-The JemRF ESP32 WiFI Sensor has the option for serveral different sensors.
+The JemRF S32 WiFI Sensor has the option for serveral different sensors.
 
 #### To see a web page of the all the onboard sensors in a web page enter:\
 

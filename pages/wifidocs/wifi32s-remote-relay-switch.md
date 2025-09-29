@@ -20,7 +20,7 @@ WARNING : Mains electricity can kill if you are careless or lacking in knowledge
 
 ## Configuring the WIFI controller.
 
-Before you start this configuration ensure you have already followed the getting started guide that shows you how to connect your device to your WIFI router and to the PrivateEyePi server (optional).
+Before you start this configuration ensure you have already followed the getting started guide that shows you how to connect your device to your WIFI router and to the JemRF clound server (optional).
 
 Open up the WIFI configuration screen by browsing to your WIFI devices IP address in a browser and then click on the Sensor Config menu. If you want to be able to control the device using your PrivateEyePi dashboard then click on the "Allow external control" check box as shown below.
 

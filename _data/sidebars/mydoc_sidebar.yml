@@ -36,23 +36,6 @@ entries:
       url: /wifi_intro.html
       output: web, pdf
 
-    - title: Projects Introduction (Older Site)
-      external_url: https://projects.privateeyepi.com/
-      output: web, pdf
-
-    - title: Projects Introduction (2024 New Site)
-      external_url: https://projects.jemrf.com/
-      output: web, pdf
-
-    - title: Introduction to JemRF Monitoring
-      url: /monitorintro.html
-      output: web, pdf
-
-    - title: Introduction to PrivateEyePi
-      url: /pepintroduction.html
-      output: web, pdf
-
-
   - title: Overview
     output: web, pdf
     folderitems:
@@ -237,8 +220,16 @@ entries:
       url: /faq.html
       output: web, pdf
 
+    - title: Introduction to JemRF Monitoring
+      url: /monitorintro.html
+      output: web, pdf
+
     - title: Create Account on JemRF Monitoring
       url: /jemrfregister.html
+      output: web, pdf
+
+    - title: JemRF Projects
+      external_url: https://projects.jemrf.com/
       output: web, pdf
 
     - title: Python Code changes for Monitor.JemRF.com
