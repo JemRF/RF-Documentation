@@ -38,7 +38,8 @@ Using the sensor shown in Figure 2
 
 ## MQTT Formats
 ### JemRF
-This is our original format designed to support the RF sensors with the WiFi Wireless Gateway.  It is now also used by the WiFi Sensor.
+This is our original format designed to support the RF sensors with the WiFi Wireless Gateway.  It is now also used by the WiFi Sensor./
+All messages are limited to each sensor resulting in a discrete MQTT message for each sensor. The Temperature and Humidity sensor is a single sensor so messages include both temperature and humidity in one message. All other sensors are discrete readings.
 
 The Gateway or the WiFi Sensor default topic is: [JEM {Gateway Id}] or [PEP {PEP Id}]/
 
@@ -71,4 +72,12 @@ With Payload for temperature only (Gateway or Sensor) with readings set to Fahre
 [probe id] = [[{"temperature":"80.42","unit_of_measurement":"F"}],[{"humidity":"53.10","unit_of_measurement":"%"}]]
 
 {% include note.html content="For the WiFi unit with the Temperature and Humidity Sensor, the Probe Id is the Device Id."%}
+
+#### Relau Payload 
+The relay state is 0 for Off and 1 for On.\
+Example Relay message
+
+[{"relay2":"0","unit_of_measurement":"State"}]
+
+
 

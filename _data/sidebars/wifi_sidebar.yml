@@ -68,11 +68,11 @@ entries:
       url: /wifi-switch.html
       output: web, pdf
 
-  - title: 32S WiFi Sensor
+  - title: S32 WiFi Sensor
     output: web, pdf
     folderitems:
 
-    - title: Introduction
+    - title: S32 Introduction
       url: /wifi32s-sensor.html
       output: web, pdf
 

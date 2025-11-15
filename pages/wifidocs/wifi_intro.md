@@ -53,7 +53,7 @@ This configuration utilizes the DS18B20 at the end of a 1-meter or 5-meter cable
 This configuration uses an Internal HTU21D to measure temperature and humidity.
 #### Support remote Pressure Sensor
 The sensor can support 5-volt analog pressure sensors from 50 to 500 PSI.
-### Support for Flow Meter
+#### Support for Flow Meter
 The sensor supports a digital toggle flow meter with calibration for flow counts, ranging from gallons to liters per minute.
 ##### Remote Control Relays
 The S32 WiFi Sensor can control two remote Relays. 

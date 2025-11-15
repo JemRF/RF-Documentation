@@ -8,6 +8,13 @@ permalink: wifi32s-remote-relay-switch.html
 folder: wifidoc
 ---
 ## Introduction
+The S32 WiFi Sensor supports two electronic switches (referred to as Relays) use to turn a remote 5 volt relay on or off. When this feature is ordered there are two JST PH2.5 sockets on the to plug and external relay. There is also a JST PH2.0 connector to provide 5 VDC if needed.
+
+The relays can be manually turned On or Off by pressing the Toggle button.
+
+The relay values are reported to the Server and to the MQTT Broker when activated.
+
+The relays can also be turned Off or On using the MQTT subscribe write.
 
 {% include image.html file="jemrf32srelayctrl.jpg" alt="WiFi Relay Controls"%}
 
@@ -17,20 +24,7 @@ Connecting a relay switch to the WIFI controller.
 
 WARNING : Mains electricity can kill if you are careless or lacking in knowledge of how to connect high voltage.
 
-
-## Configuring the WIFI controller.
-
-Before you start this configuration ensure you have already followed the getting started guide that shows you how to connect your device to your WIFI router and to the JemRF clound server (optional).
-
-Open up the WIFI configuration screen by browsing to your WIFI devices IP address in a browser and then click on the Sensor Config menu. If you want to be able to control the device using your PrivateEyePi dashboard then click on the "Allow external control" check box as shown below.
-
-{% include image.html file="allow external control.png" alt="WiFi allow external control"%}
-
-All the other settings in the above image may vary to yours depending on the type of sensor you have and what settings you configured earlier in the Getting Started Guide.
-
-Security Note:
-The "Allow external control" option will allow you to switch things on/off from the WWW outside your home network. Communications to the outside world are encrypted, but it is important to keep your Token (from the Login Details Screen) secret. Anyone with your token will be able to control the GPIO ports of your WIFI controller. If you suspect your token has been compromised then you can deny access to the device by de-selecting the "Allow external control". 
-
+ 
 ### You can switch the relay using the following URL to your device:
 
 This will switch Relay 1 off:
