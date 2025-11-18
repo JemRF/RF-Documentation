@@ -29,7 +29,7 @@ The S32 WiFi Sensor intelligence monitors for network connection, gets time from
 - Cyclic temperature transmission mode with configurable send interval
 - Supports both Celsius or Fahrenheit temperature readings
 - DS18B20 temperature sensors (Onboard or Extended) are used to measure temperatures from -55°C to +125°C. Fahrenheit equivalent is -67°F to +257°F, ±0.5°C accuracy from -10°C to +85°C
-* * Note: The operating temperature for the WiFi Temperature sensor is -30F to +125.6F, -34C to 52C
+* Note: The operating temperature for the WiFi Temperature sensor is -30F to +125.6F, -34C to 52C
 - Supports HTU21D Temperature (-40℃ -- 105℃) and Humidity Sensor, future BME280 Temperature,Humidity and Pressure
 - Although the sensor is highly accurate (±0.5°C accuracy) you can calibrate the temperature reading using a configuration in the WiFI sensor app
 - The device supports dual WiFi mode, allowing it to be WiFI access point and a WiFI client at the same time. A WiFI access point advertises itself through an SSID and can be connected to via any device or computer that has WiFI.

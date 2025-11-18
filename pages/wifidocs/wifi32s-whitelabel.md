@@ -15,10 +15,10 @@ Option allow:
 1. Customizing the banner words and title at the top, including foreground and background colors.
 2. Hiding the Server Status in the banner area at the top of the page
 3. Hiding the Server URL if not used
-* * Or it can be set and then hidden from your customers if used else leave blank before hidding
+*   Or it can be set and then hidden from your customers if used else leave blank before hidding
 4. Hiding the Token field
 5. Showing the options to set the network address manually
-* * It can also be set and then hidden from your customers
+* It can also be set and then hidden from your customers
 6. Enable Authentification on Setup, Sensor Confi and MQTT control panels
 7. Enable or hide the Relay Config Tab if not needed.
 8. Enter a Custom User Key (Must be 10 characters)
@@ -26,10 +26,10 @@ Option allow:
 At the bottom is the field for the Authentification Key.
 
 The default is the MMDD plus the last to digits of the Year plus the 4 characters of the Device Id after JEM
-Example: 
-Date is **11**-**15**-20**25** 00:13:25
-ID: JEM**C868**407446A8
-The default Key would be 111525C868.
+\Example: \
+Date is **11**-**15**-20**25** 00:13:25\
+ID: JEM**C868**407446A8 \
+The default Key would be 111525C868. \
 The default Key is base on the Sensor time and changes each day.
 
 The image below shows the White Label Option page.
@@ -38,7 +38,7 @@ The image below shows the White Label Option page.
 
 The next image shows all the different fields that can be shown or hidden using Whitelabel option 1-7.
 
-{% include image.html file="jemrfesp32whitelabel-mu.jpg" alt="White Label Options"%}
+{% include image.html file="jemrf32sensorsetup-mu.jpg" alt="White Label Options"%}
 
 The image below displays the default Setup Details tab, which includes all available options.
 {% include image.html file="jemrf32sensorsetup.jpg" alt="Full Setup Options"%}
