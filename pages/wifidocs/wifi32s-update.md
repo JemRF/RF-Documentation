@@ -14,7 +14,7 @@ folder: mydoc
 The JemRF S32 WiFi Sensor over the Internet when instructed.
 
 When new firmware is available, an update option will appear at the bottom of the Setup Details screen shown below.
-{% include image.html file="wifigwsetup-online-update.jpg" alt="WiFi Sensor Update Available "%}
+{% include image.html file="jemrfesp32ssetupupdate.jpg" alt="WiFi Sensor Update Available "%}
 
 The "Update Request" selection will appear when it checks with the download server and finds a software update. When you are ready to update the Sensor, select YES and Save.
 When the update starts, the screen will clear and a green status bar will appear:

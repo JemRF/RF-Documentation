@@ -1,5 +1,5 @@
 ---
-title: WiFi Sensor as Switch
+title: WiFi Sensor as Pressure Sensor
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Feb 04, 2024
 tags:
@@ -8,10 +8,10 @@ permalink: wifi32s-pressure.html
 folder: wifidoc
 ---
 ## Introduction
-The S32 WiFi Sensor support an external 3 wire analog Pressure Sensor. The pressure sensor supported is for a 5 volt DC analog sensor from 50 PSI to 1000 PSI. There is setting to tell the unit what the PSI limit of the pressure sensor is.
+The S32 WiFi Sensor support an external 3 wire analog Pressure Sensor. The pressure sensor supported is for a 5 volt DC analog sensor from 50 PSI to 1000 PSI. There is setting to tell the S32 what the PSI limit of the pressure sensor is.
 
 ## Quick Start
-
+When purchased the S32 Sensor will have a 3 pin JST 2.54 connector installed and a 6 inch 3 wire with connector to connect to the external Pressure sensor.
 
 ## Switch Wiring
 

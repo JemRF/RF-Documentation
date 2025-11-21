@@ -29,8 +29,8 @@ The default is the MMDD plus the last to digits of the Year plus the 4 character
 \Example: \
 Date is **11**-**15**-20**25** 00:13:25\
 ID: JEM**C868**407446A8 \
-The default Key would be 111525C868. \
-The default Key is base on the Sensor time and changes each day.
+The resulting default Key would be **111525C868**. \
+The default Key is base on the Sensor date and changes each day.
 
 The image below shows the White Label Option page.
 
