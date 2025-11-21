@@ -30,17 +30,14 @@ Password: PrivateEyePi
 
 ### Step 2 : Configure SSID and Password
 Now open up a browser  and navigate to [http://192.168.4.1/](http://192.168.4.1).
-{% include image.html file="jemrfesp32ssetup.jpg" alt="WiFi Setup Page"%}
+{% include image.html file="wifisetup.jpg" alt="WiFi Setup Page"%}
 From here you configure your WiFi Settings.
 
+{% include image.html file="jemrfesp32sscontrols.jpg" alt="WiFi SSID Select Page"%}
 Next enter the Network Name/SSID and Password of your WiFi (2.4G WiFi Only) and click on save.
 
 Wait a few moments for the WiFi Sensor to connect to the WiFi router. Click on the "Setup Details" menu option to refresh the screen. Once connected you will see the **WLAN:** IP address has given to the Wireless Sensor, as shown in the next image. In the example below it shows 192.168.254.8, yours will be different. What's important is your gateway is now connected to the Internet.
-{% include image.html file="jemrfesp32ssetup2.jpg" alt="WiFi Sensor Online"%}
-
-NOTE: Fields that have been changed but not Saved turn Yellow and are cleared when saved.
-
-{% include image.html file="jemrfesp32ssetup3.jpg" alt="WiFi Sensor Online"%}
+{% include image.html file="wifisetuponline.png" alt="WiFi Sensor Online"%}
 
 ### Step 3 : Connect to Monitoring Server
 You can now switch you laptop or phone from the device WiFi to your home WiFi Network.

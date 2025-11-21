@@ -30,14 +30,15 @@ Password: Jemrf32s
 
 ### Step 2: Configure SSID and Password
 Now open up a browser and navigate to [http://192.168.4.1/](http://192.168.4.1).
-{% include image.html file="wifisetup.jpg" alt="WiFi Setup Page"%}
+{% include image.html file="jemrfesp32ssetup.jpg" alt="WiFi Setup Page"%}
 From here, you configure your WiFi Settings.
 
-{% include image.html file="wifi-setup-ssid.jpg" alt="WiFi SSID Select Page"%}
-Next, enter the Network Name/SSID and Password of your WiFi (2.4 GHz WiFi Only) and click on save.
+{% include image.html file="jemrfesp32ssetup2.jpg" alt="WiFi SSID Select Page"%}
 
-Wait a few moments for the WiFi Sensor to connect to the WiFi router. Click on the "Setup Details" menu option to refresh the screen. Once connected, you will see the **WLAN:** IP address given to the Wireless Sensor, as shown in the following image. The example below shows 192.168.254.8; yours will be different. What's important is that your gateway is now connected to the Internet.
-{% include image.html file="wifisetuponline.png" alt="WiFi Sensor Online"%}
+Note: Changes made but not saved are flagged in Yellow so you know they have not been saved.
+
+Wait a few moments for the WiFi Sensor to connect to the WiFi router. Click on the "Setup Details" menu option to refresh the screen. Once connected, you will see the **WLAN:** IP address given to the Wireless Sensor, as shown in the following image. The example below shows 192.168.254.59; yours will be different. What's important is that your gateway is now connected to the Internet.
+{% include image.html file="jemrfesp32ssetup3.png" alt="WiFi Sensor Online"%}
 
 ### Step 3: Connect to Monitoring Server
 You can now switch your laptop or phone from the device's WiFi to your home WiFi Network.
@@ -49,7 +50,7 @@ If you want to use our monitoring services and do not have a JemRF Monitoring Se
 * For the legacy service, if you already have a PEP Token, you can use it on the newer JemRF Monitor service.
 
 ### Step 4: Final Sensor Settings
-With your Sensor now online (it has a WLAN number), you can stay on your home WiFi Network and point your browser to the WLAN address of the gateway. In the example picture above, the 192.168.254.8 would be the WLAN address for my Sensor; your address will change. Go to http://WLAN (example http://192.168.254.8).
+With your Sensor now online (it has a WLAN number), you can stay on your home WiFi Network and point your browser to the WLAN address of the gateway. In the example picture above, the 192.168.254.59 would be the WLAN address for my Sensor; your address will change. Go to http://WLAN (example http://192.168.254.59).
 #### Server
 On the WiFi Sensor Setup Details page, the **Server** setting is **monitor.jemrf.com**.
 {% include image.html file="jemrf32sensorsetupnorm.png" alt="WiFi JemRF Server"%}
@@ -71,7 +72,7 @@ Once connected, the Wireless Sensor will begin forwarding its data to the monito
 
 ## Manual Network Settings
 The normal process for the JemRF ESP32 Sensor is the automated network request to the local router or name server using DHCP.\
-If needed, when checked, the options to set the network values manually are presented.
+If needed, when checked, the options to set the network values manually are presented as show in image above.
 
 ### Static IP Address
 

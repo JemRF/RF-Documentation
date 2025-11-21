@@ -22,6 +22,8 @@ It connects to your WiFI access point so you can  send temperature readings to [
 
 The S32 WiFi Sensor intelligence monitors for network connection, gets time from Internet Servers, and disables the onboard AP after 10 minutes of connection to the local WiFi to secure open access. If not connected to the Internet, the start time is set to October 1, 2025.
 
+The sensor provides options to customize for your business and provide Authentification for making changes.
+
 ## Features:
 
 - Easy to configure web interface. No programming or soldering skills required. You do not need the internet to configure the device. Connect to it directly from any WiFI device (e.g. PC, phone, tablet…)
@@ -34,6 +36,7 @@ The S32 WiFi Sensor intelligence monitors for network connection, gets time from
 - Although the sensor is highly accurate (±0.5°C accuracy) you can calibrate the temperature reading using a configuration in the WiFI sensor app
 - The device supports dual WiFi mode, allowing it to be WiFI access point and a WiFI client at the same time. A WiFI access point advertises itself through an SSID and can be connected to via any device or computer that has WiFI.
 - MQTT Setup page for connection to the MQTT Broker to relay temperature and humidity readings. The WiFi Sensor supports 2 MQTT formats, more details at [WiFi Gateway MQTT Explained](https://documents.jemrf.com/gatewaymqtt.html). The MQTT connection can be upgraded from a standard non-secure to a secure, trusted connection.
+- Access Control Option to provide Authorization to save Changes and Read hidden settings.
 - JST PH2.0 plug option for external 5 volt DC external power or to provide power to external devices.
 - JST PH2.5 plugs for external relay options.
 - JST PH2.0 3 pin plug for external Pressure Sensor, Door Sensor or Flow meter.
