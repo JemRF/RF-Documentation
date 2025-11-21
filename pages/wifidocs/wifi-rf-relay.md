@@ -7,6 +7,9 @@ sidebar: wifi_sidebar
 permalink: wifi-rf-relay.html
 folder: mydoc
 ---
+
+{% include note.html content="Future Release, currently only available on request" %}
+
 ## Introduction
 The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the JemRF Monitoring service. This eliminates the need for a Raspberry PI computer and all that extra overhead. The Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming a computer first.<br />
 
