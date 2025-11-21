@@ -53,7 +53,7 @@ If you want to use our monitoring services and do not have a JemRF Monitoring Se
 With your Sensor now online (it has a WLAN number), you can stay on your home WiFi Network and point your browser to the WLAN address of the gateway. In the example picture above, the 192.168.254.59 would be the WLAN address for my Sensor; your address will change. Go to http://WLAN (example http://192.168.254.59).
 #### Server
 On the WiFi Sensor Setup Details page, the **Server** setting is **monitor.jemrf.com**.
-{% include image.html file="jemrf32sensorsetupnorm.png" alt="WiFi JemRF Server"%}
+{% include image.html file="jemrf32sensorsetupnorm.jpg" alt="WiFi JemRF Server"%}
 
 #### Token
 Using your account on [monitor.jemrf.com](https://monitor.jemrf.com), after you log in, click on your name in the upper right-hand corner; a dropdown menu will appear. Select Account and then click on the Edit Token button.
