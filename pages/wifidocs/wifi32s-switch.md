@@ -17,7 +17,7 @@ This configuration guide explains how to use the digital interface to sense the 
 When ordered with option for external contact switch, the sensor will include a 2 pin JST 2.5 connection and 6 inch connection cable, optional magnetic switch can be ordered.\
 The Sensor Configuration screen will display an additional sensor called Contact Sensor and will show a value of 0 or 1. When the contact circuit is connected (Closed) the value is 0. When the circuit is Open the value is 1.
 
-<img src="images/jemrf32scontact.jpg" width="425"/>
+{% include image.html file="jemrf32scontact.jpg" alt="WiFi Sensor Contact Reading"%}
 
 ## Switch Wiring
 

@@ -104,6 +104,10 @@ entries:
       url: /wifi32s-pressure.html
       output: web, pdf
 
+    - title: WiFi 2 Contact Sensor
+      url: /wifi32s-switch.html
+      output: web, pdf
+
     - title: WiFi 2 Flow Meter Sensor
       url: /wifi32s-flowmeter.html
       output: web, pdf

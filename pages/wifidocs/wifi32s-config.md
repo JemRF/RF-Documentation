@@ -14,7 +14,7 @@ Once you have completed the [setup of WIFI Temperature Sensor](/wifi-iot-setup.h
 On the "Sensor Config" menu there are a number of options which we will describe further here.
 
 
-{% include image.html file="wifi-sensor-config.jpg" alt="WiFi Sensor Configuration"%}
+{% include image.html file="jemrfesp32sscontrols.jpg" alt="WiFi Sensor Configuration"%}
 
 
 ### Send To Server
