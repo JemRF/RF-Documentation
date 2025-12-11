@@ -1,7 +1,7 @@
 ---
 title: WiFi Sensor as Pressure Sensor
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
-last_updated: Dec 10, 2025
+last_updated: Feb 04, 2024
 tags:
 sidebar: wifi_sidebar
 permalink: wifi32s-pressure.html
