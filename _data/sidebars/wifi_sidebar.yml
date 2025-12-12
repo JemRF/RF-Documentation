@@ -76,43 +76,47 @@ entries:
       url: /wifi32s-sensor.html
       output: web, pdf
 
-    - title: WiFi 2 Sensor Getting Started
+    - title: S32 WiFi Sensor Getting Started
       url: /wifi32s-setup.html
       output: web, pdf
 
-    - title: WiFi 2 Sensor Firmware Upgrade
+    - title: S32 WiFi Temperature and Humidity Sensor
+      url: /wifi32s-temp-hum.html
+      output: web, pdf
+
+    - title: S32 WiFi Sensor Firmware Upgrade
       url: /wifi32s-update.html
       output: web, pdf
 
-    - title: WiFi 2 Sensor White Label
+    - title: S32 WiFi Sensor White Label
       url: /wifi32s-whitelabel.html
       output: web, pdf
 
-    - title: WiFi 2 Sensor Options
+    - title: S32 WiFi Sensor Options
       url: /wifi32s-config.html
       output: web, pdf
 
-    - title: WiFi 2 Sensor Sensor Offline
+    - title: S32 WiFi Sensor Offline
       url: /wifi32s-offline.html
       output: web, pdf
 
-    - title: WiFi 2 Sensor Remote Control Relay(Switch)
+    - title: S32 WiFi Sensor Remote Control Relay(Switch)
       url: /wifi32s-remote-relay-switch.html
       output: web, pdf
 
-    - title: WiFi 2 Pressure Sensor
+    - title: S32 WiFi Pressure Sensor
       url: /wifi32s-pressure.html
       output: web, pdf
 
-    - title: WiFi 2 Contact Sensor
+    - title: S32 WiFi Contact Sensor
       url: /wifi32s-switch.html
       output: web, pdf
 
-    - title: WiFi 2 Flow Meter Sensor
+    - title: S32 WiFi Flow Meter Sensor
       url: /wifi32s-flowmeter.html
       output: web, pdf
 
-    - title: WiFi 2 MQTT Sensor
+    - title: S32 WiFi MQTT Sensor
       url: /wifi32s-mqtt.html
       output: web, pdf
 
