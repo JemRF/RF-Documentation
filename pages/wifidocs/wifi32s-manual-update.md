@@ -34,7 +34,8 @@ Figure 3.</center>
 
 ### Verify the Espressif folder was installed
 
-To verify the Espressif folder is in the list, type: "**cd .\Espressil**" ***(Enter)***  Followed by **ls** ***(Press Enter)*** to show the list of tools. As shown in Figure 4.  If the folder is not there review and repeat the Download Tools step.
+To verify the Espressif folder is in the list, type: **cd .\Espressil** ***(Enter)***  \
+Then type: **ls** ***(Press Enter)*** to show the list of tools. As shown in Figure 4.  If the folder is not there review and repeat the Download Tools step.
 <center>{% include image.html file="espressif4.jpg" alt="WiFi Sensor Update Available "%}
 Figure 4.</center>
 
@@ -59,7 +60,7 @@ Type the command: **.\loader.ps1 COM6** as shown in Figure 6, (replacing **COM6*
 <center>{% include image.html file="espressif6.jpg" alt="WiFi Sensor Update Available "%}
 Figure 6.</center>
 
-{% include note.html content="If you get an error like shown in Figure 6b, it means that Windows has blocked the application and it will need to be Unblocked. In Windows Explorer, in the C:\Espressif folder, right click on loader.ps1 and check the Unblock box. Then repeat with right click on the Esptools.exe and check the Unblock box. You can repeat the above step and the loader command should now work." %}
+{% include note.html content="If you get an error like shown in Figure 6b, it means that Windows has blocked the application and it will need to be Unblocked. In Windows Explorer, in the C:\Espressif folder, right click on loader.ps1, select  **Properties** and check the Unblock box. Then repeat with right click on the Esptools.exe, select  **Properties** and check the Unblock box. You can repeat the above step and the loader command should now work." %}
 <center>{% include image.html file="espressif6b.jpg" alt="File blocked "%}
 Figure 6b.</center>
 
