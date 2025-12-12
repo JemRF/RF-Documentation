@@ -15,7 +15,9 @@ This configuration guide explains how to use the digital interface to sense the 
 The sensor configuration page will show a Contact row with value of 0 or 1. When the contacts are closed it is a 0 (zero) and when they are not connected it report a 1 value.
 Monitoring.JemRF.com can represent the state as 1/0, open/losed or with an open or closed door graphic or open or closed window icon.
 
-Optional internal and external temperature sensors can be added, as well as an Internal Temperature & Humidity Sensor.
+The options include options for multiple sensors including up to 4 external temperature sensors at lengths from 1 m to 5 meters, all at the same time.  The Sensor also supports remote pressure sensors from 10 to 500 psi. Has an interface for a remote digital flow sensor.
+
+The JemrRF S32 WiFi Sensor can support multiple sensor types concurrently, reducing the cost of various sensors in a single location.
 
 ## Quick Start
 When ordered with option for external contact switch, the sensor will include a 2 pin JST 2.54 connection and 6 inch connection cable, optional magnetic switch can be ordered.\
@@ -23,5 +25,19 @@ The Sensor Configuration screen will display an additional sensor called Contact
 
 {% include image.html file="jemrf32scontact.jpg" alt="WiFi Sensor Contact Reading"%}
 
+## Features:
+
+- Easy to configure web interface. No programming or soldering skills required. You do not need the internet to configure the device. Connect to it directly from any Wi-Fi device (e.g., PC, phone, tablet).
+- Uses your local 2.4 GHz WiFi to access the Internet
+- MQTT Setup page for connection to the MQTT Broker to relay temperature and humidity readings. 
+- The WiFi Sensor supports 2 MQTT formats; more details are available in WiFi Gateway MQTT Explained. The MQTT connection can be upgraded from a standard non-secure to a secure, trusted connection.
+- Access Control Option to provide Authorization to save Changes and read hidden settings.
+- JST PH2.0 plug option for external 5 volt DC external power, or to provide power to external devices.
+- JST PH2.54 2-pin Door Sensor.
+  
 ## Switch Wiring
 
+## Tech Specs:
+
+* Dimensions 74mm x 55mm x 28mm
+* Powered either by a USB-C cable 5VDC.

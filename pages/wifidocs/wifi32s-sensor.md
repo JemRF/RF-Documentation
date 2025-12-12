@@ -1,7 +1,7 @@
 ---
-title: The JemRF ESP32 WIFI Sensor Version 2 Introduction
+title: The JemRF ESP32 WIFI Sensor Version Introduction
 keywords: getting started introduction
-last_updated: Sept 20, 2025
+last_updated: Dec  12, 2025
 tags:
 summary: "The Internet Of Things (IoT) is where everyday things (cars, homes, household appliances, plants) are being connected to the Internet where we can monitor and alert in ways not possible before. This document describes our WiFi Sensor and its place in the IoT Universe."
 sidebar: wifi_sidebar
@@ -13,7 +13,7 @@ folder: wifidocs
 
 ![WiFi Sensor Case](images/wifisensorcase.jpg "WiFi Case") 
 
-The JemRF S32 WiFi Sensor is based on the ESP32 processor, which makes it more than just Version 2; it is the start of our next-generation of sensors. The S32 WiFi Sensor expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
+The JemRF S32 WiFi Sensor is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The S32 WiFi Sensor expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
 It comes in different configurations, 
 1. Temperature and Humidity Sensor with options, 
 2. Pressure Sensor with options, 
