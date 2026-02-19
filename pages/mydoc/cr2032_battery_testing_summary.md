@@ -21,8 +21,12 @@ I have also observed that a lithium battery will recover some when the load is r
 - Will pluse loads change the power curve?
 
 ## Test Plan
+
 To better match real-world usage, the test conditions would need to be a pulse of load then a long rest and pulse again. To do that we built a test rig to hold and test 4 CR2032 batteries. The testing was for each battery to turn on an LED for .25 seconds, one at a time. Then repeat.  This cycle allowed each battery the same on and off time.  The off time being 3 times longer to allow for some battery recovery.
 The normal lithium CR2032 battery operates at 2.8 volts. So testing was run until the batteries were below 2.4 volts.  While batteries in many devices will still operate below 2.4 volts, some test end voltage was needed and manufacture data show at 2.4 volts the battery has started the fast roll off phase.
+
+To see details of the testing visit [CR2032 Battery Testing](https://documents.jemrf.com/cr2032_battery_testing.html)
+
 ## Batteries Tested
 Here are the batteries tested so far:
 

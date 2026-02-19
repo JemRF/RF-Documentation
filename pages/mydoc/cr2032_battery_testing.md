@@ -42,6 +42,7 @@ First, I needed to create a performance rating. To do that, I assigned a ranking
 
  The chart below is the summary of the batteries tested so far.  It compares their cost (if bought 10 at a time) and how they performed.  The rating was based on how long they remained above the cut off, with the best being #1.  I weighted the cost of the battery with the performance to create the Cost(C)/ Performance(P) value, and ordered the chart by the C/P Order.
 
+### Test Summary
 |Brand  |Code for Testing|General Cost (C) |Days Working|Cost Per Performance|C/P Order|
 |-------|-------------------|:---------------:|:---------------:|:--------------:|:-----------:|
 |NightKonic |NCR2032    |$ 0.25   |8-9|.083 |1|
