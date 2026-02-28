@@ -56,11 +56,11 @@ entries:
       url: /rf_modes.html
       output: web, pdf
 
-    - title: Message Format
+    - title: RF2 Message Format
       url: /rf_message_format.html
       output: web, pdf
 
-    - title: Message Reference
+    - title: RF2 Message Reference
       url: /rf_message_reference.html
       output: web, pdf
 

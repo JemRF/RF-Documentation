@@ -10,6 +10,7 @@ folder: mydoc
 ---
 
 ## Format Overview
+The RF2 message formats apply to the older messaging protocol that was limited to two character IDs.
 The RF2 message is made up of 12 characters made up of three sections:
 
 ```

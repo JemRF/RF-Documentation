@@ -39,12 +39,6 @@ The return would be b09ABVER9.xx.\
 | `INFO`  |  Request report on internal settings for TYPE xx, NOMSG yy, and INTVL zzz. | `b9999Ixxyzzz` |
 | `NOMSG[num]` <br/> `E.g. NOMSG3` | A numeric value between 1 and 9 that specifies how many messages to be sent after each trigger or request. |  `b9999NOMSG9` |
 | `PRESS` | Returns reading from Pressure Sensor  | `b9999PR999.9` |
-| `RELAYA` |  Returns the status of relay A | `b9999RELAON-` or `b9999RELAOFF` |
-| `RELAYB` |  Returns the status of relay B | `b9999RELBON-` or `b9999RELBOFF` |
-| `RELAON` |  Switches Relay A on | `b9999RELAON-` |
-| `RELAOFF` |  Switches Relay A off | `b9999RELAOFF` |
-| `RELBON` |  Switches Relay B on | `b9999RELBON-` |
-| `RELBOFF` |  Switches Relay B off | `b9999RELBOFF` |
 | `RBSON`|  Report Button Status - ON. Use this command to always send the button status (refer Button Sensor section) every INTVL minutes when in CYCLE sleep mode regardless of the TYPE. This is useful for when you are using a RF module for multiple purposes (e.g. temperature sensor and button sensor) and you want a temperature reading as well as button status every INTVL | `b9999RBSON--` |
 | `RBSOFF`|  Report Button Status - OFF. Use this command to switch off RBS (see RBSON). | `b9999RBSOFF-` |
 | `RSSION`|  Report RSSI Status - ON. This is Only a IOT Gateway receiver option. Use this command to have the IOT Gateway to send the RF Signal Strength Indicator (RSSI) level when a sensor message is received by the IOT Gateway. Like bars on Cell phone, the more positive the better. A sensor will RSSI of -70 is like 1 bar on cell phone.  | `b9999RSSION---` |
@@ -53,7 +47,7 @@ The return would be b09ABVER9.xx.\
 | `RESET` | Resets the device settings back to factory default. This command can only be sent over the serial port. This command does not require a message start indicator, or device ID (refer Message Format section). | `OK-----` |
 | `SLEEP` | Puts the device into Sleep Mode. See Sleep Mode section for more details. This command only applies to devices in sensor mode.| `b9999SLEEPIN` |
 | `TEMP` | Returns a temperature reading in Celsius from the 10k thermistor | `b9999TM99.99` <br/> `(NOMSG times)` |
-| `TYPE[num]` <br/>  `E.g. TYPE2` |  1=DS18B20 Temperature Sensor <br/> 2=Gateway  (enables serial comms TX and RX) <br/> 3=Pressure <br/> 4=DS18B20 Temperature Sensor <br/> 5=AnalogA <br/> 6=Press <br/> 7=Relay <br/> 8=Voltage <br/> 9=AC Detect <br/> 10=HTU21 Humidity and Temperature Sensor | `b9999TYPE99-` |
+| `TYPE[num]` <br/>  `E.g. TYPE2` |  1=DS18B20 Temperature Sensor <br/> 2=Gateway  (enables serial comms TX and RX) <br/> 3=Pressure <br/> 4=DS18B20 Temperature Sensor <br/> 5=AnalogA <br/> 6=AnalogB <br/> 7=AC Detect <br/> 8=Voltage <br/> 9=BME280 <br/> 10=HTU21 Humidity and Temperature Sensor | `b9999TYPE99-` |
 | `VERSION` | Returns the Firmware Version  | `b9999VERx.xx` <br/>|
 | `VOLTAGE` | Returns reading from Volatage Sensor  | `b9999VT99.99` |
 | | | |

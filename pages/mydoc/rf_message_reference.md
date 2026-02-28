@@ -3,11 +3,12 @@ title: Message Reference
 keywords: message reference, llap, protocol, message protocol, api, json, interface, messages
 last_updated: June 10, 2025
 tags:
-summary: "This page explains all the two character ID supported LLAP messages used by the JemRF devices"
+summary: "This page explains all the RF2, two character ID supported by the LLAP messages used by the JemRF devices"
 sidebar: mydoc_sidebar
 permalink: rf_message_reference.html
 folder: mydoc
 ---
+The RF2 message formats apply to the older messaging protocol that was limited to two character IDs.
 
 | Message | Action | Return Message |
 |-------|--------|---------|
