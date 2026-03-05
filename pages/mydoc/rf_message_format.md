@@ -3,7 +3,7 @@ title: RF2 Message Format
 keywords: message format, llap, protocol, message protocol, api, json, interface
 last_updated: Sep 28, 2020
 tags:
-summary: "This page explains the message format used by the JemRF devices"
+summary: "This page explains the RF2 message format used by the JemRF devices"
 sidebar: mydoc_sidebar
 permalink: rf_message_format.html
 folder: mydoc

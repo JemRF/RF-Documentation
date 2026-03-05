@@ -20,8 +20,8 @@ The return would be b09ABVER9.xx.\
 | Message | Action | Return Message |
 |-------|--------|---------|
 | `+++` | Use this command to determine if a device is up and running. This command can only be sent over the serial interface. If you want to test the presence of a remote device use the HELLO command. This command does not require message start indicator, or device ID (refer Message Format section). The return message is OK followed by the current channel the IOT gateway is listening on, and the firmware version. | `OKcv.vv`|
-| `AA` | Request Analog value 0-32767 from Analog A (Flex Module Pin17) | `b9999AA99999` |
-| `AB` | Request Analog value 0-32767 from Analog B (Flex Module Pin18)  | `b9999AB99999` |
+| `ANAA` | Request Analog value 0-32767 from Analog A (Flex Module Pin17) | `b9999AA99999` |
+| `ANAB` | Request Analog value 0-32767 from Analog B (Flex Module Pin18)  | `b9999AB99999` |
 | `ATCH[num] E.g. ATCH5` | Configures the device Frequency. Only accepts a number 1 to 6 and sets the desired frequency per chart below. Device requires a restart to apply the new frequency. For two devices to communicate they must have the same frequency and channel (ATCN). Device requires a restart to apply the new channel. <br/> 1 - 433 MHZ  <br/> 2 - 915 MHZ (default US & Canada) <br/> 3 - 868.3 MHZ (default Europe) <br/> 4 - 868 MHZ <br/> 5 - 903 MHZ <br/> 6 - 315 MHZ | `b9999ATCH9--` |
 | `ATCN[num] E.g. ATCN5` | Configures the transmission channel. Only accepts numbers 0-9. Each frequency (ATCH) has 10 channels. For two devices to communicate they must have the same frequency and channel. Device requires a restart to apply the new channel. Default is 0. | `b9999ATCN9--` |
 | `ATEE[num] E.g. ATEE1` | Configures whether to encrypt message. <br/> ATEE1 = encryption on. <br/> ATEE0 = encryption off. <br/> Default is off. <br/> Refer ATEA for the related encryption key. | `b9999ATEE9--` |
@@ -46,7 +46,8 @@ The return would be b09ABVER9.xx.\
 | `REBOOT` | Restarts the device | `b9999REBOOT-` |
 | `RESET` | Resets the device settings back to factory default. This command can only be sent over the serial port. This command does not require a message start indicator, or device ID (refer Message Format section). | `OK-----` |
 | `SLEEP` | Puts the device into Sleep Mode. See Sleep Mode section for more details. This command only applies to devices in sensor mode.| `b9999SLEEPIN` |
-| `TEMP` | Returns a temperature reading in Celsius from the 10k thermistor | `b9999TM99.99` <br/> `(NOMSG times)` |
+| `TEMP` | Transmits a temperature reading in Celsius from the 10k thermistor sensor| `9999TM99.99---` <br/> `(NOMSG times)` |
+| `TEMPC` | Transmits a temperature reading in Celsius from the DS18B 20 sensor | `9999TM99.99---` <br/> `(NOMSG times)` |
 | `TYPE[num]` <br/>  `E.g. TYPE2` |  1=DS18B20 Temperature Sensor <br/> 2=Gateway  (enables serial comms TX and RX) <br/> 3=Pressure <br/> 4=DS18B20 Temperature Sensor <br/> 5=AnalogA <br/> 6=AnalogB <br/> 7=AC Detect <br/> 8=Voltage <br/> 9=BME280 <br/> 10=HTU21 Humidity and Temperature Sensor | `b9999TYPE99-` |
 | `VERSION` | Returns the Firmware Version  | `b9999VERx.xx` <br/>|
 | `VOLTAGE` | Returns reading from Volatage Sensor  | `b9999VT99.99` |

@@ -12,6 +12,8 @@ folder: mydoc
 This document outlines the process for manually updating a JemRF S32 WiFi Sensor from a desktop PC. This procedure is for new installs and to reload a device that received a bad update.
 
 ## Download tools
+This is One Time Only, Skip if done!
+
 Software must be installed on the local PC's root disk drive "C:". [Download the tools here.](\firmware\Espressif.zip) The download is a compressed file **Espressif.zip**.  Open the Zip folder in File Explorer and drag the folder “**Espressif**” to “This PC, OS (C:).
 
 Note, the downloading and installing the tools is a one-time task.
