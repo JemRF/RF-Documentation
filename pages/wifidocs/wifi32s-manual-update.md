@@ -93,7 +93,7 @@ Figure 10.</center>
 #### Option 2 New Install
 For new installs follow the [Startup process](wifi32s-setup.html) to get connected to the WiFi 32s Sensor local WiFi.\
 You will see the messages "Missing WiFi Credentials" as shown in Figure 11.
-<center>{% include image.html file="esp32_wifi_missing.jpg" alt="WiFi Sensor Update Available "%}
+<center>{% include image.html file="esp32 wifi_missing.jpg" alt="WiFi Sensor Update Available "%}
 Figure 11.</center>
 Once the the WiFi settings completes it will exit the loader and start the monitor as shown in Figure 10.
 
