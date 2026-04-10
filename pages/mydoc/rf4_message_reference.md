@@ -46,8 +46,8 @@ The return would be b09ABVER9.xx.\
 | `REBOOT` | Restarts the device | `b9999REBOOT-` |
 | `RESET` | Resets the device settings back to factory default. This command can only be sent over the serial port. This command does not require a message start indicator, or device ID (refer Message Format section). | `OK-----` |
 | `SLEEP` | Puts the device into Sleep Mode. See Sleep Mode section for more details. This command only applies to devices in sensor mode.| `b9999SLEEPIN` |
-| `TEMP` | Transmits a temperature reading in Celsius from the 10k thermistor sensor| `9999TM99.99---` <br/> `(NOMSG times)` |
-| `TEMPC` | Transmits a temperature reading in Celsius from the DS18B 20 sensor | `9999TM99.99---` <br/> `(NOMSG times)` |
+| `TEMP` | Transmits a temperature reading in Celsius from the 10k thermistor sensor| `b9999TM99.99---` <br/> `(NOMSG times)` |
+| `TEMPC` | Transmits a temperature reading in Celsius from the DS18B 20 sensor | `b9999TM99.99---` <br/> `(NOMSG times)` |
 | `TYPE[num]` <br/>  `E.g. TYPE2` |  1=DS18B20 Temperature Sensor <br/> 2=Gateway  (enables serial comms TX and RX) <br/> 3=Pressure <br/> 4=DS18B20 Temperature Sensor <br/> 5=AnalogA <br/> 6=AnalogB <br/> 7=AC Detect <br/> 8=Voltage <br/> 9=BME280 <br/> 10=HTU21 Humidity and Temperature Sensor | `b9999TYPE99-` |
 | `VERSION` | Returns the Firmware Version  | `b9999VERx.xx` <br/>|
 | `VOLTAGE` | Returns reading from Volatage Sensor  | `b9999VT99.99` |

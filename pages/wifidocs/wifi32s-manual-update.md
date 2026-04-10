@@ -69,19 +69,39 @@ Figure 6.</center>
 Figure 6b.</center>
 
 ### Post install
-
 Once the update completes, the process will start a monitor application, and you should start seeing messages like shown in Figure 7.
-<center>{% include image.html file="espressif7.jpg" alt="WiFi Sensor Update Available "%}
+This is the generic software loader. You select if this is to be loaded as a Gateway or a Sensor.
+<center>{% include image.html file="esp32_WiFi_Init_load.jpg" alt="Loader Selection "%}
 Figure 7.</center>
 
-Once the process is running, exit the monitor program, by pressing the Control (**Ctrl**) key and the right Bracket ( **]** ) key at the same time, and that should exit the monitor as shown in Figure 8.
-<center>{% include image.html file="espressif8.jpg" alt="WiFi Sensor Update Available "%}
+You can press 1 or 2 or you can got the the WiFi IP address to make the selection as shown in Figure 8.
+Once the update completes, the process will start a monitor application, and you should start seeing messages like shown in Figure 7.
+<center>{% include image.html file="esp_wifi_load_screen.jpg" alt="Loader Web Info and Selection "%}
 Figure 8.</center>
 
-### Validation 
-To validate the update and it is working, follow the [Startup process](wifi32s-setup.html) to get connected to the WiFi 32s Sensor local WiFi. When connected, you should see Figure 9\. Look at the bottom banner to see Version 1.1.1. Now you can update over the air using the “**Update Available, Install?**” option to get the latest version.
-<center>{% include image.html file="jemrfesp32ssetupupdate.jpg" alt="WiFi Sensor Update Available "%}
+#### Option 1 Reload with SSID
+If reloading a device that had WiFi connection settings:
+
+Once the update completes, the process will start a monitor application, and you should start seeing messages like shown in Figure 9.
+<center>{% include image.html file="espressif7.jpg" alt="WiFi Sensor Update Available "%}
 Figure 9.</center>
+
+Once the process is running, exit the monitor program, by pressing the Control (**Ctrl**) key and the right Bracket ( **]** ) key at the same time, and that should exit the monitor as shown in Figure 10.
+<center>{% include image.html file="espressif8.jpg" alt="WiFi Sensor Update Available "%}
+Figure 10.</center>
+
+#### Option 2 New Install
+For new installs follow the [Startup process](wifi32s-setup.html) to get connected to the WiFi 32s Sensor local WiFi.\
+You will see the messages "Missing WiFi Credentials" as shown in Figure 11.
+<center>{% include image.html file="esp32_wifi_missing.jpg" alt="WiFi Sensor Update Available "%}
+Figure 11.</center>
+Once the the WiFi settings completes it will exit the loader and start the monitor as shown in Figure 10.
+
+
+### Validation 
+To validate the update and it is working, if needed follow the [Startup process](wifi32s-setup.html) to get connected to the WiFi 32s Sensor local WiFi. When connected, you should see Figure 12\. Look at the bottom banner to see Version 1.1.1. Now you can update over the air using the “**Update Available, Install?**” option to get the latest version.
+<center>{% include image.html file="jemrfesp32ssetupupdate.jpg" alt="WiFi Sensor Update Available "%}
+Figure 12.</center>
 
 ## Releases
 
