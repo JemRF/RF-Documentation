@@ -11,8 +11,9 @@ folder: wifidocs
 
 # JemRF WiFi Wireless Gateway Pro and WiFi Sensor Pro MQTT Options
 
-The JemRF WiFi Sensor Pro has a built-in MQTT Client. It supports the same MQTT features as the Smart Gateway,  WiFi Gateway, and the older WiFi Sensors.  They can all send data to the Monitoring Server, which will store and display the readings on the user's Dashboard. They can also connect to a MQTT Broker and publish the sensor readings.  It can do both at the same time, or just send to the Server or the Broker. You can now use tools like Node-Red to build your own monitoring displays.\
-The Pro series also has an option that supports your Home Assistant Server using Home Assistant MQTT Auto Discovery.
+The JemRF WiFi Pro have all the same features of our previous WiFi devices including the built-in MQTT Client. It supports the same MQTT features as the Smart Gateway, WiFi Gateway, and the older WiFi Sensors.  They can all send data to the Monitoring Server, which will store and display the readings on the user's Dashboard. They can also connect to a MQTT Broker and publish the sensor readings.  They send to both at the same time, or just send to the Server or the Broker. You can now use tools like Node-Red to build your own monitoring displays.\
+The Pro series also has an option that supports your Home Assistant Server using Home Assistant MQTT Auto Discovery.\
+The Pro series also does a CheckIn on MQTT start with optional checkin setting. The Checkin includes the WLAN IP and MAC address to support troubleshooting areas where more than one sensor might be installed.
 
 The settings for publishing sensor readings to an MQTT broker are configured on the MQTT Detail Tab, as shown in Figure 1.
 
@@ -88,14 +89,17 @@ homeassistant/sensor
 homeassistant/sensor/CC7DC0A28DCC
 homeassistant/sensor/CC7DC0A28DCC/humidity
 homeassistant/sensor/CC7DC0A28DCC/humidity/config
+```json
 {"device":{"identifiers":["JEMCC7DC0A28DCC"],"name":"JemRF Sensor JEMCC7DC0A28DCC","model":"WiFi Sensor","mf":"JemRF"},"device_class":"humidity","state_topic":"JEMCC7DC0A28DCC/CC7DC0A28DCC/HUM","name":"Humidity","unique_id":"CC7DC0A28DCCHumidity","state_class":"measurement","unit_of_measurement":"%","availability_topic":"JEMCC7DC0A28DCC/CheckIn","payload_available":"online","payload_not_available":"offline"}
-
+```
 homeassistant/sensor/CC7DC0A28DCC/temperature/config
+```json
 {"device":{"identifiers":["JEMCC7DC0A28DCC"],"name":"JemRF Sensor JEMCC7DC0A28DCC","model":"WiFi Sensor","mf":"JemRF"},"device_class":"temperature","state_topic":"JEMCC7DC0A28DCC/CC7DC0A28DCC/TMPA","name":"Temperature","unique_id":"CC7DC0A28DCCTemperature","state_class":"measurement","unit_of_measurement":"°F","availability_topic":"JEMCC7DC0A28DCC/CheckIn","payload_available":"online","payload_not_available":"offline"}
-
+```
 homeassistant/sensor/CC7DC0A28DCC/flow/config
+```json
 {"device":{"identifiers":["JEMCC7DC0A28DCC"],"name":"JemRF Sensor JEMCC7DC0A28DCC","model":"WiFi Sensor","mf":"JemRF"},"device_class":"volume_flow_rate","state_topic":"JEMCC7DC0A28DCC/CC7DC0A28DCC/FLOW","name":"Flow","unique_id":"CC7DC0A28DCCFlow","state_class":"measurement","unit_of_measurement":"gal/min","value_template":"{{ value | regex_replace('[^0-9.-]', '') }}","suggested_display_precision":2,"availability_topic":"JEMCC7DC0A28DCC/CheckIn","payload_available":"online","payload_not_available":"offline"}
-
+```
 with payload data in the form: \
 JEMCC7DC0A28DCC/CC7DC0A28DCC
 HUM = 62.02
