@@ -24,8 +24,8 @@ The settings for publishing sensor readings to an MQTT broker are configured on 
 ## Getting Started
 Click the MQTT tab and enter the MQTT Broker, in my case, my local server, and the MQTT port. For me, the standard MQTT port is used. Next is the optional Username and Password.
 
-Like the JemRF Pro series come preset to Port 1883 and is configured to use the JemRF Broker. But also supports secure connections on the standard port 8883 or other user defined ports. The secure connection will show Not Secure, Secure but not Trusted (if the digital certificates are self signed) and Secure Trusted if the certificates are valid. \
-The default username is jemrf, and the default password is mqtt4jemrf.  If you want a private account, contact sales @ jemrf.com.
+Like the JemRF Pro series come preset to Port 1883 and is configured to use the JemRF Broker. But also supports secure connections on the standard port 8883 or other user defined ports, just check the SSL/TSL checkbox. The controller will attempt the highest level connection first and work down until it establishes a connection or fails to make a connection to the broker. Once connected, the connection will show Not Secure, Secure but not Trusted (if the digital certificates are self signed) and Secure Trusted if the certificates are valid. \
+The default username is jemrf, and the default password is mqtt4Jemrf.  If you want a private account, contact sales @ jemrf.com.
 The JemRF WiFi Sensor can also make a Secure Connection. If the port numbers are 4000 or higher, the Sensor will attempt to make a Secure and Trusted Connection. If the Secure and Trusted fails, it will try a Secure and UnTrusted. Untrusted is caused when the site Certificate is not current or cannot be validated. A typical Example is using a self-signed certificate. A Secure, encrypted connection is made, but because the certificate cannot be validated, it is flagged as Untrusted. As shown in Figure 2.
 
 <img src="images/jemrf32smqttsecnt.jpg" width="425"/>
@@ -35,7 +35,7 @@ The JemRF WiFi Sensor can also make a Secure Connection. If the port numbers are
 ## Publishing Format
 Using the MQTT standard protocol, the Gateway will publish data to the broker using the subscription that is the combination of the Gateway Name and the sensor message.
 -Subscription
-Using the Gateway shown in Figure 1, the Gateway name is JRF03516124.
+Using the Gateway shown in Figure 1, the Gateway name is JEMB410582F3728.
 Using the sensor shown in Figure 2
 
 
