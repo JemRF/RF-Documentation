@@ -10,7 +10,7 @@ folder: wifidoc
 ## Introduction
 The S32 WiFi Sensor support and internal HTU21D Temperature and Humidity Sensor. The HTU21D provides a Temperature reading from -40℃ – 105℃ and Humidity readings from 0 to 100%. The sensor is highly accurate (±0.5°C accuracy) from -20℃ to 85℃.
 
-The JemRF S32 WiFi Sensor is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The S32 WiFi Sensor expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. 
+The JemRF S32 WiFi Sensor is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The S32 WiFi Sensor expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud.
 
 The options include options for multiple sensors including up to 4 external temperature sensors at lengths from 1 m to 5 meters, all at the same time.  The Sensor also supports remote pressure sensors from 10 to 500 psi. Has an interface for a remote digital flow sensor or door sensor.
 
@@ -22,14 +22,16 @@ The JemrRF S32 WiFi Sensor can support multiple sensor types concurrently, reduc
 - Uses your local 2.4 GHz WiFi to access the Internet
 - Cyclic temperature transmission mode with configurable send interval
 - Supports both Celsius and Fahrenheit temperature readings
-- MQTT Setup page for connection to the MQTT Broker to relay temperature and humidity readings. 
-- The WiFi Sensor supports 2 MQTT formats; more details are available in WiFi Gateway MQTT Explained. The MQTT connection can be upgraded from a standard non-secure to a secure, trusted connection.
-- Supports HTU21D Temperature (-40℃ – 105℃) and Humidity - Sensor, future BME280 Temperature,Humidity and Pressure
-  
+- MQTT Setup page for connection to the MQTT Broker to relay temperature and humidity readings.
+- The WiFi Sensor supports 3 MQTT formats; more details are available in (WiFi Pro Devices MQTT Settings)[https://documents.jemrf.com/wifi32s-mqtt.html]. The MQTT connection can be upgraded from a standard non-secure to a secure, trusted connection.
+- MQTT Home Assistant Auto-Discovery supported.
+- Supports HTU21D Temperature (-40℃ – 105℃) and Humidity - Sensor
+- Support White Label Options
+
 ## Required, but not included:
 
 USB-C cable and USB power supply.
-We have USB-C cables at our store, (JemRF Store)[https://www.jemrf.com]. 
+We have USB-C cables at our store, (JemRF Store)[https://www.jemrf.com].
 
 ## Tech Specs:
 

@@ -1,5 +1,5 @@
 ---
-title: The JemRF ESP32 WIFI Sensor Version Introduction
+title: The JemRF WIFI Sensor Pro Version Introduction
 keywords: getting started introduction
 last_updated: Dec  12, 2025
 tags:
@@ -9,17 +9,17 @@ permalink: wifi32s-sensor.html
 folder: wifidocs
 ---
 
-## S32 WiFI Sensor 
+## S32 WiFI Sensor
 
-![WiFi Sensor Case](images/wifisensorcase.jpg "WiFi Case") 
+![WiFi Sensor Case](images/wifisensorcase.jpg "WiFi Case")
 
-The JemRF S32 WiFi Sensor is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The S32 WiFi Sensor expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
-It comes in different configurations, 
-1. Temperature and Humidity Sensor with options, 
-2. Pressure Sensor with options, 
-3. Temperature sensor with options, 
-4. Contact Sensor with options. 
-   
+The JemRF S32 WiFi Sensor Pro is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The S32 WiFi Sensor expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
+It comes in different configurations,
+1. Temperature and Humidity Sensor with options,
+2. Pressure Sensor with options,
+3. Temperature sensor with options,
+4. Contact Sensor with options.
+
 The options for each include up to 4 external temperature sensors at lengths from 1 m to 5 meters, all at the same time.  The Sensor also supports remote pressure sensors from 10 to 500 psi. Has an interface for a remote digital flow sensor or door sensor.
 
 The JemrRF S32 WiFi Sensor can support multiple sensor types concurrently, reducing the cost of various sensors in a single location.
@@ -40,8 +40,9 @@ The sensor provides options to customize for your business and to authenticate c
 - Supports HTU21D Temperature (-40℃ – 105℃) and Humidity - Sensor, future BME280 Temperature,Humidity and Pressure
 - Although the sensor is highly accurate (±0.5°C accuracy), you can calibrate the temperature reading using a configuration in the WiFI sensor app
 - The device supports dual Wi-Fi mode, allowing it to act as both a Wi-Fi access point and a Wi-Fi client at the same time. A WiFI access point advertises itself through an SSID and can be connected to via any device or computer that has WiFI.
-- MQTT Setup page for connection to the MQTT Broker to relay temperature and humidity readings. 
-- The WiFi Sensor supports 2 MQTT formats; more details are available in WiFi Gateway MQTT Explained. The MQTT connection can be upgraded from a standard non-secure to a secure, trusted connection.
+- MQTT Setup page for connection to the MQTT Broker to relay temperature and humidity readings.
+- The WiFi Sensor supports 3 MQTT formats; more details are available in (WiFi Pro Devices MQTT Settings)[https://documents.jemrf.com/wifi32s-mqtt.html]. The MQTT connection can be upgraded from a standard non-secure to a secure, trusted connection.
+- MQTT Home Assistant Auto-Discovery supported.
 - Access Control Option to provide Authorization to save Changes and read hidden settings.
 - JST PH2.0 plug option for external 5 volt DC external power, or to provide power to external devices.
 - JST PH2.54 3-pin plug for external Pressure Sensor
@@ -51,7 +52,7 @@ The sensor provides options to customize for your business and to authenticate c
 ## Required, but not included:
 
 USB-C cable and USB power supply.
-We have USB-C cables at our store, (JemRF Store)[https://www.jemrf.com]. 
+We have USB-C cables at our store, (JemRF Store)[https://www.jemrf.com].
 
 ## Installation and Projects
 
