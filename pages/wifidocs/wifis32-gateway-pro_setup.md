@@ -4,7 +4,7 @@ keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Aut 8, 2026
 tags:
 sidebar: wifi_sidebar
-permalink: wifis32-gateway-pro_setup.html
+permalink: wifi32s-gateway-pro_setup.html
 folder: mydoc
 ---
 ## Introduction
