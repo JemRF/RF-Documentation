@@ -181,7 +181,7 @@ entries:
       output: web, pdf
 
     - title: S32 WiFi Temperature and Humidity Sensor
-      url: /wifis32-gateway-htu.html
+      url: /wifis32-gateway_htu.html
       output: web, pdf
 
     - title: S32 WiFi Sensor Firmware Upgrade
