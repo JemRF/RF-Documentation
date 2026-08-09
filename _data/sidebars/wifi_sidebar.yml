@@ -116,87 +116,87 @@ entries:
       url: /sgw-maintenance.html
       output: web, pdf
 
-  - title: S32 WiFi Sensor
+  - title: WiFi Sensor Pro
     output: web, pdf
     folderitems:
 
-    - title: S32 Introduction
+    - title: WiFi Sensor Pro Introduction
       url: /wifi32s-sensor.html
       output: web, pdf
 
-    - title: S32 WiFi Sensor Getting Started
+    - title: WiFi Sensor Pro Getting Started
       url: /wifi32s-setup.html
       output: web, pdf
 
-    - title: S32 WiFi Temperature and Humidity Sensor
+    - title: WiFi Sensor Pro Temperature and Humidity Sensor
       url: /wifi32s-temp-hum.html
       output: web, pdf
 
-    - title: S32 WiFi Sensor Firmware Upgrade
+    - title: WiFi Sensor Pro Firmware Upgrade
       url: /wifi32s-update.html
       output: web, pdf
 
-    - title: S32 WiFi Sensor White Label
+    - title: WiFi Sensor Pro White Label
       url: /wifi32s-whitelabel.html
       output: web, pdf
 
-    - title: S32 WiFi Sensor Options
+    - title: WiFi Sensor Pro Options
       url: /wifi32s-config.html
       output: web, pdf
 
-    - title: S32 WiFi Sensor Offline
+    - title: WiFi Sensor Pro Offline
       url: /wifi32s-offline.html
       output: web, pdf
 
-    - title: S32 WiFi Pressure Sensor
+    - title: WiFi Sensor Pro Pressure Sensor
       url: /wifi32s-pressure.html
       output: web, pdf
 
-    - title: S32 WiFi Contact Sensor
+    - title: WiFi Sensor Pro Contact Sensor
       url: /wifi32s-switch.html
       output: web, pdf
 
-    - title: S32 WiFi Flow Meter Sensor
+    - title: WiFi Sensor Pro Flow Meter Sensor
       url: /wifi32s-flowmeter.html
       output: web, pdf
 
-    - title: S32 WiFi MQTT Settings
+    - title: WiFi Sensor Pro MQTT Settings
       url: /wifi32s-mqtt.html
       output: web, pdf
 
-    - title: S32 WiFi Greenhouse Sensor
+    - title: WiFi Sensor Pro Greenhouse Sensor
       url: /wifi32s-greenhouse.html
       output: web, pdf
 
-  - title: S32 WiFi Gateway Pro
+  - title: WiFi Gateway Pro
     output: web, pdf
     folderitems:
 
-    - title: S32 WiFi Gateway Pro Introduction
+    - title: WiFi Gateway Pro Introduction
       url: /wifi32s-gateway_intro.html
       output: web, pdf
 
-    - title: S32 WiFi Gateway Pro Getting Started
+    - title: WiFi Gateway Pro Getting Started
       url: /wifi32s-gateway-pro_setup.html
       output: web, pdf
 
-    - title: S32 WiFi Temperature and Humidity Sensor
+    - title: WiFi Gateway Pro Temperature and Humidity Sensor
       url: /wifi32s-gateway_htu.html
       output: web, pdf
 
-    - title: S32 WiFi Sensor Firmware Upgrade
+    - title: WiFi Gateway Pro Firmware Upgrade
       url: /wifi32s-update.html
       output: web, pdf
 
-    - title: S32 WiFi Sensor White Label
+    - title: WiFi Gateway Pro White Label
       url: /wifi32s-whitelabel.html
       output: web, pdf
 
-    - title: S32 WiFi Sensor Remote Control Relay(Switch)
+    - title: WiFi Gateway Pro Plus Relay
       url: /wifi32s-gateway_relay.html
       output: web, pdf
 
-    - title: S32 WiFi MQTT Settings
+    - title: WiFi Gateway Pro MQTT Settings
       url: /wifi32s-mqtt.html
       output: web, pdf
 

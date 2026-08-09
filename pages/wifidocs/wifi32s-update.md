@@ -1,5 +1,5 @@
 ---
-title: The JemRF S32 WIFI Sensor Updates
+title: The JemRF WIFI Sensor Pro and Gateway Pro Updates
 keywords: getting started introduction, WiFI Sensor
 last_updated: Sept 20, 2025
 tags:
@@ -9,9 +9,10 @@ permalink: wifi32s-update.html
 folder: mydoc
 ---
 
-## JemRF S32 WIFI Sensor - Firmware Upload
+## JemRF WIFI Sensor Pro and Gateway Pro - Firmware Upload
 
-The JemRF S32 WiFi Sensor over the Internet when instructed.
+The JemRF WiFi Pro Series updates over the Internet when instructed.
+This setup process is using the WiFi Sensor Pro screen shots, but the process is the same for the WiFi Gateway Pro devices as well.
 
 When new firmware is available, an update option will appear at the bottom of the Setup Details screen shown below.
 {% include image.html file="jemrfesp32ssetupupdate.jpg" alt="WiFi Sensor Update Available "%}
@@ -36,7 +37,8 @@ The Updating Inprogress screen will appear like normal while downloading the upd
 
 | Version | Date | Description |
 |---------|------|-------------|
-| 1.1.1 | 11/21/2025 | Baseline release with getvalidation option |
+| 1.1.1 | 11/21/2025 | Baseline release with getvalidation option  For the Sensor|
+| 1.1.6 | 08/08/2026 | Baseline release for the Gateway Series|
 
 
 

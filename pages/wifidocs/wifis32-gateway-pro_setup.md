@@ -1,5 +1,5 @@
 ---
-title: WiFi Wireless Gateway Pro Series
+title: WiFi Wireless Gateway Pro Series Setup
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Aut 8, 2026
 tags:
