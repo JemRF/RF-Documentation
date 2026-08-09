@@ -13,7 +13,7 @@ folder: wifidocs
 
 ![WiFi Sensor Case](images/wifisensorcase.jpg "WiFi Case")
 
-The JemRF S32 WiFi Sensor Pro is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The S32 WiFi Sensor expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
+The JemRF WiFi Sensor Pro is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The WiFi Sensor Pro expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
 It comes in different configurations,
 1. Temperature and Humidity Sensor with options,
 2. Pressure Sensor with options,

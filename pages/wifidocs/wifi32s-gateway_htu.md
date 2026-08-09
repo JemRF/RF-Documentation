@@ -12,7 +12,7 @@ folder: mydoc
 
 ## Introduction
 The WiFi Wireless Gateway Pro (WiFi Gateway Pro) receives messages from the Wireless sensors and sends them to the JemRF Monitoring service. This eliminates the need for a Raspberry PI computer and all that extra overhead. The Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming a computer first.<br />
-Has optional internal Temperature and Humidity Sensor for room reference.
+The default option is to include an internal Temperature and Humidity Sensor for room reference.
 
 The WiFi Gateway Pro is in the same physical case as the current WiFi IoT Sensors.
  * Follows the same setup process as our WiFi IoT Sensors to connect to the local 2.4G WiFi Only.

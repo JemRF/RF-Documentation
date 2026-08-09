@@ -1,5 +1,5 @@
 ---
-title: The JemRF ESP32 WIFI Sensor Advance Options
+title: The JemRF WIFI Sensor Pro Advance Options
 keywords: getting started introduction
 last_updated: Sept 20, 2025
 tags:

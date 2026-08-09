@@ -1,6 +1,6 @@
 ---
 title: JemRF WiFi Pro Devices MQTT Settings
-keywords: Gateway, mqtt
+keywords: Gateway, mqtt, Home Assistant
 last_updated: May 18, 2026
 tags:
 summary: "This page is to show how to setup MQTT on the WiFi Gateway and Node-RED"
@@ -11,7 +11,7 @@ folder: wifidocs
 
 # JemRF WiFi Wireless Gateway Pro and WiFi Sensor Pro MQTT Options
 
-The JemRF WiFi Pro have all the same features of our previous WiFi devices including the built-in MQTT Client. It supports the same MQTT features as the Smart Gateway, WiFi Gateway, and the older WiFi Sensors.  They can all send data to the Monitoring Server, which will store and display the readings on the user's Dashboard. They can also connect to a MQTT Broker and publish the sensor readings.  They send to both at the same time, or just send to the Server or the Broker. You can now use tools like Node-Red to build your own monitoring displays.\
+The JemRF WiFi Pro devices all have the same features of our previous WiFi devices including the built-in MQTT Client. It supports the same MQTT features as the Smart Gateway, WiFi Gateway, and the older WiFi Sensors.  They can all send data to the Monitoring Server, which will store and display the readings on the user's Dashboard. They can also connect to a MQTT Broker and publish the sensor readings.  They send to both at the same time, or just send to the Server or the Broker. You can now use tools like Node-Red to build your own monitoring displays.\
 The Pro series also has an option that supports your Home Assistant Server using Home Assistant MQTT Auto Discovery.\
 The Pro series also does a CheckIn on MQTT start with optional checkin setting. The Checkin includes the WLAN IP and MAC address to support troubleshooting areas where more than one sensor might be installed.
 
@@ -76,7 +76,7 @@ With Payload for temperature only (Gateway or Sensor) with readings set to Fahre
 
 {% include note.html content="For the WiFi unit with the Temperature and Humidity Sensor, the Probe Id is the Device Id."%}
 
-#### Contact Payload 
+#### Contact Payload
 The contact state is 0 for Off and 1 for On.\
 Example Relay message
 
@@ -84,7 +84,7 @@ Example Relay message
 
 ### MQTT Home Assistant Auto Discovery
 This option formats the messages for Home Assistant. To assist auto discovery to work, the data payloads are JemRF type messages. Using the example of JemRF device JEMCC7DC0A28DCC with a temperature and humidity sensor, plus a flow meter sensor on the host board with a device ID CC7DC0A28DCC. There are three sub-categories under the device ID, one for Humidity, one for Temperature and one for a Flow meter.\
-homeassistant 
+homeassistant
 homeassistant/sensor
 homeassistant/sensor/CC7DC0A28DCC
 homeassistant/sensor/CC7DC0A28DCC/humidity

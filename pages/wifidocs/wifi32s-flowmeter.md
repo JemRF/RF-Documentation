@@ -1,5 +1,5 @@
 ---
-title: WiFi Sensor as Switch
+title: WiFi Sensor Pro Switch
 keywords: communication, communications, relay, basic, radio, spec, wifi, sensor
 last_updated: Dec 10, 2025
 tags:
@@ -25,7 +25,7 @@ When purchased the S32 Sensor will have a 3 pin JST 2.54 connector installed and
 - Easy to configure web interface. No programming or soldering skills required. You do not need the internet to configure the device. Connect to it directly from any Wi-Fi device (e.g., PC, phone, tablet).
 - Uses your local 2.4 GHz WiFi to access the Internet
 - Cyclic temperature transmission mode with configurable send interval
-- MQTT Setup page for connection to the MQTT Broker to relay temperature and humidity readings. 
+- MQTT Setup page for connection to the MQTT Broker to relay temperature and humidity readings.
 - The WiFi Sensor supports 2 MQTT formats; more details are available in WiFi Gateway MQTT Explained. The MQTT connection can be upgraded from a standard non-secure to a secure, trusted connection.
 - Access Control Option to provide Authorization to save Changes and read hidden settings.
 - JST PH2.0 plug option for external 5 volt DC external power, or to provide power to external devices.

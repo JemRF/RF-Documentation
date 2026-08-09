@@ -1,5 +1,5 @@
 ---
-title: The JemRF S32 WIFI Sensor Manual Updates
+title: The JemRF WIFI Pro Devices Manual Updates
 keywords: getting started introduction, WiFI Sensor
 last_updated: Dec 12, 2025
 sidebar: wifi_sidebar
@@ -7,9 +7,9 @@ permalink: wifi32s-manual-update.html
 folder: mydoc
 ---
 
-## JemRF S32 WIFI Sensor - Manual Firmware Upload
+## JemRF WIFI Sensor - Manual Firmware Upload
 
-This document outlines the process for manually updating a JemRF S32 WiFi Sensor from a desktop PC. This procedure is for new installs and to reload a device that received a bad update.
+This document outlines the process for manually updating a JemRF WiFi Pro Devices from a desktop PC. This procedure is for new installs and to reload a device that received a bad update.
 
 ## Download tools
 This is One Time Only, Skip if done!
@@ -21,7 +21,7 @@ Note, the downloading and installing the tools is a one-time task.
 ## Run Updates
 ### Open Windows PowerShell
 
-Left-click on **Start** and select "**Terminal**". A new window will appear on the desktop like Figure 1. 
+Left-click on **Start** and select "**Terminal**". A new window will appear on the desktop like Figure 1.
 <center>{% include image.html file="espressif1.jpg" alt="WiFi Sensor Update Available "%}
 Figure 1.</center>
 
@@ -70,11 +70,12 @@ Figure 6b.</center>
 
 ### Post install
 Once the update completes, the process will start a monitor application, and you should start seeing messages like shown in Figure 7.
+It will automatically connect to the **Seltron Network**.
 This is the generic software loader. You select if this is to be loaded as a Gateway or a Sensor.
 <center>{% include image.html file="esp32_WiFi_Init_load.jpg" alt="Loader Selection "%}
 Figure 7.</center>
 
-You can press 1 or 2 or you can got the the WiFi IP address to make the selection as shown in Figure 8.
+You can press 1 or 2 or 3 or you can got the the WiFi IP address to make the selection as shown in Figure 8.
 Once the update completes, the process will start a monitor application, and you should start seeing messages like shown in Figure 7.
 <center>{% include image.html file="esp_wifi_load_screen.jpg" alt="Loader Web Info and Selection "%}
 Figure 8.</center>
@@ -98,8 +99,9 @@ Figure 11.</center>
 Once the the WiFi settings completes it will exit the loader and start the monitor as shown in Figure 10.
 
 
-### Validation 
-To validate the update and it is working, if needed follow the [Startup process](wifi32s-setup.html) to get connected to the WiFi 32s Sensor local WiFi. When connected, you should see Figure 12\. Look at the bottom banner to see Version 1.1.1. Now you can update over the air using the “**Update Available, Install?**” option to get the latest version.
+### Validation
+To validate the update and it is working, if needed follow the [Startup process](wifi32s-setup.html) to get connected to the WiFi Pro Device local WiFi.
+Default is to transfer the **Seltron Network** credentials and automatically connect. When connected, you should see Figure 12\. Look at the bottom banner to see Version 1.1.1. Now you can update over the air using the “**Update Available, Install?**” option to get the latest version.
 <center>{% include image.html file="jemrfesp32ssetupupdate.jpg" alt="WiFi Sensor Update Available "%}
 Figure 12.</center>
 
@@ -109,7 +111,7 @@ This is the baseline release:
 
 | Version | Date | Description |
 |---------|------|-------------|
-| 1.1.1 | 11/21/2025 | Baseline release with getvalidation option |
+| 1.1.7 | 08/08/2026 | Support for 3 device configurations |
 
 
 [For current Release information click here](wifi32s-update.html#releases)

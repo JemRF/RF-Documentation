@@ -1,5 +1,5 @@
 ---
-title: The JemRF ESP32 WIFI Sensor Offline Usage
+title: The JemRF WIFI Sensor Pro Offline Usage
 keywords: getting started introduction
 last_updated: Sept 20, 2025
 tags:
@@ -8,8 +8,8 @@ permalink: wifi32s-offline.html
 folder: mydoc
 ---
 
-## Interfacing JemRF S32 WiFi Sensor
-If you want to monitor the JemRF S32 WiFi Sensor with your own applications, offline from the Internet there are two options.
+## Interfacing JemRF WiFi Sensor Pro
+If you want to monitor the JemRF WiFi Sensor Pro with your own applications, offline from the Internet there are two options.
 
 ### Here is how you do it:
 

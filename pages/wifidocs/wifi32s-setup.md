@@ -1,5 +1,5 @@
 ---
-title: The JemRF ESP32 WIFI Sensor Version Setup
+title: The JemRF WIFI Sensor Pro Setup
 keywords: getting started introduction, WiFI Sensor
 last_updated: Dec 12, 2025
 tags:

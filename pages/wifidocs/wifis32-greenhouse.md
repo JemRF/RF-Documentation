@@ -1,5 +1,5 @@
 ---
-title: WiFi Green House Sensor Pro
+title: WiFi Green House Pro
 keywords: communication, communications, greenhouse, homeassistant, home assistant  green house, basic, radio, spec, wifi, sensor
 last_updated: Aug 8, 2026
 tags:
@@ -8,11 +8,11 @@ permalink: wifi32s-greenhouse.html
 folder: wifidoc
 ---
 ## Introduction
-The S32 WiFi Green House Sensor with internal Temperature and Humidity Sensor, three external moisture sensors and two external temperature sensors.
+The WiFi Green House Pro with internal Temperature and Humidity Sensor, three external moisture sensors and two external temperature sensors.
 
 
 ## Quick Start
-Follow the WiFi Sensor Pro series devices for connection to the local WiFi.
+Follow the WiFi Green House Pro series devices for connection to the local WiFi.
 
 ## Features:
 

@@ -13,7 +13,7 @@ folder: wifidocs
 
 ![WiFi Sensor Case](images/wifisensorcase.jpg "WiFi Case")
 
-The JemRF S32 WiFi Sensor Pro is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The S32 WiFi Sensor expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
+The JemRF WiFi Sensor Pro is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The WiFi Sensor Pro expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
 It comes in different configurations,
 1. Temperature and Humidity Sensor with options,
 2. Pressure Sensor with options,
@@ -22,10 +22,10 @@ It comes in different configurations,
 
 The options for each include up to 4 external temperature sensors at lengths from 1 m to 5 meters, all at the same time.  The Sensor also supports remote pressure sensors from 10 to 500 psi. Has an interface for a remote digital flow sensor or door sensor.
 
-The JemrRF S32 WiFi Sensor can support multiple sensor types concurrently, reducing the cost of various sensors in a single location.
+The JemrRF WiFi Sensor Pro can support multiple sensor types concurrently, reducing the cost of various sensors in a single location.
 
 It connects to your WiFI access point so you can send temperature readings to monitor.jemrf.com, or another monitoring application. Additionally, MQTT support is available for forwarding readings to an MQTT broker. It is fully assembled and requires no soldering. Connect it to power, and it will advertise itself as a wireless access point. Configure it through a web browser using its easy-to-use config application. Once configured, it will connect to your WiFI network, which will give it access to the internet and the JemRF Monitoring server, your own server, or run on a local network with custom software.\
-The S32 WiFi Sensor intelligence monitors network connectivity, retrieves time from Internet Servers, and disables the onboard AP after 10 minutes of connection to the local WiFi to secure open access. If not connected to the Internet, the start time is set to October 1, 2025.\
+The WiFi Sensor Pro intelligence monitors network connectivity, retrieves time from Internet Servers, and disables the onboard AP after 10 minutes of connection to the local WiFi to secure open access. If not connected to the Internet, the start time is set to October 1, 2025.\
 The sensor provides options to customize for your business and to authenticate changes.
 
 

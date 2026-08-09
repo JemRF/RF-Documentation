@@ -8,7 +8,7 @@ permalink: wifi32s-motion.html
 folder: wifidoc
 ---
 ## Introduction
-The S32 WiFi Sensor Pro Motion and internal Temperature and Humidity Sensor.
+The WiFi Sensor Pro Motion and internal Temperature and Humidity Sensor.
 Detection range is 120 degrees in all directions.
 
 

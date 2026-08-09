@@ -1,5 +1,5 @@
 ---
-title: The ESP32 WIFI Sensor Whitelabel
+title: The WIFI Sensor Pro Whitelabel
 keywords: Setting Custom settings for ESP-32 based WiFI Sensor
 last_updated: Nov 14, 2025
 tags:
@@ -8,22 +8,23 @@ permalink: wifi32s-whitelabel.html
 folder: wifidocs
 ---
 
-## The JemRF ESP32 WiFi Sensor White Label Option
-The WiFi Version 2 Sensor supports a private control panel. The hidden control panel provides customization of the sensor when viewed on the regular sensor control panels. 
+## The JemRF WiFi Sensor Pro White Label Option
+The WiFi Sensor Pro supports a private control panel. The hidden control panel provides customization of the sensor when viewed on the regular sensor control panels.
 
 Option allow:
 1. Customizing the banner words and title at the top, including foreground and background colors.
 2. Hiding the Server Status in the banner area at the top of the page
 3. Hiding the Server URL if not used
-*   Or it can be set and then hidden from your customers if used else leave blank before hidding
-4. Hiding the Token field
-5. Showing the options to set the network address manually
-* It can also be set and then hidden from your customers
-6. Enable Authentification on Setup, Sensor Confi and MQTT control panels
-7. Enable or hide the Relay Config Tab if not needed.
-8. Enter a Custom User Key (Must be 10 characters)
+*   Or it can be set and then hidden from your customers if used else leave blank before hiding
+1. Hiding the Token field
+2. Showing the options to set the network address manually
 
-At the bottom is the field for the Authentification Key.
+* It can also be set and then hidden from your customers
+1. Enable Authentication on Setup, Sensor Config and MQTT control panels
+2. Enable or hide the Relay Config Tab if not needed.
+3. Enter a Custom User Key (Must be 10 characters)
+
+At the bottom is the field for the Authentication Key.
 
 The default is the MMDD plus the last to digits of the Year plus the 4 characters of the Device Id after JEM
 \Example: \
