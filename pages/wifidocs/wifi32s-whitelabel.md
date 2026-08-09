@@ -15,14 +15,13 @@ Option allow:
 1. Customizing the banner words and title at the top, including foreground and background colors.
 2. Hiding the Server Status in the banner area at the top of the page
 3. Hiding the Server URL if not used
-*   Or it can be set and then hidden from your customers if used else leave blank before hiding
-1. Hiding the Token field
-2. Showing the options to set the network address manually
 
-* It can also be set and then hidden from your customers
-1. Enable Authentication on Setup, Sensor Config and MQTT control panels
-2. Enable or hide the Relay Config Tab if not needed.
-3. Enter a Custom User Key (Must be 10 characters)
+4. Hiding the Token field
+   *   Or it can be set and then hidden from your customers if used else leave blank before hiding
+5. Hiding or showing the options to set the network address manually
+6. Enable Authentication on Setup, Sensor Config and MQTT control panels
+7. Enable or hide the Relay Config Tab if not needed(if device has option).
+8. Enter a Custom User Key (Must be 10 characters)
 
 At the bottom is the field for the Authentication Key.
 

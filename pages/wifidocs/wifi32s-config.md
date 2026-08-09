@@ -8,7 +8,7 @@ permalink: wifi32s-config.html
 folder: wifidoc
 ---
 
-## JemRF ESP32 WIFI Sensor Advance Options
+## JemRF WIFI Sensor Pro Advance Options
 Once you have completed the [setup of WIFI Temperature Sensor](/wifi-iot-setup.html) you may be interested in some of the advanced features of the device.
 
 On the "Sensor Config" menu there are a number of options which we will describe further here.

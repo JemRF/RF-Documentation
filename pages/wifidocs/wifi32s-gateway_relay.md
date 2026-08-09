@@ -25,7 +25,8 @@ The WiFi Gateway Plus is in the same physical case as the current WiFi IoT Senso
 ## Tech Specs
 * Dimensions 74mm x 55mm x 28mm
 * Powered either by USB-C.
-* Upgrades are done over the air using the Update button or can be done manually done using a 3.3V FTDI cable
+* Upgrades are done over the air using the Update button.
+* Relay contacts for low voltage AC or DC connections. Recommend licensed Electrician for any control applications.
 
 ## Features
 * Easy to configure web interface. No programming or soldering skills required. You do not need the internet to configure the device. Connect to it directly from any WIFI device (e.g. PC, phone tablet…)
@@ -54,7 +55,6 @@ There are three data formats the Gateway sends MQTT Messages.
 2. Using a JSON message format. i.e. the MQTT Key, value and message type [Temperature, Humidity, State,...]
 3. Home Assistant MQTT Auto Discovery which updates the Home Assistant topics with sensor descriptions and post data using the JemRF format.
 
-
 {% include image.html file="wifis32gatewaypro_mqtt.jpg" alt="WiFi Gateway Pro MQTT Setup" %}
 
 [Click here for details on the JemRF MQTT format with examples](gatewaymqtt.html)
@@ -82,6 +82,9 @@ The current WiFi Gateway Plus Version is displayed at the bottom of each page. T
 The WiFi Gateway Plus is updated from the Internet. When a new update is available a message will appear on the Setup Details Page.
 
 [Click here for Illustrated guide on updating the Gateway](wifi-gw-update.html)
+
+## Switch Wiring
+The relays each provide a normally open and normally closed dry contact. Designed for low voltage AC (0-24 vac) or low voltate DC (0-24 vdc). If using for control system contact a Licensed Electrician.
 
 ## Mounting Instructions
 Mount the Gateway in a vertical position with the USB connector down. There is a mounting hold on the back for this. Do not mount against a metal wall as that can block the WiFi and RF signals.

@@ -8,7 +8,7 @@ permalink: wifi32s-greenhouse.html
 folder: wifidoc
 ---
 ## Introduction
-The WiFi Green House Pro with internal Temperature and Humidity Sensor, three external moisture sensors and two external temperature sensors.
+The WiFi Greenhouse Monitor Pro is a Wi-Fi-enabled device that helps monitor multiple plants with a single base device. The Greenhouse Monitor comes with 3 Moisture sensors, an onboard Temperature and Humidity Sensor, and two external temperature sensors. It supports secure communication with the Monitoring Cloud Server or another monitoring application, such as Home Assistant. It is fully assembled and requires no soldering. Connect it to power, and it will advertise itself as a wireless access point. Configure it through a web browser using its easy-to-use config application. Once configured, it will connect to your Wi-Fi network, providing it with access to the internet, the monitoring server, the MQTT broker, and remote data requests.
 
 
 ## Quick Start
@@ -22,9 +22,12 @@ Follow the WiFi Green House Pro series devices for connection to the local WiFi.
 - MQTT Setup page for connection to the MQTT Broker to relay motion, temperature and humidity readings.
 - The WiFi Sensor supports 3 MQTT formats; more details are available in [WiFi Pro Devices MQTT Settings](https://documents.jemrf.com/wifi32s-mqtt.html). The MQTT connection can be upgraded from a standard non-secure to a secure, trusted connection.
 - MQTT Home Assistant Auto-Discovery supported.
--
+- Low-crossion Moisture Probes with 1.3 m extended cables. Readings from 0 to 100%
+- Supports an additional HTU21D Temperature and Humidity sensor. Measures temperatures from -40°C to +80°C. The Fahrenheit equivalent is -40°F to +176°F, with a ±0.5°C accuracy—measures humidity from 0-100%RH with 2% across the range.
+- The external DS18B20 temperature sensors are accurate (±0.5°C) from -40°C to +80°C, with an upper limit of 120°C.
 
 ## MQTT Details
+The Pro Series supports both Secure and Non-Secure MQTT and Web services, enhanced control, custom configuration, and access control to settings. MQTT messaging is compatible with Home Assistant applications, including the option for Auto MQTT Discovery, eliminating the need to manually add a JemRF sensor to your Home Assistant Dashboard.\
 The MQTT Configuration page is used to set the connection to the MQTT broker, the port and if a secure connection is requested. The default topic starts with the Gateway ID show at the top right.
 There is options to change that topic and change the Gateway ID.
 For MQTT Auto Discovery there is the option to post CheckIn messages.
@@ -32,8 +35,6 @@ There are three data formats the Gateway sends MQTT Messages.
 1. Using the JemRF data format using the device ID and value
 2. Using a JSON message format using the device ID , value and message type [Temperature, Humidity, State,...]
 3. Home Assistant MQTT Auto Discovery which updates the Home Assistant topics with sensor descriptions and post data using the JemRF format.
-
-## Switch Wiring
 
 ## Required, but not included:
 

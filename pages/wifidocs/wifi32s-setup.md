@@ -22,7 +22,7 @@ To reach the configuration page for the WiFi IoT Sensor, you can use any device 
 
 ### Step 1: Connect to WiFi
 
-The first step is to connect your smart device to the WiFi Sensor. Power up the WiFi Sensor and, using your computer (or smart device), look for a WiFi Name that starts with **JEM** followed by some numbers. These numbers are the unique ID of your device. Connect to the device using the default password:
+The first step is to connect your smart device to the WiFi Sensor. Power up the WiFi Sensor and, using your computer (or smart device), look for a WiFi Name that starts with **JEM** for WiFi Sensors, and **JRF** for WiFi Gateways followed by some numbers. These numbers are the unique ID of your device. Connect to the device using the default password:
 
 Password: Jemrf32s
 {% include image.html file="gwsetup-ssid.jpg" alt="WiFi Connect"%}
