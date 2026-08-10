@@ -87,4 +87,21 @@ There is also an option to set Sensors to a common send Interval at the bottom o
 This allows for setting the update interval of a Sensor when the sensor starts up. The Gateway detects the Sensor Started and sends it the Interval command. \
 Use case: You have several sensor sending updates at 1 minute, 3 minutes and 5 minutes. You would like them all to be sending at a 5 minute invterval. You would enter 5 in the *Set Sensor Updated Interval* and press **Change**. Then when you power cycle your sensors they will be changed to update every 5 minutes. The interval can be 1 to 30 minutes.
 
+### Sensor List Messages
+
+The MQTT Key field is the value used to trigger the relay.
+
+How to decode the MQTT Key field.
+Using the value in the Device ID column you skip that part of the MQTT Key.\
+For Device ID 55 with MQTT Key 55TMPC that translate to TMPC for the reading type.  [55][TMPC]\
+For Device ID J023 with MQTT Key J023BA that translate to BA for the reading type.  [J023][BA]
+
+|Reading Type Code|Description|
+|-------|--------|
+| TMPA or TMPC or TM| Sensor Temperature readings |
+| BATT or BA | Battery level of the sensor|
+| RSSI or RS | Sensor Receiver Signal Strength, (How good the signal is, the less negative the better)|
+| HUM or HM  | Sensor Humidity Readings|
+| ANAA or AA | Sensor Light Level Readings |
+
 
