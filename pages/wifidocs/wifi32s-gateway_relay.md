@@ -20,7 +20,7 @@ The WiFi Gateway Plus is in the same physical case as the current WiFi IoT Senso
  * It provides a Sensor List overview page to show all the sensors it is tracking and their last value.
  * Supports RF4 Sensors, sensors with 4-character device IDs as well as the 2-character IDs.
 
-<img src>="gateway-pro-relay.jpeg" alt="WiFi Gateway Pro with Relay Case" width="200px">
+<img src="gateway-pro-relay.jpeg" alt="WiFi Gateway Pro with Relay Case" width="200px">
 
 ## Tech Specs
 * Dimensions 74mm x 55mm x 28mm
