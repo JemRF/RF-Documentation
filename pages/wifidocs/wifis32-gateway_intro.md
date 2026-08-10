@@ -11,20 +11,24 @@ folder: wifidocs
 
 ## S32 WiFI Gateway Pro
 
+
+The JemRF WiFi Gateway Pro is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The WiFi Gateway Pro expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
+It comes in different configurations,
+1. WiFi Gateway Pro which has an optional internal Temperature and Humidity Sensor.
 ![WiFi Sensor Case](images/wifisensorcase.jpg "WiFi Case")
 
-The JemRF WiFi Sensor Pro is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The WiFi Sensor Pro expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
-It comes in different configurations,
-1. Temperature and Humidity Sensor with options,
-2. Pressure Sensor with options,
-3. Temperature sensor with options,
-4. Contact Sensor with options.
+2. WiFi Gateway Pro with Relay.
+It contains dual internal relay for control signalling. \
+Using and of the sensors being monitored by the Gateway, you can select a sensor to control the on/off state of the control a relay.
+There are two independent relays allowing you to select two different sensors, one for each relay. Then set the on and off values that control the relay action.
 
-The options for each include up to 4 external temperature sensors at lengths from 1 m to 5 meters, all at the same time.  The Sensor also supports remote pressure sensors from 10 to 500 psi. Has an interface for a remote digital flow sensor or door sensor.
+{% include image.html file="gateway-pro-relay.jpeg" alt="WiFi Gateway Pro with Relay Case" width="200px"%}
 
-The JemrRF S32 WiFi Gateway Pro connects to your WiFI access point so you can send temperature readings to monitor.jemrf.com, or another monitoring application. Additionally, MQTT support is available for forwarding readings to an MQTT broker. It is fully assembled and requires no soldering. Connect it to power, and it will advertise itself as a wireless access point. Configure it through a web browser using its easy-to-use config application. Once configured, it will connect to your WiFI network, which will give it access to the internet and the JemRF Monitoring server, your own server, or run on a local network with custom software.\
-The S32 WiFi Gateway intelligence monitors network connectivity, retrieves time from Internet Servers, and disables the onboard AP after 10 minutes of connection to the local WiFi to secure open access. If not connected to the Internet, the start time is set to October 1, 2025.\
+The JemrRF WiFi Gateway Pro connects to your WiFI access point so you can send temperature readings to monitor.jemrf.com, or another monitoring application. Additionally, MQTT support is available for forwarding readings to an MQTT broker. It is fully assembled and requires no soldering. Connect it to power, and it will advertise itself as a wireless access point. Configure it through a web browser using its easy-to-use config application. Once configured, it will connect to your WiFI network, which will give it access to the internet and the JemRF Monitoring server, your own server, or run on a local network with custom software.\
+The WiFi Gateway Pro intelligence monitors network connectivity, retrieves time from Internet Servers, and disables the onboard AP after 10 minutes of connection to the local WiFi to secure open access. If not connected to the Internet, the start time is set to October 1, 2025.\
 The sensor provides options to customize for your business and to authenticate changes.
+
+The Gateway Pro series are Home Assistant MQTT Auto Discovery compliant, making adding to Home Assistant a simple selection without any coding.
 
 
 ## Features:
@@ -33,10 +37,8 @@ The sensor provides options to customize for your business and to authenticate c
 - Uses your local 2.4 GHz WiFi to access the Internet
 - Cyclic temperature transmission mode with configurable send interval
 - Supports both Celsius and Fahrenheit temperature readings
-- DS18B20 temperature sensors (Onboard or Extended) are used to measure temperatures from -55°C to +125°C. Fahrenheit equivalent is -67°F to +257°F, ±0.5°C accuracy from -10°C to +85°C
-- Note: The operating temperature for the WiFi Temperature sensor is -30F to +125.6F, -34C to 52C
-- Supports HTU21D Temperature (-40℃ – 105℃) and Humidity - Sensor, future BME280 Temperature,Humidity and Pressure
-- Although the sensor is highly accurate (±0.5°C accuracy), you can calibrate the temperature reading using a configuration in the WiFI sensor app
+- Supports HTU21D Temperature (-40℃ – 105℃) and Humidity - Sensor.
+- Supports physical contact closures with Relay option.
 - The device supports dual Wi-Fi mode, allowing it to act as both a Wi-Fi access point and a Wi-Fi client at the same time. A WiFI access point advertises itself through an SSID and can be connected to via any device or computer that has WiFI.
 - MQTT Setup page for connection to the MQTT Broker to relay temperature and humidity readings.
 - The WiFi Sensor supports 3 MQTT formats; more details are available in (WiFi Pro Devices MQTT Settings)[https://documents.jemrf.com/wifi32s-mqtt.html]. The MQTT connection can be upgraded from a standard non-secure to a secure, trusted connection.
