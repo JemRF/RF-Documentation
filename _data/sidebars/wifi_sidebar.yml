@@ -173,7 +173,7 @@ entries:
     folderitems:
 
     - title: WiFi Gateway Pro Introduction
-      url: /wifi32s-gateway_intro.html
+      url: /wifi32-gateway_intro.html
       output: web, pdf
 
     - title: WiFi Gateway Pro Getting Started

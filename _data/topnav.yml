@@ -43,10 +43,6 @@ topnav_dropdowns:
           url: /wireless_motion_sensor.html
         - title: Wireless Light Sensor
           url: /wireless_light_sensor.html
-        - title: Flex RF Module
-          url: /flex.html
-        - title: Flex Development Module
-          url: /developmentboard.html
         - title: Wireless Power Detect Sensor
           url: /wireless_power_sensor.html
         - title: IoT Gateway
@@ -55,6 +51,10 @@ topnav_dropdowns:
           url: /wifi-rf-relay.html
         - title: Wifi Sensor
           url: /wifi_iot.html
+        - title: WiFi Gateway Pro
+          url: /wifi32-gateway_intro.html
+        - title: WiFi Sensor Pro Introduction
+          url: /wifi32s-sensor.html
 
     - title: Projects
       folderitems:
