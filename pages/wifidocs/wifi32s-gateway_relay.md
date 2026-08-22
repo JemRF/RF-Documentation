@@ -86,5 +86,9 @@ The WiFi Gateway Plus is updated from the Internet. When a new update is availab
 ## Switch Wiring
 The relays each provide a normally open and normally closed dry contact. Designed for low voltage AC (0-24 vac) or low voltage DC (0-24 vdc). If using for control system contact a Licensed Electrician.
 
+Below is inside the Gateway Relay Pro with the top access lid off. At top are the two relay and the screws connections used to hold the connection wires. Below that is the WiFI Gateway Pro controller board.  On the relay board, there are two sets of three screws for each relay. Relay 2 is the relay closest to the controller with the first screw on bottom being the normally open, then Common, then the normally closed contact. Then that repeats for Relay 1.
+
+{% include image.html file="gatewayproinside.jpg" alt="WiFi Gateway Pro Relay Sensor List" %}
+
 ## Mounting Instructions
 Mount the Gateway in a vertical position with the USB connector down. There is a mounting hold on the back for this. Do not mount against a metal wall as that can block the WiFi and RF signals.
