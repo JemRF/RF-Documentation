@@ -20,7 +20,7 @@ The WiFi Gateway Plus is in the same physical case as the current WiFi IoT Senso
  * It provides a Sensor List overview page to show all the sensors it is tracking and their last value.
  * Supports RF4 Sensors, sensors with 4-character device IDs as well as the 2-character IDs.
 
-<img src="gateway-pro-relay.jpeg" alt="WiFi Gateway Pro with Relay Case" width="200px">
+<img src="images/gateway-pro-relay.jpeg" alt="WiFi Gateway Pro with Relay Case" width="200px">
 
 ## Tech Specs
 * Dimensions 74mm x 55mm x 28mm
@@ -84,7 +84,7 @@ The WiFi Gateway Plus is updated from the Internet. When a new update is availab
 [Click here for Illustrated guide on updating the Gateway](wifi-gw-update.html)
 
 ## Switch Wiring
-The relays each provide a normally open and normally closed dry contact. Designed for low voltage AC (0-24 vac) or low voltate DC (0-24 vdc). If using for control system contact a Licensed Electrician.
+The relays each provide a normally open and normally closed dry contact. Designed for low voltage AC (0-24 vac) or low voltage DC (0-24 vdc). If using for control system contact a Licensed Electrician.
 
 ## Mounting Instructions
 Mount the Gateway in a vertical position with the USB connector down. There is a mounting hold on the back for this. Do not mount against a metal wall as that can block the WiFi and RF signals.
