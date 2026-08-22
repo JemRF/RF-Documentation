@@ -1,6 +1,6 @@
 ---
 title: The JemRF WIFI Gateway Pro Series Introduction
-keywords: getting started introduction
+keywords: getting started introduction, home Assistant, Gateway, Sensors
 last_updated: Aug 8, 2026
 tags:
 summary: "The JemRF Gateway Pro series provides clean and easy to setup and monitor you RF Wireless sensors."
@@ -12,13 +12,17 @@ folder: wifidocs
 ## WiFI Gateway Pro
 
 The JemRF WiFi Gateway Pro is based on the ESP32C3 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The WiFi Gateway Pro expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
-The JemRF WiFi Gateway Pro connects to your WiFI access point to send sensor readings to monitor.jemrf.com, or another monitoring application. Additionally, MQTT support is available for forwarding readings to an MQTT broker. It is fully assembled and requires no soldering. Connect it to power, and it will advertise itself as a wireless access point. Configure it through a web browser using its easy-to-use config application. Once configured, it will connect to your WiFI network, which will give it access to the internet and the JemRF Monitoring server, your own server, or run on a local network with custom software.\
+
+The JemRF WiFi Gateway Pro connects to your WiFI access point to send sensor readings to monitor.jemrf.com, or another monitoring application. Additionally, MQTT support is available for forwarding readings to an MQTT broker. It is fully assembled and requires no soldering. Connect it to power, and it will advertise itself as a wireless access point. Configure it through a web browser using its easy-to-use config application. Once configured, it will connect to your WiFI network, which will give it access to the internet and the JemRF Monitoring server, your own server, or run on a local network with custom software.
+
 The WiFi Gateway Pro intelligence monitors network connectivity, retrieves time from Internet Servers, and disables the onboard AP after 10 minutes of connection to the local WiFi to secure open access. If not connected to the Internet, the start time is set to October 1, 2025.\
-The sensor provides options to customize for your business and to authenticate changes.
+The gateway provides options to customize for your business and to authenticate changes, see [White Lable](wifi32s-whitelabel.html).
 
 The Gateway Pro series are Home Assistant MQTT Auto Discovery compliant, making adding to Home Assistant a simple selection without any coding.
 
-THe Gateway Pros come in different configurations:
+## Configurations
+
+The Gateway Pros come in different configurations:
 
 1. WiFi Gateway Pro which has an optional internal Temperature and Humidity Sensor.
 
@@ -26,7 +30,7 @@ THe Gateway Pros come in different configurations:
 
 2. WiFi Gateway Pro with Relay.
 
-<img src="inages/gateway-pro-relay.jpeg" alt="WiFi Gateway Pro with Relay Case" width="200px">
+<img src="images/gateway-pro-relay.jpeg" alt="WiFi Gateway Pro with Relay Case" width="200px">
 
 The Gateway Pro with Relay contains dual internal relays for control of external devices or signalling external control systems. \
 Using and of the sensors being monitored by the Gateway, you can select a sensor to control the on/off state of the control a relay.
