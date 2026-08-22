@@ -1,5 +1,5 @@
 ---
-title: The WIFI Sensor Pro Whitelabel
+title: The WIFI Pro Devices White label Option
 keywords: Setting Custom settings for ESP-32 based WiFI Sensor
 last_updated: Nov 14, 2025
 tags:
@@ -8,8 +8,8 @@ permalink: wifi32s-whitelabel.html
 folder: wifidocs
 ---
 
-## The JemRF WiFi Sensor Pro White Label Option
-The WiFi Sensor Pro supports a private control panel. The hidden control panel provides customization of the sensor when viewed on the regular sensor control panels.
+## The JemRF WiFi Pro Devices support White Label Option
+The WiFi Pro series supports a private control panel. The hidden control panel provides customization of the sensor or gateway when viewed on the regular sensor control panels.
 
 Option allow:
 1. Customizing the banner words and title at the top, including foreground and background colors.
