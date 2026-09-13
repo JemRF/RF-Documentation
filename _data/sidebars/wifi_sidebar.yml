@@ -164,9 +164,9 @@ entries:
       url: /wifi32s-mqtt.html
       output: web, pdf
 
-    - title: WiFi Sensor Pro Greenhouse Sensor
-      url: /wifi32s-greenhouse.html
-      output: web, pdf
+  - title: WiFi Greenhouse Monitor
+    url: /wifi32s-greenhouse.html
+    output: web, pdf
 
   - title: WiFi Gateway Pro
     output: web, pdf

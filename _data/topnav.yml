@@ -55,6 +55,8 @@ topnav_dropdowns:
           url: /wifi32-gateway_intro.html
         - title: WiFi Sensor Pro Introduction
           url: /wifi32s-sensor.html
+        - title: WiFi Greenhouse Monitor
+          url: /wifi32s-greenhouse.html
 
     - title: Projects
       folderitems:
