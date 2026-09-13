@@ -28,7 +28,7 @@ Follow the WiFi Green House Monitor is a member of our WiFI Pro series of device
   -  MQTT Home Assistant Auto-Discovery supported.
 - Low-crossion Moisture Probes with 1.3 m extended cables for longer lifetime and reduced maintenance. Readings from 0 to 100%
 
-  {% include image.html file="moisture-detect-sensor.jpg" alt="Moisture Sensor"%}
+  {% include image.html file="moisture-detect-sensors.jpg" alt="Moisture Sensor"%}
 
 - Has internal HTU21D Temperature and Humidity sensor to monitor the room conditions. Measures temperatures from -40°C to +80°C. The Fahrenheit equivalent is -40°F to +176°F, with a ±0.5°C accuracy—measures humidity from 0-100%RH with 2% across the range.
 - There are also two external DS18B20 temperature sensors to monitor liquid systems, such as hydroponic systems. They are accurate (±0.5°C) from -40°C to +80°C, with an upper limit of 120°C.
@@ -69,7 +69,7 @@ We then created a Home Assistant Green House Dashboard:
 
 {% include image.html file="ha-greenhouse_template.jpg" alt="Home Assistant Greenhouse Dashboard"%}
 
-We will provide free to customers the Home Assistant Green House Dashboard Template and guide on how to include the Green House Dashboard in your Home Assistant, just contact Sales @ jemrf.com.
+We will provide free to customers the Home Assistant Green House Dashboard Template customized to your Greenhouse Monitor and guide on how to include the Green House Dashboard in your Home Assistant, just contact Sales @ jemrf.com.
 
 
 ## Required, but not included:
