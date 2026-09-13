@@ -165,8 +165,11 @@ entries:
       output: web, pdf
 
   - title: WiFi Greenhouse Monitor
-    url: /wifi32s-greenhouse.html
     output: web, pdf
+    folderitems:
+
+      - title: WiFi Greenhouse Monitor
+        url: /wifi32s-greenhouse.html
 
   - title: WiFi Gateway Pro
     output: web, pdf
