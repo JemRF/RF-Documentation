@@ -28,7 +28,7 @@ You can configure the Wireless Gateway using any device that supports WiFi and a
 
 The first step is to connect your smart device to the WiFi Gateway. Power up the WiFi Gateway and using your computer (or smart device) look for a WiFi Name that starts with **JRF** followed by some numbers. These numbers are the unique ID of your device. Connect to the device using the default password:
 
-Password: Jemrfs32
+Password: Jemrf32s
 {% include image.html file="gwsetup-ssid.jpg" alt="WiFi GW Connect"%}
 
 
