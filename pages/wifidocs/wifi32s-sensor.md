@@ -13,7 +13,14 @@ folder: wifidocs
 
 ![WiFi Sensor Case](images/wifisensorcase.jpg "WiFi Case")
 
-The JemRF WiFi Sensor Pro is based on the ESP32 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The WiFi Sensor Pro expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
+The JemRF WiFi Sensor Pro it is more than just upgraded Version, it is the start of our next-generation of sensors. The WiFi Sensor Pro supports the features of the older device with a larger collection of sensor options, and adding:
+- Access Control: an option for simple to eliminate accidental changes.
+- Removing WiFi Network clutter:  they will disable their AP when online after 5 minutes.
+- Customizing: They have a white-label option so the devices and put Your Name at the Top if you want.
+- Add Certificates: There is the option to add a Private or Self-Sign Digital Certificates
+- Home Assistant: Support for Auto Discovery in Home Assistant Application using MQTT
+
+Ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
 It comes in different configurations,
 1. Temperature and Humidity Sensor with options,
 2. Pressure Sensor with options,

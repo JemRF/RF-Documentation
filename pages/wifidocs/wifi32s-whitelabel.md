@@ -9,15 +9,12 @@ folder: wifidocs
 ---
 
 ## The JemRF WiFi Pro Devices support White Label Option
-The WiFi Pro series supports a private control panel. The hidden control panel provides customization of the sensor or gateway when viewed on the regular sensor control panels. With option for private or self-signed digital certificates.
+The WiFi Pro series supports a private control panel to alter the devices appearance and customize it for your business. The hidden control panel provides customization of the sensor or gateway when viewed on the regular sensor control panel pages.
 
-There is a simple access control option the bottom of all pages, the field for the Authentication Key if enabled.
+Other options with the White Label feature, you can enable a simple access control option that will show a Authentication Key field, if enabled at the bottom of all pages.\
+If provides an option to upload a private or Self-Signed SSL Certificate.
 
-    Enter a Custom User Key (Must be 10 characters)
-    Option for a private or Self-Signed SSL Certificate.
-
-
-The image below shows the White Label Option page.
+The image below shows the White Label Features page.
 
 {% include image.html file="jemrfesp32whitelabel.jpg" alt="White Label Options"%}
 

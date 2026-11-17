@@ -11,7 +11,14 @@ folder: wifidocs
 
 ## WiFI Gateway Pro
 
-The JemRF WiFi Gateway Pro is based on the ESP32C3 processor, which makes it more than just upgraded Version; it is the start of our next-generation of sensors. The WiFi Gateway Pro expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
+The JemRF WiFi Gateway Pro is upgraded Version, it is the start of our next-generation of sensors. The WiFi Sensor Pro supports the features of the older device with a larger collection of sensor options, and adding:
+- Access Control: an option for simple to eliminate accidental changes.
+- Removing WiFi Network clutter:  they will disable their AP when online after 5 minutes.
+- Customizing: They have a white-label option so the devices and put Your Name at the Top if you want.
+- Add Certificates: There is the option to add a Private or Self-Sign Digital Certificates
+- Home Assistant: Support for Auto Discovery in Home Assistant Application using MQTT
+
+The WiFi Gateway Pro expands the versatile device features of the older device with a larger collection of sensor options, ready to go with simple plug-and-play, for quickly and inexpensively updating the cloud. \
 
 The JemRF WiFi Gateway Pro connects to your WiFI access point to send sensor readings to monitor.jemrf.com, or another monitoring application. Additionally, MQTT support is available for forwarding readings to an MQTT broker. It is fully assembled and requires no soldering. Connect it to power, and it will advertise itself as a wireless access point. Configure it through a web browser using its easy-to-use config application. Once configured, it will connect to your WiFI network, which will give it access to the internet and the JemRF Monitoring server, your own server, or run on a local network with custom software.
 
