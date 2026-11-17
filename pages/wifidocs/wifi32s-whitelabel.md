@@ -13,6 +13,10 @@ The WiFi Pro series supports a private control panel. The hidden control panel p
 
 There is a simple access control option the bottom of all pages, the field for the Authentication Key if enabled.
 
+    Enter a Custom User Key (Must be 10 characters)
+    Option for a private or Self-Signed SSL Certificate.
+
+
 The image below shows the White Label Option page.
 
 {% include image.html file="jemrfesp32whitelabel.jpg" alt="White Label Options"%}
@@ -27,10 +31,11 @@ Fields options apply to:
 4. Hiding the Token field
    *   Or it can be set and then hidden from your customers if used else leave blank before hiding
 5. Hiding or showing the options to set the network address manually
-6. Enable Authentication on Setup, Sensor Config and MQTT control panels
-7. Enable or hide the Relay Config Tab if not needed(if device has option).
-8. Enter a Custom User Key (Must be 10 characters)
-9. Option for a private or Self-Signed SSL Certificate.
+6. Enter Authentication Key if Authentication is enabled.
+
+Controls (Not Shown) for fields that are not on all devices:\
+1. Enable or hide the Relay Config Tab if not needed(if device has option).
+2. Send the WLAN IP if the JSON option is selected as the MQTT Send Data Format is selected. (Sensors Only)
 
 
 {% include image.html file="jemrf32sensorsetup-mu.jpg" alt="White Label Options"%}
@@ -50,7 +55,7 @@ When enabled, the Key field will turn Yellow when there is a change that needs t
 
 {% include image.html file="jemrfesp32whitelabel2.jpg" alt="White Label Options"%}
 
-You have the option to use the default key or enter your own Custom User Key. The default Key is base on the Sensor date and changes each day.\
+You have the option to use the default key or enter your own Custom User Key. The default Key is base on the Sensor date and changes each day. If using a **Custom User Key, it Must be 10 characters**.\
 The format for the default Key is the two digits for the month, day, the last two digits of the year and the first four characters after JEM or JRF.
 
 Example: \
