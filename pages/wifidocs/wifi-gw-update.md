@@ -7,6 +7,8 @@ sidebar: wifi_sidebar
 permalink: wifi-gw-update.html
 folder: mydoc
 ---
+{% include note.html content="<span style="color:red"> This item has been Discontinued.</span></br>This document if for reference only. </br>The WiFi Gateway Pro has replace it." %}
+
 ### Online Firmware Download and Update
 The WiFi Wireless Gateway Version 2 can be updated directly to the Gateway using the Internet. It is not updated automatically.
 When new firmware is available, an update option will appear at the bottom of the Setup Details screen shown below.
