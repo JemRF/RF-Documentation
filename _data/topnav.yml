@@ -55,7 +55,6 @@ topnav_dropdowns:
           url: /wifi32s-sensor.html
         - title: WiFi Greenhouse Monitor
           url: /wifi32s-greenhouse.html
-
     - title: Projects
       folderitems:
         - title: Projects with RF Devices
