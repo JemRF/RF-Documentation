@@ -7,6 +7,10 @@ sidebar: wifi_sidebar
 permalink: wifi-rf-gw-setup.html
 folder: mydoc
 ---
+{% include note.html content="<span style='color:red'> This item has been Discontinued.</span> \
+This document if for reference only. \
+The WiFi Gateway Pro has replace it." %}
+
 ## Introduction
 The WiFi Wireless Gateway (WiFi Gateway) receives messages from the Wireless sensors and sends them to the JemRF Monitoring service. This eliminates the need for a Raspberry PI computer and all that extra overhead. You can also connect to the our legacy service PrivateEyePi. The Gateway provides an easy to use tool to get your wireless sensors online free of configuring and programming a computer first.
 
