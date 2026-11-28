@@ -47,6 +47,8 @@ topnav_dropdowns:
           url: /wireless_power_sensor.html
         - title: IoT Gateway
           url: /iot_gateway.html
+        - title: WiFi Gateway
+          url: /wifi-rf-relay.html
         - title: Wifi Sensor
           url: /wifi_iot.html
         - title: WiFi Gateway Pro
@@ -55,6 +57,7 @@ topnav_dropdowns:
           url: /wifi32s-sensor.html
         - title: WiFi Greenhouse Monitor
           url: /wifi32s-greenhouse.html
+
     - title: Projects
       folderitems:
         - title: Projects with RF Devices
