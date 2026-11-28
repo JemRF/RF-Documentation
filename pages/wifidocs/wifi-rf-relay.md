@@ -7,8 +7,8 @@ sidebar: wifi_sidebar
 permalink: wifi-rf-relay.html
 folder: mydoc
 ---
-{% include note.html content="<span style='color:red'> This item has been Discontinued.</span> \
-This document if for reference only. \
+{% include note.html content="<span style='color:red'> This item has been Discontinued.</span> <p>
+This document if for reference only. </p>
 The WiFi Gateway Pro has replace it." %}
 
 
